@@ -1,2 +1,5 @@
 bundles:
   - 2
+files:
+  - source: /config/locales/*/en.yml
+    translation: /config/locales/phrase_exports/%two_letters_code%.yml
