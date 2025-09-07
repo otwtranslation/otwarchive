@@ -1,0 +1,422 @@
+---
+zh-CN:
+  admin:
+    mailer:
+      reset_password_instructions:
+        expiration:
+          other: If you do not use this link to reset your password within %{count} days, it will expire, and you will have to request a new one.
+        intro: 'Someone has requested a password reset for your account. You can change your account password by following the link below and entering your new password:'
+        link_title_html: Change my password.
+        subject: "[%{app_name}] Reset your admin password"
+        unrequested: If you did not request this password reset, you may ignore this email and your previous password will continue to work.
+  admin_mailer:
+    set_password_notification:
+      created: Your AO3 admin account has been created.
+      expiration:
+        other: 'The link to set your password is good for %{count} days. If it no longer works, you can request a password reset and use the link that will be emailed to you instead: %{request_reset_url}.'
+      expiration_html:
+        other: The link to set your password is good for %{count} days. If it no longer works, you can %{request_reset_link} and use the link that will be emailed to you instead.
+      finish: 'Please follow this link to set your password so you can log in: %{set_password_url}.'
+      finish_html: Please %{set_password_link} so you can log in.
+      request_reset: request a password reset
+      set_password: follow this link to set your password
+      subject: "[%{app_name}] Your AO3 admin account"
+      url: Admin login URL
+      username: Admin username
+  kudo_mailer:
+    batch_kudo_notification:
+      guest:
+        other: "%{count}名访客"
+      left_kudos:
+        html:
+          other: "%{givers_list}给您的作品%{commentable_link}点了赞。"
+        text:
+          other: '%{givers_list}给您的作品%{commentable_title}（%{commentable_url}）点了赞。'
+      single_guest:
+        giver: 一名访客
+        html: "%{giver}给您的作品%{commentable_link}点了赞。"
+        text: 一名访客给您的作品%{commentable_title}（%{commentable_url}）点了赞。
+      subject: "[%{app_name}] 您收到了点赞！"
+  mailer:
+    general:
+      closing:
+        formal: 此致敬礼
+        informal: 祝好
+      creation:
+        link_with_word_count: "%{creation_link}（%{word_count}）"
+        title_with_chapter_number: '%{title}的第%{position}章'
+        title_with_word_count: '"%{creation_title}"（%{word_count}）'
+        word_count:
+          other: "%{count} 字符"
+      footer:
+        general:
+          about:
+            html: The Archive of Our Own is a fan-run and fan-supported archive that relies on %{donate_link}.
+            text: 'The Archive of Our Own is a fan-run and fan-supported archive that relies on your donations: %{donate_url}.'
+          html:
+            donate_link_text: your donations
+            support_link_text: contact Support
+          unwanted_email:
+            html: If you've received this message in error, please %{support_link}.
+            text: If you've received this message in error, please contact Support at %{support_url}.
+        sent_at: 于%{sent_at}发送。
+      greeting:
+        formal_html: Dear %{name},
+        informal:
+          addressed_html: 您好，%{name}！
+          unaddressed: 您好！
+        introductory: Archive of Our Own – AO3（AO3作品库）向您问好！
+        tag_wrangler_supervisors: Tag Wrangler Supervisors
+      metadata_label_indicator: "："
+      signature:
+        abuse_team: AO3条款执行与违规行为处理团队
+        app_short_name: AO3
+        open_doors: Open Doors（Open Doors拯救计划）团队
+        parent_org: Organization for Transformative Works – OTW（OTW再创作组织）
+        support: AO3支持委员会团队
+  roles:
+    anonymous_creator: Anonymous Creator
+    commenter_name:
+      html: "%{name} %{role_with_parens}"
+      text: "%{name} %{role_with_parens}"
+    guest_with_parens: "(Guest)"
+    official_with_parens: "(Official)"
+    registered_with_parens: "(Registered User)"
+  tag_wrangling_supervisor_mailer:
+    wrangler_username_change_notification:
+      name_changed:
+        html: The wrangler %{old_username} has changed their name to %{new_username}.
+      subject: "[%{app_name}] Wrangler name change"
+  user_mailer:
+    abuse_report:
+      copy:
+        comment: Description of the content or issue
+        intro: 'Here is a copy of your report for your reference:'
+        summary: Terms of Service violation
+        url: URL of the reported page
+      report_received: The Policy & Abuse team has received your report, and our volunteers will investigate as soon as they can. Because our team is small and we receive thousands of reports each month, it may take some time for us to get to your report.
+      resubmission: Please do not resubmit this report unless you have additional information that you did not include in your original report. Submitting multiple reports about the same issue may delay our response.
+      subject: "[%{app_name}] Abuse - %{summary}"
+      thank_you: Thank you for your patience.
+    admin_deleted_work_notification:
+      bye: 附件中为该作品副本，以供参考。
+      contact_abuse: 联系条款执行与违反行为处理委员会
+      deleted:
+        html: 您的作品%{title}已被网站管理员从AO3作品库中删除。
+        text: 网站管理员从AO3作品库中删除您的作品%{title}。
+      html:
+        tos_violation: 如果您的作品违反了AO3作品库的网站服务条款，请%{contact_abuse_link}。
+      import_project:
+        html: 如果您的作品属于Open Doors（Open Doors拯救计划）的导入项目，请%{opendoors_link}提出有关疑问。
+        text: 如果您的作品属于Open Doors（Open Doors拯救计划）的导入项目，请联系Open Doors拯救计划（%{opendoors_link}）。
+      opendoors: 联系Open Doors拯救计划
+      subject: "[%{app_name}] 您的作品已被管理员删除"
+      text:
+        tos_violation: 如果您的作品违反了AO3作品库的网站服务条款，请联系条款执行和违规行为处理委员会（%{contact_abuse_url}）。
+    admin_hidden_work_notification:
+      access: 在作品被隐藏期间，您依然可以通过上方链接访问该作品，但它将不会显示在您的作品页，且其他AO3用户将无法访问。
+      check_email: 条款执行和违规行为处理委员会可能已经联系您并对您作品被隐藏的原因进行了解释，因此请检查您的邮箱，包括垃圾邮件列表。
+      contact_abuse: 联系条款执行和违规行为处理委员会
+      html:
+        help: 如果您不确定为什么您的作品会被隐藏，并且没有收到有关此事的进一步联系，请直接%{contact_abuse_link}。
+        hidden: 您的作品%{title}已被条款执行和违规行为处理委员会隐藏且无法再被公开访问。
+        tos_violation: 如果您的作品是因为违反AO3的%{tos_link}而被隐藏，您会被要求采取行动以纠正违规行为。如果您无法让您的作品符合服务条款，您的作品可能会被从AO3作品库中删除。
+      subject: "[%{app_name}] 您的作品已被条款执行和违规行为处理委员会隐藏"
+      text:
+        help: '如果您不确定为什么您的作品会被隐藏，并且没有收到有关此事的进一步联系，请直接联系条款执行和违规行为处理委员会：%{contact_abuse_url}。'
+        hidden: 您的作品"%{title}"（%{work_url}）已被条款执行和违规行为处理委员会隐藏且无法再被公开访问。
+        tos_violation: 如果您的作品是因为违反AO3的服务条款（%{tos_url}）而被隐藏，您会被要求采取行动以纠正违规行为。如果您无法让您的作品符合服务条款，您的作品可能会被从AO3作品库中删除。
+      tos: 服务条款
+    anonymous_or_unrevealed_notification:
+      anonymous_info: 匿名作品在标签列表中可见，但不会显示在您的作品页面上。在作品页，您的用户名将被替换为"Anonymous"（佚名）。
+      anonymous_unrevealed_info: 管理员随后可能会公开您的作品，但仍保留匿名。订阅您账户的用户不会收到相关改动提示。作品一经公开，即会被收录到标签列表中，但不会显示在您的作品页面。在作品页，您的用户名将被替换为"Anonymous"（佚名）。
+      changed_status:
+        anonymous:
+          html: 作品集%{collection_link}的管理员已将您的作品%{work_link}设为匿名状态。
+          text: 作品集%{collection_title}（%{collection_url}）的管理员已将您的作品%{work_title}（%{work_url}）设为匿名状态。
+        anonymous_unrevealed:
+          html: 作品集%{collection_link}的管理员已将您的作品%{work_link} 设为匿名与非公开状态.
+          text: 作品集%{collection_title}（%{collection_url}）的管理员已将您的作品%{work_title}（%{work_url}）设为匿名与非公开状态。
+        unrevealed:
+          html: 作品集%{collection_link}的管理员已将您的作品%{work_link}设为非公开状态。
+          text: 作品集%{collection_title}（%{collection_url}）的管理员已将您的作品%{work_title}（%{work_url}）设为非公开状态。
+      collection_items_link_text: Approved Collection Items（已通过作品集条目）页
+      do_not_want:
+        anonymous:
+          html: 如果您想取消作品的匿名状态，请访问%{collection_items_link}将其从该作品集中移除。
+          text: '如果您不希望作品保持匿名状态，请访问Approved Collection Items（已通过作品集条目）页，将其从该作品集中移除：%{collection_items_url}'
+        anonymous_unrevealed:
+          html: 如果您不希望您的作品保持匿名与非公开状态，请访问%{collection_items_link}将其从作品集中移除。
+          text: '如果您不希望作品保持匿名与非公开状态，请访问Approved Collection Items（已通过作品集条目）页，将其从该作品集中移除：%{collection_items_url}'
+        unrevealed:
+          html: 如果您不希望您的作品保持非公开状态，请访问%{collection_items_link}将其从作品集中移除。
+          text: '如果您不希望作品保持非公开状态，请访问Approved Collection Items（已通过作品集条目）页，将其从该作品集中移除：%{collection_items_url}'
+      faq_link_text: 同人作品集常见问题
+      more_info:
+        html: 详情请查阅%{faq_link}。
+        text: '详情请查阅同人作品集常见问题：%{faq_url}'
+      subject:
+        anonymous: "[%{app_name}] 您的作品被设为匿名状态"
+        anonymous_unrevealed: "[%{app_name}] 您的作品被设为匿名与非公开状态"
+        unrevealed: "[%{app_name}] 您的作品被设为非公开状态"
+      unrevealed_info: 非公开作品不会显示在标签列表或您的作品页面上。如果点击作品链接，用户将收到一则提示：作品当前未公开，无法获取内容。
+    archivist_added_to_collection_notification:
+      approved_collection_items_page: Approved Collection Items (已批准作品集的作品) 页面
+      archivist_notice: 因为作品集维护员拥有Open Doors (Open Doors拯救计划) 作品库管理员官方身份，所以即使您禁用了作品集邀请，他们也可以将您的作品添加到此作品集中。管理员只会将被导入作品库中的作品添加到作品集中。
+      removal_instructions:
+        html: 如果您想从此作品集中删除您的作品，请访问您的%{approved_items_link}。
+        text: '如果您想从此作品集中删除您的作品，请访问您的Approved Collection Items (已批准作品集的作品) 页面：%{approved_items_url}.'
+      subject: "[%{app_name}][%{collection_title}]一位Open Doors (Open Doors拯救计划) 作品库管理员已将您的作品添加到一个作品集。"
+      work_added:
+        html: '%{collection_link}的作品集维护员已将您的作品%{work_link} 添加到他们的作品集。'
+        text: '"%{collection_title}" (%{collection_url})的作品集维护员已将您的作品"%{work_title}"(%{work_url})添加到他们的作品集!'
+    challenge_assignment_notification:
+      any: 任意
+      assignment:
+        html: 您在AO3的%{link}写手挑战中收到了以下点文！
+      description: '描述：'
+      due: '本篇点文的截止日期为：'
+      html:
+        footer: 您之所以会收到这封邮件，是因为您报名参加了%{title}写手挑战。如果想了解本次挑战的相关信息以及管理员的联系方式，请前往%{footer_link}。
+        footer_link: 写手挑战详情页面
+        look_up: 查看本篇点文详情，请前往%{link}。
+        look_up_link: 您的Assignments（点文）页面
+      optional_tags: '可选标签：'
+      prompt_url: '点梗链接：'
+      prompts: '点梗：'
+      recipient: '受赠者：'
+      recipient_missing: '无受赠者：请联系写手挑战管理员。'
+      subject: "[%{app_name}][%{collection_title}] 您的点文！"
+      text:
+        assignment: 您在AO3的%{collection_title}写手挑战（%{collection_url}）中收到了以下点文！
+        footer: 您之所以会收到这封邮件，是因为您报名参加了%{title}写手挑战（%{url}）。如果您想了解本次挑战的相关信息以及管理员的联系方式，请前往%{profile_url}。
+        look_up: 查看本篇点文详情，请前往您的Assignments（点文）页面%{link}。
+    change_email:
+      changed:
+        html: "%{login}, the email associated with your account has been changed to %{email}"
+        text: "%{login}, the email associated with your account has been changed to %{email}"
+      subject: "[%{app_name}] 电子邮箱变更申请"
+    claim_notification:
+      access:
+        contact_support: 联系AO3支持委员会
+        html: 出于被搬运作品库的要求，您的作品被搬运至AO3后可能仅向登录用户开放（以防它们出现在谷歌检索结果中）。在这种情况下，除非您选择面向所有访客打开权限，否则仅登录用户可以查看这些作品。关于如何解锁、遗弃或删除您的作品，请%{contact_support_link}。
+        text: 出于被搬运作品库的要求，您的作品被搬运至AO3后可能仅向登录用户开放（以防它们出现在谷歌检索结果中）。在这种情况下，除非您选择面向所有访客打开权限，否则仅登录用户可以查看这些作品。关于如何解锁、遗弃或删除您的作品，请使用%{support_url}，联系AO3支持委员会。
+      email_tips: 如欲与我们取得联系，请将使用@transformativeworks.org这一域名的电邮地址添加至安全联系人列表，并检查您的垃圾邮件确认其中是否有我们的回复。
+      introduction:
+        ao3_name: Archive of Our Own – AO3（AO3作品库）
+        html: 本邮件旨在通知您，包含您作品的同人作品库已被%{open_doors_name_link}搬运至 %{app_link}。由于此电邮地址与被搬运作品库的注册用户相关联，相关同人作品（如下）已被自动添加至您的AO3账号。
+        open_doors_name: Open Doors（Open Doors拯救计划）
+        text: 本邮件旨在通知您，包含您作品的同人作品库已被Open Doors（Open Doors拯救计划）（%{open_doors_url}）搬运至Archive of Our Own – AO3（AO3作品库）：%{app_url}。由于此电邮地址与被搬运作品库的注册用户相关联，相关同人作品（如下）已被自动添加至您的AO3账号。
+      mistake:
+        contact_open_doors: 联系Open Doors拯救计划
+        html: 如果存在错误，并且下列作品并非您的作品，请勿将其删除！请%{contact_open_doors_link}，我们会帮助您解决。
+        text: 如果存在错误，并且下列作品并非您的作品，请勿将其删除！请联系Open Doors拯救计划（%{open_doors_url}），我们会帮助您解决。
+      more_info:
+        ao3_news: AO3新闻
+        contact_support: 联系AO3支持委员会
+        faq_page: 常见问题页面
+        html: 您可以点击%{ao3_news_link}阅读近期的作品库搬运公告，亦可前往Open Doors拯救计划的%{faq_page_link}或%{tutorial_page_link}了解更多信息。对于常见问题、教程或此封邮件中未予解答的任何问题，请%{contact_support_link}。
+        text: 您可以点击AO3新闻（%{news_url}）阅读近期的作品库搬运公告，亦可前往Open Doors拯救计划的常见问题页面（%{open_doors_faq_url}）或教程页面（%{open_doors_tutorial_url}），了解更多信息。对于常见问题、教程或此封邮件中未予解答的任何问题，请使用%{support_url}联系支持委员会。
+        tutorial_page: 教程页面
+      other_works:
+        contact_open_doors: 联系Open Doors拯救计划
+        html: 如果您在被搬运作品库还拥有其他作品，但已无法访问上传时所用的电邮地址，请%{contact_open_doors_link}并提供任何有助于核验您身份的信息。
+        text: 如果您在被搬运作品库还拥有其他作品，但已无法访问上传时所用的电邮地址，请联系Open Doors拯救计划并提供任何有助于核验您身份的信息。
+      questions:
+        contact_support: 联系AO3支持委员会
+        html: 如有其他疑问，请%{contact_support_link}。
+        text: 如有其他疑问，请使用%{support_url}联系AO3支持委员会。
+      redirects:
+        html: 为保留推荐列表和收藏，在有限的时间内，被搬运作品库的网址可能会被重定向至这些作品在AO3上的搬运副本（请查阅作品库搬运公告帖确认具体情况）。如果您已上传这些作品的副本，并且%{negation}使用"通过URL地址搬运"这一功能，同一作品在AO3上将有两份副本。
+        negation: NOT
+      subject: "[%{app_name}]作品上传通知"
+      update_redirect:
+        contact_open_doors: 联系Open Doors拯救计划
+        html: 如果您希望由Open Doors拯救计划来更新重定向链接，导向您自行上传的作品副本，请删除搬运副本，并%{contact_open_doors_link}，说明您的AO3账号用户名、您在被搬运作品库使用的用户名，以及希望重定向链接导向的同人作品标题和URL地址。（如果涉及多份作品，您可以在同一封邮件中全部列出。）
+        text: 如果您希望由Open Doors拯救计划来更新重定向链接，导向您已自行上传的作品副本，请删除搬运副本，并使用%{open_doors_url}联系Open Doors拯救计划，说明您的AO3账号用户名、您在被搬运作品库使用的用户名，以及希望重定向链接导向的同人作品标题和URL地址。（如果涉及多份作品，您可以在同一封邮件中全部列出。）
+      work_info:
+        html: "%{work_link} (%{fandom})"
+        text:
+          no_fandom: "- %{work_title} %{work_url}"
+          with_fandom: "- %{work_title} %{work_url} (%{fandom})"
+      works_by: '此邮箱（%{email}）关联的作品如下：'
+    collection_notification:
+      assignments_sent:
+        complete: 所有任务已发送。
+        subject: 任务已发送
+      challenge_default:
+        complete: 'Signed-up participant %{offer_byline} has defaulted on their assignment for %{request_byline}. You may want to assign a pinch hitter on the collection assignments page: %{assignments_page_url}'
+        subject: Challenge default by %{offer_byline}
+      html:
+        received_message: '您收到一则有关您的作品集%{collection_link}的信息：'
+      text:
+        received_message: '您收到一则有关您的作品集"%{collection_title}"（%{collection_url}）的信息：'
+    creatorship_notification:
+      explanation: 作为某一作品的共同创作者, 无论您在个人设置中是否允许他人邀请您成为共同创作者，您都可能被列为该作品新章节的创作者， 也会被列为该作品所属系列的创作者之一。
+      html:
+        creation: "由%{pseud_links}所作的%{creation_link}"
+        edit_chapter: 编辑章节
+        edit_series: 编辑系列
+        remove_chapter: 如果您被误列为共同创作者，或者不想被列为创作者之一，您可以通过%{edit_chapter_link}将自己从创作者名单中移除。
+        remove_series: 如果您被误列为共同创作者，或者不想被列为创作者之一，您可以通过%{edit_series_link}将自己从创作者名单中移除。
+      intro_chapter: '用户%{adding_user}将您 以别名%{pseud}列为了下述章节的共同创作者：'
+      intro_series: '用户%{adding_user}将您以别名%{pseud}列为了下述系列的共同创作者：'
+      subject: "[%{app_name}] 共同创作者提示"
+      text:
+        creation: "由%{pseuds}所作的%{title}（%{url}）"
+        remove_chapter: '如果您被误列为共同创作者，或者不想被列为创作者之一，您可以通过编辑章节将自己从创作者名单中移除：%{url}'
+        remove_series: '如果您被误列为共同创作者，或者不想被列为创作者之一，您可以通过编辑系列将自己从创作者名单中移除：%{url}'
+    creatorship_notification_archivist:
+      explanation: 该用户作为Open Doors（Open Doors拯救计划）的作品库管理员，在相关工作需要时，可在不发送请求的情况下将您添加为共同创作者，即使您可能在个人设置中禁止了其他用户邀请您成为共同创作者。
+      html:
+        creation: "%{creation_link}，作者：%{pseud_links}"
+        edit_chapter: 编辑章节
+        edit_series: 编辑系列
+        edit_work: 编辑作品
+        remove_chapter: 如果您被误列为共同创作者，或者不想被列为创作者之一，您可以通过%{edit_chapter_link}，将自己从创作者名单中移除。
+        remove_series: 如果您被误列为共同创作者，或者不想被列为创作者之一，您可以通过%{edit_series_link}将自己从创作者名单中移除。
+        remove_work: 如果您被误列为共同创作者，或者不想被列为创作者之一，您可以通过%{edit_work_link}，将自己从创作者名单中移除。
+      intro_chapter: '用户%{archivist} 已将您以别名%{pseud}添加为下述章节的共同创作者：'
+      intro_series: '用户%{archivist} 已将您以别名%{pseud}添加为下述系列的共同创作者：'
+      intro_work: '用户%{archivist}已将您以别名%{pseud}添加为下述作品的共同创作者：'
+      subject: "[%{app_name}]档案管理员添加共同创作者通知"
+      text:
+        creation: "%{title}（%{url}），作者：%{pseuds}"
+        remove_chapter: '如果您被误列为共同创作者，或者不想被列为创作者之一，您可以通过编辑章节将自己从创作者名单中移除：%{url}'
+        remove_series: '如果您被误列为共同创作者，或者不想被列为创作者之一，您可以通过编辑系列将自己从创作者名单中移除：%{url}'
+        remove_work: '如果您被误列为共同创作者，或者不想被列为创作者之一，您可以通过编辑作品将自己从创作者名单中移除：%{url}'
+    creatorship_request:
+      html:
+        creation: "由%{pseud_links}所作的%{creation_link}"
+        instructions: 您可以在您的%{page_name}页面接受或拒绝此邀请。
+        page_name: Co-Creator Requests（共同创作者邀请）
+      intro_chapter: '用户%{inviting_user}向您发送了一则邀请，希望将您以别名%{pseud}列为下述章节的共同创作者：'
+      intro_series: '用户%{inviting_user}向您发送了一则邀请，希望将您以别名%{pseud}列为下述系列的共同创作者：'
+      intro_work: '用户%{inviting_user}向您发送了一则邀请，希望将您以别名%{pseud}列为下述作品的共同创作者：'
+      subject: "[%{app_name}] 共同创作者邀请"
+      text:
+        creation: "由%{pseuds}所作的%{title}（%{url}）"
+        instructions: '您可以在您的Co-Creator Requests（共同创作者邀请）页面接受或拒绝此邀请：%{url}'
+    delete_work_notification:
+      attachment: 附件中为该作品副本，以供参考。
+      deleted_other:
+        html: 应%{pseud}的要求，您的作品%{title}已被删除。
+        text: 应%{pseud}的要求，您的作品%{title}已被删除。
+      deleted_yourself:
+        html: 应您的要求，您的作品%{title}已被删除。
+        text: 应您的要求，您的作品%{title}已被删除。
+      questions:
+        html: 如果您有任何疑问，请%{support}。
+        text: 如果您有任何疑问，请%{support} （%{url}）。
+      subject: "[%{app_name}] 您的作品已被删除"
+      support: 联系支持委员会
+    feedback:
+      additional_ticket: If you have additional questions or information, do not hesitate to send in another ticket.
+      introduction: 'We''re working hard to reply to everyone, and we''ll respond to you as soon as we can. Your communication is greatly valued, and it will be reviewed and answered by our volunteer Support team. In the meantime, here is a copy of the information you submitted through the Technical Support and Feedback form:'
+      subject: "[%{app_name}] Support - %{summary}"
+    invitation:
+      been_invited: You've been invited to join the Archive of Our Own!
+      features: With an account, you can post fanworks, use bookmarks to keep track of works you enjoyed, receive subscription emails when your favorite creators or works update, customize the way the site looks for you, and more!
+      has_invited: "%{user_name} has invited you to join the Archive of Our Own!"
+      html:
+        about: The Archive of Our Own (AO3) is a free, noncommercial archive built by and for fans. Our servers are owned by our parent nonprofit, the %{otw_link}, which works to protect fan rights and preserve fanworks. We welcome all kinds of fanworks, including fanfiction, fanart, fanvids, and podfic from any fandom.
+        activation_support: After you sign up, you'll receive an account activation email. If you do not receive this email after 48 hours, please %{support_link}.
+        faq: For more information, please check %{faq_link}.
+        faq_link_text: our FAQ
+        invitation_link_text: follow this link to sign up
+        join: If you'd like to join us, please %{invitation_link}.
+        otw_link_text: Organization for Transformative Works
+        support_link_text: contact Support
+      subject: "[%{app_name}] Invitation"
+      text:
+        about: The Archive of Our Own (AO3) is a free, noncommercial archive built by and for fans. Our servers are owned by our parent nonprofit, the Organization for Transformative Works (%{otw_url}), which works to protect fan rights and preserve fanworks. We welcome all kinds of fanworks, including fanfiction, fanart, fanvids, and podfic from any fandom.
+        activation_support: 'After you sign up, you''ll receive an account activation email. If you do not receive this email after 48 hours, please contact Support: %{support_url}.'
+        faq: 'For more information, please check our FAQ: %{faq_url}.'
+        join: 'If you''d like to join us, please follow this link to sign up: %{invitation_url}.'
+    invitation_to_claim:
+      access:
+        html: Depending on the archive, your works may have been imported restricted to registered users only (to keep them out of Google searches). If this is the case, the works will only be accessible by logged-in users unless you choose to make them fully visible. For help unlocking, orphaning, or deleting your works, please %{contact_support_link}.
+        text: Depending on the archive, your works may have been imported restricted to registered users only (to keep them out of Google searches). If this is the case, the works will only be accessible by logged-in users unless you choose to make them fully visible. For help unlocking, orphaning, or deleting your works, please contact AO3 Support.
+      claim_or_remove:
+        html: Claim or remove your works here.
+        text: 'Claim or remove your works here: %{claim_url}'
+      email_tips: If you're contacting us, please add email addresses from @transformativeworks.org to your list of safe contacts and check your spam folders for our reply.
+      html:
+        ao3_news: AO3 News
+        contact_open_doors: contact Open Doors
+        contact_support: contact AO3 Support
+        faq_page: FAQ page
+        open_doors_name: Open Doors
+        tutorial_page: tutorial page
+      introduction:
+        html: You're receiving this e-mail because an archive has recently been imported by %{open_doors_name_link} into the %{app_link} (%{app_short_name}), and we believe that the following fanworks belong to you. We'd like to give you a chance to claim (or delete/orphan) these works if you want to. And if you don't already have an account under a different e-mail, we'd like to invite you aboard!
+        text: You're receiving this e-mail because an archive has recently been imported by Open Doors (%{open_doors_link}) into the %{app_name} (%{app_short_name} - %{app_url}), and we believe that the following fanworks belong to you. We'd like to give you a chance to claim (or delete/orphan) these works if you want to. And if you don't already have an account under a different e-mail, we'd like to invite you aboard!
+      mistake:
+        html: If this is a mistake and these are not your works, please don't delete them! Please just %{contact_open_doors_link} and we will sort it out.
+        text: If this is a mistake and these are not your works, please don't delete them! Please just contact Open Doors (%{open_doors_link}) and we will sort it out.
+      more_info:
+        html: You can read announcements about recent archive moves at %{ao3_news_link}, and find additional information on Open Doors' %{faq_page_link} or %{tutorial_page_link}. For any questions not answered in the FAQ, tutorials, or this e-mail, please %{contact_support_link}.
+        text: You can read announcements about recent archive moves at AO3 News (%{news_link}), and find additional information on Open Doors' FAQ page (%{open_doors_faq_link}) or tutorials page (%{open_doors_tutorial_link}). For any questions not answered in the FAQ, tutorials, or this e-mail, please contact Support at %{support_link}.
+      other_works:
+        html: If you had other works on the imported archive under an e-mail address you can no longer access, please %{contact_open_doors_link} with any information that can help verify your identity.
+        text: If you had other works on the imported archive under an e-mail address you can no longer access, please contact Open Doors with any information that can help verify your identity.
+      questions:
+        html: For other inquiries, please %{contact_support_link}.
+        text: For other inquiries, please contact AO3 Support at %{support_link}.
+      redirects: To preserve rec lists and bookmarks, the imported archive's web addresses may redirect to the imported copy of these works for a limited time (check the announcement post for your archive to be sure). If you've already uploaded a copy of these works and you did NOT use the import from URL feature, there will be two copies of the same work on the archive.
+      subject: "[%{app_name}] Invitation to claim works"
+      unwanted:
+        html: If these works do belong to you, but you don't want them, you can orphan (so that they remain on the AO3, but with your name removed) or delete them (so that they are entirely removed from the AO3). You do not need to add these works to any account in order to orphan or delete them--you can do this directly from the claim link above. (For assistance, please %{contact_support_link}.)
+        text: If these works do belong to you, but you don't want them, you can orphan (so that they remain on the AO3, but with your name removed) or delete them (so that they are entirely removed from the AO3). You do not need to add these works to any account in order to orphan or delete them--you can do this directly from the claim link above. (For assistance, please contact Support at %{support_link}.)
+      update_redirect:
+        html: If you would like Open Doors to update the redirect to point to your pre-existing work, please delete the imported copy, and %{contact_open_doors_link} with your AO3 account name, your account name on the imported archive, and the title and URL of the fanwork you would like the redirect to point to. (If you have multiple works you would like to change the redirects for, you can list these in one email.)
+        text: If you would like Open Doors to update the redirect to point to your pre-existing work, please delete the imported copy, and contact Open Doors at %{open_doors_link} with your AO3 account name, your account name on the imported archive, and the title and URL of the fanwork you would like the redirect to point to. (If you have multiple works you would like to change the redirects for, you can list these in one email.)
+      uploaded_list: 'The works uploaded include:'
+    invite_increase_notification:
+      html:
+        body:
+          other: 我们想通知您，您有%{count}份新邀请帖，该邀请帖用于创建AO3作品库的新帐户。您可以在%{invitation_page_link}邀请朋友。
+      invitation_page_link_text: 您的Invitations（邀请帖）页面
+      subject: "[%{app_name}] 新邀请帖"
+      text:
+        body:
+          other: 我们想通知您，您有%{count}份新邀请帖，该邀请帖用于创建AO3作品库的新帐户。您可以在(%{invitation_page_url})邀请朋友。
+    invite_request_declined:
+      main:
+        other: 我们很遗憾地通知您，您提出的%{count}份新邀请码申请未能获批。
+      reason: '您的申请为：'
+      subject: "[%{app_name}] 额外邀请码申请拒函"
+    recipient_notification:
+      html:
+        collection: 您在AO3上收到了一篇来自于作品集 %{collection_link} 的赠文！
+      no_collection: 您在AO3上收到了一篇赠文！
+      subject:
+        collection: "[%{app_name}][%{collection_title}]来自于作品集 %{collection_title} 的赠文"
+        no_collection: "[%{app_name}]您收到了一篇赠文"
+      text:
+        collection: 您在AO3上收到了一篇来自于作品集%{collection_title} （%{collection_url}）的赠文！
+    signup_notification:
+      activate:
+        html: Please %{activate_account_link}.
+        text: 'Please follow this link to activate your account: %{activate_account_url}'
+      activate_your_account: follow this link to activate your account
+      admin_posts: AO3 News
+      bye: We hope you enjoy using the Archive.
+      contact_support: contact Support
+      faq: FAQ
+      features:
+        html: Once your account is up and running, you can post your fanworks, set up email subscriptions to let you know when your favorite creators or works have updated, set preferences to customize the way the site looks and works for you, keep track of the works you've accessed on the Archive via your history, and much more.
+        text: Once your account is up and running, you can post your fanworks, set up email subscriptions to let you know when your favorite creators or works have updated, set preferences to customize the way the site looks and works for you, keep track of the works you've accessed on the Archive via your history, and much more.
+      information:
+        html: There's lots of information and advice on how to use the Archive in our %{faq_link}. You'll find the latest news about site developments on %{admin_posts_link}. If you need more help, run into a bug, or have questions or comments, please %{contact_support_link}, who are always happy to help out.
+        text: 'There''s lots of information and advice on how to use the Archive in our FAQ at %{faq_url}. You''ll find the latest news about site developments on AO3 News at %{admin_posts_url}. If you need more help, run into a bug, or have questions or comments, please contact Support, who are always happy to help out: %{contact_support_url}.'
+      subject: "[%{app_name}] Activate your account"
+      welcome: Welcome to the Archive of Our Own, %{login}!
+  users:
+    mailer:
+      reset_password_instructions:
+        expiration: 此链接一周后失效，如果您届时仍未修改密码，则需要申请新的链接。
+        intro: '有人提出了重设您的账号密码的申请。您可以进入下方的链接对密码进行更改：'
+        link_title: 更改我的密码。
+        subject: "[%{app_name}] 重设您的密码"
+        unrequested: 如果您没有申请重设密码，请忽略此邮件，继续使用您原本的密码。
