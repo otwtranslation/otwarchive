@@ -29,32 +29,32 @@ bn:
   kudo_mailer:
     batch_kudo_notification:
       guest:
-        one: a guest
-        other: "%{count} guests"
+        one: একজন অতিথি
+        other: "%{count}জন অতিথি"
       left_kudos:
         html:
-          one: "%{givers_list} left kudos on %{commentable_link}."
-          other: "%{givers_list} left kudos on %{commentable_link}."
+          one: "%{givers_list} বাহবা (কুডোস) দিয়ে গেছেন %{commentable_link}।"
+          other: "%{givers_list} বাহবা (কুডোস) দিয়ে গেছেন %{commentable_link}।"
         text:
-          one: '%{givers_list} left kudos on "%{commentable_title}" (%{commentable_url}).'
-          other: '%{givers_list} left kudos on "%{commentable_title}" (%{commentable_url}).'
+          one: '%{givers_list} বাহবা (কুডোস) দিয়ে গেছেন %{commentable_title} (%{commentable_url})।'
+          other: '%{givers_list} বাহবা (কুডোস) দিয়ে গেছেন %{commentable_title} (%{commentable_url})।'
       single_guest:
-        giver: A guest
-        html: "%{giver} left kudos on %{commentable_link}."
-        text: A guest left kudos on "%{commentable_title}" (%{commentable_url}).
-      subject: "[%{app_name}] You've got kudos!"
+        giver: একজন অতিথি
+        html: "%{giver} বাহবা (কুডোস) দিয়ে গেছেন %{commentable_link}।"
+        text: একজন অতিথি %{commentable_title} (%{commentable_url}) বাহবা (কুডোস) দিয়ে গেছেন।
+      subject: "[%{app_name}]-তে আপনি বাহবা (কুডোস) পেয়েছেন!"
   mailer:
     general:
       closing:
-        formal: Sincerely,
-        informal: Best,
+        formal: ধন্যবাদান্তে,
+        informal: ভালো থাকবেন,
       creation:
         link_with_word_count: "%{creation_link} (%{word_count})"
-        title_with_chapter_number: Chapter %{position} of %{title}
+        title_with_chapter_number: '%{title}-এর %{position} অধ্যায়'
         title_with_word_count: '"%{creation_title}" (%{word_count})'
         word_count:
-          one: "%{count} word"
-          other: "%{count} words"
+          one: "%{count} শব্দ"
+          other: "%{count} শব্দ"
       footer:
         general:
           about:
@@ -66,21 +66,21 @@ bn:
           unwanted_email:
             html: If you've received this message in error, please %{support_link}.
             text: If you've received this message in error, please contact Support at %{support_url}.
-        sent_at: Sent at %{sent_at}.
+        sent_at: '%{sent_at}তে পাঠানো হয়েছে।'
       greeting:
         formal_html: Dear %{name},
         informal:
-          addressed_html: Hi, %{name}!
-          unaddressed: Hi!
-        introductory: Hello from the Archive of Our Own!
+          addressed_html: নমস্কার, %{name}!
+          unaddressed: নমস্কার!
+        introductory: Archive of Our Own – AO3 (আমাদের নিজস্ব সংগ্রহশালা) থেকে নমস্কার!
         tag_wrangler_supervisors: Tag Wrangler Supervisors
-      metadata_label_indicator: ": "
+      metadata_label_indicator: ":"
       signature:
-        abuse_team: The AO3 Policy & Abuse team
+        abuse_team: AO3 নিয়মাবলী ও অপব্যবহার নিবারণ সমিতি
         app_short_name: AO3
-        open_doors: The Open Doors team
-        parent_org: Organization for Transformative Works
-        support: The AO3 Support team
+        open_doors: Open Doors (মুক্ত দ্বার) বিভাগ
+        parent_org: Organization for Transformative Works – OTW (রূপান্তরাত্মক কর্মের সংস্থা)
+        support: AO3 সহায়তা বিভাগ
   roles:
     anonymous_creator: Anonymous Creator
     commenter_name:
@@ -106,217 +106,217 @@ bn:
       subject: "[%{app_name}] Abuse - %{summary}"
       thank_you: Thank you for your patience.
     admin_deleted_work_notification:
-      bye: Attached is a copy of your work for your reference.
-      contact_abuse: contact our Policy & Abuse team
+      bye: আপনার সুবিধার জন্যে আপনার কর্মের একটি প্রতিলিপি এই ইমেলের সঙ্গে যুক্ত আছে।
+      contact_abuse: আমাদের অপব্যবহার নিবারণ সমিতির সঙ্গে যোগাযোগ করুন
       deleted:
-        html: Your work %{title} was deleted from the Archive by a site admin.
-        text: Your work "%{title}" was deleted from the Archive by a site admin.
+        html: আপনার কর্ম %{title} একজন ওয়েবসাইট প্রশাসকের (অ্যাডমিন) দ্বারা AO3 থেকে বিনষ্ট (ডিলিট) করা হয়েছে।
+        text: আপনার কর্ম "%{title}" একজন ওয়েবসাইট প্রশাসকের (অ্যাডমিন) দ্বারা AO3 থেকে বিনষ্ট (ডিলিট) করা হয়েছে ।
       html:
-        tos_violation: If it's possible your work violated the Archive's Terms of Service, please %{contact_abuse_link}.
+        tos_violation: আপনার কর্ম যদি AO3-র পরিষেবা প্রাপ্তির নিয়ম ভঙ্গ করে থাকে, তবে দয়া করে %{contact_abuse_link}।
       import_project:
-        html: If your work was part of an import project managed by our Open Doors team, please %{opendoors_link} with any further questions.
-        text: If your work was part of an import project managed by our Open Doors team, please contact Open Doors (%{opendoors_link}) with any further questions.
-      opendoors: contact Open Doors
-      subject: "[%{app_name}] Your work has been deleted by an admin"
+        html: আপনার কর্ম যদি আমাদের Open Doors (মুক্ত দ্বার) সমিতির দ্বারা পরিচালিত একটি ইমপোর্ট প্রকল্পের অংশ হয়, তাহলে আরও প্রশ্নের জবাবের জন্য দয়া করে %{opendoors_link}।
+        text: আপনার কর্ম যদি আমাদের Open Doors (মুক্ত দ্বার) সমিতির দ্বারা পরিচালিত একটি ইমপোর্ট প্রকল্পের অংশ হয়, তাহলে অতিরিক্ত যেকোন প্রশ্নের জন্য দয়া করে (%{opendoors_link})।
+      opendoors: মুক্ত দ্বারের সঙ্গে যোগাযোগ করুন
+      subject: "[%{app_name}] আপনার কর্ম প্রশাসকের (অ্যাডমিন) দ্বারা বিনষ্ট (ডিলিট) হয়েছে ।"
       text:
-        tos_violation: If it's possible your work violated the Archive's Terms of Service, please contact our Policy & Abuse team (%{contact_abuse_url}).
+        tos_violation: আপনার কর্ম যদি AO3-র পরিষেবা প্রাপ্তির নিয়ম ভঙ্গ করে থাকে, তবে দয়া করে আমাদের অপব্যবহার নিবারণ সমিতির সঙ্গে যোগাযোগ করুন (%{contact_abuse_url})।
     admin_hidden_work_notification:
-      access: While your work is hidden, you will still be able to access it through the link provided above, but it will not be listed on your works page, and it won't be available to other users of the Archive.
-      check_email: Please check your email, including your spam folder, as the Policy & Abuse team may have already contacted you explaining why your work was hidden.
-      contact_abuse: contact Policy & Abuse
+      access: আপনার কর্ম যতক্ষণ লুকানো আছে, আপনি উপরে দেওয়া লিঙ্কের মাধ্যমে এটি দেখতে পারবেন, কিন্তু এটি আপনার কর্ম-পৃষ্ঠায় তালিকাভুক্ত হবে না এবং AO3-এর অন্যান্য ব্যবহারকারীদের জন্য দৃশ্যমান হবে না।
+      check_email: অনুগ্রহ করে আপনার আপনার ইমেল দেখুন, স্প্যাম ফোল্ডারটাও দেখবেন, নীতি ও অপব্যবহার নিবারণ সমিতি হয়তো ইতিমধ্যেই আপনার কাজ কেন লুকিয়ে রাখা হয়েছে তা ব্যাখ্যা করে আপনাকে ইমেল করেছে৷
+      contact_abuse: নীতি ও অপব্যবহার নিবারণ সমিতির সঙ্গে যোগাযোগ করুন
       html:
-        help: If you are uncertain why your work was hidden, and you have not received further communication regarding this matter, please %{contact_abuse_link} directly.
-        hidden: Your work %{title} has been hidden by the Policy & Abuse team and is no longer publicly accessible.
-        tos_violation: If your work was hidden due to being in violation of the Archive of Our Own's %{tos_link}, you will be required to take action to correct the violation. Failure to bring your work into compliance with the Terms of Service may lead to your work being deleted from the Archive.
-      subject: "[%{app_name}] Your work has been hidden by the Policy & Abuse team"
+        help: আপনি যদি অনিশ্চিত হন যে আপনার কর্ম কেন লুকানো হয়েছে, এবং আপনি এই বিষয়ে আরো খবর না পেয়ে থাকলে, অনুগ্রহ করে সরাসরি %{contact_abuse_link}।
+        hidden: আপনার কর্ম %{title} নীতি ও অপব্যবহার নিবারণ সমিতি দ্বারা লুকানো হয়েছে এবং আর সর্বজনীনভাবে দৃশ্যমান নেই।
+        tos_violation: AO3-র %{tos_link} লঙ্ঘনের কারণে আপনার কর্ম লুকানো হলে সেই লঙ্ঘন সংশোধন করার জন্য আপনাকে ব্যবস্থা নিতে হবে। পরিষেবা প্রাপ্তির শর্তাবলী মেনে চলতে ব্যর্থ হলে AO3 থেকে আপনার কর্ম মুছে ফেলা হতে পারে।
+      subject: "[%{app_name}] আপনার কর্ম নীতি ও অপব্যবহার নিবারণ সমিতি দ্বারা লুকানো হয়েছে"
       text:
-        help: 'If you are uncertain why your work was hidden, and you have not received further communication regarding this matter, please contact Policy & Abuse directly: %{contact_abuse_url}.'
-        hidden: Your work "%{title}" (%{work_url}) has been hidden by the Policy & Abuse team and is no longer publicly accessible.
-        tos_violation: If your work was hidden due to being in violation of the Archive of Our Own's Terms of Service (%{tos_url}), you will be required to take action to correct the violation. Failure to bring your work into compliance with the Terms of Service may lead to your work being deleted from the Archive.
-      tos: Terms of Service
+        help: 'আপনি যদি অনিশ্চিত হন আপনার কর্ম কেন লুকানো হয়েছে, এবং আপনি এই বিষয়ে আর খবর না পেয়ে থাকেন, তাহলে অনুগ্রহ করে সরাসরি নীতি ও অপব্যবহার নিবারণ সমিতির সাথে যোগাযোগ করুন: %{contact_abuse_url}।'
+        hidden: আপনার কর্ম "%{title}" (%{work_url}) নীতি ও অপব্যবহার নিবারণ সমিতির দ্বারা লুকানো হয়েছে এবং আর সর্বজনীনভাবে দৃশ্যমান নয়৷
+        tos_violation: AO3-র %{tos_url} লঙ্ঘনের কারণে আপনার কর্ম লুকানো হয়ে থাকলে সেই লঙ্ঘন সংশোধন করার জন্য আপনাকে ব্যবস্থা নিতে হবে। পরিষেবা প্রাপ্তির শর্তাবলী মেনে চলতে ব্যর্থ হলে AO3 থেকে আপনার কর্ম মুছে ফেলা হতে পারে।
+      tos: পরিষেবা প্রাপ্তির শর্তাবলী
     anonymous_or_unrevealed_notification:
-      anonymous_info: Anonymous works are included in tag listings, but not on your works page. On the work, your user name will be replaced with "Anonymous."
-      anonymous_unrevealed_info: The collection maintainers may later reveal your work but leave it anonymous. People who subscribe to you will not be notified of this change. Your work will be included in tag listings, but not on your works page. On the work, your user name will be replaced with "Anonymous."
+      anonymous_info: অজ্ঞাতনামা কর্ম সংযোজন (ট্যাগ) এর তালিকায় অন্তর্ভুক্ত হবে, কিন্তু আপনার কর্মের পাতায় প্রদর্শিত হবে না। কর্মের ভিতরে আপনার ব্যবহারকারী নাম "Anonymous"(অজ্ঞাতনামা)-তে পরিবর্তিত হবে।
+      anonymous_unrevealed_info: সংকলন রক্ষণাবেক্ষণকারীরা পরে আপনার কর্ম উদ্ঘাটন করতে পারেন, কিন্তু এটিকে অজ্ঞাতনামা রাখতে পারেন। যেসব ব্যক্তিরা আপনার কাছে সাবস্ক্রাইব করবেন, তারা এ বিষয়ে বিজ্ঞপ্তি পাবেন না। উদ্ঘাটন করার পর, আপনার কর্ম সংযোজন (ট্যাগ) এর তালিকায় অন্তর্ভুক্ত হবে, কিন্তু আপনার কর্মের পাতায় প্রদর্শিত হবে না। কর্মে ব্যবহারকারী নাম "Anonymous" (অজ্ঞাতনামা)-তে পরিবর্তিত হবে।
       changed_status:
         anonymous:
-          html: The collection maintainers of %{collection_link} have changed the status of your work %{work_link} to anonymous.
-          text: The collection maintainers of "%{collection_title}" (%{collection_url}) have changed the status of your work "%{work_title}" (%{work_url}) to anonymous.
+          html: '%{collection_link}-এর সংকলন রক্ষণাবেক্ষণকারীরা আপনার কর্ম %{work_link} অজ্ঞাতনামা করেছেন।'
+          text: '"%{collection_title}" (%{collection_url}) -এর সংকলন রক্ষণাবেক্ষণকারীরা আপনার কর্ম "%{work_title}" (%{work_url}) অজ্ঞাতনামা করেছেন।'
         anonymous_unrevealed:
-          html: The collection maintainers of %{collection_link} have changed the status of your work %{work_link} to anonymous and unrevealed.
-          text: The collection maintainers of "%{collection_title}" (%{collection_url}) have changed the status of your work "%{work_title}" (%{work_url}) to anonymous and unrevealed.
+          html: '%{collection_link}-এর সংকলন রক্ষণাবেক্ষণকারীরা আপনার কর্ম %{work_link} অজ্ঞাতনামা আর অনুদ্ঘাটিত করেছেন।'
+          text: '"%{collection_title}" (%{collection_url}) -এর সংকলন রক্ষণাবেক্ষণকারীরা আপনার কর্ম "%{work_title}" (%{work_url}) অজ্ঞাতনামা আর অনুদ্ঘাটিত করেছেন।'
         unrevealed:
-          html: The collection maintainers of %{collection_link} have changed the status of your work %{work_link} to unrevealed.
-          text: The collection maintainers of "%{collection_title}" (%{collection_url}) have changed the status of your work "%{work_title}" (%{work_url}) to unrevealed.
-      collection_items_link_text: Approved Collection Items page
+          html: '%{collection_link}-এর সংকলন রক্ষণাবেক্ষণকারীরা আপনার কর্ম %{work_link} অনুদ্ঘাটিত করেছেন।'
+          text: '"%{collection_title}" (%{collection_url}) -এর সংকলন রক্ষণাবেক্ষণকারীরা আপনার কর্ম "%{work_title}" (%{work_url}) অনুদ্ঘাটিত করেছেন।'
+      collection_items_link_text: Approved Collection Items (সংগ্রহে অনুমোদিত আইটেম) পাতা
       do_not_want:
         anonymous:
-          html: If you do not want your work to be anonymous, please visit your %{collection_items_link} to remove it from this collection.
-          text: 'If you do not want your work to be anonymous, please visit your Approved Collection Items page to remove it from this collection: %{collection_items_url}'
+          html: আপনি যদি আপনার কর্মকে অজ্ঞাতনামা করতে অনিচ্ছুক হন, তবে কর্মটি ওই সংকলন থেকে অপসারণ করার জন্যে অনুগ্রহ করে %{collection_items_link}-তে যান।
+          text: 'আপনি যদি আপনার কর্ম অজ্ঞাতনামা করতে অনিচ্ছুক হন, তবে কর্মটি এই সংকলন: %{collection_items_url} থেকে বাদ দিতে অনুগ্রহ করে আপনার Approved Collection Items (সংগ্রহে অনুমোদিত আইটেম) পাতায় যান।'
         anonymous_unrevealed:
-          html: If you do not want your work to be anonymous and unrevealed, please visit your %{collection_items_link} to remove it from this collection.
-          text: 'If you do not want your work to be anonymous and unrevealed, please visit your Approved Collection Items page to remove it from this collection: %{collection_items_url}'
+          html: আপনি যদি আপনার কর্মকে অজ্ঞাতনামা আর অনুদ্ঘাটিত করতে অনিচ্ছুক হন, তবে কর্মটি ওই সংকলন থেকে অপসারণ করার জন্যে অনুগ্রহ করে %{collection_items_link}-তে যান।
+          text: 'আপনি যদি আপনার কর্ম অজ্ঞাতনামা বা অনুদ্ঘাটিত করতে অনিচ্ছুক হন, তবে কর্মটি এই সংকলন: %{collection_items_url} থেকে বাদ দিতে অনুগ্রহ করে আপনার Approved Collection Items (সংগ্রহে অনুমোদিত আইটেম) পাতায় যান।'
         unrevealed:
-          html: If you do not want your work to be unrevealed, please visit your %{collection_items_link} to remove it from this collection.
-          text: 'If you do not want your work to be unrevealed, please visit your Approved Collection Items page to remove it from this collection: %{collection_items_url}'
-      faq_link_text: Collections FAQ
+          html: আপনি যদি আপনার কর্মকে অনুদ্ঘাটিত করতে অনিচ্ছুক হন, তবে কর্মটি ওই সংকলন থেকে অপসারণ করার জন্যে অনুগ্রহ করে %{collection_items_link}-তে যান।
+          text: 'আপনি যদি আপনার কর্ম অনুদ্ঘাটিত করতে অনিচ্ছুক হন, তবে কর্মটি এই সংকলন: %{collection_items_url} থেকে বাদ দিতে অনুগ্রহ করে আপনার Approved Collection Items (সংগ্রহে অনুমোদিত আইটেম) পাতায় যান।'
+      faq_link_text: সংকলন প্রা-জি-প্র
       more_info:
-        html: For more information, visit our %{faq_link}.
-        text: 'For more information, visit our Collections FAQ: %{faq_url}'
+        html: আরো তথ্যের জন্যে, আমাদের %{faq_link} দেখুন।
+        text: 'আরো তথ্যের জন্যে, আমাদের সংকলন প্রা-জি-প্র: %{faq_url} দেখুন।'
       subject:
-        anonymous: "[%{app_name}] Your work was made anonymous"
-        anonymous_unrevealed: "[%{app_name}] Your work was made anonymous and unrevealed"
-        unrevealed: "[%{app_name}] Your work was made unrevealed"
-      unrevealed_info: Unrevealed works are not included in tag listings or on your works page. Anyone who follows a link to the work will receive a notice that it is currently unrevealed, and they will be unable to access its content.
+        anonymous: "[%{app_name}] আপনার কর্ম অজ্ঞাতনামা করা হয়েছে"
+        anonymous_unrevealed: "[%{app_name}] আপনার কর্ম অজ্ঞাতনামা আর অনুদ্ঘাটিত করা হয়েছে"
+        unrevealed: "[%{app_name}] আপনার কর্ম অনুদ্ঘাটিত করা হয়েছে"
+      unrevealed_info: অনুদ্ঘাটিত কর্ম সংযোজন (ট্যাগ) এর তালিকায় বা আপনার কর্মের পাতায় অন্তর্ভুক্ত হবে না। কেউ এই কর্মের একটি লিঙ্ক অনুসরণ করলে, একটি বিজ্ঞপ্তি পাবে যে এই কর্মটি বর্তমানে অনুদ্ঘাটিত এবং তারা এর বিষয়বস্তু দেখতে পাবে না।
     archivist_added_to_collection_notification:
-      approved_collection_items_page: Approved Collection Items page
-      archivist_notice: Because the collection maintainers are acting in their official capacity as Open Doors archivists, they are allowed to add your work to this collection, even if you have collection invitations disabled. Archivists will only add a work to a collection if it was hosted on an imported archive.
+      approved_collection_items_page: Approved Collection Items (সংগ্রহে অনুমোদিত আইটেম) পাতা
+      archivist_notice: সংকলন রক্ষণাবেক্ষণকারীরা তাদের অফিসিয়াল ক্ষমতা থেকে একজন Open Doors (মুক্ত দ্বার) আর্কাইভিস্ট হিসাবে কাজ করছেন, তাই তারা আপনার কর্মকে এই সংকলনে যোগ করতে পারেন, আপনি যদি সংকলনের আমন্ত্রণগুলি নিষ্ক্রিয় করে থাকেন, তাহলেও। আর্কাইভিস্ট শুধুমাত্র একটি সংকলনে একটি কর্ম যোগ করবেন যদি এটি একটি নিয়ে আসা সংগ্রহশালায় হোস্ট করা হয়।
       removal_instructions:
-        html: If you would like to remove your work from this collection, please visit your %{approved_items_link}.
-        text: 'If you would like to remove your work from this collection, please visit your Approved Collection Items page: %{approved_items_url}.'
-      subject: "[%{app_name}][%{collection_title}] An Open Doors archivist has added your work to a collection"
+        html: আপনি যদি আপনার কর্মকে এই সংকলন থেকে অপসারণ করতে চান, তবে অনুগ্রহ করে %{approved_items_link}-তে যান।
+        text: 'আপনি যদি আপনার কর্মকে এই সংকলন থেকে অপসারণ করতে চান, তবে অনুগ্রহ করে আপনার Approved Collection Items (সংগ্রহে অনুমোদিত আইটেম) পাতায় যান: %{approved_items_url}'
+      subject: "[%{app_name}][%{collection_title}] একজন Open Doors (মুক্ত দ্বার) আর্কাইভিস্ট আপনার কর্মকে একটি সংকলনে যোগ করেছে"
       work_added:
-        html: The collection maintainers of %{collection_link} have added your work %{work_link} to their collection!
-        text: The collection maintainers of "%{collection_title}" (%{collection_url}) have added your work "%{work_title}" (%{work_url}) to their collection!
+        html: '%{collection_link}-এর সংকলন রক্ষণাবেক্ষণকারীরা আপনার কর্ম %{work_link}-কে তাদের সংকলনে যোগ করেছে!'
+        text: '"%{collection_title}" (%{collection_url})-এর সংকলন রক্ষণাবেক্ষণকারীরা আপনার কর্ম "%{work_title}" (%{work_url})-কে তাদের সংকলনে যোগ করেছে!'
     challenge_assignment_notification:
-      any: Any
+      any: যেকোন
       assignment:
-        html: You have been assigned the following request in the %{link} challenge at the Archive of Our Own!
-      description: 'Description:'
-      due: 'This assignment is due at:'
+        html: AO3-তে %{link} চ্যালেঞ্জে আপনাকে নিম্নলিখিত সূত্রটি (প্রম্পট) বরাদ্দ করা হয়েছে!
+      description: 'বর্ণনা:'
+      due: 'এই কর্মটি জমা দিতে হবে:'
       html:
-        footer: You're receiving this email because you signed up for the %{title} challenge. For more information about this challenge and contact information for the moderators, please visit %{footer_link}.
-        footer_link: the challenge profile page
-        look_up: You can look up this assignment from %{link}.
-        look_up_link: your Assignments page
-      optional_tags: 'Optional Tags:'
-      prompt_url: 'Prompt URL:'
-      prompts: 'Prompts:'
-      recipient: 'Recipient:'
-      recipient_missing: 'None: contact a moderator for help!'
-      subject: "[%{app_name}][%{collection_title}] Your assignment!"
+        footer: আপনি এই ইমেলটি পাচ্ছেন কারণ আপনি %{title} চ্যালেঞ্জে যোগদান করছেন। এই আহ্বান সম্বন্ধে আরো তথ্য এবং নিয়ামকদের সঙ্গে যোগাযোগের তথ্যের জন্যে, অনুগ্রহ করে %{footer_link}-এ যান।
+        footer_link: আহ্বান নিয়ন্ত্রণ পাতা
+        look_up: আপনি %{link} থেকে এই বরাদ্দ কর্মটি দেখতে পারেন।
+        look_up_link: আপনার Assignments (বরাদ্দ কর্ম)-এর পাতা
+      optional_tags: 'ঐচ্ছিক সংযোজন:'
+      prompt_url: 'সূত্রের ইউ.আর.এল.:'
+      prompts: 'সূত্র:'
+      recipient: 'প্রাপক:'
+      recipient_missing: 'কেউ নেই: সাহায্যের জন্যে একজন নিয়ামকের সঙ্গে যোগাযোগ করুন!'
+      subject: "[%{app_name}][%{collection_title}] আপনার বরাদ্দ কর্ম!"
       text:
-        assignment: You have been assigned the following request in the "%{collection_title}" challenge (%{collection_url}) at the Archive of Our Own!
-        footer: You're receiving this email because you signed up for the %{title} challenge (%{url}). For more information about this challenge and contact information for the moderators, please visit %{profile_url}.
-        look_up: You can look up this assignment from your Assignments page at %{link}.
+        assignment: AO3-তে "%{collection_title}" (%{collection_url}) চ্যালেঞ্জে আপনাকে নিম্নলিখিত সূত্রটি বরাদ্দ করা হয়েছে!
+        footer: আপনি এই ইমেলটি পাচ্ছেন কারণ আপনি %{title} আহ্বানে (%{url}) যোগদান করছেন। এই আহ্বান সম্বন্ধে আরো তথ্য এবং নিয়ামকদের সঙ্গে যোগাযোগের তথ্যের জন্যে, অনুগ্রহ করে %{profile_url} যান।
+        look_up: আপনি এই বরাদ্দ কর্মটি আপনার Assignments (বরাদ্দ কর্ম)-এর পাতাতে এখানে %{link} দেখতে পারেন।
     change_email:
       changed:
         html: "%{login}, the email associated with your account has been changed to %{email}"
         text: "%{login}, the email associated with your account has been changed to %{email}"
-      subject: "[%{app_name}] Email changed"
+      subject: "[%{app_name}] ইমেল অ্যাড্রেস পরিবর্তনের অনুরোধ"
     claim_notification:
       access:
-        contact_support: contact AO3 Support
-        html: Depending on the archive, your works may have been imported restricted to registered users only (to keep them out of Google searches). If this is the case, the works will only be accessible by logged-in users unless you choose to make them fully visible. For help unlocking, orphaning, or deleting your works, please %{contact_support_link}.
-        text: Depending on the archive, your works may have been imported restricted to registered users only (to keep them out of Google searches). If this is the case, the works will only be accessible by logged-in users unless you choose to make them fully visible. For help unlocking, orphaning, or deleting your works, please contact AO3 Support at %{support_url}.
-      email_tips: If you're contacting us, please add email addresses from @transformativeworks.org to your list of safe contacts and check your spam folders for our reply.
+        contact_support: AO3 সহায়তা সমিতির সঙ্গে যোগাযোগ করুন
+        html: সংগ্রহশালার উপর ভিত্তি করে আপনার কর্ম শুধুমাত্র নিবন্ধিত (রেজিস্টার্ড) ব্যবহারকারীদের দ্বারা প্রদর্শন যোগ্য হতে পারে (এটি সংগ্রহশালার কর্মগুলিকে গুগুল সার্চের থেকে সরিয়ে রাখতে করা হয়)। এক্ষেত্রে, আপনি যদি আলাদা করে আপনার কর্মগুলি সর্বসাধারণের কাছে প্রদর্শিত না করেন, তবে কর্মগুলি শুধুমাত্র লগড-ইন ব্যবহারকারিকারীদের দ্বারা প্রদর্শিত হবে। আপনার কর্ম সর্বসাধারণ দ্বারা প্রদর্শন যোগ্য করতে, কর্ম অনাথ করতে, বা কর্ম অপসারণ করতে অনুগ্রহ করে %{contact_support_link}।
+        text: সংগ্রহশালার উপর ভিত্তি করে আপনার কর্ম শুধুমাত্র নিবন্ধিত (রেজিস্টার্ড) ব্যবহারকারীদের দ্বারা প্রদর্শন যোগ্য হতে পারে (এটি সংগ্রহশালার কর্মগুলিকে গুগুল সার্চের থেকে সরিয়ে রাখতে করা হয়)। এক্ষেত্রে, আপনি যদি আলাদা করে আপনার কর্মগুলি সর্বসাধারণের কাছে প্রদর্শিত না করেন, তবে কর্মগুলি শুধুমাত্র লগড-ইন ব্যবহারকারিকারীদের দ্বারা প্রদর্শিত হবে। আপনার কর্ম সর্বসাধারণ দ্বারা প্রদর্শন যোগ্য করতে, কর্ম অনাথ করতে, বা কর্ম অপসারণ করতে অনুগ্রহ করে AO3 সহায়তা সমিতির সঙ্গে যোগাযোগ করুন - %{support_url}।
+      email_tips: আপনি যদি আমাদের সাথে যোগাযোগ করেন তাহলে অনুগ্রহ করে @transformativeworks.org এর ইমেল অ্যাড্রেসগুলি আপনার নিরাপদ অ্যাড্রেসের তালিকায় যোগ করবেন, এবং আমাদের উত্তরটি আপনার স্প্যাম ফোল্ডারেও খুঁজে দেখবেন।
       introduction:
-        ao3_name: Archive of Our Own
-        html: You're receiving this e-mail because you had works in a fanworks archive that has been imported by %{open_doors_name_link} into the %{app_link} (AO3). Because this e-mail address is connected to one registered on the imported archive, the associated fanworks (listed below) have been automatically added to your AO3 account.
-        open_doors_name: Open Doors
-        text: You're receiving this e-mail because you had works in a fanworks archive that has been imported by Open Doors (%{open_doors_url}) into the Archive of Our Own (AO3 - %{app_url}). Because this e-mail address is connected to one registered on the imported archive, the associated fanworks (listed below) have been automatically added to your AO3 account.
+        ao3_name: Archive of Our Own – AO3 (আমাদের নিজস্ব সংগ্রহশালা)
+        html: আপনি এই ইমেলটি পেয়েছেন কারণ %{open_doors_name_link} সমিতির দ্বারা %{app_link}-তে ইমপোর্ট করে আনা একটি অনুরাগী সংগ্রহশালাতে আপনার কিছু অনুরাগীকর্ম ছিল। যেহেতু এই ইমেল অ্যাড্রেস ইমপোর্ট করে আনা সংগ্রহশালাটিতে নিবন্ধন ছিল, তাই সংগ্রহশালাটিতে এই ইমেলের সঙ্গে সংযুক্ত থাকা সমস্ত কর্ম (নিচে তালিকাভুক্ত) আপনার AO3 অ্যাকাউন্টে যোগ করা হয়েছে।
+        open_doors_name: Open Doors (মুক্ত দ্বার)
+        text: আপনি এই ইমেলটি পেয়েছেন কারণ Open Doors (মুক্ত দ্বার সমিতি) (%{open_doors_url}) দ্বারা Archive of Our Own – AO3 (আমাদের নিজস্ব সংগ্রহশালা)-তে %{app_url} ইমপোর্ট করে আনা একটি অনুরাগী সংগ্রহশালাতে আপনার কিছু অনুরাগীকর্ম ছিল। যেহেতু এই ইমেল অ্যাড্রেস ইমপোর্ট করে আনা সংগ্রহশালাটিতে নিবন্ধন ছিল, তাই সংগ্রহশালাটিতে এই ইমেলের সঙ্গে সংযুক্ত থাকা সমস্ত কর্ম (নিচে তালিকাভুক্ত) আপনার AO3 অ্যাকাউন্টে যোগ করা হয়েছে।
       mistake:
-        contact_open_doors: contact Open Doors
-        html: If this is a mistake and these are not your works, please don't delete them! Please just %{contact_open_doors_link} and we will sort it out.
-        text: If this is a mistake and these are not your works, please don't delete them! Please just contact Open Doors (%{open_doors_url}) and we will sort it out.
+        contact_open_doors: মুক্ত দ্বারের সঙ্গে যোগাযোগ করুন
+        html: এখানে যদি কোন ভুল হয়ে থাকে এবং এই কর্মগুলি আপনার না হয়, তবে অনুগ্রহ করে এগুলো অপসারণ (ডিলিট) করবেন না! দয়া করে %{contact_open_doors_link}, তাহলে আমরা এই ব্যাপারটি দেখে ঠিক করে নেব।
+        text: এখানে যদি কোন ভুল হয়ে থাকে এবং এই কর্মগুলি আপনার না হয়, তবে অনুগ্রহ করে এগুলো অপসারণ (ডিলিট) করবেন না! দয়া করে মুক্ত দ্বারের সঙ্গে যোগাযোগ করুন (%{open_doors_url}), তাহলে আমরা এই ব্যাপারটি দেখে ঠিক করে নেব।
       more_info:
-        ao3_news: AO3 News
-        contact_support: contact AO3 Support
-        faq_page: FAQ page
-        html: You can read announcements about recent archive moves at %{ao3_news_link}, and find additional information on Open Doors' %{faq_page_link} or %{tutorial_page_link}. For any questions not answered in the FAQ, tutorials, or this e-mail, please %{contact_support_link}.
-        text: You can read announcements about recent archive moves at AO3 News (%{news_url}), and find additional information on Open Doors' FAQ page (%{open_doors_faq_url}) or tutorials page (%{open_doors_tutorial_url}). For any questions not answered in the FAQ, tutorials, or this e-mail, please contact Support at %{support_url}.
-        tutorial_page: tutorial page
+        ao3_news: AO3 সংবাদ
+        contact_support: AO3 সহায়তা সমিতির সঙ্গে যোগাযোগ করুন
+        faq_page: প্র-জি-প্র (FAQ) পাতা
+        html: সাম্প্রতিক সংগ্রহশালা ইমপোর্ট বিষয়ক ঘোষণা আপনি %{ao3_news_link}-এ পড়তে পারেন, এবং এ বিষয়ে আরো তথ্যে মুক্ত দ্বারের %{faq_page_link} অথবা %{tutorial_page_link} পাবেন। অন্য যেকোন প্রশ্ন যার উত্তর প্র-জি-প্র, পাঠগুলিতে, বা এই ইমেলে নেই, সে বিষয়ে উত্তরের জন্য অনুগ্রহ করে %{contact_support_link}।
+        text: সাম্প্রতিক সংগ্রহশালা ইমপোর্ট বিষয়ক ঘোষণা আপনি AO3 সংবাদে (%{news_url}) পড়তে পারেন, এবং এ বিষয়ে আরো তথ্যে মুক্ত দ্বারের প্র-জি-প্র পাতাতে (%{open_doors_faq_url}) অথবা পাঠ (টিউটোরিয়াল) (%{open_doors_tutorial_url}) পাতাতে পাবেন। অন্য যেকোন প্রশ্ন যার উত্তর প্র-জি-প্র, পাঠগুলিতে, বা এই ইমেলে নেই, সে বিষয়ে উত্তরের জন্য অনুগ্রহ করে সহায়তা সমতির সঙ্গে যোগাযোগ করুন - %{support_url}।
+        tutorial_page: পাঠ (টিউটোরিয়াল) পাতা
       other_works:
-        contact_open_doors: contact Open Doors
-        html: If you had other works on the imported archive under an e-mail address you can no longer access, please %{contact_open_doors_link} with any information that can help verify your identity.
-        text: If you had other works on the imported archive under an e-mail address you can no longer access, please contact Open Doors with any information that can help verify your identity.
+        contact_open_doors: মুক্ত দ্বারের সঙ্গে যোগাযোগ করুন
+        html: ইমপোর্ট করে আনা সংগ্রহশালাতে আপনার যদি অন্য কোন কর্ম সংযুক্ত হয়ে থাকে এমন একটি ইমেল অ্যাড্রেসের সঙ্গে যেটিতে আপনি বর্তমানে প্রবেশ করতে অক্ষম, তাহলে অনুগ্রহ করে যেকোন তথ্য যা আপনার পরিচয় নিশ্চিত করতে পারবে, তা নিয়ে %{contact_open_doors_link}।
+        text: ইমপোর্ট করে আনা সংগ্রহশালাতে আপনার যদি অন্য কোন কর্ম সংযুক্ত হয়ে থাকে এমন একটি ইমেল অ্যাড্রেসের সঙ্গে যেটিতে আপনি বর্তমানে প্রবেশ করতে অক্ষম, তাহলে অনুগ্রহ করে যেকোন তথ্য যা আপনার পরিচয় নিশ্চিত করতে পারবে তা নিয়ে মুক্ত দ্বারের সঙ্গে যোগাযোগ করুন।
       questions:
-        contact_support: contact AO3 Support
-        html: For other inquiries, please %{contact_support_link}.
-        text: For other inquiries, please contact AO3 Support at %{support_url}.
+        contact_support: AO3 সহায়তা সমিতির সঙ্গে যোগাযোগ করুন
+        html: আরো তথ্যের জন্য অনুগ্রহ করে %{contact_support_link}।
+        text: আরো তথ্যের জন্য অনুগ্রহ করে AO3 সহায়তা সমিতির সঙ্গে যোগাযোগ করুন - %{support_url}।
       redirects:
-        html: To preserve rec lists and bookmarks, the imported archive's web addresses may redirect to the imported copy of these works for a limited time (check the announcement post for your archive to be sure). If you've already uploaded a copy of these works and you did %{negation} use the import from URL feature, there will be two copies of the same work on the AO3.
+        html: রেক তালিকা এবং পুস্তকচিহ্ন সংরক্ষণ করার জন্য, ইমপোর্ট করে আনা সংগ্রহশালার ওয়েব অ্যাড্রেসগুলি কিছু সময়ের জন্য সেই অনুরাগীকর্মের ইমপোর্ট করে আনা প্রতিলিপিতে রিডিরেক্ট করতে পারে (এ বিষয়ে তথ্যের জন্যে আপনার সংগ্রহশালা সম্বন্ধীয় ঘোষণার প্রকাশনটি পরে দেখুন)। আপনি যদি এই কর্মগুলির একটি প্রতিলিপি এর আগেই আপলোড করে থাকেন ও যদি 'URL দ্বারা করে ইমপোর্ট করুন' ব্যবহার %{negation} করে থাকেন , তবে AO3-তে একই কর্মের দুটি প্রতিলিপি থেকে যাবে।
         negation: NOT
-      subject: "[%{app_name}] Works uploaded"
+      subject: "[%{app_name}] কর্ম আপলোড হয়েছে"
       update_redirect:
-        contact_open_doors: contact Open Doors
-        html: If you would like Open Doors to update the redirect to point to your pre-existing work, please delete the imported copy, and %{contact_open_doors_link} with your AO3 account name, your account name on the imported archive, and the title and URL of the fanwork you would like the redirect to point to. (If you have multiple works you would like to change the redirects for, you can list these in one email.)
-        text: If you would like Open Doors to update the redirect to point to your pre-existing work, please delete the imported copy, and contact Open Doors at %{open_doors_url} with your AO3 account name, your account name on the imported archive, and the title and URL of the fanwork you would like the redirect to point to. (If you have multiple works you would like to change the redirects for, you can list these in one email.)
+        contact_open_doors: মুক্ত দ্বারের সঙ্গে যোগাযোগ করুন
+        html: আপনি যদি চান যে মুক্ত দ্বার এই রিডাইরেক্টটি আপনার আগে প্রকাশিত অনুরাগীকর্মের সঙ্গে যুক্ত করুক, তাহলে অনুগ্রহ করে কর্মটির ইমপোর্ট করে আনা প্রতিলিপিটি অপসারণ করুন, এবং আপনার AO3 অ্যাকাউন্ট এর নাম, ইমপোর্ট করে আনা সংগ্রহশালাটিতে আপনার অ্যাকাউন্ট এর নাম, আর যে অনুরাগীকর্মে আপনি এই রিডাইরেক্টটি কার্যকর করতে চান সেটির URL নিয়ে %{contact_open_doors_link}। (আপনার যদি একাধিক কর্ম থাকে যেগুলির রিডাইরেক্টগুলি আপনি পরিবর্তন করতে চান, তাহলে সেই সব কর্মগুলি আপনি একটি ইমেলেই তালিকা করে লিখে দিতে পারেন।)
+        text: আপনি যদি চান যে মুক্ত দ্বার এই রিডাইরেক্টটি আপনার আগে প্রকাশিত অনুরাগীকর্মের সঙ্গে যুক্ত করুক, তাহলে অনুগ্রহ করে কর্মটির ইমপোর্ট করে আনা প্রতিলিপিটি অপসারণ করুন, এবং আপনার AO3 অ্যাকাউন্ট এর নাম, ইমপোর্ট করে আনা সংগ্রহশালাটিতে আপনার অ্যাকাউন্ট এর নাম, আর যে অনুরাগীকর্মে আপনি এই রিডাইরেক্টটি কার্যকর করতে চান সেটির URL নিয়ে মুক্ত দ্বারের সঙ্গে যোগাযোগ করুন - %{open_doors_url}। (আপনার যদি একাধিক কর্ম থাকে যেগুলির রিডাইরেক্টগুলি আপনি পরিবর্তন করতে চান, তাহলে সেই সব কর্মগুলি আপনি একটি ইমেলেই তালিকা করে লিখে দিতে পারেন।)
       work_info:
         html: "%{work_link} (%{fandom})"
         text:
           no_fandom: "- %{work_title} %{work_url}"
           with_fandom: "- %{work_title} %{work_url} (%{fandom})"
-      works_by: 'These works were written under the e-mail: %{email}'
+      works_by: 'এই কর্মগুলি এই ইমেলের সঙ্গে সংযুক্তিতে লেখা হয়েছিল: %{email}'
     collection_notification:
       assignments_sent:
-        complete: All assignments have now been sent out.
-        subject: Assignments sent
+        complete: সব অ্যাসাইনমেন্ট পাঠানো হয়ে গেছে।
+        subject: অ্যাসাইনমেন্ট পাঠানো হয়েছে
       challenge_default:
         complete: 'Signed-up participant %{offer_byline} has defaulted on their assignment for %{request_byline}. You may want to assign a pinch hitter on the collection assignments page: %{assignments_page_url}'
         subject: Challenge default by %{offer_byline}
       html:
-        received_message: 'You have received a message about your collection %{collection_link}:'
+        received_message: 'আপনার সংগ্রহ সম্পর্কে আপনি একটি বার্তা পেয়েছেন %{collection_link}:'
       text:
-        received_message: 'You have received a message about your collection "%{collection_title}" (%{collection_url}):'
+        received_message: 'আপনার সংগ্রহ সম্পর্কে আপনি একটি বার্তা পেয়েছেন "%{collection_title}" (%{collection_url}):'
     creatorship_notification:
-      explanation: When you're a co-creator on a work, you can be added to new chapters regardless of your co-creation settings. You will also be added to any series the work is added to.
+      explanation: আপনি যখন একটা কর্মের সহ-স্রষ্টা হন, আপনি আপনার সহ-সৃষ্টি সেটিং এ যাই থাক না কেন, আপনি নতুন অধ্যায়ে যুক্ত হতে পারেন। কোনো সিরিজে কর্মটা যুক্ত হলে আপনিও সেই সিরিজে যুক্ত হবেন।
       html:
-        creation: "%{creation_link} by %{pseud_links}"
-        edit_chapter: edit the chapter
-        edit_series: edit the series
-        remove_chapter: If you've been added in error or don't want to be listed as a creator, you can %{edit_chapter_link} to remove yourself as creator.
-        remove_series: If you've been added in error or don't want to be listed as a creator, you can %{edit_series_link} to remove yourself as creator.
-      intro_chapter: 'The user %{adding_user} has listed your pseud %{pseud} as a co-creator on the following chapter:'
-      intro_series: 'The user %{adding_user} has listed your pseud %{pseud} as a co-creator on the following series:'
-      subject: "[%{app_name}] Co-creator notification"
+        creation: "%{pseud_links} দ্বারা %{creation_link}"
+        edit_chapter: অধ্যায় সম্পাদন করুন
+        edit_series: সিরিজটা সম্পাদন করুন
+        remove_chapter: আপনাকে যদি ভুলবশতঃ যোগ করা হয়ে থাকে বা আপনি স্রষ্টা হিসেবে তালিকাভুক্ত হতে না চান, আপনি %{edit_chapter_link} স্রষ্টা তালিকা থেকে নিজেকে সরিয়ে ফেলতে পারেন।
+        remove_series: আপনাকে যদি ভুলবশতঃ যোগ করা হয়ে থাকে বা আপনি স্রষ্টা হিসেবে তালিকাভুক্ত হতে না চান, আপনি %{edit_series_link} স্রষ্টা তালিকা থেকে নিজেকে সরিয়ে ফেলতে পারেন।
+      intro_chapter: 'ব্যবহারকারী %{adding_user} আপনার ছদ্মনাম %{pseud} নিম্নোক্ত অধ্যায়ের জন্য সহ-স্রষ্টা হিসেবে তালিকাভুক্ত করেছেন:'
+      intro_series: 'ব্যবহারকারী %{adding_user} আপনার ছদ্মনাম %{pseud} নিম্নোক্ত সিরিজের জন্য সহ-স্রষ্টা হিসেবে তালিকাভুক্ত করেছেন:'
+      subject: "[%{app_name}] সহ-স্রষ্টার বিজ্ঞপ্তি"
       text:
-        creation: "%{title} (%{url}) by %{pseuds}"
-        remove_chapter: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the chapter to remove yourself as creator: %{url}'
-        remove_series: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the series to remove yourself as creator: %{url}'
+        creation: "%{pseuds} দ্বারা %{title} (%{url})"
+        remove_chapter: 'আপনাকে যদি ভুলবশতঃ যোগ করা হয়ে থাকে বা আপনি স্রষ্টা হিসেবে তালিকাভুক্ত হতে না চান, আপনি অধ্যায়টা সম্পাদন করে স্রষ্টা তালিকা থেকে নিজেকে সরিয়ে ফেলতে পারেন: %{url}'
+        remove_series: 'আপনাকে যদি ভুলবশতঃ যোগ করা হয়ে থাকে বা আপনি স্রষ্টা হিসেবে তালিকাভুক্ত হতে না চান, আপনি সিরিজটা সম্পাদন করে স্রষ্টা তালিকা থেকে নিজেকে সরিয়ে ফেলতে পারেন: %{url}'
     creatorship_notification_archivist:
-      explanation: Because they are acting in their official capacity as an Open Doors archivist, they are allowed to add you without a request, even if you have co-creation disabled.
+      explanation: যেহেতু তারা তাদের অফিসিয়াল ক্ষমতা থেকে, একজন Open Doors (খোলা দরজা) আর্কাইভিস্ট হিসাবে কাজ করছেন, তারা আপনাকে অনুরোধ ছাড়াই যোগ করতে পারেন, আপনি যদি সহ-সৃষ্টি নিষ্ক্রিয় করে থাকেন তাহলেও।
       html:
-        creation: "%{creation_link} by %{pseud_links}"
-        edit_chapter: edit the chapter
-        edit_series: edit the series
-        edit_work: edit the work
-        remove_chapter: If you've been added in error or don't want to be listed as a creator, you can %{edit_chapter_link} to remove yourself as creator.
-        remove_series: If you've been added in error or don't want to be listed as a creator, you can %{edit_series_link} to remove yourself as creator.
-        remove_work: If you've been added in error or don't want to be listed as a creator, you can %{edit_work_link} to remove yourself as creator.
-      intro_chapter: 'The user %{archivist} has added your pseud %{pseud} as a co-creator on the following chapter:'
-      intro_series: 'The user %{archivist} has added your pseud %{pseud} as a co-creator on the following series:'
-      intro_work: 'The user %{archivist} has added your pseud %{pseud} as a co-creator on the following work:'
-      subject: "[%{app_name}] Archivist co-creator notification"
+        creation: "%{pseud_links} দ্বারা %{creation_link}"
+        edit_chapter: অধ্যায় সম্পাদনা
+        edit_series: সিরিজ সম্পাদনা
+        edit_work: কাজ সম্পাদনা
+        remove_chapter: আপনি যদি ভুল করে যুক্ত হয়ে থাকেন বা একজন স্রষ্টা হিসেবে তালিকাভুক্ত হতে না চান, তাহলে আপনি নিজেকে স্রষ্টা হিসেবে অপসারিত %{edit_chapter_link} করতে পারেন।
+        remove_series: আপনি যদি ভুল করে যুক্ত হয়ে থাকেন বা একজন স্রষ্টা হিসেবে তালিকাভুক্ত হতে না চান, তাহলে আপনি নিজেকে স্রষ্টা হিসেবে অপসারিত %{edit_series_link} করতে পারেন।
+        remove_work: আপনি যদি ভুল করে যুক্ত হয়ে থাকেন বা একজন স্রষ্টা হিসেবে তালিকাভুক্ত হতে চান না , তাহলে আপনি নিজেকে স্রষ্টাহিসেবে অপসারিত %{edit_work_link} করতে পারেন।
+      intro_chapter: 'ব্যবহারকারী %{archivist} নিম্নলিখিত অধ্যায় সহ-স্রষ্টা হিসাবে আপনার ছদ্মনাম %{pseud} যুক্ত করেছেন:'
+      intro_series: 'ব্যবহারকারী %{archivist} নিম্নলিখিত সিরিজে সহ-স্রষ্টা হিসাবে আপনার ছদ্মনাম %{pseud} যুক্ত করেছেন:'
+      intro_work: 'ব্যবহারকারী %{archivist} নিম্নলিখিত কাজের সহ-স্রষ্টা হিসাবে আপনার ছদ্মনাম %{pseud} যুক্ত করেছেন:'
+      subject: "[%{app_name}] আর্কাইভিস্ট সহ-স্রষ্টা বিজ্ঞপ্তি"
       text:
-        creation: "%{title} (%{url}) by %{pseuds}"
-        remove_chapter: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the chapter to remove yourself as creator: %{url}'
-        remove_series: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the series to remove yourself as creator: %{url}'
-        remove_work: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the work to remove yourself as creator: %{url}'
+        creation: "%{pseuds} দ্বারা %{title} (%{url})"
+        remove_chapter: 'আপনি যদি ভুল করে যুক্ত হয়ে থাকেন বা একজন স্রষ্টা হিসেবে তালিকাভুক্ত হতে না চান, তাহলে আপনি নিজেকে স্রষ্টা হিসেবে অপসারিত করার জন্য অধ্যায় সম্পাদনা করতে পারেন: %{url}'
+        remove_series: 'আপনি যদি ভুল করে যুক্ত হয়ে থাকেন বা একজন স্রষ্টা হিসেবে তালিকাভুক্ত হতে না চান, তাহলে আপনি নিজেকে স্রষ্টা হিসেবে সরিয়ে দিতে সিরিজ সম্পাদনা করতে পারেন: %{url}'
+        remove_work: 'আপনি যদি ভুল করে যুক্ত হয়ে থাকেন বা একজন স্রষ্টা হিসেবে তালিকাভুক্ত হতে না চান, তাহলে আপনি নিজেকে স্রষ্টা হিসেবে সরিয়ে দিতে কাজ সম্পাদনা করতে পারেন: %{url}'
     creatorship_request:
       html:
-        creation: "%{creation_link} by %{pseud_links}"
-        instructions: You can accept or reject this request on your %{page_name} page.
-        page_name: Co-Creator Requests
-      intro_chapter: 'The user %{inviting_user} has invited your pseud %{pseud} to be listed as a co-creator on the following chapter:'
-      intro_series: 'The user %{inviting_user} has invited your pseud %{pseud} to be listed as a co-creator on the following series:'
-      intro_work: 'The user %{inviting_user} has invited your pseud %{pseud} to be listed as a co-creator on the following work:'
-      subject: "[%{app_name}] Co-creator request"
+        creation: "%{pseud_links} দ্বারা %{creation_link}"
+        instructions: আপনি আপনার %{page_name} পৃষ্ঠায় এই অনুরোধ গ্রহণ বা প্রত্যাখ্যান করতে পারেন।
+        page_name: Co-Creator Requests (সহ-নির্মাতা আমন্ত্রণ)
+      intro_chapter: 'ব্যবহারকারী %{inviting_user} আপনার ছদ্মনাম %{pseud}-কে নিম্নলিখিত অধ্যায়ের সহ-নির্মাতা হিসাবে তালিকাভুক্ত করার জন্য আমন্ত্রণ জানিয়েছেন:'
+      intro_series: 'ব্যবহারকারী %{inviting_user} আপনার ছদ্মনাম %{pseud}-কে নিম্নলিখিত সিরিজের সহ-নির্মাতা হিসাবে তালিকাভুক্ত করার জন্য আমন্ত্রণ জানিয়েছেন:'
+      intro_work: 'ব্যবহারকারী %{inviting_user} আপনার ছদ্মনামকে %{pseud} নিম্নলিখিত কাজের সহ-নির্মাতা হিসাবে তালিকাভুক্ত করার জন্য আমন্ত্রণ জানিয়েছেন:'
+      subject: "[%{app_name}] সহ-নির্মাতা আমন্ত্রণ"
       text:
-        creation: "%{title} (%{url}) by %{pseuds}"
-        instructions: 'You can accept or reject this request on your Co-Creator Requests page: %{url}'
+        creation: "%{pseuds} দ্বারা %{title} (%{url})"
+        instructions: 'আপনি আপনার Co-Creator Requests (সহ-নির্মাতা আমন্ত্রণ) পৃষ্ঠায় এই অনুরোধ গ্রহণ বা প্রত্যাখ্যান করতে পারেন: %{url}'
     delete_work_notification:
-      attachment: Attached is a copy of your work for your reference.
+      attachment: আপনার কর্মের একটা প্রতিলিপি এই ইমেলের সাথে আপনার তথ্যের জন্য যুক্ত করা আছে।
       deleted_other:
-        html: Your work %{title} was deleted at the request of %{pseud}.
-        text: Your work "%{title}" was deleted at the request of %{pseud}.
+        html: আপনার কর্ম %{title} %{pseud} এর অনুরোধে বিনষ্ট (ডিলিট) করা হয়েছে।
+        text: আপনার কর্ম "%{title}" %{pseud} এর অনুরোধে বিনষ্ট (ডিলিট) করা হয়েছে।
       deleted_yourself:
-        html: Your work %{title} was deleted at your request.
-        text: Your work "%{title}" was deleted at your request.
+        html: আপনার কর্ম %{title} আপনারই অনুরোধে বিনষ্ট (ডিলিট) করা হয়েছে।
+        text: আপনার কর্ম "%{title}" আপনারই অনুরোধে বিনষ্ট (ডিলিট) করা হয়েছে।
       questions:
-        html: If you have questions, please %{support}.
-        text: If you have questions, please %{support} (%{url}).
-      subject: "[%{app_name}] Your work has been deleted"
-      support: contact Support
+        html: আপনার যদি কোনো প্রশ্ন থাকে, দয়া করে %{support}।
+        text: আপনার যদি কোনো প্রশ্ন থাকে, দয়া করে %{support} (%{url})।
+      subject: "[%{app_name}] আপনার কর্ম বিনষ্ট (ডিলিট) করা হয়েছে।"
+      support: সহায়তা সমিতির সঙ্গে যোগাযোগ করুন।
     feedback:
       additional_ticket: If you have additional questions or information, do not hesitate to send in another ticket.
       introduction: 'We''re working hard to reply to everyone, and we''ll respond to you as soon as we can. Your communication is greatly valued, and it will be reviewed and answered by our volunteer Support team. In the meantime, here is a copy of the information you submitted through the Technical Support and Feedback form:'
@@ -382,29 +382,29 @@ bn:
     invite_increase_notification:
       html:
         body:
-          one: We just wanted to let you know that you have %{count} new invitation, which can be used to create a new account at the Archive. You can invite a friend at %{invitation_page_link}.
-          other: We just wanted to let you know that you have %{count} new invitations, which can be used to create new accounts at the Archive. You can invite a friend at %{invitation_page_link}.
-      invitation_page_link_text: your invitations page
-      subject: "[%{app_name}] New invitations"
+          one: আমরা আপনাকে জানাতে চাই যে আপনার কাছে %{count}টা নতুন আমন্ত্রণ রয়েছে, যা ব্যবহার করে AO3তে একটা নতুন অ্যাকাউন্ট তৈরি করা যাবে৷ আপনি %{invitation_page_link}তে একজন বন্ধুকে আমন্ত্রণ জানাতে পারেন৷
+          other: আমরা আপনাকে জানাতে চাই যে আপনার কাছে %{count}টি নতুন আমন্ত্রণ রয়েছে, যেগুলি ব্যবহার করে AO3তে নতুন অ্যাকাউন্ট তৈরি করা যাবে৷ আপনি %{invitation_page_link}তে একজন বন্ধুকে আমন্ত্রণ জানাতে পারেন৷
+      invitation_page_link_text: আপনার Invitations (আমন্ত্রণ) পৃষ্ঠা
+      subject: "[%{app_name}] নতুন আমন্ত্রণ"
       text:
         body:
-          one: We just wanted to let you know that you have %{count} new invitation, which can be used to create a new account at the Archive. You can invite a friend at your invitations page (%{invitation_page_url}).
-          other: We just wanted to let you know that you have %{count} new invitations, which can be used to create new accounts at the Archive. You can invite a friend at your invitations page (%{invitation_page_url}).
+          one: আমরা আপনাকে জানাতে চাই যে আপনার কাছে %{count}টা নতুন আমন্ত্রণ রয়েছে, যা ব্যবহার করে AO3তে একটা নতুন অ্যাকাউন্ট তৈরি করা যাবে৷ আপনি (%{invitation_page_url})তে একজন বন্ধুকে আমন্ত্রণ জানাতে পারেন৷
+          other: আমরা আপনাকে জানাতে চাই যে আপনার কাছে %{count}টি নতুন আমন্ত্রণ রয়েছে, যেগুলি ব্যবহার করে AO3তে নতুন অ্যাকাউন্ট তৈরি করা যাবে৷ আপনি (%{invitation_page_url})তে একজন বন্ধুকে আমন্ত্রণ জানাতে পারেন৷
     invite_request_declined:
       main:
-        one: We regret to inform you that your request for a new invitation cannot be fulfilled at this time.
-        other: We regret to inform you that your request for %{count} new invitations cannot be fulfilled at this time.
-      reason: 'Your request was:'
-      subject: "[%{app_name}] Additional invitation request declined"
+        one: আমরা দুঃখিত যে আপনার নতুন নিমন্ত্রনপত্রের জন্যে অনুরোধ এই সময় পূরণ করা সম্ভব নয়।
+        other: আমরা দুঃখিত যে আপনার %{count}-টি নতুন নিমন্ত্রনপত্রের জন্যে অনুরোধ এই সময় পূরণ করা সম্ভব নয়।
+      reason: 'আপনার অনুরোধ ছিল:'
+      subject: "[%{app_name}] সংযোজিত নিমন্ত্রণপত্রের অনুরোধ প্রত্যাখ্যান করা হয়েছে"
     recipient_notification:
       html:
-        collection: A gift work has been posted for you in the %{collection_link} collection at the Archive of Our Own!
-      no_collection: A gift work has been posted for you at the Archive of Our Own!
+        collection: AO3–তে %{collection_link} সংকলনে আপনার জন্য একটি উপহার কর্ম প্রকাশ করা হয়েছে!
+      no_collection: AO3-তে আপনার জন্য একটি উপহার কর্ম প্রকাশিত হয়েছে!
       subject:
-        collection: "[%{app_name}][%{collection_title}] A gift work for you from %{collection_title}"
-        no_collection: "[%{app_name}] A gift work for you"
+        collection: "[%{app_name}][%{collection_title}] আপনার জন্য %{collection_title} থেকে একটি উপহার কর্ম"
+        no_collection: "[%{app_name}] আপনার জন্য একটি উপহার কর্ম"
       text:
-        collection: A gift work has been posted for you in the "%{collection_title}" collection (%{collection_url}) at the Archive of Our Own!
+        collection: আপনার জন্য একটি উপহার কর্ম (%{collection_url}) AO3-তে "%{collection_title}" সংকলনে প্রকাশ করা হয়েছে!
     signup_notification:
       activate:
         html: Please %{activate_account_link}.
@@ -425,8 +425,8 @@ bn:
   users:
     mailer:
       reset_password_instructions:
-        expiration: If you do not use this link to reset your password within a week, it will expire, and you will have to request a new one.
-        intro: 'Someone has requested a password reset for your account. You can change your account password by following the link below and entering your new password:'
-        link_title: Change my password.
-        subject: "[%{app_name}] Reset your password"
-        unrequested: If you did not request this password reset, you may ignore this email and your previous password will continue to work.
+        expiration: আপনি যদি এক সপ্তাহের মধ্যে আপনার পাসওয়ার্ড রিসেট করার জন্য এই লিঙ্কটি ব্যবহার না করেন, তবে এটির মেয়াদ শেষ হয়ে অকার্যকর হয়ে যাবে, এবং আপনাকে একটি নতুন লিঙ্ক অনুরোধ করতে হবে৷
+        intro: 'কেউ আপনার অ্যাকাউন্টের জন্য একটি পাসওয়ার্ড রিসেট করার অনুরোধ করেছে৷ আপনার অ্যাকাউন্টের পাসওয়ার্ড পরিবর্তন করার জন্য, নীচের লিঙ্কটি অনুসরণ করে নতুন পাসওয়ার্ড লিখুন:'
+        link_title: আমার পাসওয়ার্ড পরিবর্তন করব৷
+        subject: "[%{app_name}] নতুন পাসওয়ার্ড সেট করুন"
+        unrequested: আপনি যদি পাসওয়ার্ড বদল করার জন্য অনুরোধ না করে থাকেন, তাহলে আপনি এই ইমেলটিকে উপেক্ষা করতে পারেন এবং আপনার পূর্ববর্তী পাসওয়ার্ড কার্যকর থাকবে৷
