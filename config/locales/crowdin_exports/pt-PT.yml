@@ -29,32 +29,32 @@ pt:
   kudo_mailer:
     batch_kudo_notification:
       guest:
-        one: a guest
-        other: "%{count} guests"
+        one: uma pessoa convidada
+        other: "%{count} pessoas convidadas"
       left_kudos:
         html:
-          one: "%{givers_list} left kudos on %{commentable_link}."
-          other: "%{givers_list} left kudos on %{commentable_link}."
+          one: "%{givers_list} deixou kudos em %{commentable_link}."
+          other: "%{givers_list} deixaram kudos em %{commentable_link}."
         text:
-          one: '%{givers_list} left kudos on "%{commentable_title}" (%{commentable_url}).'
-          other: '%{givers_list} left kudos on "%{commentable_title}" (%{commentable_url}).'
+          one: '%{givers_list} deixou kudos em %{commentable_title} (%{commentable_url}).'
+          other: '%{givers_list} deixaram kudos em %{commentable_title} (%{commentable_url}).'
       single_guest:
-        giver: A guest
-        html: "%{giver} left kudos on %{commentable_link}."
-        text: A guest left kudos on "%{commentable_title}" (%{commentable_url}).
-      subject: "[%{app_name}] You've got kudos!"
+        giver: Uma pessoa convidada
+        html: "%{giver} deixou kudos em %{commentable_link}."
+        text: Uma pessoa convidada deixou kudos em %{commentable_title} (%{commentable_url}).
+      subject: "[%{app_name}] Recebeste kudos!"
   mailer:
     general:
       closing:
-        formal: Sincerely,
-        informal: Best,
+        formal: Atenciosamente,
+        informal: Atenciosamente,
       creation:
         link_with_word_count: "%{creation_link} (%{word_count})"
-        title_with_chapter_number: Chapter %{position} of %{title}
+        title_with_chapter_number: Capítulo %{position} de %{title}
         title_with_word_count: '"%{creation_title}" (%{word_count})'
         word_count:
-          one: "%{count} word"
-          other: "%{count} words"
+          one: "%{count} palavra"
+          other: "%{count} palavras"
       footer:
         general:
           about:
@@ -66,21 +66,21 @@ pt:
           unwanted_email:
             html: If you've received this message in error, please %{support_link}.
             text: If you've received this message in error, please contact Support at %{support_url}.
-        sent_at: Sent at %{sent_at}.
+        sent_at: Enviado às %{sent_at}.
       greeting:
         formal_html: Dear %{name},
         informal:
-          addressed_html: Hi, %{name}!
-          unaddressed: Hi!
-        introductory: Hello from the Archive of Our Own!
+          addressed_html: Olá, %{name}!
+          unaddressed: Olá!
+        introductory: Olá do Archive of Our Own – AO3 (O Nosso Próprio Arquivo)!
         tag_wrangler_supervisors: Tag Wrangler Supervisors
-      metadata_label_indicator: ": "
+      metadata_label_indicator: ":"
       signature:
-        abuse_team: The AO3 Policy & Abuse team
+        abuse_team: A equipa de Políticas e Abuso do AO3
         app_short_name: AO3
-        open_doors: The Open Doors team
-        parent_org: Organization for Transformative Works
-        support: The AO3 Support team
+        open_doors: A equipa do Open Doors (Portas Abertas)
+        parent_org: Organization for Transformative Works – OTW (Organização para Obras Transformativas)
+        support: A equipa de Suporte do AO3
   roles:
     anonymous_creator: Anonymous Creator
     commenter_name:
@@ -106,98 +106,98 @@ pt:
       subject: "[%{app_name}] Abuse - %{summary}"
       thank_you: Thank you for your patience.
     admin_deleted_work_notification:
-      bye: Attached is a copy of your work for your reference.
-      contact_abuse: contact our Policy & Abuse team
+      bye: Foi anexada uma cópia da obra para tua referência.
+      contact_abuse: contacta o nosso Comité de Políticas e Abuso
       deleted:
-        html: Your work %{title} was deleted from the Archive by a site admin.
-        text: Your work "%{title}" was deleted from the Archive by a site admin.
+        html: A tua obra %{title} foi eliminada do Arquivo por uma pessoa administradora do site.
+        text: A tua obra "%{title}" foi eliminada do Arquivo por uma pessoa administradora do site.
       html:
-        tos_violation: If it's possible your work violated the Archive's Terms of Service, please %{contact_abuse_link}.
+        tos_violation: Se é possível que a tua obra tenha violado os Termos de Serviço do Arquivo, por favor %{contact_abuse_link}.
       import_project:
-        html: If your work was part of an import project managed by our Open Doors team, please %{opendoors_link} with any further questions.
-        text: If your work was part of an import project managed by our Open Doors team, please contact Open Doors (%{opendoors_link}) with any further questions.
-      opendoors: contact Open Doors
-      subject: "[%{app_name}] Your work has been deleted by an admin"
+        html: Se a tua obra fazia parte de um projeto importado gerido pela nossa equipa do Open Doors (Portas Abertas), por favor %{opendoors_link} com as tuas questões.
+        text: Se a tua obra fazia parte de um projeto importado gerido pela nossa equipa do Open Doors (Portas Abertas), por favor contacta o Portas Abertas (%{opendoors_link}) com quaisquer questões que tenhas.
+      opendoors: contacta o Portas Abertas
+      subject: "[%{app_name}] A tua obra foi eliminada por uma pessoa administradora"
       text:
-        tos_violation: If it's possible your work violated the Archive's Terms of Service, please contact our Policy & Abuse team (%{contact_abuse_url}).
+        tos_violation: Se é possível que a tua obra tenha violado os Termos de Serviço do Arquivo, por favor contacta o nosso Comité de Políticas e Abuso (%{contact_abuse_url}).
     admin_hidden_work_notification:
-      access: While your work is hidden, you will still be able to access it through the link provided above, but it will not be listed on your works page, and it won't be available to other users of the Archive.
-      check_email: Please check your email, including your spam folder, as the Policy & Abuse team may have already contacted you explaining why your work was hidden.
-      contact_abuse: contact Policy & Abuse
+      access: Ainda poderás aceder à obra oculta através do link indicado acima, mas esta não aparecerá na tua página de obras e não estará disponível para outras pessoas utilizadoras do AO3.
+      check_email: Por favor verifica o teu email, incluindo a tua pasta de spam, pois a equipa de Políticas e Abuso pode já te ter contactado para explicar porque é que a tua obra foi ocultada.
+      contact_abuse: contacta a equipa de Políticas e Abuso
       html:
-        help: If you are uncertain why your work was hidden, and you have not received further communication regarding this matter, please %{contact_abuse_link} directly.
-        hidden: Your work %{title} has been hidden by the Policy & Abuse team and is no longer publicly accessible.
-        tos_violation: If your work was hidden due to being in violation of the Archive of Our Own's %{tos_link}, you will be required to take action to correct the violation. Failure to bring your work into compliance with the Terms of Service may lead to your work being deleted from the Archive.
-      subject: "[%{app_name}] Your work has been hidden by the Policy & Abuse team"
+        help: Se não sabes porque é que a tua obra foi ocultada e não recebeste mais nenhuma comunicação sobre o assunto, por favor %{contact_abuse_link} diretamente.
+        hidden: A tua obra %{title} foi ocultada pela equipa de Políticas e Abuso e já não está acessível publicamente.
+        tos_violation: Se a tua obra foi ocultada por infringir os %{tos_link} do AO3, será necessário que faças algo para corrigir a infração. Caso não tomes as medidas necessárias para a tua obra estar em conformidade com os Termos de Serviço, a tua obra poderá ser eliminada do AO3.
+      subject: "[%{app_name}] A tua obra foi ocultada pela equipa de Políticas e Abuso"
       text:
-        help: 'If you are uncertain why your work was hidden, and you have not received further communication regarding this matter, please contact Policy & Abuse directly: %{contact_abuse_url}.'
-        hidden: Your work "%{title}" (%{work_url}) has been hidden by the Policy & Abuse team and is no longer publicly accessible.
-        tos_violation: If your work was hidden due to being in violation of the Archive of Our Own's Terms of Service (%{tos_url}), you will be required to take action to correct the violation. Failure to bring your work into compliance with the Terms of Service may lead to your work being deleted from the Archive.
-      tos: Terms of Service
+        help: 'Se não sabes porque é que a tua obra foi ocultada e não recebeste mais nenhuma comunicação sobre o assunto, por favor contacta a equipa de abuso diretamente: %{contact_abuse_url}.'
+        hidden: A tua obra "%{title}" (%{work_url}) foi ocultada pela equipa de Políticas e Abuso e já não está acessível publicamente.
+        tos_violation: Se a tua obra foi ocultada por infringir os Termos de Serviço (%{tos_url}) do AO3, será necessário que faças algo para corrigir a infração. Caso não tomes as medidas necessárias para a tua obra estar em conformidade com os Termos de Serviço, a tua obra poderá ser eliminada do AO3.
+      tos: Termos de Serviço
     anonymous_or_unrevealed_notification:
-      anonymous_info: Anonymous works are included in tag listings, but not on your works page. On the work, your user name will be replaced with "Anonymous."
-      anonymous_unrevealed_info: The collection maintainers may later reveal your work but leave it anonymous. People who subscribe to you will not be notified of this change. Your work will be included in tag listings, but not on your works page. On the work, your user name will be replaced with "Anonymous."
+      anonymous_info: Obras anónimas são incluídas em listas de tags, mas não na tua página de obras. Na obra, o teu nome de utilizador será substituído por "Anonymous" (Anónimo).
+      anonymous_unrevealed_info: As pessoas responsáveis pela coleção podem revelar a tua obra mais tarde mas mantê-la anónima. As pessoas que te subscrevem não serão notificadas sobre esta alteração. Uma vez revelada, a tua obra será incluída nas listas de tags, mas não na tua página de obras. Na obra, o teu nome de utilizador será substituído por "Anonymous" (Anónimo).
       changed_status:
         anonymous:
-          html: The collection maintainers of %{collection_link} have changed the status of your work %{work_link} to anonymous.
-          text: The collection maintainers of "%{collection_title}" (%{collection_url}) have changed the status of your work "%{work_title}" (%{work_url}) to anonymous.
+          html: As pessoas responsáveis por manter a coleção %{collection_link} alteraram o estado da tua obra %{work_link} para "anónima".
+          text: As pessoas responsáveis por manter a coleção "%{collection_title}" (%{collection_url}) alteraram o estado da tua obra "%{work_title}" (%{work_url}) para "anónima".
         anonymous_unrevealed:
-          html: The collection maintainers of %{collection_link} have changed the status of your work %{work_link} to anonymous and unrevealed.
-          text: The collection maintainers of "%{collection_title}" (%{collection_url}) have changed the status of your work "%{work_title}" (%{work_url}) to anonymous and unrevealed.
+          html: As pessoas responsáveis por manter a coleção %{collection_link} alteraram o estado da tua obra %{work_link} para "anónima" e "não revelada".
+          text: As pessoas responsáveis por manter a coleção "%{collection_title}" (%{collection_url}) alteraram o estado da tua obra "%{work_title}" (%{work_url}) para "anónima" e "não revelada".
         unrevealed:
-          html: The collection maintainers of %{collection_link} have changed the status of your work %{work_link} to unrevealed.
-          text: The collection maintainers of "%{collection_title}" (%{collection_url}) have changed the status of your work "%{work_title}" (%{work_url}) to unrevealed.
-      collection_items_link_text: Approved Collection Items page
+          html: As pessoas responsáveis por manter a coleção %{collection_link} alteraram o estado da tua obra %{work_link} para "não revelada".
+          text: As pessoas responsáveis por manter a coleção "%{collection_title}" (%{collection_url}) alteraram o estado da tua obra "%{work_title}" (%{work_url}) para "não revelada".
+      collection_items_link_text: página de Approved Collection Items (Itens de Coleção Aprovados)
       do_not_want:
         anonymous:
-          html: If you do not want your work to be anonymous, please visit your %{collection_items_link} to remove it from this collection.
-          text: 'If you do not want your work to be anonymous, please visit your Approved Collection Items page to remove it from this collection: %{collection_items_url}'
+          html: Se não queres que a tua obra seja anónima, por favor visita a tua %{collection_items_link} para a remover desta coleção.
+          text: 'Se não queres que a tua obra seja anónima, por favor visita a tua página de Approved Collection Items (Itens de Coleção Aprovados) para a remover desta coleção: %{collection_items_url}'
         anonymous_unrevealed:
-          html: If you do not want your work to be anonymous and unrevealed, please visit your %{collection_items_link} to remove it from this collection.
-          text: 'If you do not want your work to be anonymous and unrevealed, please visit your Approved Collection Items page to remove it from this collection: %{collection_items_url}'
+          html: Se não queres que a tua obra seja anónima e fique inacessível até ser revelada, por favor visita a tua %{collection_items_link} para a remover desta coleção.
+          text: 'Se não queres que a tua obra seja anónima e fique inacessível até ser revelada, por favor visita a tua página de Approved Collection Items (Itens de Coleção Aprovados) para a remover desta coleção: %{collection_items_url}'
         unrevealed:
-          html: If you do not want your work to be unrevealed, please visit your %{collection_items_link} to remove it from this collection.
-          text: 'If you do not want your work to be unrevealed, please visit your Approved Collection Items page to remove it from this collection: %{collection_items_url}'
-      faq_link_text: Collections FAQ
+          html: Se não queres que a tua obra fique inacessível até ser revelada, por favor visita a tua %{collection_items_link} para a remover desta coleção.
+          text: 'Se não queres que a tua obra fique inacessível até ser revelada, por favor visita a tua página de Approved Collection Items (Itens de Coleção Aprovados) para a remover desta coleção: %{collection_items_url}'
+      faq_link_text: FAQs sobre Coleções
       more_info:
-        html: For more information, visit our %{faq_link}.
-        text: 'For more information, visit our Collections FAQ: %{faq_url}'
+        html: Para mais informações, visita as nossas %{faq_link}.
+        text: 'Para mais informações, visita as nossas FAQs sobre Coleções: %{faq_url}.'
       subject:
-        anonymous: "[%{app_name}] Your work was made anonymous"
-        anonymous_unrevealed: "[%{app_name}] Your work was made anonymous and unrevealed"
-        unrevealed: "[%{app_name}] Your work was made unrevealed"
-      unrevealed_info: Unrevealed works are not included in tag listings or on your works page. Anyone who follows a link to the work will receive a notice that it is currently unrevealed, and they will be unable to access its content.
+        anonymous: "[%{app_name}] A tua obra foi tornada anónima"
+        anonymous_unrevealed: "[%{app_name}] A tua obra foi tornada anónima e não revelada"
+        unrevealed: "[%{app_name}] A tua obra foi tornada numa obra não revelada"
+      unrevealed_info: Obras não reveladas não são incluídas nas listas de tags ou na tua página de obras. Qualquer pessoa que siga uma ligação para a obra vai receber um aviso a indicar que, atualmente, não está revelada e que não poderá aceder ao seu conteúdo.
     archivist_added_to_collection_notification:
-      approved_collection_items_page: Approved Collection Items page
-      archivist_notice: Because the collection maintainers are acting in their official capacity as Open Doors archivists, they are allowed to add your work to this collection, even if you have collection invitations disabled. Archivists will only add a work to a collection if it was hosted on an imported archive.
+      approved_collection_items_page: página Approved Collection Items (Itens de Coleção Aprovados)
+      archivist_notice: Como as pessoas responsáveis pela coleção estão a agir na sua função oficial como arquivista do Open Doors (Portas Abertas), podem adicionar a tua obra a esta coleção, mesmo que tenhas desativado a opção de convites para coleções. As pessoas arquivistas só irão adicionar uma obra a uma coleção se a obra estava alojada num arquivo importado.
       removal_instructions:
-        html: If you would like to remove your work from this collection, please visit your %{approved_items_link}.
-        text: 'If you would like to remove your work from this collection, please visit your Approved Collection Items page: %{approved_items_url}.'
-      subject: "[%{app_name}][%{collection_title}] An Open Doors archivist has added your work to a collection"
+        html: Se quiseres remover a tua obra desta coleção, por favor visita a tua %{approved_items_link}.
+        text: 'Se quiseres remover a tua obra desta coleção, por favor visita a tua página Approved Collection Items (Itens de Coleção Aprovados): %{approved_items_url}.'
+      subject: "[%{app_name}][%{collection_title}] Uma pessoa arquivista do Open Doors (Portas Abertas) adicionou a tua obra a uma coleção"
       work_added:
-        html: The collection maintainers of %{collection_link} have added your work %{work_link} to their collection!
-        text: The collection maintainers of "%{collection_title}" (%{collection_url}) have added your work "%{work_title}" (%{work_url}) to their collection!
+        html: As pessoas responsáveis pela coleção %{collection_link} adicionaram a tua obra %{work_link} à sua coleção!
+        text: As pessoas responsáveis pela coleção "%{collection_title}" (%{collection_url}) adicionaram a tua obra "%{work_title}" (%{work_url}) à sua coleção!
     challenge_assignment_notification:
-      any: Any
+      any: Qualquer
       assignment:
-        html: You have been assigned the following request in the %{link} challenge at the Archive of Our Own!
-      description: 'Description:'
-      due: 'This assignment is due at:'
+        html: Foi-te atribuída a seguinte tarefa no desafio %{link} no AO3!
+      description: 'Descrição:'
+      due: 'O prazo para esta tarefa é:'
       html:
-        footer: You're receiving this email because you signed up for the %{title} challenge. For more information about this challenge and contact information for the moderators, please visit %{footer_link}.
-        footer_link: the challenge profile page
-        look_up: You can look up this assignment from %{link}.
-        look_up_link: your Assignments page
-      optional_tags: 'Optional Tags:'
-      prompt_url: 'Prompt URL:'
+        footer: Estás a receber este email porque te inscreveste no desafio %{title}. Para mais informação acerca deste desafio e os detalhes de contacto das pessoas moderadoras, por favor visita %{footer_link}.
+        footer_link: a página de perfil do desafio
+        look_up: Podes encontrar esta tarefa %{link}.
+        look_up_link: na tua página Assignments (Tarefas)
+      optional_tags: 'Tags Opcionais:'
+      prompt_url: 'URL da prompt:'
       prompts: 'Prompts:'
-      recipient: 'Recipient:'
-      recipient_missing: 'None: contact a moderator for help!'
-      subject: "[%{app_name}][%{collection_title}] Your assignment!"
+      recipient: 'Destinada a:'
+      recipient_missing: 'Ninguém: contacta uma pessoa moderadora para obter ajuda!'
+      subject: "[%{app_name}][%{collection_title}] A Tua Tarefa!"
       text:
-        assignment: You have been assigned the following request in the "%{collection_title}" challenge (%{collection_url}) at the Archive of Our Own!
-        footer: You're receiving this email because you signed up for the %{title} challenge (%{url}). For more information about this challenge and contact information for the moderators, please visit %{profile_url}.
-        look_up: You can look up this assignment from your Assignments page at %{link}.
+        assignment: Foi-te atribuída a seguinte tarefa no desafio "%{collection_title}" (%{collection_url}) no AO3!
+        footer: Estás a receber este email porque te inscreveste no desafio %{title} (%{url}). Para mais informação acerca deste desafio e os detalhes de contacto das pessoas moderadoras, por favor visita %{profile_url}.
+        look_up: Podes encontrar esta tarefa na tua página Assignments (Tarefas) em %{link}.
     change_email:
       changed:
         html: "%{login}, the email associated with your account has been changed to %{email}"
@@ -205,118 +205,118 @@ pt:
       subject: "[%{app_name}] Email changed"
     claim_notification:
       access:
-        contact_support: contact AO3 Support
-        html: Depending on the archive, your works may have been imported restricted to registered users only (to keep them out of Google searches). If this is the case, the works will only be accessible by logged-in users unless you choose to make them fully visible. For help unlocking, orphaning, or deleting your works, please %{contact_support_link}.
-        text: Depending on the archive, your works may have been imported restricted to registered users only (to keep them out of Google searches). If this is the case, the works will only be accessible by logged-in users unless you choose to make them fully visible. For help unlocking, orphaning, or deleting your works, please contact AO3 Support at %{support_url}.
-      email_tips: If you're contacting us, please add email addresses from @transformativeworks.org to your list of safe contacts and check your spam folders for our reply.
+        contact_support: contacta a equipa de Suporte do AO3
+        html: Dependendo do arquivo, as tuas obras podem ter sido importadas com acesso restrito a pessoas utilizadoras registadas (para não aparecerem em pesquisas Google). Se for este o caso, as obras só estarão acessíveis a pessoas utilizadoras com sessão iniciada a não ser que escolhas torná-las completamente visíveis. Se precisares de ajuda a desbloquear, orfanar ou apagar as tuas obras, por favor %{contact_support_link}.
+        text: Dependendo do arquivo, as tuas obras podem ter sido importadas estando restritas a pessoas utilizadoras registadas (para não aparecerem em pesquisas Google). Se for este o caso, as obras só estarão acessíveis a pessoas utilizadoras com sessão iniciada a não ser que escolhas torná-las completamente visíveis. Se precisares de ajuda a desbloquear, orfanar ou apagar as tuas obras, por favor contacta a equipa de Suporte do AO3 em %{support_url}.
+      email_tips: Se nos contactares, por favor adiciona os endereços de email @transformativeworks.org à tua lista de contactos seguros e verifica se a nossa resposta está nas tuas pastas de spam.
       introduction:
-        ao3_name: Archive of Our Own
-        html: You're receiving this e-mail because you had works in a fanworks archive that has been imported by %{open_doors_name_link} into the %{app_link} (AO3). Because this e-mail address is connected to one registered on the imported archive, the associated fanworks (listed below) have been automatically added to your AO3 account.
-        open_doors_name: Open Doors
-        text: You're receiving this e-mail because you had works in a fanworks archive that has been imported by Open Doors (%{open_doors_url}) into the Archive of Our Own (AO3 - %{app_url}). Because this e-mail address is connected to one registered on the imported archive, the associated fanworks (listed below) have been automatically added to your AO3 account.
+        ao3_name: Archive of Our Own – AO3 (O Nosso Próprio Arquivo)
+        html: Estás a receber este e-mail porque tinhas obras num arquivo de obras de fãs que foi importado pelo %{open_doors_name_link} para o %{app_link}. Como este endereço de email está associado a uma pessoa registada no arquivo importado, as obras de fãs associadas (enumeradas abaixo) foram adicionadas automaticamente à tua conta do AO3.
+        open_doors_name: Open Doors (Portas Abertas)
+        text: 'Estás a receber este e-mail porque tinhas obras num arquivo de obras de fãs que foi importado pelo Open Doors (Portas Abertas) (%{open_doors_url}) para o Archive of Our Own – AO3 (O Nosso Próprio Arquivo): %{app_url}. Como este endereço de e-mail está associado a uma pessoa registada no arquivo importado, as obras de fãs associadas (enumeradas abaixo) foram adicionadas automaticamente à tua conta do AO3.'
       mistake:
-        contact_open_doors: contact Open Doors
-        html: If this is a mistake and these are not your works, please don't delete them! Please just %{contact_open_doors_link} and we will sort it out.
-        text: If this is a mistake and these are not your works, please don't delete them! Please just contact Open Doors (%{open_doors_url}) and we will sort it out.
+        contact_open_doors: contacta o Portas Abertas
+        html: Se isto for um engano e estas obras não forem tuas, por favor não as apagues! Por favor %{contact_open_doors_link} e nós trataremos do assunto.
+        text: Se isto for um engano e estas obras não forem tuas, por favor não as apagues! Por favor contacta o Portas Abertas (%{open_doors_url}) e nós trataremos do assunto.
       more_info:
-        ao3_news: AO3 News
-        contact_support: contact AO3 Support
-        faq_page: FAQ page
-        html: You can read announcements about recent archive moves at %{ao3_news_link}, and find additional information on Open Doors' %{faq_page_link} or %{tutorial_page_link}. For any questions not answered in the FAQ, tutorials, or this e-mail, please %{contact_support_link}.
-        text: You can read announcements about recent archive moves at AO3 News (%{news_url}), and find additional information on Open Doors' FAQ page (%{open_doors_faq_url}) or tutorials page (%{open_doors_tutorial_url}). For any questions not answered in the FAQ, tutorials, or this e-mail, please contact Support at %{support_url}.
-        tutorial_page: tutorial page
+        ao3_news: Notícias do AO3
+        contact_support: contacta a equipa de Suporte do AO3
+        faq_page: página de Perguntas Frequentes (FAQs)
+        html: Podes ler os anúncios de importações recentes de arquivos nas %{ao3_news_link} e encontrar informação adicional na %{faq_page_link} do Portas Abertas ou na %{tutorial_page_link}. Se tiveres questões que não estejam respondidas nas FAQs, nos tutoriais ou neste e-mail, por favor %{contact_support_link}.
+        text: Podes ler os anúncios de mudanças de arquivos recentes no AO3 News (%{news_url}) e encontrar informação adicional na página de Perguntas Frequentes (FAQs) do Portas Abertas (%{open_doors_faq_url}) ou na página de tutoriais (%{open_doors_tutorial_url}). Se tiveres questões que não sejam respondidas nas FAQs, nos tutoriais ou neste e-mail, por favor contacta a equipa de Suporte em %{support_url}.
+        tutorial_page: página dos tutoriais
       other_works:
-        contact_open_doors: contact Open Doors
-        html: If you had other works on the imported archive under an e-mail address you can no longer access, please %{contact_open_doors_link} with any information that can help verify your identity.
-        text: If you had other works on the imported archive under an e-mail address you can no longer access, please contact Open Doors with any information that can help verify your identity.
+        contact_open_doors: contacta o Portas Abertas
+        html: Se tinhas outras obras no arquivo importado com um endereço de e-mail a que já não tens acesso, por favor %{contact_open_doors_link} com qualquer informação que possa ajudar a verificar a tua identidade.
+        text: Se tinhas outras obras no arquivo importado com um e-mail a que já não tens acesso, por favor contacta o Portas Abertas com qualquer informação que possa ajudar a verificar a tua identidade.
       questions:
-        contact_support: contact AO3 Support
-        html: For other inquiries, please %{contact_support_link}.
-        text: For other inquiries, please contact AO3 Support at %{support_url}.
+        contact_support: contacta a equipa de Suporte do AO3
+        html: Para outras questões, por favor %{contact_support_link}.
+        text: Para outras questões, por favor contacta a equipa de Suporte do AO3 em %{support_url}.
       redirects:
-        html: To preserve rec lists and bookmarks, the imported archive's web addresses may redirect to the imported copy of these works for a limited time (check the announcement post for your archive to be sure). If you've already uploaded a copy of these works and you did %{negation} use the import from URL feature, there will be two copies of the same work on the AO3.
+        html: Para preservar listas de recomendações e favoritos, os endereços web do arquivo importado podem redirecionar para a cópia importada destas obras por um período de tempo limitado (consulta o anúncio de importação do teu arquivo para teres a certeza). Se já fizeste upload de uma cópia destas obras e %{negation} usaste a opção importar de URL, irão existir duas cópias da mesma obra no AO3.
         negation: NOT
-      subject: "[%{app_name}] Works uploaded"
+      subject: "[%{app_name}] Obras publicadas"
       update_redirect:
-        contact_open_doors: contact Open Doors
-        html: If you would like Open Doors to update the redirect to point to your pre-existing work, please delete the imported copy, and %{contact_open_doors_link} with your AO3 account name, your account name on the imported archive, and the title and URL of the fanwork you would like the redirect to point to. (If you have multiple works you would like to change the redirects for, you can list these in one email.)
-        text: If you would like Open Doors to update the redirect to point to your pre-existing work, please delete the imported copy, and contact Open Doors at %{open_doors_url} with your AO3 account name, your account name on the imported archive, and the title and URL of the fanwork you would like the redirect to point to. (If you have multiple works you would like to change the redirects for, you can list these in one email.)
+        contact_open_doors: contacta o Portas Abertas
+        html: Se quiseres que o Portas Abertas atualize o redirecionamento para apontar para a tua obra pré-existente, por favor apaga a cópia importada, e %{contact_open_doors_link} com o nome da tua conta no AO3, o nome da tua conta no arquivo importado, e o título e o URL da obra para a qual gostarias que o redirecionamento apontasse. (Se gostarias de alterar o redirecionamento para várias obras, podes listá-las num único email.)
+        text: Se quiseres que o Portas Abertas atualize o redirecionamento para apontar para a tua obra pré-existente, por favor apaga a cópia importada, e contacta o Portas Abertas em %{open_doors_url} com o nome da tua conta no AO3, o nome da tua conta no arquivo importado, e o título e o URL da obra para a qual gostarias que o redirecionamento apontasse. (Se gostarias de alterar o redirecionamento para várias obras, podes listá-las num único email.)
       work_info:
         html: "%{work_link} (%{fandom})"
         text:
           no_fandom: "- %{work_title} %{work_url}"
           with_fandom: "- %{work_title} %{work_url} (%{fandom})"
-      works_by: 'These works were written under the e-mail: %{email}'
+      works_by: 'Estas obras foram escritas sob o e-mail: %{email}'
     collection_notification:
       assignments_sent:
-        complete: All assignments have now been sent out.
-        subject: Assignments sent
+        complete: Já foram enviadas todas as tarefas.
+        subject: Tarefas enviadas
       challenge_default:
         complete: 'Signed-up participant %{offer_byline} has defaulted on their assignment for %{request_byline}. You may want to assign a pinch hitter on the collection assignments page: %{assignments_page_url}'
         subject: Challenge default by %{offer_byline}
       html:
-        received_message: 'You have received a message about your collection %{collection_link}:'
+        received_message: 'Recebeste uma mensagem acerca da tua coleção %{collection_link}:'
       text:
-        received_message: 'You have received a message about your collection "%{collection_title}" (%{collection_url}):'
+        received_message: 'Recebeste uma mensagem acerca da tua coleção "%{collection_title}" (%{collection_url}):'
     creatorship_notification:
-      explanation: When you're a co-creator on a work, you can be added to new chapters regardless of your co-creation settings. You will also be added to any series the work is added to.
+      explanation: Quando és pessoa cocriadora numa obra, podes ser adicionada a novos capítulos, independentemente das tuas definições de cocriação. Podes ainda ser adicionada a quaisquer séries às quais a obra for adicionada.
       html:
-        creation: "%{creation_link} by %{pseud_links}"
-        edit_chapter: edit the chapter
-        edit_series: edit the series
-        remove_chapter: If you've been added in error or don't want to be listed as a creator, you can %{edit_chapter_link} to remove yourself as creator.
-        remove_series: If you've been added in error or don't want to be listed as a creator, you can %{edit_series_link} to remove yourself as creator.
-      intro_chapter: 'The user %{adding_user} has listed your pseud %{pseud} as a co-creator on the following chapter:'
-      intro_series: 'The user %{adding_user} has listed your pseud %{pseud} as a co-creator on the following series:'
-      subject: "[%{app_name}] Co-creator notification"
+        creation: "%{creation_link} por %{pseud_links}"
+        edit_chapter: editar o capítulo
+        edit_series: editar a série
+        remove_chapter: Se te adicionaram por engano ou não quiseres aparecer como pessoa criadora, podes %{edit_chapter_link} para te removeres como pessoa criadora.
+        remove_series: Caso a tua adição tenha sido por erro, ou não queiras aparecer como pessoa criadora, podes %{edit_series_link} para te retirares como pessoa criadora.
+      intro_chapter: 'A pessoa utilizadora %{adding_user} listou o teu pseudónimo %{pseud} como cocriador no seguinte capítulo:'
+      intro_series: 'A pessoa utilizadora %{adding_user} listou o teu pseudónimo %{pseud} como cocriador no na seguinte série:'
+      subject: "[%{app_name}] Notificação de Pessoa Cocriadora"
       text:
-        creation: "%{title} (%{url}) by %{pseuds}"
-        remove_chapter: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the chapter to remove yourself as creator: %{url}'
-        remove_series: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the series to remove yourself as creator: %{url}'
+        creation: "%{title} (%{url}) por %{pseuds}"
+        remove_chapter: 'Se te adicionaram por engano ou não quiseres aparecer como pessoa criadora, podes editar o capítulo para te removeres como pessoa criadora: %{url}'
+        remove_series: 'Caso a tua adição tenha sido por erro, ou não queiras aparecer como pessoa criadora, podes editar a série para te retirares como pessoa criadora: %{url}'
     creatorship_notification_archivist:
-      explanation: Because they are acting in their official capacity as an Open Doors archivist, they are allowed to add you without a request, even if you have co-creation disabled.
+      explanation: Como está a agir na sua capacidade como arquivista do Open Doors (Portas Abertas), esta pessoa está autorizada a adicionar-te sem um pedido, mesmo se tiveres a opção de co-criação desativada.
       html:
-        creation: "%{creation_link} by %{pseud_links}"
-        edit_chapter: edit the chapter
-        edit_series: edit the series
-        edit_work: edit the work
-        remove_chapter: If you've been added in error or don't want to be listed as a creator, you can %{edit_chapter_link} to remove yourself as creator.
-        remove_series: If you've been added in error or don't want to be listed as a creator, you can %{edit_series_link} to remove yourself as creator.
-        remove_work: If you've been added in error or don't want to be listed as a creator, you can %{edit_work_link} to remove yourself as creator.
-      intro_chapter: 'The user %{archivist} has added your pseud %{pseud} as a co-creator on the following chapter:'
-      intro_series: 'The user %{archivist} has added your pseud %{pseud} as a co-creator on the following series:'
-      intro_work: 'The user %{archivist} has added your pseud %{pseud} as a co-creator on the following work:'
-      subject: "[%{app_name}] Archivist co-creator notification"
+        creation: "%{creation_link} por %{pseud_links}"
+        edit_chapter: editar o capítulo
+        edit_series: editar a série
+        edit_work: editar a obra
+        remove_chapter: Se te adicionaram por engano ou não quiseres aparecer como pessoa criadora, podes %{edit_chapter_link} para te removeres como pessoa criadora.
+        remove_series: Se te adicionaram por engano ou não quiseres aparecer como pessoa criadora, podes %{edit_series_link}para te removeres como pessoa criadora.
+        remove_work: Se te adicionaram por engano ou não quiseres aparecer como pessoa criadora, podes %{edit_work_link} para te removeres como pessoa criadora.
+      intro_chapter: 'A pessoa utilizadora %{archivist} adicionou o teu pseudónimo %{pseud} como pessoa co-criadora do seguinte capítulo:'
+      intro_series: 'A pessoa utilizadora %{archivist} adicionou o teu pseudónimo %{pseud} como pessoa co-criadora da seguinte série:'
+      intro_work: 'A pessoa utilizadora %{archivist} adicionou o teu pseudónimo %{pseud} como pessoa co-criadora da seguinte obra:'
+      subject: "[%{app_name}] Notificação de adição como pessoa co-criadora por arquivista"
       text:
-        creation: "%{title} (%{url}) by %{pseuds}"
-        remove_chapter: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the chapter to remove yourself as creator: %{url}'
-        remove_series: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the series to remove yourself as creator: %{url}'
-        remove_work: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the work to remove yourself as creator: %{url}'
+        creation: "%{title} (%{url}) por %{pseuds}"
+        remove_chapter: 'Se te adicionaram por engano ou não quiseres aparecer como pessoa criadora, podes editar o capítulo para para te removeres como pessoa criadora: %{url}'
+        remove_series: 'Se te adicionaram por engano ou não quiseres aparecer como pessoa criadora, podes editar a série para te removeres como pessoa criadora: %{url}'
+        remove_work: 'Se te adicionaram por engano ou não quiseres aparecer como pessoa criadora, podes editar a obra para te removeres como pessoa criadora: %{url}'
     creatorship_request:
       html:
-        creation: "%{creation_link} by %{pseud_links}"
-        instructions: You can accept or reject this request on your %{page_name} page.
-        page_name: Co-Creator Requests
-      intro_chapter: 'The user %{inviting_user} has invited your pseud %{pseud} to be listed as a co-creator on the following chapter:'
-      intro_series: 'The user %{inviting_user} has invited your pseud %{pseud} to be listed as a co-creator on the following series:'
-      intro_work: 'The user %{inviting_user} has invited your pseud %{pseud} to be listed as a co-creator on the following work:'
-      subject: "[%{app_name}] Co-creator request"
+        creation: "%{creation_link} por %{pseud_links}"
+        instructions: Podes aceitar ou rejeitar este pedido na tua página de %{page_name}.
+        page_name: Co-Creator Requests (Pedidos de Pessoa Co-Criadora)
+      intro_chapter: 'A pessoa utilizadora %{inviting_user} convidou o teu pseudónimo %{pseud} para ser listado como pessoa co-criadora do seguinte capítulo:'
+      intro_series: 'A pessoa utilizadora %{inviting_user} convidou o teu pseudónimo %{pseud} para ser listado como pessoa co-criadora da seguinte série:'
+      intro_work: 'A pessoa utilizadora %{inviting_user} convidou o teu pseudónimo %{pseud} para ser listado como pessoa co-criadora da seguinte obra:'
+      subject: "[%{app_name}] Pedido de pessoa co-criadora"
       text:
-        creation: "%{title} (%{url}) by %{pseuds}"
-        instructions: 'You can accept or reject this request on your Co-Creator Requests page: %{url}'
+        creation: "%{title} (%{url}) por %{pseuds}"
+        instructions: 'Podes aceitar ou rejeitar este pedido na tua página de Co-Creator Requests (Pedidos de Pessoa Co-Criadora): %{url}'
     delete_work_notification:
-      attachment: Attached is a copy of your work for your reference.
+      attachment: Segue em anexo uma cópia da tua obra para tua referência.
       deleted_other:
-        html: Your work %{title} was deleted at the request of %{pseud}.
-        text: Your work "%{title}" was deleted at the request of %{pseud}.
+        html: A tua obra %{title} foi eliminada a pedido de %{pseud}.
+        text: A tua obra "%{title}" foi eliminada a pedido de %{pseud}.
       deleted_yourself:
-        html: Your work %{title} was deleted at your request.
-        text: Your work "%{title}" was deleted at your request.
+        html: A tua obra %{title} foi eliminada a teu pedido.
+        text: A tua obra "%{title}" foi eliminada a teu pedido.
       questions:
-        html: If you have questions, please %{support}.
-        text: If you have questions, please %{support} (%{url}).
-      subject: "[%{app_name}] Your work has been deleted"
-      support: contact Support
+        html: Se tiveres alguma pergunta, por favor %{support}.
+        text: Se tiveres alguma questão, por favor %{support} (%{url}).
+      subject: "[%{app_name}] A tua obra foi eliminada"
+      support: contacta a equipa de Suporte
     feedback:
       additional_ticket: If you have additional questions or information, do not hesitate to send in another ticket.
       introduction: 'We''re working hard to reply to everyone, and we''ll respond to you as soon as we can. Your communication is greatly valued, and it will be reviewed and answered by our volunteer Support team. In the meantime, here is a copy of the information you submitted through the Technical Support and Feedback form:'
@@ -382,29 +382,29 @@ pt:
     invite_increase_notification:
       html:
         body:
-          one: We just wanted to let you know that you have %{count} new invitation, which can be used to create a new account at the Archive. You can invite a friend at %{invitation_page_link}.
-          other: We just wanted to let you know that you have %{count} new invitations, which can be used to create new accounts at the Archive. You can invite a friend at %{invitation_page_link}.
-      invitation_page_link_text: your invitations page
-      subject: "[%{app_name}] New invitations"
+          one: Queremos apenas informar-te de que tens %{count} novo convite, que pode ser utilizado para criar uma nova conta no AO3. Podes convidar uma pessoa amiga a partir da %{invitation_page_link}.
+          other: Queremos apenas informar-te de que tens %{count} novos convites, que podem ser utilizados para criar novas contas no AO3. Podes convidar pessoas amigas a partir da %{invitation_page_link}.
+      invitation_page_link_text: tua página de convites
+      subject: "[%{app_name}] Novos Convites"
       text:
         body:
-          one: We just wanted to let you know that you have %{count} new invitation, which can be used to create a new account at the Archive. You can invite a friend at your invitations page (%{invitation_page_url}).
-          other: We just wanted to let you know that you have %{count} new invitations, which can be used to create new accounts at the Archive. You can invite a friend at your invitations page (%{invitation_page_url}).
+          one: Queremos apenas informar-te de que tens %{count} novo convite, que pode ser utilizado para criar uma nova conta no AO3. Podes convidar uma pessoa amiga a partir da tua página Invitations (Convites) (%{invitation_page_url}).
+          other: Queremos apenas informar-te de que tens %{count} novos convites, que podem ser utilizados para criar novas contas no AO3. Podes convidar pessoas amigas a partir da tua página Invitations (Convites) (%{invitation_page_url}).
     invite_request_declined:
       main:
-        one: We regret to inform you that your request for a new invitation cannot be fulfilled at this time.
-        other: We regret to inform you that your request for %{count} new invitations cannot be fulfilled at this time.
-      reason: 'Your request was:'
-      subject: "[%{app_name}] Additional invitation request declined"
+        one: Lamentamos informar que, de momento, não podemos satisfazer o teu pedido de um novo convite.
+        other: Lamentamos informar que, de momento, não podemos satisfazer o teu pedido de %{count} novos convites.
+      reason: 'O teu pedido foi:'
+      subject: "[%{app_name}] Pedido de Código de Convite Adicional Recusado"
     recipient_notification:
       html:
-        collection: A gift work has been posted for you in the %{collection_link} collection at the Archive of Our Own!
-      no_collection: A gift work has been posted for you at the Archive of Our Own!
+        collection: Foi publicada uma obra presente para ti na coleção %{collection_link} no AO3!
+      no_collection: Foi publicada uma obra presente para ti no AO3!
       subject:
-        collection: "[%{app_name}][%{collection_title}] A gift work for you from %{collection_title}"
-        no_collection: "[%{app_name}] A gift work for you"
+        collection: "[%{app_name}][%{collection_title}] Uma obra presente para ti de %{collection_title}"
+        no_collection: "[%{app_name}] Uma obra presente para ti"
       text:
-        collection: A gift work has been posted for you in the "%{collection_title}" collection (%{collection_url}) at the Archive of Our Own!
+        collection: Foi publicada uma obra presente para ti na coleção "%{collection_title}" (%{collection_url}) no AO3!
     signup_notification:
       activate:
         html: Please %{activate_account_link}.
@@ -425,8 +425,8 @@ pt:
   users:
     mailer:
       reset_password_instructions:
-        expiration: If you do not use this link to reset your password within a week, it will expire, and you will have to request a new one.
-        intro: 'Someone has requested a password reset for your account. You can change your account password by following the link below and entering your new password:'
-        link_title: Change my password.
-        subject: "[%{app_name}] Reset your password"
-        unrequested: If you did not request this password reset, you may ignore this email and your previous password will continue to work.
+        expiration: Se não utilizares este link para repor a tua palavra-passe dentro de uma semana, o link expirará e terás de pedir um novo.
+        intro: 'Alguém pediu uma reposição da palavra-passe da tua conta. Podes alterar a tua palavra-passe seguindo o link abaixo e inserindo a tua nova palavra-passe:'
+        link_title: Mudar a minha palavra-passe.
+        subject: "[%{app_name}] Repõe a tua palavra-passe"
+        unrequested: Se não pediste uma reposição de palavra-passe, podes ignorar este email e a tua antiga palavra-passe continuará a funcionar.
