@@ -29,32 +29,32 @@ tr:
   kudo_mailer:
     batch_kudo_notification:
       guest:
-        one: a guest
-        other: "%{count} guests"
+        one: bir ziyaretçi
+        other: "%{count} ziyaretçi"
       left_kudos:
         html:
-          one: "%{givers_list} left kudos on %{commentable_link}."
-          other: "%{givers_list} left kudos on %{commentable_link}."
+          one: "%{givers_list}, %{commentable_link} eserinize kalp bıraktı."
+          other: "%{givers_list}, %{commentable_link} eserinize kalp bıraktı."
         text:
-          one: '%{givers_list} left kudos on "%{commentable_title}" (%{commentable_url}).'
-          other: '%{givers_list} left kudos on "%{commentable_title}" (%{commentable_url}).'
+          one: '%{givers_list}, %{commentable_title} (%{commentable_url}) eserinize kalp bıraktı.'
+          other: '%{givers_list}, %{commentable_title} (%{commentable_url}) eserinize kalp bıraktı.'
       single_guest:
-        giver: A guest
-        html: "%{giver} left kudos on %{commentable_link}."
-        text: A guest left kudos on "%{commentable_title}" (%{commentable_url}).
-      subject: "[%{app_name}] You've got kudos!"
+        giver: Bir ziyaretçi
+        html: "%{giver}, %{commentable_link} eserinize kalp bıraktı."
+        text: Bir ziyaretçi %{commentable_title} (%{commentable_url}) eserinize kalp bıraktı.
+      subject: "[%{app_name}] Kalp aldınız!"
   mailer:
     general:
       closing:
-        formal: Sincerely,
-        informal: Best,
+        formal: En içten dileklerimizle,
+        informal: İyi dileklerimizle,
       creation:
         link_with_word_count: "%{creation_link} (%{word_count})"
-        title_with_chapter_number: Chapter %{position} of %{title}
+        title_with_chapter_number: '%{title} ''ın %{position} . bölümü'
         title_with_word_count: '"%{creation_title}" (%{word_count})'
         word_count:
-          one: "%{count} word"
-          other: "%{count} words"
+          one: "%{count} kelime"
+          other: "%{count} kelime"
       footer:
         general:
           about:
@@ -66,21 +66,21 @@ tr:
           unwanted_email:
             html: If you've received this message in error, please %{support_link}.
             text: If you've received this message in error, please contact Support at %{support_url}.
-        sent_at: Sent at %{sent_at}.
+        sent_at: '%{sent_at} tarihinde gönderilmiştir.'
       greeting:
         formal_html: Dear %{name},
         informal:
-          addressed_html: Hi, %{name}!
-          unaddressed: Hi!
-        introductory: Hello from the Archive of Our Own!
+          addressed_html: Merhaba %{name}!
+          unaddressed: Merhaba!
+        introductory: Archive of Our Own – AO3 (Kendimize Ait Bir Arşiv)ten selamlar!
         tag_wrangler_supervisors: Tag Wrangler Supervisors
-      metadata_label_indicator: ": "
+      metadata_label_indicator: ":"
       signature:
-        abuse_team: The AO3 Policy & Abuse team
+        abuse_team: AO3 Poliçe ve Kötüye Kullanım ekibi
         app_short_name: AO3
-        open_doors: The Open Doors team
-        parent_org: Organization for Transformative Works
-        support: The AO3 Support team
+        open_doors: Open Doors (Açık Kapılar) ekibi
+        parent_org: Organization for Transformative Works – OTW (Transformatif Eserler Derneği)
+        support: AO3 Teknik Destek ekibi
   roles:
     anonymous_creator: Anonymous Creator
     commenter_name:
@@ -106,98 +106,98 @@ tr:
       subject: "[%{app_name}] Abuse - %{summary}"
       thank_you: Thank you for your patience.
     admin_deleted_work_notification:
-      bye: Attached is a copy of your work for your reference.
-      contact_abuse: contact our Policy & Abuse team
+      bye: Referans için eserinizin bir kopyası ektedir.
+      contact_abuse: Poliçe ve Kötüye Kullanım Komitesi ile iletişime geçin
       deleted:
-        html: Your work %{title} was deleted from the Archive by a site admin.
-        text: Your work "%{title}" was deleted from the Archive by a site admin.
+        html: Eseriniz, %{title}, bir site yöneticisi tarafından AO3'ten silinmiştir.
+        text: Eseriniz "%{title}" bir site yöneticisi tarafından AO3'ten silinmiştir.
       html:
-        tos_violation: If it's possible your work violated the Archive's Terms of Service, please %{contact_abuse_link}.
+        tos_violation: Eğer eserinizin AO3'ün Kullanım Şartlarını ihlal etmiş olma ihtimali var ise lütfen %{contact_abuse_link}.
       import_project:
-        html: If your work was part of an import project managed by our Open Doors team, please %{opendoors_link} with any further questions.
-        text: If your work was part of an import project managed by our Open Doors team, please contact Open Doors (%{opendoors_link}) with any further questions.
-      opendoors: contact Open Doors
-      subject: "[%{app_name}] Your work has been deleted by an admin"
+        html: Eğer eseriniz, Open Doors (Açık Kapılar) ekibimiz tarafından yönetilen bir içe aktarma projesinin parçası ise lütfen sorularınız için %{opendoors_link}.
+        text: Eğer eseriniz Open Doors (Açık Kapılar) ekibimiz tarafından yönetilen bir içe aktarma projesinin parçası ise lütfen sorularınız için Açık Kapılar (%{opendoors_link}) ile iletişime geçin.
+      opendoors: Açık Kapılar ile iletişime geçin
+      subject: "[%{app_name}] Eseriniz bir yönetici tarafından silinmiştir"
       text:
-        tos_violation: If it's possible your work violated the Archive's Terms of Service, please contact our Policy & Abuse team (%{contact_abuse_url}).
+        tos_violation: Eğer eserinizin AO3'ün Kullanım Şartlarını ihlal etmiş olma ihtimali var ise lütfen Poliçe ve Kötüye Kullanım Komitesi (%{contact_abuse_url}) ile iletişime geçin.
     admin_hidden_work_notification:
-      access: While your work is hidden, you will still be able to access it through the link provided above, but it will not be listed on your works page, and it won't be available to other users of the Archive.
-      check_email: Please check your email, including your spam folder, as the Policy & Abuse team may have already contacted you explaining why your work was hidden.
-      contact_abuse: contact Policy & Abuse
+      access: Eseriniz gizliyken de yukarıda verilen link üzerinden ona erişim sağlamanız mümkün olacak, fakat eser çalışma sayfanızda listelenmeyecek ve AO3'ün diğer kullanıcıları esere erişemiyor olacak.
+      check_email: Poliçe ve Kötüye Kullanım Komitesi eserinizin neden gizlendiğini açıklamak için sizinle daha önce iletişime geçmiş olabilir. Bu nedenle lütfen, spam klasörünüz de dahil olmak üzere, e-postalarınızı kontrol edin.
+      contact_abuse: Poliçe ve Kötüye Kullanım Komitesi'yle iletişime geçin
       html:
-        help: If you are uncertain why your work was hidden, and you have not received further communication regarding this matter, please %{contact_abuse_link} directly.
-        hidden: Your work %{title} has been hidden by the Policy & Abuse team and is no longer publicly accessible.
-        tos_violation: If your work was hidden due to being in violation of the Archive of Our Own's %{tos_link}, you will be required to take action to correct the violation. Failure to bring your work into compliance with the Terms of Service may lead to your work being deleted from the Archive.
-      subject: "[%{app_name}] Your work has been hidden by the Policy & Abuse team"
+        help: Eserinizin neden gizlendiğinden emin değilseniz ve bu konuyla ilgili herhangi başka bilgi almadıysanız, lütfen doğrudan %{contact_abuse_link}.
+        hidden: '%{title} adlı eseriniz Poliçe ve Kötüye Kullanım Komitesi tarafından gizlenmiştir ve artık herkese açık değildir.'
+        tos_violation: Eseriniz, AO3'ün %{tos_link} ihlali nedeniyle gizlendiyse, ihlali düzeltmek için sizin aksiyon almanız gerekecektir. Eserinizin Kullanım Şartları'na uygun hale getirilmemesi, eserinizin AO3'ten silinmesine neden olabilir.
+      subject: "[%{app_name}] eseriniz Poliçe ve Kötüye Kullanım Komitesi tarafından gizlenmiştir"
       text:
-        help: 'If you are uncertain why your work was hidden, and you have not received further communication regarding this matter, please contact Policy & Abuse directly: %{contact_abuse_url}.'
-        hidden: Your work "%{title}" (%{work_url}) has been hidden by the Policy & Abuse team and is no longer publicly accessible.
-        tos_violation: If your work was hidden due to being in violation of the Archive of Our Own's Terms of Service (%{tos_url}), you will be required to take action to correct the violation. Failure to bring your work into compliance with the Terms of Service may lead to your work being deleted from the Archive.
-      tos: Terms of Service
+        help: 'Eserinizin neden gizlendiğinden emin değilseniz ve bu konuyla ilgili başka bilgi almadıysanız, lütfen doğrudan Poliçe ve Kötüye Kullanım Komitesi''yle iletişime geçin: %{contact_abuse_url}.'
+        hidden: '"%{title}" (%{work_url}) adlı eseriniz Poliçe ve Kötüye Kullanım Komitesi tarafından gizlenmiştir ve artık herkese açık değildir.'
+        tos_violation: Eseriniz, AO3 Kullanım Şartları'nın (%{tos_url}) ihlali nedeniyle gizlendiyse, ihlali düzeltmek için sizin aksiyon almanız gerekecektir. Eserinizin Kullanım Şartları'na uygun hale getirilmemesi, eserinizin AO3'ten silinmesine neden olabilir.
+      tos: Kullanım Şartları
     anonymous_or_unrevealed_notification:
-      anonymous_info: Anonymous works are included in tag listings, but not on your works page. On the work, your user name will be replaced with "Anonymous."
-      anonymous_unrevealed_info: The collection maintainers may later reveal your work but leave it anonymous. People who subscribe to you will not be notified of this change. Your work will be included in tag listings, but not on your works page. On the work, your user name will be replaced with "Anonymous."
+      anonymous_info: Anonim eserler etiket listelerine dahil edilir, ancak sizin eserler sayfanızda gösterilmez. Eserde bulunan kullanıcı adınız ise "Anonymous" (Anonim) olarak değiştirilir.
+      anonymous_unrevealed_info: İlerleyen dönemlerde koleksiyon sorumluları eserinizin durumunu gizli olmaktan çıkarıp eseri genele açabilir, ancak eserin anonim durumunu koruyabilir. Size abone olan kişiler böylesi bir değişiklikten haberdar edilmez. Eser genel erişime açıldığında, eseriniz etiket listelerine dahil edilir, ancak sizin eserler sayfanızda gösterilmez. Eserde kullanıcı adınız "Anonymous" (Anonim) ile değiştirilir.
       changed_status:
         anonymous:
-          html: The collection maintainers of %{collection_link} have changed the status of your work %{work_link} to anonymous.
-          text: The collection maintainers of "%{collection_title}" (%{collection_url}) have changed the status of your work "%{work_title}" (%{work_url}) to anonymous.
+          html: '%{collection_link} koleksiyonunu sorumluları, %{work_link} eserinizin durumunu anonim olarak değiştirdi.'
+          text: '"%{collection_title}" (%{collection_url}) koleksiyonunun sorumluları "%{work_title}" (%{work_url}) eserinizin durumunu anonim olarak değiştirdi.'
         anonymous_unrevealed:
-          html: The collection maintainers of %{collection_link} have changed the status of your work %{work_link} to anonymous and unrevealed.
-          text: The collection maintainers of "%{collection_title}" (%{collection_url}) have changed the status of your work "%{work_title}" (%{work_url}) to anonymous and unrevealed.
+          html: '%{collection_link}''ın koleksiyon sorumluları, %{work_link} eserinizin durumunu anonim ve gizli olarak değiştirdi.'
+          text: '"%{collection_title}" (%{collection_url}) koleksiyonunun sorumluları"%{work_title}" (%{work_url}) eserinizin durumunu anonim ve gizli olarak değiştirdi.'
         unrevealed:
-          html: The collection maintainers of %{collection_link} have changed the status of your work %{work_link} to unrevealed.
-          text: The collection maintainers of "%{collection_title}" (%{collection_url}) have changed the status of your work "%{work_title}" (%{work_url}) to unrevealed.
-      collection_items_link_text: Approved Collection Items page
+          html: '%{collection_link}''ın koleksiyon sorumluları, %{work_link} eserinizin durumunu gizli olarak değiştirdi.'
+          text: '"%{collection_title}" (%{collection_url}) koleksiyonunun sorumluları "%{work_title}" (%{work_url}) eserinizin durumunu gizli olarak değiştirdi.'
+      collection_items_link_text: Approved Collection Items (Onaylı Koleksiyon Öğeleri) sayfası
       do_not_want:
         anonymous:
-          html: If you do not want your work to be anonymous, please visit your %{collection_items_link} to remove it from this collection.
-          text: 'If you do not want your work to be anonymous, please visit your Approved Collection Items page to remove it from this collection: %{collection_items_url}'
+          html: Eserinizin anonim olmasını istemiyorsanız, eserinizi bu koleksiyondan çıkarmak için %{collection_items_link} sayfasını ziyaret ediniz.
+          text: 'Eserinizin anonim olmasını istemiyorsanız, eserinizi bu koleksiyondan çıkarmak için Approved Collection Items (Onaylı Koleksiyon Öğeleri) sayfanızı ziyaret edebilirsiniz: %{collection_items_url}'
         anonymous_unrevealed:
-          html: If you do not want your work to be anonymous and unrevealed, please visit your %{collection_items_link} to remove it from this collection.
-          text: 'If you do not want your work to be anonymous and unrevealed, please visit your Approved Collection Items page to remove it from this collection: %{collection_items_url}'
+          html: Eserinizin anonim ve gizli olmasını istemiyorsanız, eserinizi bu koleksiyondan çıkarmak için lütfen %{collection_items_link} sayfasını ziyaret ediniz.
+          text: 'Eserinizin anonim ve gizli olmasını istemiyorsanız, eserinizi bu koleksiyondan çıkarmak için Approved Collection Items (Onaylı Koleksiyon Öğeleri) sayfanızı ziyaret edebilirsiniz: %{collection_items_url}'
         unrevealed:
-          html: If you do not want your work to be unrevealed, please visit your %{collection_items_link} to remove it from this collection.
-          text: 'If you do not want your work to be unrevealed, please visit your Approved Collection Items page to remove it from this collection: %{collection_items_url}'
-      faq_link_text: Collections FAQ
+          html: Eserinizin gizli olmasını istemiyorsanız, eserinizi bu koleksiyondan çıkarmak için lütfen %{collection_items_link} sayfasını ziyaret ediniz.
+          text: 'Eserinizin gizli olmasını istemiyorsanız, eserinizi bu koleksiyondan çıkarmak için Approved Collection Items (Onaylı Koleksiyon Öğeleri) sayfanızı ziyaret edebilirsiniz: %{collection_items_url}'
+      faq_link_text: Koleksiyonlar SSS
       more_info:
-        html: For more information, visit our %{faq_link}.
-        text: 'For more information, visit our Collections FAQ: %{faq_url}'
+        html: Daha fazla bilgi için, %{faq_link} sayfasına göz atabilirsiniz.
+        text: 'Daha fazla bilgi için, Koleksiyonlar SSS sayfasına göz atabilirsiniz: %{faq_url}'
       subject:
-        anonymous: "[%{app_name}] Your work was made anonymous"
-        anonymous_unrevealed: "[%{app_name}] Your work was made anonymous and unrevealed"
-        unrevealed: "[%{app_name}] Your work was made unrevealed"
-      unrevealed_info: Unrevealed works are not included in tag listings or on your works page. Anyone who follows a link to the work will receive a notice that it is currently unrevealed, and they will be unable to access its content.
+        anonymous: "[%{app_name}] Eseriniz anonim hale getirildi"
+        anonymous_unrevealed: "[%{app_name}] Eseriniz anonim ve gizli hale getirildi"
+        unrevealed: "[%{app_name}] Eseriniz gizli hale getirildi"
+      unrevealed_info: Gizli eserler etiket listelerinde veya eser sayfanızda yer almaz. Eser bağlantısını takip eden herkes, eserin şu anda gizli olduğuna dair bir bildirimle karşılaşır ve içeriğine erişim sağlayamazlar.
     archivist_added_to_collection_notification:
-      approved_collection_items_page: Approved Collection Items page
-      archivist_notice: Because the collection maintainers are acting in their official capacity as Open Doors archivists, they are allowed to add your work to this collection, even if you have collection invitations disabled. Archivists will only add a work to a collection if it was hosted on an imported archive.
+      approved_collection_items_page: Approved Collection Items (Onaylanan Koleksiyon Ögeleri) sayfası
+      archivist_notice: Siz koleksiyon davetlerini devre dışı bırakmış olsanız bile, koleksiyon yöneticilerinin Open Doors (Açık Kapılar) arşivciliği kapsamındaki yetkileri dahilinde eserinizi bu koleksiyona ekleme izni bulunmaktadır. Arşivciler bir eseri yalnızca eser içe aktarılan bir arşivde barındırılıyorsa bir koleksiyona eklemektedir.
       removal_instructions:
-        html: If you would like to remove your work from this collection, please visit your %{approved_items_link}.
-        text: 'If you would like to remove your work from this collection, please visit your Approved Collection Items page: %{approved_items_url}.'
-      subject: "[%{app_name}][%{collection_title}] An Open Doors archivist has added your work to a collection"
+        html: Eserinizi bu koleksiyondan çıkarmak isterseniz, lütfen %{approved_items_link} linkini ziyaret edin.
+        text: 'Eserinizi bu koleksiyondan çıkarmak isterseniz, lütfen Approved Collection Items (Onaylanan Koleksiyon Ögeleri) sayfanızı ziyaret edin: %{approved_items_url}.'
+      subject: "[%{app_name}][%{collection_title}] Bir Open Doors (Açık Kapılar) arşivcisi eserinizi bir koleksiyona ekledi"
       work_added:
-        html: The collection maintainers of %{collection_link} have added your work %{work_link} to their collection!
-        text: The collection maintainers of "%{collection_title}" (%{collection_url}) have added your work "%{work_title}" (%{work_url}) to their collection!
+        html: '%{collection_link} koleksiyonunun yöneticileri %{work_link} eserinizi koleksiyona ekledi!'
+        text: '"%{collection_title}" (%{collection_url}) koleksiyonunun yöneticileri "%{work_title}" (%{work_url}) eserinizi koleksiyonlarına ekledi!'
     challenge_assignment_notification:
-      any: Any
+      any: Herhangi bir
       assignment:
-        html: You have been assigned the following request in the %{link} challenge at the Archive of Our Own!
-      description: 'Description:'
-      due: 'This assignment is due at:'
+        html: AO3'teki %{link} oyununda size aşağıdaki istek atandı!
+      description: 'Tanım:'
+      due: 'Bu görevin teslim tarihi:'
       html:
-        footer: You're receiving this email because you signed up for the %{title} challenge. For more information about this challenge and contact information for the moderators, please visit %{footer_link}.
-        footer_link: the challenge profile page
-        look_up: You can look up this assignment from %{link}.
-        look_up_link: your Assignments page
-      optional_tags: 'Optional Tags:'
-      prompt_url: 'Prompt URL:'
-      prompts: 'Prompts:'
-      recipient: 'Recipient:'
-      recipient_missing: 'None: contact a moderator for help!'
-      subject: "[%{app_name}][%{collection_title}] Your assignment!"
+        footer: Bu e-postayı, %{title} oyununa kaydolduğunuz için aldınız. Bu oyun hakkında daha fazla bilgi ve moderatörlerin iletişim bilgileri için lütfen %{footer_link} adresini ziyaret edin.
+        footer_link: oyun profil sayfası
+        look_up: Bu görevi %{link} adresinden arayabilirsiniz.
+        look_up_link: Assignments (Görevler) sayfanız
+      optional_tags: 'İsteğe Bağlı Etiketler:'
+      prompt_url: 'Fikir URL''si:'
+      prompts: 'Fikirler:'
+      recipient: 'Alıcı:'
+      recipient_missing: 'Hiç kimse: yardım için bir moderatörle iletişime geçin!'
+      subject: "[%{app_name}][%{collection_title}] Göreviniz!"
       text:
-        assignment: You have been assigned the following request in the "%{collection_title}" challenge (%{collection_url}) at the Archive of Our Own!
-        footer: You're receiving this email because you signed up for the %{title} challenge (%{url}). For more information about this challenge and contact information for the moderators, please visit %{profile_url}.
-        look_up: You can look up this assignment from your Assignments page at %{link}.
+        assignment: AO3'teki "%{collection_title}" oyununda (%{collection_url}) size aşağıdaki istek atandı!
+        footer: Bu e-postayı, %{title} oyununa (%{url}) kaydolduğunuz için aldınız. Bu oyun hakkında daha fazla bilgi ve moderatörlerin iletişim bilgileri için lütfen %{profile_url} adresini ziyaret edin.
+        look_up: Bu görevi, %{link} adresindeki Assignments (Görevler) sayfanızdan arayabilirsiniz.
     change_email:
       changed:
         html: "%{login}, the email associated with your account has been changed to %{email}"
@@ -205,118 +205,118 @@ tr:
       subject: "[%{app_name}] Email changed"
     claim_notification:
       access:
-        contact_support: contact AO3 Support
-        html: Depending on the archive, your works may have been imported restricted to registered users only (to keep them out of Google searches). If this is the case, the works will only be accessible by logged-in users unless you choose to make them fully visible. For help unlocking, orphaning, or deleting your works, please %{contact_support_link}.
-        text: Depending on the archive, your works may have been imported restricted to registered users only (to keep them out of Google searches). If this is the case, the works will only be accessible by logged-in users unless you choose to make them fully visible. For help unlocking, orphaning, or deleting your works, please contact AO3 Support at %{support_url}.
-      email_tips: If you're contacting us, please add email addresses from @transformativeworks.org to your list of safe contacts and check your spam folders for our reply.
+        contact_support: AO3 Teknik Destek Komitesi ile iletişime geçin
+        html: Arşive bağlı olarak eserleriniz yalnızca kayıtlı kullanıcılara açık olacak şekilde aktarılmış olabilir (Bu Google aramalarında gözükmesini engellemek için yapılır). Eğer durum böyleyse, siz tamamen görünür yapmadığınız takdirde eserlerinize yalnızca giriş yapmış kullanıcılar erişebilecek. Kilidi kaldırmak, terk etmek veya eserlerinizi silmek konusunda yardım için, lütfen %{contact_support_link}.
+        text: Arşive bağlı olarak eserleriniz yalnızca kayıtlı kullanıcılara açık olacak şekilde aktarılmış olabilir (Bu Google aramalarında gözükmesini engellemek için yapılır). Eğer durum böyleyse, siz tamamen görünür yapmadığınız takdirde eserlerinize yalnızca giriş yapmış kullanıcılar erişebilecek. Kilidi kaldırmak, terk etmek veya eserlerinizi silmek konusunda yardım için, lütfen %{support_url}'den AO3 Teknik Destek Komitesi ile iletişime geçin.
+      email_tips: Bizimle iletişime geçiyorsanız lütfen @transformativeworks.org'daki e-posta adreslerini güvenli kişiler listenize ekleyin ve yanıtımız için spam klasörlerinizi kontrol edin.
       introduction:
-        ao3_name: Archive of Our Own
-        html: You're receiving this e-mail because you had works in a fanworks archive that has been imported by %{open_doors_name_link} into the %{app_link} (AO3). Because this e-mail address is connected to one registered on the imported archive, the associated fanworks (listed below) have been automatically added to your AO3 account.
-        open_doors_name: Open Doors
-        text: You're receiving this e-mail because you had works in a fanworks archive that has been imported by Open Doors (%{open_doors_url}) into the Archive of Our Own (AO3 - %{app_url}). Because this e-mail address is connected to one registered on the imported archive, the associated fanworks (listed below) have been automatically added to your AO3 account.
+        ao3_name: Archive of Our Own – AO3 (Kendimize Ait Bir Arşiv)
+        html: Bu e-postayı alıyorsunuz çünkü bir hayran eseri arşivinde %{open_doors_name_link} tarafından %{app_link}'e aktarılan eserleriniz bulunmakta. Bu e-posta adresi aktarılan arşivde kayıtlı olan bir adrese bağlı olduğundan, ilgili hayran eserleri (aşağıda listelenmiştir) otomatik olarak AO3 hesabınıza eklenmiştir.
+        open_doors_name: Open Doors (Açık Kapılar)
+        text: 'Bu e-postayı alıyorsunuz çünkü bir hayran eseri arşivinde Open Doors (Açık Kapılar) (%{open_doors_url}) tarafından Archive of Our Own – AO3 (Kendimize Ait Bir Arşiv): %{app_url}''e aktarılan eserleriniz bulunmakta. Bu e-posta adresi aktarılan arşivde kayıtlı olan bir adrese bağlı olduğundan, ilgili hayran eserleri (aşağıda listelenmiştir) otomatik olarak AO3 hesabınıza eklenmiştir.'
       mistake:
-        contact_open_doors: contact Open Doors
-        html: If this is a mistake and these are not your works, please don't delete them! Please just %{contact_open_doors_link} and we will sort it out.
-        text: If this is a mistake and these are not your works, please don't delete them! Please just contact Open Doors (%{open_doors_url}) and we will sort it out.
+        contact_open_doors: Açık Kapılar ile iletişime geçin
+        html: Eğer bu bir hataysa ve bunlar sizin eserleriniz değilse, lütfen onları silmeyin! Lütfen %{contact_open_doors_link} ve biz düzeltelim.
+        text: Eğer bu bir hataysa ve bunlar sizin eserleriniz değilse, lütfen onları silmeyin! Lütfen Açık Kapılar ile iletişime geçin (%{open_doors_url}) ve biz düzeltelim.
       more_info:
-        ao3_news: AO3 News
-        contact_support: contact AO3 Support
-        faq_page: FAQ page
-        html: You can read announcements about recent archive moves at %{ao3_news_link}, and find additional information on Open Doors' %{faq_page_link} or %{tutorial_page_link}. For any questions not answered in the FAQ, tutorials, or this e-mail, please %{contact_support_link}.
-        text: You can read announcements about recent archive moves at AO3 News (%{news_url}), and find additional information on Open Doors' FAQ page (%{open_doors_faq_url}) or tutorials page (%{open_doors_tutorial_url}). For any questions not answered in the FAQ, tutorials, or this e-mail, please contact Support at %{support_url}.
-        tutorial_page: tutorial page
+        ao3_news: AO3 Duyuruları
+        contact_support: AO3 Teknik Destek Komitesi ile iletişime geçin.
+        faq_page: SSS Sayfası
+        html: Yakın zamandaki arşiv hareketleri hakkındaki duyuruları %{ao3_news_link} adresinden okuyabilir ve daha fazla bilgiyi Açık Kapılar'ın %{faq_page_link} veya %{tutorial_page_link} adresinde bulabilirsiniz. SSS'lerde, eğitimlerde ya da bu e-postada yanıtlanmayan sorularınız için, lütfen %{contact_support_link}
+        text: Yakın zamandaki arşiv hareketleri hakkındaki duyuruları AO3 Duyurularından (%{news_url}) okuyabilir ve daha fazla bilgiyi Açık Kapılar'ın SSS sayfası (%{open_doors_faq_url}) veya eğitimler sayfasından (%{open_doors_tutorial_url}) bulabilirsiniz. SSS'lerde, eğitimlerde ya da bu e-postada yanıtlanmayan sorularınız için, %{support_url}'den Teknik Destek Komitesi ile iletişime geçin.
+        tutorial_page: eğitim sayfası
       other_works:
-        contact_open_doors: contact Open Doors
-        html: If you had other works on the imported archive under an e-mail address you can no longer access, please %{contact_open_doors_link} with any information that can help verify your identity.
-        text: If you had other works on the imported archive under an e-mail address you can no longer access, please contact Open Doors with any information that can help verify your identity.
+        contact_open_doors: Açık Kapılar ile iletişime geçin
+        html: Eğer aktarılan arşivde artık erişemediğiniz bir e-posta altında eserleriniz varsa, lütfen kimliğinizi onaylamaya yardımcı bilgiler ile %{contact_open_doors_link}.
+        text: Eğer aktarılan arşivde artık erişemediğiniz bir e-posta altında eserleriniz varsa, lütfen kimliğinizi onaylamaya yardımcı bilgilerle Açık Kapılar ile iletişime geçin.
       questions:
-        contact_support: contact AO3 Support
-        html: For other inquiries, please %{contact_support_link}.
-        text: For other inquiries, please contact AO3 Support at %{support_url}.
+        contact_support: AO3 Teknik Destek Komitesi ile iletişime geçin
+        html: Diğer sorularınız için lütfen %{contact_support_link}.
+        text: Diğer sorularınız için lütfen %{support_url}'den AO3 Teknik Destek Komitesi ile iletişime geçin.
       redirects:
-        html: To preserve rec lists and bookmarks, the imported archive's web addresses may redirect to the imported copy of these works for a limited time (check the announcement post for your archive to be sure). If you've already uploaded a copy of these works and you did %{negation} use the import from URL feature, there will be two copies of the same work on the AO3.
+        html: Öneri listeleri ve yer işaretlerini korumak için, aktarılan arşivin web adresi kısa bir süreliğine bu eserlerin aktarılan bir kopyasına yönlendirebilir (emin olmak için arşivinizdeki duyuru gönderilerini kontrol ediniz). Eğer çoktan bu eserin bir kopyasını yüklediyseniz ve URL'den aktar özelliğini %{negation}, AO3'te aynı eserin iki kopyası olacaktır.
         negation: NOT
-      subject: "[%{app_name}] Works uploaded"
+      subject: "[%{app_name}] Yüklenen eserler"
       update_redirect:
-        contact_open_doors: contact Open Doors
-        html: If you would like Open Doors to update the redirect to point to your pre-existing work, please delete the imported copy, and %{contact_open_doors_link} with your AO3 account name, your account name on the imported archive, and the title and URL of the fanwork you would like the redirect to point to. (If you have multiple works you would like to change the redirects for, you can list these in one email.)
-        text: If you would like Open Doors to update the redirect to point to your pre-existing work, please delete the imported copy, and contact Open Doors at %{open_doors_url} with your AO3 account name, your account name on the imported archive, and the title and URL of the fanwork you would like the redirect to point to. (If you have multiple works you would like to change the redirects for, you can list these in one email.)
+        contact_open_doors: Açık Kapılar ile iletişime geçin
+        html: Açık Kapılar'ın yönlendirmeyi önceden var olan eserinize işaret edecek şekilde güncellemesini istiyorsanız, lütfen aktarılan kopyayı silin ve AO3 hesap adınız, aktarılan arşivdeki hesap adınız ve yönlendirmek istediğiniz hayran eserinin adını ve URL'si ile %{contact_open_doors_link}. (Yönlendirmelerini değiştirmek istediğiniz birden fazla eser varsa, bunları tek e-postada belirtebilirsiniz.)
+        text: Açık Kapılar'ın yönlendirmeyi önceden var olan eserinize işaret edecek şekilde güncellemesini istiyorsanız, lütfen aktarılan kopyayı silin ve AO3 hesap adınız, aktarılan arşivdeki hesap adınız ve yönlendirmek istediğiniz hayran eserinin adını ve URL'si ile %{open_doors_url} linkinden Açık Kapılar ile iletişime geçin. (Yönlendirmelerini değiştirmek istediğiniz birden fazla eser varsa, bunları tek e-postada belirtebilirsiniz.)
       work_info:
         html: "%{work_link} (%{fandom})"
         text:
           no_fandom: "- %{work_title} %{work_url}"
           with_fandom: "- %{work_title} %{work_url} (%{fandom})"
-      works_by: 'These works were written under the e-mail: %{email}'
+      works_by: 'Eserler bu e-posta altında yazılmıştır: %{email}'
     collection_notification:
       assignments_sent:
-        complete: All assignments have now been sent out.
-        subject: Assignments sent
+        complete: Bütün atamalar gönderildi.
+        subject: Atamalar gönderildi
       challenge_default:
         complete: 'Signed-up participant %{offer_byline} has defaulted on their assignment for %{request_byline}. You may want to assign a pinch hitter on the collection assignments page: %{assignments_page_url}'
         subject: Challenge default by %{offer_byline}
       html:
-        received_message: 'You have received a message about your collection %{collection_link}:'
+        received_message: '%{collection_link} koleksiyonunuz hakkında bir mesaj aldınız:'
       text:
-        received_message: 'You have received a message about your collection "%{collection_title}" (%{collection_url}):'
+        received_message: '"%{collection_title}" koleksiyonunuz (%{collection_url}) hakkında bir mesaj aldınız:'
     creatorship_notification:
-      explanation: When you're a co-creator on a work, you can be added to new chapters regardless of your co-creation settings. You will also be added to any series the work is added to.
+      explanation: Bir eserin ortak yazarı olduğunuzda, ortak yazarlık ayarlarınızdan bağımsız olarak yeni bölümlere ekleyebilirsiniz. Ayrıca çalışmanın eklendiği herhangi bir diziye de ekleneceksiniz.
       html:
-        creation: "%{creation_link} by %{pseud_links}"
-        edit_chapter: edit the chapter
-        edit_series: edit the series
-        remove_chapter: If you've been added in error or don't want to be listed as a creator, you can %{edit_chapter_link} to remove yourself as creator.
-        remove_series: If you've been added in error or don't want to be listed as a creator, you can %{edit_series_link} to remove yourself as creator.
-      intro_chapter: 'The user %{adding_user} has listed your pseud %{pseud} as a co-creator on the following chapter:'
-      intro_series: 'The user %{adding_user} has listed your pseud %{pseud} as a co-creator on the following series:'
-      subject: "[%{app_name}] Co-creator notification"
+        creation: "%{pseud_links} tarafından %{creation_link}"
+        edit_chapter: bölümü düzenleyerek
+        edit_series: diziyi düzenleyerek
+        remove_chapter: Yanlışlıkla eklendiyseniz veya yazar olarak listelenmek istemiyorsanız, %{edit_chapter_link} kendinizi yazarlıktan kaldırabilirsiniz.
+        remove_series: Yanlışlıkla eklendiyseniz veya yazar olarak listelenmek istemiyorsanız, %{edit_series_link} kendinizi yazarlıktan kaldırabilirsiniz.
+      intro_chapter: '%{adding_user} kullanıcısı %{pseud} takma adınızı aşağıdaki bölümde ortak yazar olarak listeledi:'
+      intro_series: '%{adding_user} kullanıcısı %{pseud} takma adınızı aşağıdaki dizide ortak yazar olarak listeledi:'
+      subject: "[%{app_name}] Ortak yazar bildirimi"
       text:
-        creation: "%{title} (%{url}) by %{pseuds}"
-        remove_chapter: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the chapter to remove yourself as creator: %{url}'
-        remove_series: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the series to remove yourself as creator: %{url}'
+        creation: "%{pseuds} tarafından %{title} (%{url})"
+        remove_chapter: 'Yanlışlıkla eklendiyseniz veya yazar olarak listelenmek istemiyorsanız, kendinizi yazar olarak kaldırmak için bölümü düzenleyebilirsiniz: %{url}'
+        remove_series: 'Yanlışlıkla eklendiyseniz veya yazar olarak listelenmek istemiyorsanız, kendinizi yazar olarak kaldırmak için diziyi düzenleyebilirsiniz: %{url}'
     creatorship_notification_archivist:
-      explanation: Because they are acting in their official capacity as an Open Doors archivist, they are allowed to add you without a request, even if you have co-creation disabled.
+      explanation: Open Doors (Açık Kapılar) arşivcileri, onlara verilen yetki dahilinde ortaklığı devre dışı bırakmış olsanız bile sizi talep olmadan ortak yaratıcı olarak ekleme hakkına sahiptirler.
       html:
-        creation: "%{creation_link} by %{pseud_links}"
-        edit_chapter: edit the chapter
-        edit_series: edit the series
-        edit_work: edit the work
-        remove_chapter: If you've been added in error or don't want to be listed as a creator, you can %{edit_chapter_link} to remove yourself as creator.
-        remove_series: If you've been added in error or don't want to be listed as a creator, you can %{edit_series_link} to remove yourself as creator.
-        remove_work: If you've been added in error or don't want to be listed as a creator, you can %{edit_work_link} to remove yourself as creator.
-      intro_chapter: 'The user %{archivist} has added your pseud %{pseud} as a co-creator on the following chapter:'
-      intro_series: 'The user %{archivist} has added your pseud %{pseud} as a co-creator on the following series:'
-      intro_work: 'The user %{archivist} has added your pseud %{pseud} as a co-creator on the following work:'
-      subject: "[%{app_name}] Archivist co-creator notification"
+        creation: "%{pseud_links} tarafından %{creation_link}"
+        edit_chapter: bölümü düzenleyebilirsiniz
+        edit_series: seriyi düzenleyebilirsiniz
+        edit_work: eseri düzenleyebilirsiniz
+        remove_chapter: Eğer yanlışlıkla eklendiyseniz veya yaratıcı olarak listelenmek istemiyorsanız kendinizi yaratıcılıktan çıkarmak için %{edit_chapter_link}.
+        remove_series: Eğer yanlışlıkla eklendiyseniz veya yaratıcı olarak listelenmek istemiyorsanız kendinizi yaratıcılıktan çıkarmak için %{edit_series_link}.
+        remove_work: Eğer yanlışlıkla eklendiyseniz veya yaratıcı olarak listelenmek istemiyorsanız kendinizi yaratıcılıktan çıkarmak için %{edit_work_link}.
+      intro_chapter: '%{archivist} kullanıcısı %{pseud} takma adınızı ortak yaratıcı olarak aşağıdaki bölüme ekledi:'
+      intro_series: '%{archivist} kullanıcısı %{pseud} takma adınızı ortak yaratıcı olarak aşağıdaki seriye ekledi:'
+      intro_work: '%{archivist} kullanıcısı %{pseud} takma adınızı ortak yaratıcı olarak aşağıdaki esere ekledi:'
+      subject: "[%{app_name}] Ortak yaratıcı arşivci bildirimi"
       text:
-        creation: "%{title} (%{url}) by %{pseuds}"
-        remove_chapter: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the chapter to remove yourself as creator: %{url}'
-        remove_series: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the series to remove yourself as creator: %{url}'
-        remove_work: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the work to remove yourself as creator: %{url}'
+        creation: "%{pseuds} tarafından %{title} (%{url})"
+        remove_chapter: 'Eğer yanlışlıkla eklendiyseniz veya yaratıcı olarak listelenmek istemiyorsanız kendinizi yaratıcılıktan çıkarmak için bölümü düzenleyebilirsiniz: %{url}'
+        remove_series: 'Eğer yanlışlıkla eklendiyseniz veya yaratıcı olarak listelenmek istemiyorsanız kendinizi yaratıcılıktan çıkarmak için seriyi düzenleyebilirsiniz: %{url}'
+        remove_work: 'Eğer yanlışlıkla eklendiyseniz veya yaratıcı olarak listelenmek istemiyorsanız kendinizi yaratıcılıktan çıkarmak için eseri düzenleyebilirsiniz: %{url}'
     creatorship_request:
       html:
-        creation: "%{creation_link} by %{pseud_links}"
-        instructions: You can accept or reject this request on your %{page_name} page.
-        page_name: Co-Creator Requests
-      intro_chapter: 'The user %{inviting_user} has invited your pseud %{pseud} to be listed as a co-creator on the following chapter:'
-      intro_series: 'The user %{inviting_user} has invited your pseud %{pseud} to be listed as a co-creator on the following series:'
-      intro_work: 'The user %{inviting_user} has invited your pseud %{pseud} to be listed as a co-creator on the following work:'
-      subject: "[%{app_name}] Co-creator request"
+        creation: "%{pseud_links} tarafından %{creation_link}"
+        instructions: Bu isteği %{page_name} sayfanızdan kabul edebilir veya reddedebilirsiniz.
+        page_name: Co-Creator Requests (Eş-Yazar İstekleri)
+      intro_chapter: 'Kullanıcı %{inviting_user}, %{pseud} takma adınızı eş-yazar olarak aşağıdaki bölüme ekleme isteğinde bulundu:'
+      intro_series: 'Kullanıcı %{inviting_user}, %{pseud} takma adınızı eş-yazar olarak aşağıdaki seriye ekleme isteğinde bulundu:'
+      intro_work: 'Kullanıcı %{inviting_user}, %{pseud} takma adınızı eş-yazar olarak aşağıdaki esere ekleme isteğinde bulundu:'
+      subject: "[%{app_name}] Eş-yazar isteği"
       text:
-        creation: "%{title} (%{url}) by %{pseuds}"
-        instructions: 'You can accept or reject this request on your Co-Creator Requests page: %{url}'
+        creation: "%{pseuds} tarafından %{title} (%{url})"
+        instructions: 'Bu isteği Co-Creator Requests (Eş-Yazar İstekleri) sayfanızdan kabul edebilir veya reddedebilirsiniz: %{url}'
     delete_work_notification:
-      attachment: Attached is a copy of your work for your reference.
+      attachment: Ekte referansınız için eserinizin bir kopyası bulunmaktadır.
       deleted_other:
-        html: Your work %{title} was deleted at the request of %{pseud}.
-        text: Your work "%{title}" was deleted at the request of %{pseud}.
+        html: '%{title} eseriniz %{pseud} kullanıcısının isteği üzerine silindi.'
+        text: '"%{title}" eseriniz %{pseud} kullanıcısının isteği üzerine silinmiştir.'
       deleted_yourself:
-        html: Your work %{title} was deleted at your request.
-        text: Your work "%{title}" was deleted at your request.
+        html: '%{title} eseriniz isteğiniz üzerine silindi.'
+        text: '"%{title}" eseriniz isteğiniz üzerine silinmiştir.'
       questions:
-        html: If you have questions, please %{support}.
-        text: If you have questions, please %{support} (%{url}).
-      subject: "[%{app_name}] Your work has been deleted"
-      support: contact Support
+        html: Sorularınız varsa, lütfen %{support}.
+        text: Sorularınız varsa, lütfen %{support} (%{url}).
+      subject: "[%{app_name}] Eseriniz silinmiştir"
+      support: Teknik Destek Komitesi ile iletişime geçin
     feedback:
       additional_ticket: If you have additional questions or information, do not hesitate to send in another ticket.
       introduction: 'We''re working hard to reply to everyone, and we''ll respond to you as soon as we can. Your communication is greatly valued, and it will be reviewed and answered by our volunteer Support team. In the meantime, here is a copy of the information you submitted through the Technical Support and Feedback form:'
@@ -382,29 +382,29 @@ tr:
     invite_increase_notification:
       html:
         body:
-          one: We just wanted to let you know that you have %{count} new invitation, which can be used to create a new account at the Archive. You can invite a friend at %{invitation_page_link}.
-          other: We just wanted to let you know that you have %{count} new invitations, which can be used to create new accounts at the Archive. You can invite a friend at %{invitation_page_link}.
-      invitation_page_link_text: your invitations page
-      subject: "[%{app_name}] New invitations"
+          one: AO3'te yeni bir hesap oluşturmak için kullanabileceğiniz %{count} yeni davetiyeniz olduğunu size bildirmek istedik. Dilerseniz %{invitation_page_link} üzerinden bir arkadaşınızı davet edebilirsiniz.
+          other: AO3'te yeni hesaplar oluşturmak için kullanabileceğiniz %{count} yeni davetiyeniz olduğunu size bildirmek istedik. Dilerseniz %{invitation_page_link} üzerinden bir arkadaşınızı davet edebilirsiniz.
+      invitation_page_link_text: Invitations (Davetiyeler) sayfanız
+      subject: "[%{app_name}] Yeni Davetiyeler"
       text:
         body:
-          one: We just wanted to let you know that you have %{count} new invitation, which can be used to create a new account at the Archive. You can invite a friend at your invitations page (%{invitation_page_url}).
-          other: We just wanted to let you know that you have %{count} new invitations, which can be used to create new accounts at the Archive. You can invite a friend at your invitations page (%{invitation_page_url}).
+          one: AO3'te yeni bir hesap oluşturmak için kullanabileceğiniz %{count} yeni davetiyeniz olduğunu size bildirmek istedik. Dilerseniz Invitations (Davetiyeler) sayfası (%{invitation_page_url}) üzerinden bir arkadaşınızı davet edebilirsiniz.
+          other: AO3'te yeni hesaplar oluşturmak için kullanabileceğiniz %{count} yeni davetiyeniz olduğunu size bildirmek istedik. Dilerseniz Invitations (Davetiyeler) sayfası (%{invitation_page_url}) üzerinden bir arkadaşınızı davet edebilirsiniz.
     invite_request_declined:
       main:
-        one: We regret to inform you that your request for a new invitation cannot be fulfilled at this time.
-        other: We regret to inform you that your request for %{count} new invitations cannot be fulfilled at this time.
-      reason: 'Your request was:'
-      subject: "[%{app_name}] Additional invitation request declined"
+        one: Yeni bir davete ilişkin talebinizi şu anda yerine getiremeyeceğimizi üzülerek bildiriyoruz.
+        other: '%{count} yeni davet talebinizi şu anda yerine getiremeyeceğimizi üzülerek bildiriyoruz.'
+      reason: 'Talebiniz şöyleydi:'
+      subject: "[%{app_name}] İlave Davet Kodu İsteğiniz Reddedildi"
     recipient_notification:
       html:
-        collection: A gift work has been posted for you in the %{collection_link} collection at the Archive of Our Own!
-      no_collection: A gift work has been posted for you at the Archive of Our Own!
+        collection: AO3'te %{collection_link} koleksiyonunda sizin için hediye bir hediye eser yayınlandı!
+      no_collection: AO3'te sizin için bir hediye eser yayınlandı!
       subject:
-        collection: "[%{app_name}][%{collection_title}] A gift work for you from %{collection_title}"
-        no_collection: "[%{app_name}] A gift work for you"
+        collection: "[%{app_name}][%{collection_title}] %{collection_title} tarafından size hediye edilmiş bir eser"
+        no_collection: "[%{app_name}] Size hediye edilmiş bir eser"
       text:
-        collection: A gift work has been posted for you in the "%{collection_title}" collection (%{collection_url}) at the Archive of Our Own!
+        collection: AO3'te "%{collection_title}" koleksiyonunda (%{collection_url}) sizin için hediye bir eser yayınlandı!
     signup_notification:
       activate:
         html: Please %{activate_account_link}.
@@ -425,8 +425,8 @@ tr:
   users:
     mailer:
       reset_password_instructions:
-        expiration: If you do not use this link to reset your password within a week, it will expire, and you will have to request a new one.
-        intro: 'Someone has requested a password reset for your account. You can change your account password by following the link below and entering your new password:'
-        link_title: Change my password.
-        subject: "[%{app_name}] Reset your password"
-        unrequested: If you did not request this password reset, you may ignore this email and your previous password will continue to work.
+        expiration: Şifrenizi sıfırlamak için yukarıdaki linki bir hafta içinde kullanmadığınız takdirde linkin süresi dolacak ve yeni bir talepte bulunmanız gerekecektir.
+        intro: 'Hesabınız için şifre sıfırlama talebinde bulunuldu. Aşağıdaki bağlantıyı takip edip yeni şifrenizi girerek hesabınızın şifresini değiştirebilirsiniz:'
+        link_title: Şifremi değiştir.
+        subject: "[%{app_name}] Şifrenizi sıfırlayın"
+        unrequested: Eğer şifre sıfırlama talebinde bulunmadıysanız bu e-postayı görmezden gelerek önceki şifrenizi kullanmaya devam edebilirsiniz.
