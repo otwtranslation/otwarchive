@@ -63,10 +63,10 @@ ar:
           many: '%{givers_list} left kudos on "%{commentable_title}" (%{commentable_url}).'
           other: '%{givers_list} left kudos on "%{commentable_title}" (%{commentable_url}).'
       single_guest:
-        giver: A guest
-        html: "%{giver} left kudos on %{commentable_link}."
-        text: A guest left kudos on "%{commentable_title}" (%{commentable_url}).
-      subject: "[%{app_name}] You've got kudos!"
+        giver: ضيف
+        html: "حصلت على علامة امتياز للعمل %{commentable_link} من %{giver}."
+        text: حصلت على علامة امتياز للعمل %{commentable_title} (%{commentable_url}) من ضيف.
+      subject: "[%{app_name}] حصلت على علامة امتياز!"
   mailer:
     general:
       closing:
@@ -74,7 +74,7 @@ ar:
         informal: Best,
       creation:
         link_with_word_count: "%{creation_link} (%{word_count})"
-        title_with_chapter_number: Chapter %{position} of %{title}
+        title_with_chapter_number: الفصل %{position} من %{title}
         title_with_word_count: '"%{creation_title}" (%{word_count})'
         word_count:
           zero: "%{count} words"
@@ -134,67 +134,67 @@ ar:
       subject: "[%{app_name}] Abuse - %{summary}"
       thank_you: Thank you for your patience.
     admin_deleted_work_notification:
-      bye: Attached is a copy of your work for your reference.
-      contact_abuse: contact our Policy & Abuse team
+      bye: تم إلحاق نسخة من عملك كَمَرجِع.
+      contact_abuse: التواصل مع لجنة السياسات والتعسفات
       deleted:
-        html: Your work %{title} was deleted from the Archive by a site admin.
-        text: Your work "%{title}" was deleted from the Archive by a site admin.
+        html: تم حذف عملك %{title} من الأرشيف من قبل أحد المشرفين.
+        text: تم حذف عملك "%{title}" من الأرشيف من قبل أحد المشرفين.
       html:
-        tos_violation: If it's possible your work violated the Archive's Terms of Service, please %{contact_abuse_link}.
+        tos_violation: في حال انتهك عملك أحد شروط الخدمة للأرشيف، نرجو منك %{contact_abuse_link}.
       import_project:
-        html: If your work was part of an import project managed by our Open Doors team, please %{opendoors_link} with any further questions.
-        text: If your work was part of an import project managed by our Open Doors team, please contact Open Doors (%{opendoors_link}) with any further questions.
-      opendoors: contact Open Doors
-      subject: "[%{app_name}] Your work has been deleted by an admin"
+        html: في حال كان عملك جزءاً من أحد مشاريع الاستيراد التي يديرها فريق الأبواب المفتوحة، نرجو منك %{opendoors_link} وطرح كافة تساؤلاتك.
+        text: في حال كان عملك جزءاً من أحد مشاريع الاستيراد التي يديرها فريق الأبواب المفتوحة، نرجو منك التواصل مع لجنة الأبواب المفتوحة (%{opendoors_link}) وطرح كافة تساؤلاتك.
+      opendoors: التواصل مع لجنة الأبواب المفتوحة
+      subject: "[%{app_name}] تم حذف عملك من قبل أحد المشرفين"
       text:
-        tos_violation: If it's possible your work violated the Archive's Terms of Service, please contact our Policy & Abuse team (%{contact_abuse_url}).
+        tos_violation: في حال انتهك عملك أحد شروط الخدمة للأرشيف، نرجو منك التواصل مع لجنة السياسات والتعسفات (%{contact_abuse_url}).
     admin_hidden_work_notification:
-      access: While your work is hidden, you will still be able to access it through the link provided above, but it will not be listed on your works page, and it won't be available to other users of the Archive.
-      check_email: Please check your email, including your spam folder, as the Policy & Abuse team may have already contacted you explaining why your work was hidden.
-      contact_abuse: contact Policy & Abuse
+      access: أثناء بقاء عملك مخفياً، ستظل قادرًا على الوصول إليه من خلال الرابط المتاح أعلاه، لكنه لن يتم إدراجه في صفحة اعمالك، ولن يكون متاحًا لمستخدمي AO3 الآخرين.
+      check_email: يرجى التحقق من بريدك الإلكتروني، بما في ذلك مجلد البريد العشوائي، حيث قد يكون فريق السياسات والتعسفات اتصل بك ليشرح لك سبب إخفاء عملك.
+      contact_abuse: تواصل مع لجنة السياسات والتعسفات
       html:
-        help: If you are uncertain why your work was hidden, and you have not received further communication regarding this matter, please %{contact_abuse_link} directly.
-        hidden: Your work %{title} has been hidden by the Policy & Abuse team and is no longer publicly accessible.
-        tos_violation: If your work was hidden due to being in violation of the Archive of Our Own's %{tos_link}, you will be required to take action to correct the violation. Failure to bring your work into compliance with the Terms of Service may lead to your work being deleted from the Archive.
-      subject: "[%{app_name}] Your work has been hidden by the Policy & Abuse team"
+        help: إذا لم تكن متأكدًا من سبب إخفاء عملك، ولم تتلق مزيدًا من المعلومات بخصوص هذا الأمر، رجاءً %{contact_abuse_link} مباشرةً.
+        hidden: عملك %{title} تم اخفائه من قبل فريق السياسات والتعسفات ولم يعد متاحاً إلى العامة.
+        tos_violation: إذا تم إخفاء عملك بسبب انتهاك %{tos_link} الخاصة بـ AO3، فستتم مطالبتك باتخاذ إجراء لتصحيح الانتهاك. قد يؤدي عدم تعديل عملك ليتوافق مع شروط الخدمة إلى حذف عملك من AO3.
+      subject: "[%{app_name}] تم إخفاء عملك من قبل فريق السياسات والتعسفات"
       text:
-        help: 'If you are uncertain why your work was hidden, and you have not received further communication regarding this matter, please contact Policy & Abuse directly: %{contact_abuse_url}.'
-        hidden: Your work "%{title}" (%{work_url}) has been hidden by the Policy & Abuse team and is no longer publicly accessible.
-        tos_violation: If your work was hidden due to being in violation of the Archive of Our Own's Terms of Service (%{tos_url}), you will be required to take action to correct the violation. Failure to bring your work into compliance with the Terms of Service may lead to your work being deleted from the Archive.
-      tos: Terms of Service
+        help: 'إذا لم تكن متأكدًا من سبب إخفاء عملك، ولم تتلق مزيدًا من المعلومات بخصوص هذا الأمر، رجاءً %{contact_abuse_url} مباشرةً.'
+        hidden: عملك "%{title}" (%{work_url}) تم اخفائه من قبل فريق السياسات والتعسفات ولم يعد متاحاً إلى العامة.
+        tos_violation: إذا تم إخفاء عملك بسبب انتهاك %{tos_url} الخاصة بـ AO3، فستتم مطالبتك باتخاذ إجراء لتصحيح الانتهاك. قد يؤدي عدم تعديل عملك ليتوافق مع شروط الخدمة إلى حذف عملك من AO3.
+      tos: شروط الخدمة
     anonymous_or_unrevealed_notification:
-      anonymous_info: Anonymous works are included in tag listings, but not on your works page. On the work, your user name will be replaced with "Anonymous."
-      anonymous_unrevealed_info: The collection maintainers may later reveal your work but leave it anonymous. People who subscribe to you will not be notified of this change. Your work will be included in tag listings, but not on your works page. On the work, your user name will be replaced with "Anonymous."
+      anonymous_info: يتم تضمين الأعمال المجهولة المصدر في قوائم الوسوم، ولكن ليس في صفحة الأعمال الخاصة بك. في العمل، سيتم استبدال اسم المستخدم الخاص بك بكلمة "Anonymous" (مجهول المصدر).
+      anonymous_unrevealed_info: قد يكشف مشرفو المجموعة لاحقًا عن عملك لكن سيتركونه مجهول المصدر. لن يُنبه الأشخاص الذين يشتركون في صفحتك بهذا التغيير. بمجرد الكشف عنه، سيُضمن عملك في قوائم الوسوم، ولكن ليس في صفحة عملك. في العمل، سيتم استبدال اسم المستخدم الخاص بك بكلمة "Anonymous" (مجهول).
       changed_status:
         anonymous:
-          html: The collection maintainers of %{collection_link} have changed the status of your work %{work_link} to anonymous.
-          text: The collection maintainers of "%{collection_title}" (%{collection_url}) have changed the status of your work "%{work_title}" (%{work_url}) to anonymous.
+          html: لقد غير مشرفو المجموعة %{collection_link} حالة عملك %{work_link} إلى مجهول المصدر.
+          text: لقد غير مشرفو المجموعة "%{collection_title}" (%{collection_url}) حالة عملك "%{work_title}" (%{work_url}) إلى مجهول المصدر.
         anonymous_unrevealed:
-          html: The collection maintainers of %{collection_link} have changed the status of your work %{work_link} to anonymous and unrevealed.
-          text: The collection maintainers of "%{collection_title}" (%{collection_url}) have changed the status of your work "%{work_title}" (%{work_url}) to anonymous and unrevealed.
+          html: لقد غير مشرفو المجموعة %{collection_link} حالة عملك %{work_link} إلى مجهول المصدر وغير مكشوف.
+          text: لقد غير مشرفو المجموعة "%{collection_title}" (%{collection_url}) حالة عملك "%{work_title}" (%{work_url}) إلى مجهول المصدر وغير مكشوف.
         unrevealed:
-          html: The collection maintainers of %{collection_link} have changed the status of your work %{work_link} to unrevealed.
-          text: The collection maintainers of "%{collection_title}" (%{collection_url}) have changed the status of your work "%{work_title}" (%{work_url}) to unrevealed.
-      collection_items_link_text: Approved Collection Items page
+          html: لقد غير مشرفو المجموعة %{collection_link} حالة عملك %{work_link} إلى غير مكشوف.
+          text: لقد غير مشرفو المجموعة "%{collection_title}" (%{collection_url}) حالة عملك "%{work_title}" (%{work_url}) إلى غير مكشوف.
+      collection_items_link_text: صفحة Approved Collection Items (عناصر المجموعة المعتمدة)
       do_not_want:
         anonymous:
-          html: If you do not want your work to be anonymous, please visit your %{collection_items_link} to remove it from this collection.
-          text: 'If you do not want your work to be anonymous, please visit your Approved Collection Items page to remove it from this collection: %{collection_items_url}'
+          html: إذا كنت لا تريد أن يكون عملك مجهول المصدر، يرجى زيارة %{collection_items_link} لإزالته من هذه المجموعة.
+          text: 'إذا كنت لا تريد أن يكون عملك مجهول المصدر، يرجى زيارة صفحة Approved Collection Items (عناصر المجموعة المعتمدة) لإزالته من هذه المجموعة: %{collection_items_url}'
         anonymous_unrevealed:
-          html: If you do not want your work to be anonymous and unrevealed, please visit your %{collection_items_link} to remove it from this collection.
-          text: 'If you do not want your work to be anonymous and unrevealed, please visit your Approved Collection Items page to remove it from this collection: %{collection_items_url}'
+          html: إذا كنت لا تريد أن يكون عملك مجهول المصدر وغير مكشوف، يرجى زيارة %{collection_items_link} لإزالته من هذه المجموعة.
+          text: 'إذا كنت لا تريد أن يكون عملك مجهول المصدر وغير مكشوفًا، يرجى زيارة صفحة Approved Collection Items (عناصر المجموعة المعتمدة) لإزالته من هذه المجموعة: %{collection_items_url}'
         unrevealed:
-          html: If you do not want your work to be unrevealed, please visit your %{collection_items_link} to remove it from this collection.
-          text: 'If you do not want your work to be unrevealed, please visit your Approved Collection Items page to remove it from this collection: %{collection_items_url}'
-      faq_link_text: Collections FAQ
+          html: إذا كنت لا تريد أن يكون عملك غير مكشوفًا، يرجى زيارة %{collection_items_link} لإزالته من هذه المجموعة.
+          text: 'إذا كنت لا تريد أن يكون عملك غير مكشوفًا، يرجى زيارة صفحة Approved Collection Items (عناصر المجموعة المعتمدة) لإزالته من هذه المجموعة: %{collection_items_url}'
+      faq_link_text: الأسئلة المتداولة حول المجموعات
       more_info:
-        html: For more information, visit our %{faq_link}.
-        text: 'For more information, visit our Collections FAQ: %{faq_url}'
+        html: للمزيد من المعلومات، تفضل بزيارة %{faq_link}.
+        text: 'للمزيد من المعلومات، تفضل بزيارة الأسئلة المتداولة حول المجموعات: %{faq_url}'
       subject:
-        anonymous: "[%{app_name}] Your work was made anonymous"
-        anonymous_unrevealed: "[%{app_name}] Your work was made anonymous and unrevealed"
-        unrevealed: "[%{app_name}] Your work was made unrevealed"
-      unrevealed_info: Unrevealed works are not included in tag listings or on your works page. Anyone who follows a link to the work will receive a notice that it is currently unrevealed, and they will be unable to access its content.
+        anonymous: "[%{app_name}] أصبح عملك مجهول المصدر"
+        anonymous_unrevealed: "[%{app_name}] أصبح عملك مجهول المصدر وغير مكشوف"
+        unrevealed: "[%{app_name}] أصبح عملك غير مكشوف"
+      unrevealed_info: لا يتم تضمين الأعمال غير المكشوفة في قوائم الوسوم أو في صفحة الأعمال الخاصة بك. سيتلقى أي شخص يزور رابطًا للعمل إشعارًا بأنه لم يتم الكشف عنه حاليًا، ولن يتمكن من الوصول إلى محتواه.
     archivist_added_to_collection_notification:
       approved_collection_items_page: Approved Collection Items page
       archivist_notice: Because the collection maintainers are acting in their official capacity as Open Doors archivists, they are allowed to add your work to this collection, even if you have collection invitations disabled. Archivists will only add a work to a collection if it was hosted on an imported archive.
@@ -206,26 +206,26 @@ ar:
         html: The collection maintainers of %{collection_link} have added your work %{work_link} to their collection!
         text: The collection maintainers of "%{collection_title}" (%{collection_url}) have added your work "%{work_title}" (%{work_url}) to their collection!
     challenge_assignment_notification:
-      any: Any
+      any: أي من الموجود
       assignment:
-        html: You have been assigned the following request in the %{link} challenge at the Archive of Our Own!
-      description: 'Description:'
-      due: 'This assignment is due at:'
+        html: تم تعيينك للطلب الآتي في تحدي %{link} على AO3!
+      description: 'الوصف:'
+      due: 'موعد تسليم المهمة:'
       html:
-        footer: You're receiving this email because you signed up for the %{title} challenge. For more information about this challenge and contact information for the moderators, please visit %{footer_link}.
-        footer_link: the challenge profile page
-        look_up: You can look up this assignment from %{link}.
-        look_up_link: your Assignments page
-      optional_tags: 'Optional Tags:'
-      prompt_url: 'Prompt URL:'
-      prompts: 'Prompts:'
-      recipient: 'Recipient:'
-      recipient_missing: 'None: contact a moderator for help!'
-      subject: "[%{app_name}][%{collection_title}] Your assignment!"
+        footer: إنك تتلقى هذا البريد لانك اشتركت في تحدي %{title}. للمزيد من المعلومات حول هذا التحدي ولمعلومات التواصل مع المشرفين، قم بزيارة %{footer_link}.
+        footer_link: صفحة التحدي الرئيسية
+        look_up: يمكنك الوصول إلى مهمتك من خلال %{link}.
+        look_up_link: صفحة Assignments (المهمات) الخاصة بك
+      optional_tags: 'وسوم اختيارية:'
+      prompt_url: 'رابط المحفز:'
+      prompts: 'المحفزات:'
+      recipient: 'المتلقي:'
+      recipient_missing: 'لا يوجد: تواصل مع أحد المشرفين للحصول على المساعدة!'
+      subject: "[%{app_name}][%{collection_title}] مهمّتك!"
       text:
-        assignment: You have been assigned the following request in the "%{collection_title}" challenge (%{collection_url}) at the Archive of Our Own!
-        footer: You're receiving this email because you signed up for the %{title} challenge (%{url}). For more information about this challenge and contact information for the moderators, please visit %{profile_url}.
-        look_up: You can look up this assignment from your Assignments page at %{link}.
+        assignment: تم تعيينك للطلب الآتي في تحدي %{collection_title} (%{collection_url}) على الأرشيف من جانبنا (AO3)!
+        footer: إنك تتلقى هذا البريد لأنك اشتركت في تحدي %{title} (%{url}). للمزيد من المعلومات حول هذا التحدي ولمعلومات التواصل مع المشرفين، قم بزيارة %{profile_url}.
+        look_up: يمكنك الوصول إلى مهمتك من خلال صفحة Assignments (المهمات) الخاصة بك على %{link}.
     change_email:
       changed:
         html: "%{login}, the email associated with your account has been changed to %{email}"
@@ -277,74 +277,74 @@ ar:
       works_by: 'These works were written under the e-mail: %{email}'
     collection_notification:
       assignments_sent:
-        complete: All assignments have now been sent out.
-        subject: Assignments sent
+        complete: تم ارسال جميع المهام.
+        subject: تم ارسال المهام
       challenge_default:
         complete: 'Signed-up participant %{offer_byline} has defaulted on their assignment for %{request_byline}. You may want to assign a pinch hitter on the collection assignments page: %{assignments_page_url}'
         subject: Challenge default by %{offer_byline}
       html:
-        received_message: 'You have received a message about your collection %{collection_link}:'
+        received_message: 'تلقيت رسالة بخصوص مجموعتك %{collection_link}:'
       text:
-        received_message: 'You have received a message about your collection "%{collection_title}" (%{collection_url}):'
+        received_message: 'تلقيت رسالة بخصوص مجموعتك "%{collection_title}"(%{collection_url}):'
     creatorship_notification:
-      explanation: When you're a co-creator on a work, you can be added to new chapters regardless of your co-creation settings. You will also be added to any series the work is added to.
+      explanation: عندما تكون منتجاً مشاركاً لعمل ما، يمكن إضافتك إلى فصول جديدة بغض النظر عن إعداداتك كمنتج مشارك. كما ستتم إضافتك إلى أية سلسلة يضاف العمل إليها.
       html:
-        creation: "%{creation_link} by %{pseud_links}"
-        edit_chapter: edit the chapter
-        edit_series: edit the series
-        remove_chapter: If you've been added in error or don't want to be listed as a creator, you can %{edit_chapter_link} to remove yourself as creator.
-        remove_series: If you've been added in error or don't want to be listed as a creator, you can %{edit_series_link} to remove yourself as creator.
-      intro_chapter: 'The user %{adding_user} has listed your pseud %{pseud} as a co-creator on the following chapter:'
-      intro_series: 'The user %{adding_user} has listed your pseud %{pseud} as a co-creator on the following series:'
-      subject: "[%{app_name}] Co-creator notification"
+        creation: "%{creation_link} بقلم %{pseud_links}"
+        edit_chapter: تحرير الفصل
+        edit_series: تحرير السلسلة
+        remove_chapter: إذا تمت إضافتك بالخطأ أو إن لم تكن ترغب في تسجيل اسمك كمنتج، يمكنك %{edit_chapter_link} لإزالة نفسك من قائمة المنتجين.
+        remove_series: إذا تمت إضافتك بالخطأ أو إن لم تكن ترغب في تسجيل اسمك كمنتج، يمكنك %{edit_series_link} لإزالة نفسك من قائمة المنتجين.
+      intro_chapter: 'أضاف المستخدم %{adding_user} اسمك المستعار %{pseud} إلى قائمة المنتجين المشاركين للفصل التالي:'
+      intro_series: 'أضاف المستخدم %{adding_user} اسمك المستعار %{pseud} إلى قائمة المنتجين المشاركين للسلسلة التالية:'
+      subject: "[%{app_name}] إشعار منتج مشارك"
       text:
-        creation: "%{title} (%{url}) by %{pseuds}"
-        remove_chapter: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the chapter to remove yourself as creator: %{url}'
-        remove_series: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the series to remove yourself as creator: %{url}'
+        creation: "%{title} (%{url}) بقلم %{pseuds}"
+        remove_chapter: 'إذا تمت إضافتك بالخطأ أو إن لم تكن ترغب في تسجيل اسمك كمنتج، يمكنك تحرير الفصل لإزالة نفسك من قائمة المنتجين: %{url}'
+        remove_series: 'إذا تمت إضافتك بالخطأ أو إن لم تكن ترغب في تسجيل اسمك كمنتج، يمكنك تحرير السلسلة لإزالة نفسك من قائمة المنتجين: %{url}'
     creatorship_notification_archivist:
-      explanation: Because they are acting in their official capacity as an Open Doors archivist, they are allowed to add you without a request, even if you have co-creation disabled.
+      explanation: بما أنه يعمل بصفته الرسمية كمؤرشف لمشروع الأبواب المفتوحة، يمكنه اضافتك دون طلب، حتى إن عطّلت خاصية المنتج المشارك.
       html:
-        creation: "%{creation_link} by %{pseud_links}"
-        edit_chapter: edit the chapter
-        edit_series: edit the series
-        edit_work: edit the work
-        remove_chapter: If you've been added in error or don't want to be listed as a creator, you can %{edit_chapter_link} to remove yourself as creator.
-        remove_series: If you've been added in error or don't want to be listed as a creator, you can %{edit_series_link} to remove yourself as creator.
-        remove_work: If you've been added in error or don't want to be listed as a creator, you can %{edit_work_link} to remove yourself as creator.
-      intro_chapter: 'The user %{archivist} has added your pseud %{pseud} as a co-creator on the following chapter:'
-      intro_series: 'The user %{archivist} has added your pseud %{pseud} as a co-creator on the following series:'
-      intro_work: 'The user %{archivist} has added your pseud %{pseud} as a co-creator on the following work:'
-      subject: "[%{app_name}] Archivist co-creator notification"
+        creation: "%{creation_link} من إنتاج %{pseud_links}"
+        edit_chapter: تحرير الفصل
+        edit_series: تحرير السلسلة
+        edit_work: تحرير العمل
+        remove_chapter: إن تمت إضافتك بالخطأ، أو إن لم ترغب في إدراج اسمك المستعار كمنتج، باستطاعتك %{edit_chapter_link} لإزالة نفسك من قائمة المنتجين.
+        remove_series: إن تمت إضافتك بالخطأ، أو إن لم ترغب في إدراج اسمك المستعار كمنتج، باستطاعتك %{edit_series_link} لإزالة نفسك من قائمة المنتجين.
+        remove_work: إن تمت إضافتك بالخطأ، أو إن لم ترغب في إدراج اسمك المستعار كمنتج، باستطاعتك %{edit_work_link} لإزالة نفسك من قائمة المنتجين.
+      intro_chapter: 'أضاف المستخدم %{archivist} اسمك المستعار %{pseud} كمنتج مشارك للفصل التالي:'
+      intro_series: 'أضاف المستخدم %{archivist} اسمك المستعار %{pseud} كمنتج مشارك للسلسلة التالية:'
+      intro_work: 'أضاف المستخدم %{archivist} اسمك المستعار %{pseud} كمنتج مشارك للعمل التالي:'
+      subject: "[%{app_name}] إشعار منتج مشارك من أمين الأرشيف المستورد"
       text:
-        creation: "%{title} (%{url}) by %{pseuds}"
-        remove_chapter: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the chapter to remove yourself as creator: %{url}'
-        remove_series: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the series to remove yourself as creator: %{url}'
-        remove_work: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the work to remove yourself as creator: %{url}'
+        creation: "%{title} (%{url}) من إنتاج %{pseuds}"
+        remove_chapter: 'إن تمت إضافتك بالخطأ، أو إن لم ترغب في إدراج اسمك المستعار كمنتج، باستطاعتك تحرير الفصل لإزالة نفسك من قائمة المنتجين: %{url}'
+        remove_series: 'إن تمت إضافتك بالخطأ، أو إن لم ترغب في إدراج اسمك المستعار كمنتج، باستطاعتك تحرير السلسلة لإزالة نفسك من قائمة المنتجين: %{url}'
+        remove_work: 'إن تمت إضافتك بالخطأ، أو إن لم ترغب في إدراج اسمك المستعار كمنتج، باستطاعتك تحرير العمل لإزالة نفسك من قائمة المنتجين: %{url}'
     creatorship_request:
       html:
-        creation: "%{creation_link} by %{pseud_links}"
-        instructions: You can accept or reject this request on your %{page_name} page.
-        page_name: Co-Creator Requests
-      intro_chapter: 'The user %{inviting_user} has invited your pseud %{pseud} to be listed as a co-creator on the following chapter:'
-      intro_series: 'The user %{inviting_user} has invited your pseud %{pseud} to be listed as a co-creator on the following series:'
-      intro_work: 'The user %{inviting_user} has invited your pseud %{pseud} to be listed as a co-creator on the following work:'
-      subject: "[%{app_name}] Co-creator request"
+        creation: "%{creation_link} من قبل %{pseud_links}"
+        instructions: يمكنك قبول هذا الطلب أو رفضه في صفحة %{page_name} الخاصة بك.
+        page_name: Co-Creator Requests (طلبات المنتج المشارك)
+      intro_chapter: 'قام المستخدم %{inviting_user} بدعوة اسمك المستعار %{pseud} لكي يضاف كمنتج مشارك على الفصل التالي:'
+      intro_series: 'قام المستخدم %{inviting_user} بدعوة اسمك المستعار %{pseud} لكي يضاف كمنتج مشارك على السلسلة التالية:'
+      intro_work: 'قام المستخدم %{inviting_user} بدعوة اسمك المستعار %{pseud} لكي يضاف كمنتج مشارك على العمل التالي:'
+      subject: "[%{app_name}] طلب منتج مشارك"
       text:
-        creation: "%{title} (%{url}) by %{pseuds}"
-        instructions: 'You can accept or reject this request on your Co-Creator Requests page: %{url}'
+        creation: "%{title} (%{url}) من قبل %{pseuds}"
+        instructions: 'يمكنك قبول هذا الطلب أو رفضه في صفحة Co-Creator Requests (طلبات المنتج المشارك) الخاصة بك: %{url}'
     delete_work_notification:
-      attachment: Attached is a copy of your work for your reference.
+      attachment: تم إرفاق نسخة من عملك كمرجِع.
       deleted_other:
-        html: Your work %{title} was deleted at the request of %{pseud}.
-        text: Your work "%{title}" was deleted at the request of %{pseud}.
+        html: تم حذف عملك %{title} بناءاً على طلب %{pseud}.
+        text: تم حذف عملك "%{title}" بناءاً على طلب %{pseud}.
       deleted_yourself:
-        html: Your work %{title} was deleted at your request.
-        text: Your work "%{title}" was deleted at your request.
+        html: تم حذف عملك %{title} بناءاً على طلبك.
+        text: تم حذف عملك "%{title}" بناءاً على طلبك.
       questions:
-        html: If you have questions, please %{support}.
-        text: If you have questions, please %{support} (%{url}).
-      subject: "[%{app_name}] Your work has been deleted"
-      support: contact Support
+        html: إن كان لديك أيّة تساؤلات، نرجو منك %{support}.
+        text: إن كان لديك أيّة تساؤلات، نرجو منك %{support} (%{url}).
+      subject: "[%{app_name}] تم حذف عملك"
+      support: التواصل مع لجنة الدعم
     feedback:
       additional_ticket: If you have additional questions or information, do not hesitate to send in another ticket.
       introduction: 'We''re working hard to reply to everyone, and we''ll respond to you as soon as we can. Your communication is greatly valued, and it will be reviewed and answered by our volunteer Support team. In the meantime, here is a copy of the information you submitted through the Technical Support and Feedback form:'
@@ -416,8 +416,8 @@ ar:
           few: We just wanted to let you know that you have %{count} new invitations, which can be used to create new accounts at the Archive. You can invite a friend at %{invitation_page_link}.
           many: We just wanted to let you know that you have %{count} new invitations, which can be used to create new accounts at the Archive. You can invite a friend at %{invitation_page_link}.
           other: We just wanted to let you know that you have %{count} new invitations, which can be used to create new accounts at the Archive. You can invite a friend at %{invitation_page_link}.
-      invitation_page_link_text: your invitations page
-      subject: "[%{app_name}] New invitations"
+      invitation_page_link_text: صفحة Invitations (دعواتك)
+      subject: "[%{app_name}] دعوات جديدة"
       text:
         body:
           zero: We just wanted to let you know that you have %{count} new invitations, which can be used to create new accounts at the Archive. You can invite a friend at your invitations page (%{invitation_page_url}).
@@ -434,17 +434,17 @@ ar:
         few: We regret to inform you that your request for %{count} new invitations cannot be fulfilled at this time.
         many: We regret to inform you that your request for %{count} new invitations cannot be fulfilled at this time.
         other: We regret to inform you that your request for %{count} new invitations cannot be fulfilled at this time.
-      reason: 'Your request was:'
-      subject: "[%{app_name}] Additional invitation request declined"
+      reason: 'كان طلبك:'
+      subject: "[%{app_name}] طلب دعوة إضافية مرفوض"
     recipient_notification:
       html:
-        collection: A gift work has been posted for you in the %{collection_link} collection at the Archive of Our Own!
-      no_collection: A gift work has been posted for you at the Archive of Our Own!
+        collection: لقد نُشر عملٌ مُهدى إليك في مجموعة %{collection_link} على AO3!
+      no_collection: لقد نُشر عملٌ مُهدى إليك في AO3!
       subject:
-        collection: "[%{app_name}][%{collection_title}] A gift work for you from %{collection_title}"
-        no_collection: "[%{app_name}] A gift work for you"
+        collection: "[%{app_name}][%{collection_title}] عمل مُهدى إليك من %{collection_title}"
+        no_collection: "[%{app_name}] عمل مُهدى إليك"
       text:
-        collection: A gift work has been posted for you in the "%{collection_title}" collection (%{collection_url}) at the Archive of Our Own!
+        collection: لقد نُشر عملٌ مُهدى إليك في مجموعة "%{collection_title}" (%{collection_url}) على AO3!
     signup_notification:
       activate:
         html: Please %{activate_account_link}.
@@ -465,8 +465,8 @@ ar:
   users:
     mailer:
       reset_password_instructions:
-        expiration: If you do not use this link to reset your password within a week, it will expire, and you will have to request a new one.
-        intro: 'Someone has requested a password reset for your account. You can change your account password by following the link below and entering your new password:'
-        link_title: Change my password.
-        subject: "[%{app_name}] Reset your password"
-        unrequested: If you did not request this password reset, you may ignore this email and your previous password will continue to work.
+        expiration: إذا ذا لم تستخدم الرابط الملحق لإعادة تعيين كلمة السر الخاصة بك خلال أسبوع واحد، فستنتهي صلاحيته، وستحتاج إلى طلب رابط جديد.
+        intro: 'طلب أحدهم إعادة تعيين كلمة سر حسابك. يمكنك إعادة تعيين كلمة السر لحسابك باتّباع الرابط التالي وإدخال كلمة السر الجديدة:'
+        link_title: إعادة تعيين كلمة السر الخاصة بي.
+        subject: "إعادة تعيين كلمة السر الخاصة بك [%{app_name}]"
+        unrequested: إذا لم ترسل هذا الطلب لإعادة تعيين كلمة السر، فيمكنك تجاهل هذا البريد الإلكتروني والاستمرار باستعمال كلمة السر القديمة.
