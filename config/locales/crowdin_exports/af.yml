@@ -50,7 +50,7 @@ af:
         informal: Best,
       creation:
         link_with_word_count: "%{creation_link} (%{word_count})"
-        title_with_chapter_number: Chapter %{position} of %{title}
+        title_with_chapter_number: Hoofstuk %{position} van %{title}
         title_with_word_count: '"%{creation_title}" (%{word_count})'
         word_count:
           one: "%{count} word"
@@ -121,83 +121,83 @@ af:
       text:
         tos_violation: If it's possible your work violated the Archive's Terms of Service, please contact our Policy & Abuse team (%{contact_abuse_url}).
     admin_hidden_work_notification:
-      access: While your work is hidden, you will still be able to access it through the link provided above, but it will not be listed on your works page, and it won't be available to other users of the Archive.
-      check_email: Please check your email, including your spam folder, as the Policy & Abuse team may have already contacted you explaining why your work was hidden.
-      contact_abuse: contact Policy & Abuse
+      access: Alhoewel jou werk versteek is, sal jy steeds toegang daartoe hê deur die skakel hierbo, maar dit sal nie op jou werkebladsy gelys word nie, en dit sal nie beskikbaar wees vir ander gebruikers van die AO3 nie.
+      check_email: Gaan asseblief jou e-pos na, insluitend jou strooiposvouer, aangesien die Beleid- en Misbruikspan jou moontlik reeds gekontak het om te verduidelik hoekom jou werk versteek is.
+      contact_abuse: kontak die Beleidsmisbruik-komitee
       html:
-        help: If you are uncertain why your work was hidden, and you have not received further communication regarding this matter, please %{contact_abuse_link} directly.
-        hidden: Your work %{title} has been hidden by the Policy & Abuse team and is no longer publicly accessible.
-        tos_violation: If your work was hidden due to being in violation of the Archive of Our Own's %{tos_link}, you will be required to take action to correct the violation. Failure to bring your work into compliance with the Terms of Service may lead to your work being deleted from the Archive.
-      subject: "[%{app_name}] Your work has been hidden by the Policy & Abuse team"
+        help: Indien jy onseker is waarom jou werk versteek is, en jy geen verdere kommunikasie oor hierdie saak ontvang het nie, %{contact_abuse_link}.
+        hidden: Jou werk %{title} is deur die Beleidsmisbruik-span versteek en is nie meer in die openbaar toeganklik nie.
+        tos_violation: Indien jou werk versteek is as gevolg van 'n oortreding van die AO3 se %{tos_link}, sal jy stappe moet volg om die oortreding reg te stel. Indien jy nie jou werk opdateer om aan die Diensvoorwaardes te voldoen nie, kan jou werk van die AO3 verwyder word.
+      subject: "[%{app_name}] Jou werk is deur die Beleidsmisbruik-span versteek"
       text:
-        help: 'If you are uncertain why your work was hidden, and you have not received further communication regarding this matter, please contact Policy & Abuse directly: %{contact_abuse_url}.'
-        hidden: Your work "%{title}" (%{work_url}) has been hidden by the Policy & Abuse team and is no longer publicly accessible.
-        tos_violation: If your work was hidden due to being in violation of the Archive of Our Own's Terms of Service (%{tos_url}), you will be required to take action to correct the violation. Failure to bring your work into compliance with the Terms of Service may lead to your work being deleted from the Archive.
-      tos: Terms of Service
+        help: 'Indien jy onseker is waarom jou werk versteek is, en jy geen verdere kommunikasie oor hierdie saak ontvang het nie, kontak asseblief die Beleidsmisbruik-komitee: %{contact_abuse_url}.'
+        hidden: Jou werk "%{title}" (%{work_url}) is deur die Beleidsmisbruik-span versteek en is nie meer publiek toeganklik nie.
+        tos_violation: Indien jou werk versteek is as gevolg van 'n oortreding van die AO3 se Diensvoorwaardes (%{tos_url}), sal jy stappe moet neem om die oortreding reg te stel. Indien jy nie jou werk opdateer om aan die Diensvoorwaardes te voldoen nie, kan jou werk van die AO3 verwyder word.
+      tos: Diensvoorwaardes
     anonymous_or_unrevealed_notification:
-      anonymous_info: Anonymous works are included in tag listings, but not on your works page. On the work, your user name will be replaced with "Anonymous."
-      anonymous_unrevealed_info: The collection maintainers may later reveal your work but leave it anonymous. People who subscribe to you will not be notified of this change. Your work will be included in tag listings, but not on your works page. On the work, your user name will be replaced with "Anonymous."
+      anonymous_info: Anonieme werke word ingesluit by etiket-lyste, maar nie op jou werke-bladsy nie. Op die werk sal jou gebruikersnaam vervang word met "Anonymous" (Anoniem).
+      anonymous_unrevealed_info: Die versameling onderhouers mag later jou werk openbaar maar dit anoniem los. Mense wat tot jou rekening ingeskryf is sal nie in kennis gestel word van hierdie verandering nie. Sodra dit openbaar is, sal jou werk by etiket lyste ingesluit word, maar nie op jou werke-bladsy nie. Op die werk sal jou gebruikersnaam vervang word met "Anonymous" (Anoniem).
       changed_status:
         anonymous:
-          html: The collection maintainers of %{collection_link} have changed the status of your work %{work_link} to anonymous.
-          text: The collection maintainers of "%{collection_title}" (%{collection_url}) have changed the status of your work "%{work_title}" (%{work_url}) to anonymous.
+          html: Die versameling onderhouers van %{collection_link} het die status van jou werk %{work_link} na anoniem verander.
+          text: Die versameling onderhouers van "%{collection_title}" (%{collection_url}) het die status van jou werk "%{work_title}" (%{work_url}) na anoniem verander.
         anonymous_unrevealed:
-          html: The collection maintainers of %{collection_link} have changed the status of your work %{work_link} to anonymous and unrevealed.
-          text: The collection maintainers of "%{collection_title}" (%{collection_url}) have changed the status of your work "%{work_title}" (%{work_url}) to anonymous and unrevealed.
+          html: Die versameling onderhouers van %{collection_link} het die status van jou werk %{work_link} verander na anoniem en ongeopenbaar.
+          text: Die versameling onderhouers van "%{collection_title}" (%{collection_url}) het die status van jou werk "%{work_title}" (%{work_url}) na anoniem en ongeopenbaar verander.
         unrevealed:
-          html: The collection maintainers of %{collection_link} have changed the status of your work %{work_link} to unrevealed.
-          text: The collection maintainers of "%{collection_title}" (%{collection_url}) have changed the status of your work "%{work_title}" (%{work_url}) to unrevealed.
-      collection_items_link_text: Approved Collection Items page
+          html: Die versameling onderhouers van %{collection_link} het die status van jou werk %{work_link} na ongeopenbaar verander.
+          text: Die versameling onderhouers van "%{collection_title}" (%{collection_url}) het die status van jou werk "%{work_title}" (%{work_url}) na ongeopenbaar verander.
+      collection_items_link_text: Approved Collection Items (Goedgekeurde Versameling Items)-bladsy
       do_not_want:
         anonymous:
-          html: If you do not want your work to be anonymous, please visit your %{collection_items_link} to remove it from this collection.
-          text: 'If you do not want your work to be anonymous, please visit your Approved Collection Items page to remove it from this collection: %{collection_items_url}'
+          html: As jy nie wil hê jou werk moet anoniem wees nie, besoek asseblief jou %{collection_items_link} om dit vanuit die versameling te verwyder.
+          text: 'As jy nie wil hê jou werk moet anoniem wees nie, besoek asseblief jou Approved Collection Items (Goedgekeurde Versameling Items)-bladsy om dit vanuit hierdie versameling te verwyder: %{collection_items_url}'
         anonymous_unrevealed:
-          html: If you do not want your work to be anonymous and unrevealed, please visit your %{collection_items_link} to remove it from this collection.
-          text: 'If you do not want your work to be anonymous and unrevealed, please visit your Approved Collection Items page to remove it from this collection: %{collection_items_url}'
+          html: As jy nie wil hê jou werk moet anoniem en ongeopenbaar wees nie, besoek asseblief jou %{collection_items_link} om dit vanuit hierdie versameling te verwyder.
+          text: 'As jy nie wil hê jou werk moet anoniem en ongeopenbaar wees nie, besoek asseblief jou Approved Collection Items (Goedgekeurde Versameling Items)-bladsy om dit vanuit hierdie versameling te verwyder: %{collection_items_url}'
         unrevealed:
-          html: If you do not want your work to be unrevealed, please visit your %{collection_items_link} to remove it from this collection.
-          text: 'If you do not want your work to be unrevealed, please visit your Approved Collection Items page to remove it from this collection: %{collection_items_url}'
-      faq_link_text: Collections FAQ
+          html: As jy nie wil hê jou werk moet ongeopenbaar wees nie, besoek asseblief jou %{collection_items_link} om dit vanuit hierdie versameling te verwyder.
+          text: 'As jy nie wil hê jou werk moet ongeopenbaar wees nie, besoek asseblief jou Approved Collection Items (Goedgekeurde Versameling Items)-bladsy om dit vanuit hierdie versameling te verwyder: %{collection_items_url}'
+      faq_link_text: Versamelings Algemene Vrae
       more_info:
-        html: For more information, visit our %{faq_link}.
-        text: 'For more information, visit our Collections FAQ: %{faq_url}'
+        html: Vir meer inligting, besoek ons %{faq_link}.
+        text: 'Vir meer inligting, besoek ons Versamelings Algemene Vrae: %{faq_url}'
       subject:
-        anonymous: "[%{app_name}] Your work was made anonymous"
-        anonymous_unrevealed: "[%{app_name}] Your work was made anonymous and unrevealed"
-        unrevealed: "[%{app_name}] Your work was made unrevealed"
-      unrevealed_info: Unrevealed works are not included in tag listings or on your works page. Anyone who follows a link to the work will receive a notice that it is currently unrevealed, and they will be unable to access its content.
+        anonymous: "[%{app_name}] Jou werk is anoniem gemaak"
+        anonymous_unrevealed: "[%{app_name}] Jou werk is nou anoniem en ongeopenbaar"
+        unrevealed: "[%{app_name}] Jou werk is nou ongeopenbaar"
+      unrevealed_info: Ongeopenbaarde werke word nie ingesluit in etiket lyste of op jou werke-bladsy nie. Enigiemand wat 'n skakel na die werk volg sal 'n kennisgewing ontvang dat dit tans ongeopenbaar is en hulle sal nie toegang tot die inhoud kan verkry nie.
     archivist_added_to_collection_notification:
-      approved_collection_items_page: Approved Collection Items page
-      archivist_notice: Because the collection maintainers are acting in their official capacity as Open Doors archivists, they are allowed to add your work to this collection, even if you have collection invitations disabled. Archivists will only add a work to a collection if it was hosted on an imported archive.
+      approved_collection_items_page: Approved Collection Items (Goedgekeurde Versamelingsitems)-bladsy
+      archivist_notice: Omdat die versameling onderhouers in hul amptelike hoedanigheid as Open Doors (Oop Deure) argivarisse optree, word hulle toegelaat om jou werk by hierdie versameling te voeg, selfs al het jy versameling uitnodigings gedeaktiveer. Argivarisse sal slegs 'n werk by 'n versameling voeg as dit op 'n ingevoerde argief gehuisves is.
       removal_instructions:
-        html: If you would like to remove your work from this collection, please visit your %{approved_items_link}.
-        text: 'If you would like to remove your work from this collection, please visit your Approved Collection Items page: %{approved_items_url}.'
-      subject: "[%{app_name}][%{collection_title}] An Open Doors archivist has added your work to a collection"
+        html: As jy jou werk uit hierdie versameling wil verwyder, besoek asseblief jou %{approved_items_link}.
+        text: 'As jy jou werk uit hierdie versameling wil verwyder, besoek asseblief jou Approved Collection Items (Goedgekeurde Versamelingsitems): %{approved_items_link}.'
+      subject: "[%{app_name}][%{collection_title}] 'n Open Doors (Oop Deure) argivaris het jou werk by 'n versameling gevoeg"
       work_added:
-        html: The collection maintainers of %{collection_link} have added your work %{work_link} to their collection!
-        text: The collection maintainers of "%{collection_title}" (%{collection_url}) have added your work "%{work_title}" (%{work_url}) to their collection!
+        html: Die versameling onderhouers van %{collection_link} het jou werk %{work_link} by hul versameling gevoeg!
+        text: Die versameling onderhouers van "%{collection_title}" (%{collection_url}) het jou werk "%{work_title}" (%{work_url}) by hul versameling gevoeg!
     challenge_assignment_notification:
-      any: Any
+      any: Enige
       assignment:
-        html: You have been assigned the following request in the %{link} challenge at the Archive of Our Own!
-      description: 'Description:'
-      due: 'This assignment is due at:'
+        html: Die volgende versoek is aan jou toegeken in die %{link} uitdaging by die AO3!
+      description: 'Beskrywing:'
+      due: 'Hierdie opdrag moet voltooi wees teen:'
       html:
-        footer: You're receiving this email because you signed up for the %{title} challenge. For more information about this challenge and contact information for the moderators, please visit %{footer_link}.
-        footer_link: the challenge profile page
-        look_up: You can look up this assignment from %{link}.
-        look_up_link: your Assignments page
-      optional_tags: 'Optional Tags:'
-      prompt_url: 'Prompt URL:'
-      prompts: 'Prompts:'
-      recipient: 'Recipient:'
-      recipient_missing: 'None: contact a moderator for help!'
-      subject: "[%{app_name}][%{collection_title}] Your assignment!"
+        footer: Jy ontvang hierdie e-pos omdat jy ingekryf het vir die %{title} uitdaging. Vir meer inligting oor hierdie uitdaging en kontakbesonderhede van die modereerders, besoek asseblief %{footer_link}.
+        footer_link: die uitdaging profielbladsy
+        look_up: Jy kan die opdrag opsoek by %{link}.
+        look_up_link: Jou Assignments (Opdragte)-bladsy
+      optional_tags: 'Opsionele etikette:'
+      prompt_url: 'Prikkel URL:'
+      prompts: 'Prikkels:'
+      recipient: 'Ontvanger:'
+      recipient_missing: 'Geen: kontak ''n modereerder vir hulp!'
+      subject: "[%{app_name}][%{collection_title}] Jou Opdrag!"
       text:
-        assignment: You have been assigned the following request in the "%{collection_title}" challenge (%{collection_url}) at the Archive of Our Own!
-        footer: You're receiving this email because you signed up for the %{title} challenge (%{url}). For more information about this challenge and contact information for the moderators, please visit %{profile_url}.
-        look_up: You can look up this assignment from your Assignments page at %{link}.
+        assignment: Die volgende versoek is aan jou toegeken in die "%{collection_title}" uitdaging (%{collection_url}) by die AO3!
+        footer: U ontvang hierdie e-pos omdat jy ingekryf het vir die %{title} uitdaging (%{url}). Vir meer inligting oor hierdie uitdaging en kontakbesonderhede van die modereerders, besoek asseblief %{profile_url}.
+        look_up: Jy kan die opdrag opsoek in jou Assignments (Opdragte)-bladsy by %{link}.
     change_email:
       changed:
         html: "%{login}, the email associated with your account has been changed to %{email}"
@@ -205,48 +205,48 @@ af:
       subject: "[%{app_name}] Email changed"
     claim_notification:
       access:
-        contact_support: contact AO3 Support
-        html: Depending on the archive, your works may have been imported restricted to registered users only (to keep them out of Google searches). If this is the case, the works will only be accessible by logged-in users unless you choose to make them fully visible. For help unlocking, orphaning, or deleting your works, please %{contact_support_link}.
-        text: Depending on the archive, your works may have been imported restricted to registered users only (to keep them out of Google searches). If this is the case, the works will only be accessible by logged-in users unless you choose to make them fully visible. For help unlocking, orphaning, or deleting your works, please contact AO3 Support at %{support_url}.
-      email_tips: If you're contacting us, please add email addresses from @transformativeworks.org to your list of safe contacts and check your spam folders for our reply.
+        contact_support: Kontak die AO3 Ondersteuningkomitee
+        html: Afhangende van die argief, is jou ingevoerde werke dalk beperk tot geregistreerde gebruikers (om hulle uit Google-soektogte te hou). As dit die geval is, sal die werke slegs toeganklik wees vir ingetekende gebruikers, tensy jy kies om die werke ten volle sigbaar te maak. %{contact_support_link} vir hulp om jou werke oop te sluit, te oneien of uit te vee.
+        text: Afhangende van die argief, is jou ingevoerde werke dalk beperk tot geregistreerde gebruikers (om hulle uit Google-soektogte te hou). As dit die geval is, sal die werke slegs toeganklik wees vir ingetekende gebruikers, tensy jy kies om die werke ten volle sigbaar te maak. Kontak asseblief die AO3 Ondersteuning-komitee by %{support_url} vir hulp om jou werke oop te sluit, te oneien of uit te vee.
+      email_tips: As jy ons kontak, voeg asseblief e-posadresse vanaf @transformativeworks.org by jou lys van veilige kontakte en hou jou strooiposvouers dop vir ons antwoord.
       introduction:
-        ao3_name: Archive of Our Own
-        html: You're receiving this e-mail because you had works in a fanworks archive that has been imported by %{open_doors_name_link} into the %{app_link} (AO3). Because this e-mail address is connected to one registered on the imported archive, the associated fanworks (listed below) have been automatically added to your AO3 account.
-        open_doors_name: Open Doors
-        text: You're receiving this e-mail because you had works in a fanworks archive that has been imported by Open Doors (%{open_doors_url}) into the Archive of Our Own (AO3 - %{app_url}). Because this e-mail address is connected to one registered on the imported archive, the associated fanworks (listed below) have been automatically added to your AO3 account.
+        ao3_name: Archive of Our Own – AO3 (Argief van Ons Eie)
+        html: Jy ontvang hierdie e-pos omdat jy werke in 'n fanwerke-argief gehad het wat deur %{open_doors_name_link} na die %{app_link} ingevoer is. Omdat hierdie e-posadres gekoppel is aan een wat op die ingevoerde argief geregistreer is, is die gepaarde fanwerke (hieronder gelys) outomaties by jou AO3-rekening gevoeg.
+        open_doors_name: Open Doors (Oop Deure)
+        text: 'Jy ontvang hierdie e-pos omdat jy werke in ''n fanwerke-argief gehad het wat deur Open Doors (Oop Deure) (%{open_doors_url}) in die Archive of Our Own ingevoer is – AO3 (Argief van Ons Eie): %{app_url}. Omdat hierdie e-posadres gekoppel is aan een wat op die ingevoerde argief geregistreer is, is die gekoppelde fanwerke (hieronder gelys) outomaties by jou AO3-rekening gevoeg.'
       mistake:
-        contact_open_doors: contact Open Doors
-        html: If this is a mistake and these are not your works, please don't delete them! Please just %{contact_open_doors_link} and we will sort it out.
-        text: If this is a mistake and these are not your works, please don't delete them! Please just contact Open Doors (%{open_doors_url}) and we will sort it out.
+        contact_open_doors: Kontak Oop Deure
+        html: As dit 'n fout is en hierdie nie jou werke is nie, moet dit asseblief nie uitvee nie! %{contact_open_doors_link} en ons sal dit uitsorteer.
+        text: As dit 'n fout is en hierdie nie jou werke is nie, moet dit asseblief nie uitvee nie! Kontak vir Oop Deure (%{open_doors_url}) en ons sal dit uitsorteer.
       more_info:
-        ao3_news: AO3 News
-        contact_support: contact AO3 Support
-        faq_page: FAQ page
-        html: You can read announcements about recent archive moves at %{ao3_news_link}, and find additional information on Open Doors' %{faq_page_link} or %{tutorial_page_link}. For any questions not answered in the FAQ, tutorials, or this e-mail, please %{contact_support_link}.
-        text: You can read announcements about recent archive moves at AO3 News (%{news_url}), and find additional information on Open Doors' FAQ page (%{open_doors_faq_url}) or tutorials page (%{open_doors_tutorial_url}). For any questions not answered in the FAQ, tutorials, or this e-mail, please contact Support at %{support_url}.
-        tutorial_page: tutorial page
+        ao3_news: AO3 Nuus
+        contact_support: kontak die AO3 Ondersteuningkomitee
+        faq_page: Algemene Vrae-bladsy
+        html: Jy kan aankondigings lees oor argiewe wat onlangs oorgeskuif is by %{ao3_news_link} en bykomende inligting op Oop Deure se %{faq_page_link} of %{tutorial_page_link} vind. Vir enige vrae wat nie in die Algemene Vrae, handleidings of hierdie e-pos beantwoord is nie, %{contact_support_link}.
+        text: Jy kan aankondigings lees oor argiewe wat onlangs oorgeskuif is by AO3 Nuus (%{news_url}) en bykomende inligting op Oop Deure se Algemene Vrae-bladsy (%{open_doors_faq_url}) of handleiding-bladsy (%{open_doors_tutorial_url}) vind. Vir enige vrae wat nie in die Algemene Vrae, handleidings of hierdie e-pos beantwoord is nie, kontak asseblief %{support_url}.
+        tutorial_page: handleiding-bladsy
       other_works:
-        contact_open_doors: contact Open Doors
-        html: If you had other works on the imported archive under an e-mail address you can no longer access, please %{contact_open_doors_link} with any information that can help verify your identity.
-        text: If you had other works on the imported archive under an e-mail address you can no longer access, please contact Open Doors with any information that can help verify your identity.
+        contact_open_doors: kontak Oop Deure
+        html: As jy ander werke op die ingevoerde argief gehad het onder 'n e-posadres waartoe jy nie meer toegang het nie, %{contact_open_doors_link} met enige inligting wat kan help om jou identiteit te verifieer.
+        text: As jy ander werke op die ingevoerde argief gehad het onder 'n e-posadres waartoe jy nie meer toegang het nie, kontak asseblief Oop Deure met enige inligting wat kan help om jou identiteit te verifieer.
       questions:
-        contact_support: contact AO3 Support
-        html: For other inquiries, please %{contact_support_link}.
-        text: For other inquiries, please contact AO3 Support at %{support_url}.
+        contact_support: kontak die AO3 Ondersteuningkomitee
+        html: Vir ander navrae, %{contact_support_link}.
+        text: Vir ander navrae, kontak asseblief die AO3 Ondersteuning-komitee by %{support_url}.
       redirects:
-        html: To preserve rec lists and bookmarks, the imported archive's web addresses may redirect to the imported copy of these works for a limited time (check the announcement post for your archive to be sure). If you've already uploaded a copy of these works and you did %{negation} use the import from URL feature, there will be two copies of the same work on the AO3.
+        html: Om aanbevelinglyste en boekmerke te bewaar, kan die ingevoerde argief se webadresse vir 'n beperkte tyd na die ingevoerde kopie van hierdie werke herlei word (verwys na die aankondiging e-pos vir jou argief om seker te maak). As jy reeds kopieë van hierdie werke opgelaai het en jy %{negation} die "invoer vanaf URL-funksie" gebruik het nie, sal daar twee kopieë van dieselfde werk op AO3 wees.
         negation: NOT
-      subject: "[%{app_name}] Works uploaded"
+      subject: "[%{app_name}] Werke opgelaai"
       update_redirect:
-        contact_open_doors: contact Open Doors
-        html: If you would like Open Doors to update the redirect to point to your pre-existing work, please delete the imported copy, and %{contact_open_doors_link} with your AO3 account name, your account name on the imported archive, and the title and URL of the fanwork you would like the redirect to point to. (If you have multiple works you would like to change the redirects for, you can list these in one email.)
-        text: If you would like Open Doors to update the redirect to point to your pre-existing work, please delete the imported copy, and contact Open Doors at %{open_doors_url} with your AO3 account name, your account name on the imported archive, and the title and URL of the fanwork you would like the redirect to point to. (If you have multiple works you would like to change the redirects for, you can list these in one email.)
+        contact_open_doors: kontak Oop Deure
+        html: As jy wil hê Oop Deure moet die herleiding opdateer om na jou bestaande werk te wys, vee asseblief die ingevoerde kopie uit, en %{contact_open_doors_link} met jou AO3-rekeningnaam, jou rekeningnaam op die ingevoerde argief, en die titel en URL van die fanwerk waarna jy wil hê die herleiding moet wys. (As jy verskeie werke het waarvoor jy die herleiding wil verander, kan jy dit in een e-pos lys.)
+        text: As jy wil hê Oop Deure moet die herleiding opdateer om na jou voorafbestaande werk te wys, vee asseblief die ingevoerde kopie uit, en kontak Oop Deure by %{open_doors_url} met jou AO3-rekeningnaam, jou rekeningnaam op die ingevoerde argief, en die titel en URL van die fanwerk waarna jy wil hê die herleiding moet wys. (As jy verskeie werke het waarvoor jy die herleiding wil verander, kan jy dit in een e-pos lys.)
       work_info:
         html: "%{work_link} (%{fandom})"
         text:
           no_fandom: "- %{work_title} %{work_url}"
           with_fandom: "- %{work_title} %{work_url} (%{fandom})"
-      works_by: 'These works were written under the e-mail: %{email}'
+      works_by: 'Hierdie werke is onder die volgende e-posadres geskryf: %{email}'
     collection_notification:
       assignments_sent:
         complete: All assignments have now been sent out.
@@ -259,51 +259,51 @@ af:
       text:
         received_message: 'You have received a message about your collection "%{collection_title}" (%{collection_url}):'
     creatorship_notification:
-      explanation: When you're a co-creator on a work, you can be added to new chapters regardless of your co-creation settings. You will also be added to any series the work is added to.
+      explanation: Wanneer jy 'n werk se medeskepper is, kan jy by nuwe hoofstukke gevoeg word ongeag jou medeskepper-instellings. Jou skuilnaam sal ook by enige reeks gevoeg word waarby die werk gevoeg word.
       html:
-        creation: "%{creation_link} by %{pseud_links}"
-        edit_chapter: edit the chapter
-        edit_series: edit the series
-        remove_chapter: If you've been added in error or don't want to be listed as a creator, you can %{edit_chapter_link} to remove yourself as creator.
-        remove_series: If you've been added in error or don't want to be listed as a creator, you can %{edit_series_link} to remove yourself as creator.
-      intro_chapter: 'The user %{adding_user} has listed your pseud %{pseud} as a co-creator on the following chapter:'
-      intro_series: 'The user %{adding_user} has listed your pseud %{pseud} as a co-creator on the following series:'
-      subject: "[%{app_name}] Co-creator notification"
+        creation: "%{creation_link} deur %{pseud_links}"
+        edit_chapter: wysig die hoofstuk
+        edit_series: wysig die reeks
+        remove_chapter: Indien jy per ongeluk bygevoeg is of nie as 'n skepper gelys wil word nie, kan jy jouself %{edit_chapter_link} as skepper verwyder.
+        remove_series: Indien jy per ongeluk bygevoeg is of nie as 'n skepper gelys wil word nie, kan jy jouself %{edit_series_link} as skepper verwyder.
+      intro_chapter: 'Die gebruiker %{adding_user} het jou skuilnaam %{pseud} as ''n medeskepper van die volgende hoofstuk gelys:'
+      intro_series: 'Die gebruiker %{adding_user} het jou skuilnaam %{pseud} as ''n medeskepper van die volgende reeks gelys:'
+      subject: "[%{app_name}] Medeskepper-kennisgewing"
       text:
-        creation: "%{title} (%{url}) by %{pseuds}"
-        remove_chapter: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the chapter to remove yourself as creator: %{url}'
-        remove_series: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the series to remove yourself as creator: %{url}'
+        creation: "%{title} (%{url}) deur %{pseuds}"
+        remove_chapter: 'Indien jy per ongeluk bygevoeg is of nie as ''n skepper gelys wil word nie, kan jy die hoofstuk wysig om jouself as skepper te verwyder: %{url}'
+        remove_series: 'Indien jy per ongeluk bygevoeg is of nie as ''n skepper gelys wil word nie, kan jy die reeks wysig om jouself as skepper te verwyder: %{url}'
     creatorship_notification_archivist:
-      explanation: Because they are acting in their official capacity as an Open Doors archivist, they are allowed to add you without a request, even if you have co-creation disabled.
+      explanation: Omdat hulle in hul amptelike kapasiteit as 'n Open Doors (Oop Deure) argivaris optree, word hulle toegelaat om jou sonder 'n aanvraag by te voeg, selfs al het jy jou mede-skepping opsie afgeskakel.
       html:
-        creation: "%{creation_link} by %{pseud_links}"
-        edit_chapter: edit the chapter
-        edit_series: edit the series
-        edit_work: edit the work
-        remove_chapter: If you've been added in error or don't want to be listed as a creator, you can %{edit_chapter_link} to remove yourself as creator.
-        remove_series: If you've been added in error or don't want to be listed as a creator, you can %{edit_series_link} to remove yourself as creator.
-        remove_work: If you've been added in error or don't want to be listed as a creator, you can %{edit_work_link} to remove yourself as creator.
-      intro_chapter: 'The user %{archivist} has added your pseud %{pseud} as a co-creator on the following chapter:'
-      intro_series: 'The user %{archivist} has added your pseud %{pseud} as a co-creator on the following series:'
-      intro_work: 'The user %{archivist} has added your pseud %{pseud} as a co-creator on the following work:'
-      subject: "[%{app_name}] Archivist co-creator notification"
+        creation: "%{creation_link} deur %{pseud_links}"
+        edit_chapter: die hoofstuk redigeer
+        edit_series: die reeks redigeer
+        edit_work: die werk redigeer
+        remove_chapter: As jy verkeerdelik bygevoeg is of nie as 'n skepper gelys wil word nie, kan jy %{edit_chapter_link} om jouself as skepper te verwyder.
+        remove_series: As jy verkeerdelik bygevoeg is of nie as 'n skepper gelys wil word nie, kan jy %{edit_series_link} om jouself as skepper te verwyder.
+        remove_work: As jy verkeerdelik bygevoeg is of nie as 'n skepper gelys wil word nie, kan jy %{edit_work_link} om jouself as skepper te verwyder.
+      intro_chapter: 'Die gebruiker %{archivist} het jou skuilnaam %{pseud} as ''n mede-skepper by die volgende hoofstuk gevoeg:'
+      intro_series: 'Die gebruiker %{archivist} het jou skuilnaam %{pseud} as ''n mede-skepper by die volgende reeks gevoeg:'
+      intro_work: 'Die gebruiker %{archivist} het jou skuilnaam %{pseud} as ''n mede-skepper by die volgende werk gevoeg:'
+      subject: "[%{app_name}] Argivaris mede-skepper kennisgewing"
       text:
-        creation: "%{title} (%{url}) by %{pseuds}"
-        remove_chapter: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the chapter to remove yourself as creator: %{url}'
-        remove_series: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the series to remove yourself as creator: %{url}'
-        remove_work: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the work to remove yourself as creator: %{url}'
+        creation: "%{title} (%{url}) deur %{pseuds}"
+        remove_chapter: 'As jy verkeerdelik bygevoeg is of nie as ''n skepper gelys wil word nie, kan jy die hoofstuk redigeer om jouself as skepper te verwyder: %{url}'
+        remove_series: 'As jy verkeerdelik bygevoeg is of nie as ''n skepper gelys wil word nie, kan jy die reeks redigeer om jouself as skepper te verwyder: %{url}'
+        remove_work: 'As jy verkeerdelik bygevoeg is of nie as ''n skepper gelys wil word nie, kan jy die werk redigeer om jouself as skepper te verwyder: %{url}'
     creatorship_request:
       html:
-        creation: "%{creation_link} by %{pseud_links}"
-        instructions: You can accept or reject this request on your %{page_name} page.
-        page_name: Co-Creator Requests
-      intro_chapter: 'The user %{inviting_user} has invited your pseud %{pseud} to be listed as a co-creator on the following chapter:'
-      intro_series: 'The user %{inviting_user} has invited your pseud %{pseud} to be listed as a co-creator on the following series:'
-      intro_work: 'The user %{inviting_user} has invited your pseud %{pseud} to be listed as a co-creator on the following work:'
-      subject: "[%{app_name}] Co-creator request"
+        creation: "%{creation_link} deur %{pseud_links}"
+        instructions: Jy kan die versoek aanvaar of verwerp op jou %{page_name}-bladsy.
+        page_name: Co-Creator Requests (Medeskepper versoeke)
+      intro_chapter: 'Die gebruiker %{inviting_user} het jou skuilnaam %{pseud} genooi om as medeskepper van die volgende hoofstuk gelys te word:'
+      intro_series: 'Die gebruiker %{inviting_user} het jou skuilnaam %{pseud} genooi om as medeskepper van die volgende reeks gelys te word:'
+      intro_work: 'Die gebruiker %{inviting_user} het jou skuilnaam %{pseud} genooi om as medeskepper van die volgende werk gelys te word:'
+      subject: "[%{app_name}] Medeskepper versoek"
       text:
-        creation: "%{title} (%{url}) by %{pseuds}"
-        instructions: 'You can accept or reject this request on your Co-Creator Requests page: %{url}'
+        creation: "%{title} (%{url}) deur %{pseuds}"
+        instructions: 'Jy kan die versoek aanvaar of verwerp op jou Co-Creator Requests (Medeskepper versoeke) bladsy: %{url}'
     delete_work_notification:
       attachment: Attached is a copy of your work for your reference.
       deleted_other:
