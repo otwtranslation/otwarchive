@@ -126,27 +126,27 @@ ru:
         html: Ваша работа %{title} была удалена администратором AO3.
         text: Ваша работа "%{title}" была удалена администратором AO3.
       html:
-        tos_violation: If it's possible your work violated the Archive's Terms of Service, please %{contact_abuse_link}.
+        tos_violation: Если есть вероятность того, что данная работа нарушает Пользовательское соглашение AO3, пожалуйста, %{contact_abuse_link}.
       import_project:
         html: Если данная работа была импортирована на AO3 как часть проекта Открытые двери, пожалуйста, %{opendoors_link}, если возникнут дополнительные вопросы.
         text: Если данная работа была импортирована на AO3 как часть проекта Открытые двери, пожалуйста, свяжитесь с командой Открытых дверей (%{opendoors_link}), если возникнут дополнительные вопросы.
       opendoors: свяжитесь с командой Открытых дверей
       subject: "[%{app_name}] Ваша работа была удалена администратором сайта"
       text:
-        tos_violation: If it's possible your work violated the Archive's Terms of Service, please contact our Policy & Abuse team (%{contact_abuse_url}).
+        tos_violation: Если есть вероятность того, что данная работа нарушает Пользовательское соглашение AO3, пожалуйста, свяжитесь с нашим комитетом Политик и нарушений (%{contact_abuse_url}).
     admin_hidden_work_notification:
       access: Пока ваша работа скрыта, она остается доступной вам по ссылке выше, но она не будет отображаться в списке ваших работ, и будет недоступна другим пользователям AO3.
       check_email: Пожалуйста, проверьте вашу почту, включая папку со спамом - возможно, комитет Политик и Нарушений уже связался с вами с объяснением, почему ваша работа была скрыта.
       contact_abuse: свяжитесь с комитетом Политик и Нарушений
       html:
-        help: If you are uncertain why your work was hidden, and you have not received further communication regarding this matter, please %{contact_abuse_link} directly.
-        hidden: Your work %{title} has been hidden by the Policy & Abuse team and is no longer publicly accessible.
-        tos_violation: If your work was hidden due to being in violation of the Archive of Our Own's %{tos_link}, you will be required to take action to correct the violation. Failure to bring your work into compliance with the Terms of Service may lead to your work being deleted from the Archive.
+        help: Если вы не уверены, почему ваша работа была скрыта, и с вами не связывались по этому поводу, пожалуйста %{contact_abuse_link} напрямую.
+        hidden: Ваша работа %{title} была скрыта комитетом Политик и Нарушений и больше не находится в публичном доступе.
+        tos_violation: Если ваша работа была скрыта, потому что нарушает %{tos_link} AO3, вы должны будете исправить нарушение - иначе ваша работа может быть удалена с AO3.
       subject: "[%{app_name}] Комитет Политик и Нарушений скрыл вашу работу"
       text:
-        help: 'If you are uncertain why your work was hidden, and you have not received further communication regarding this matter, please contact Policy & Abuse directly: %{contact_abuse_url}.'
-        hidden: Your work "%{title}" (%{work_url}) has been hidden by the Policy & Abuse team and is no longer publicly accessible.
-        tos_violation: If your work was hidden due to being in violation of the Archive of Our Own's Terms of Service (%{tos_url}), you will be required to take action to correct the violation. Failure to bring your work into compliance with the Terms of Service may lead to your work being deleted from the Archive.
+        help: 'Если вы не уверены, почему ваша работа была скрыта, и с вами не связывались по этому поводу, пожалуйста свяжитесь с комитетом Политик и Нарушений напрямую: %{contact_abuse_url}.'
+        hidden: Ваша работа "%{title}" (%{work_url}) была скрыта комитетом Политик и Нарушений и больше не находится в публичном доступе.
+        tos_violation: Если ваша работа была скрыта потому что она нарушает Пользовательское соглашение AO3 (%{tos_url}), вы должны будете исправить нарушение - иначе ваша работа может быть удалена с AO3
       tos: Пользовательское соглашение
     anonymous_or_unrevealed_notification:
       anonymous_info: Анонимные работы можно найти по тегам, но они не отображаются в списке ваших работ. В самой работе ваше имя пользователя будет заменено на "Anonymous" (Анонимный автор).
@@ -198,10 +198,10 @@ ru:
       description: 'Описание:'
       due: 'Задание необходимо выполнить до:'
       html:
-        footer: You're receiving this email because you signed up for the %{title} challenge. For more information about this challenge and contact information for the moderators, please visit %{footer_link}.
-        footer_link: the challenge profile page
-        look_up: You can look up this assignment from %{link}.
-        look_up_link: your Assignments page
+        footer: Вы получили это письмо, потому что записались на участие в челлендже %{title}. Чтобы узнать больше об этом челлендже и получить контактные данные модераторов, пожалуйста, посетите %{footer_link}.
+        footer_link: профиль челленджа
+        look_up: Вы можете уточнить детали этого задания на %{link}.
+        look_up_link: своей странице Assignments (Задания)
       optional_tags: 'Дополнительные теги:'
       prompt_url: 'URL заявки:'
       prompts: 'Заявки:'
@@ -209,9 +209,9 @@ ru:
       recipient_missing: 'Отсутствует: свяжитесь с модератором!'
       subject: "[%{app_name}][%{collection_title}] Ваше задание!"
       text:
-        assignment: You have been assigned the following request in the "%{collection_title}" challenge (%{collection_url}) at the Archive of Our Own!
-        footer: You're receiving this email because you signed up for the %{title} challenge (%{url}). For more information about this challenge and contact information for the moderators, please visit %{profile_url}.
-        look_up: You can look up this assignment from your Assignments page at %{link}.
+        assignment: Вам было поручено выполнение следующей заявки челленджа "%{collection_title}" (%{collection_url}) на AO3!
+        footer: Вы получили это письмо, потому что записались на участие в челлендже %{title} (%{url}).Чтобы узнать больше об этом челлендже и получить контактные данные модераторов, пожалуйста, посетите %{profile_url}.
+        look_up: Вы можете найти это задание на своей странице Assignments (Задания) по адресу %{link}.
     change_email:
       changed:
         html: "%{login}, the email associated with your account has been changed to %{email}"
@@ -418,13 +418,13 @@ ru:
       subject: "[%{app_name}] Отказ в получении дополнительного кода приглашения"
     recipient_notification:
       html:
-        collection: A gift work has been posted for you in the %{collection_link} collection at the Archive of Our Own!
+        collection: Подарочная работа для вас была опубликована в коллекции %{collection_link} на AO3!
       no_collection: Для вас была опубликована подарочная работа на AO3!
       subject:
         collection: "[%{app_name}][%{collection_title}] Подарочная работа для вас от %{collection_title}"
         no_collection: "[%{app_name}] Подарок для вас"
       text:
-        collection: A gift work has been posted for you in the "%{collection_title}" collection (%{collection_url}) at the Archive of Our Own!
+        collection: Подарочная работа для вас была опубликована в коллекции "%{collection_title}" (%{collection_url}) на AO3!
     signup_notification:
       activate:
         html: Please %{activate_account_link}.
