@@ -32,36 +32,36 @@ sr:
   kudo_mailer:
     batch_kudo_notification:
       guest:
-        one: a guest
-        few: "%{count} guests"
-        other: "%{count} guests"
+        one: '%{count} gost'
+        few: "%{count} gosta"
+        other: "%{count} gostiju"
       left_kudos:
         html:
-          one: "%{givers_list} left kudos on %{commentable_link}."
-          few: "%{givers_list} left kudos on %{commentable_link}."
-          other: "%{givers_list} left kudos on %{commentable_link}."
+          one: "%{givers_list} je pohvalio/la %{commentable_link}."
+          few: "%{givers_list} su pohvalili %{commentable_link}."
+          other: "%{givers_list} su pohvalili %{commentable_link}."
         text:
-          one: '%{givers_list} left kudos on "%{commentable_title}" (%{commentable_url}).'
-          few: '%{givers_list} left kudos on "%{commentable_title}" (%{commentable_url}).'
-          other: '%{givers_list} left kudos on "%{commentable_title}" (%{commentable_url}).'
+          one: '%{givers_list} je pohvalio/la %{commentable_title} (%{commentable_url}).'
+          few: '%{givers_list} su pohvalili %{commentable_title} (%{commentable_url}).'
+          other: '%{givers_list} su pohvalili %{commentable_title} (%{commentable_url}).'
       single_guest:
-        giver: A guest
-        html: "%{giver} left kudos on %{commentable_link}."
-        text: A guest left kudos on "%{commentable_title}" (%{commentable_url}).
-      subject: "[%{app_name}] You've got kudos!"
+        giver: Gost/gošća
+        html: "%{giver} je ostavio/la pohvalu na %{commentable_link}."
+        text: Gost/gošća je ostavio/la pohvalu na %{commentable_title} (%{commentable_url}).
+      subject: "[%{app_name}] Dobili ste pohvale!"
   mailer:
     general:
       closing:
-        formal: Sincerely,
-        informal: Best,
+        formal: Srdačan pozdrav,
+        informal: Sve najbolje,
       creation:
         link_with_word_count: "%{creation_link} (%{word_count})"
-        title_with_chapter_number: Chapter %{position} of %{title}
+        title_with_chapter_number: '%{title}: Poglavlje %{position}'
         title_with_word_count: '"%{creation_title}" (%{word_count})'
         word_count:
-          one: "%{count} word"
-          few: "%{count} words"
-          other: "%{count} words"
+          one: "%{count} reč"
+          few: "%{count} reči"
+          other: "%{count} reči"
       footer:
         general:
           about:
@@ -73,21 +73,21 @@ sr:
           unwanted_email:
             html: If you've received this message in error, please %{support_link}.
             text: If you've received this message in error, please contact Support at %{support_url}.
-        sent_at: Sent at %{sent_at}.
+        sent_at: Poslato u %{sent_at}.
       greeting:
         formal_html: Dear %{name},
         informal:
-          addressed_html: Hi, %{name}!
-          unaddressed: Hi!
-        introductory: Hello from the Archive of Our Own!
+          addressed_html: Zdravo, %{name}!
+          unaddressed: Zdravo!
+        introductory: Pozdrav od Archive of Our Own – AO3-a (Naše sopstvene arhive)!
         tag_wrangler_supervisors: Tag Wrangler Supervisors
-      metadata_label_indicator: ": "
+      metadata_label_indicator: ":"
       signature:
-        abuse_team: The AO3 Policy & Abuse team
+        abuse_team: Tim Politike i zloupotrebe AO3-a
         app_short_name: AO3
-        open_doors: The Open Doors team
-        parent_org: Organization for Transformative Works
-        support: The AO3 Support team
+        open_doors: Tim Open Doors (Otvorenih vrata)
+        parent_org: Organization for Transformative Works – OTW (Organizacija za transformativne radove)
+        support: Tim Korisničke podrške AO3-a
   roles:
     anonymous_creator: Anonymous Creator
     commenter_name:
@@ -113,94 +113,94 @@ sr:
       subject: "[%{app_name}] Abuse - %{summary}"
       thank_you: Thank you for your patience.
     admin_deleted_work_notification:
-      bye: Attached is a copy of your work for your reference.
-      contact_abuse: contact our Policy & Abuse team
+      bye: U prilogu je kopija Vašeg dela kao referenca.
+      contact_abuse: kontaktirate Odbor za politiku i zloupotrebu
       deleted:
-        html: Your work %{title} was deleted from the Archive by a site admin.
-        text: Your work "%{title}" was deleted from the Archive by a site admin.
+        html: Vaše delo %{title} je izbrisano sa AO3-a od strane administratora sajta.
+        text: Vaše delo "%{title}" je izbrisano sa AO3-a od strane administratora sajta.
       html:
         tos_violation: If it's possible your work violated the Archive's Terms of Service, please %{contact_abuse_link}.
       import_project:
-        html: If your work was part of an import project managed by our Open Doors team, please %{opendoors_link} with any further questions.
-        text: If your work was part of an import project managed by our Open Doors team, please contact Open Doors (%{opendoors_link}) with any further questions.
-      opendoors: contact Open Doors
-      subject: "[%{app_name}] Your work has been deleted by an admin"
+        html: Ako je Vaše delo bilo deo projekta unosa kojim se bavi naš tim Open Doors (Otvorena vrata), molimo Vas da %{opendoors_link} ako imate dodatna pitanja.
+        text: Ako je Vaše delo bilo deo projekta unosa kojim se bavi naš tim Open Doors (Otvorena vrata), molimo Vas da kontaktirate Otvorena vrata (%{opendoors_link}) ako imate dodatna pitanja.
+      opendoors: kontaktirate Otvorena vrata
+      subject: "[%{app_name}] Vaše delo je izbrisano od strane administratora"
       text:
         tos_violation: If it's possible your work violated the Archive's Terms of Service, please contact our Policy & Abuse team (%{contact_abuse_url}).
     admin_hidden_work_notification:
-      access: While your work is hidden, you will still be able to access it through the link provided above, but it will not be listed on your works page, and it won't be available to other users of the Archive.
-      check_email: Please check your email, including your spam folder, as the Policy & Abuse team may have already contacted you explaining why your work was hidden.
-      contact_abuse: contact Policy & Abuse
+      access: Dok Vam je delo sakriveno, i dalje ćete moći da mu pristupite putem linka iznad, ali neće biti navedeno na Vašoj stranici dela, i neće biti dostupno drugim korisnicima AO3-a.
+      check_email: Molimo Vas da proverite Vaš imejl, uključujući folder za nepoželjnu poštu, jer Vas je tim za Politiku i zloupotrebu možda već kontaktirao sa objašnjenjem zašto je Vaše delo sakriveno.
+      contact_abuse: kontaktirate Politiku i zloupotrebu
       html:
         help: If you are uncertain why your work was hidden, and you have not received further communication regarding this matter, please %{contact_abuse_link} directly.
         hidden: Your work %{title} has been hidden by the Policy & Abuse team and is no longer publicly accessible.
         tos_violation: If your work was hidden due to being in violation of the Archive of Our Own's %{tos_link}, you will be required to take action to correct the violation. Failure to bring your work into compliance with the Terms of Service may lead to your work being deleted from the Archive.
-      subject: "[%{app_name}] Your work has been hidden by the Policy & Abuse team"
+      subject: "[%{app_name}] Vaše delo je sakriveno od strane tima za Politiku i zloupotrebu"
       text:
         help: 'If you are uncertain why your work was hidden, and you have not received further communication regarding this matter, please contact Policy & Abuse directly: %{contact_abuse_url}.'
         hidden: Your work "%{title}" (%{work_url}) has been hidden by the Policy & Abuse team and is no longer publicly accessible.
         tos_violation: If your work was hidden due to being in violation of the Archive of Our Own's Terms of Service (%{tos_url}), you will be required to take action to correct the violation. Failure to bring your work into compliance with the Terms of Service may lead to your work being deleted from the Archive.
-      tos: Terms of Service
+      tos: Uslove korišćenja
     anonymous_or_unrevealed_notification:
-      anonymous_info: Anonymous works are included in tag listings, but not on your works page. On the work, your user name will be replaced with "Anonymous."
-      anonymous_unrevealed_info: The collection maintainers may later reveal your work but leave it anonymous. People who subscribe to you will not be notified of this change. Your work will be included in tag listings, but not on your works page. On the work, your user name will be replaced with "Anonymous."
+      anonymous_info: Anonimna dеla su uključеna u izlistanе tagovе, ali nisu na Vašoj stranici radova. Na samom dеlu, Vašе korisničko imе ćе biti zamеnjеno sa "Anonymous" (Anonimno).
+      anonymous_unrevealed_info: Održavaoci zbirkе mogu kasnijе otkriti Vašе dеlo, ali ga ostaviti anonimnim. Ljudi koji Vas budu pratili nеćе biti obavеštеni kada ova promеna stupi na snagu. Nakon što jе otkrivеno, Vašе dеlo ćе biti uključеno u izlistanе tagovе, ali nеćе biti na stranici Vaših radova. Na samom dеlu, Vašе korisničko imе ćе biti zamеnjеno sa "Anonymous" (Anonimno).
       changed_status:
         anonymous:
-          html: The collection maintainers of %{collection_link} have changed the status of your work %{work_link} to anonymous.
-          text: The collection maintainers of "%{collection_title}" (%{collection_url}) have changed the status of your work "%{work_title}" (%{work_url}) to anonymous.
+          html: Održavaoci %{collection_link} zbirkе su promеnili status Vašеg dеla %{work_link} na anonimno.
+          text: Održavaoci "%{collection_title}" (%{collection_url}) zbirkе su promеnili status Vašеg dеla "%{work_title}" (%{work_url}) na anonimno.
         anonymous_unrevealed:
-          html: The collection maintainers of %{collection_link} have changed the status of your work %{work_link} to anonymous and unrevealed.
-          text: The collection maintainers of "%{collection_title}" (%{collection_url}) have changed the status of your work "%{work_title}" (%{work_url}) to anonymous and unrevealed.
+          html: Održavaoci %{collection_link} zbirkе su promеnili status Vašеg dеla %{work_link} na anonimno i nеotkrivеno.
+          text: Održavaoci "%{collection_title}" (%{collection_url}) zbirkе su promеnili status Vašеg dеla "%{work_title}" (%{work_url}) na anonimno i nеotkrivеno.
         unrevealed:
-          html: The collection maintainers of %{collection_link} have changed the status of your work %{work_link} to unrevealed.
-          text: The collection maintainers of "%{collection_title}" (%{collection_url}) have changed the status of your work "%{work_title}" (%{work_url}) to unrevealed.
-      collection_items_link_text: Approved Collection Items page
+          html: Održavaoci %{collection_link} zbirkе su promеnili status Vašеg dеla %{work_link} na nеotkrivеno.
+          text: Održavaoci "%{collection_title}" (%{collection_url}) zbirkе su promеnili status Vašеg dеla "%{work_title}" (%{work_url}) na nеotkrivеno.
+      collection_items_link_text: stranicu Approved Collection Items (Odobrеni prеdmеti iz zbirkе)
       do_not_want:
         anonymous:
-          html: If you do not want your work to be anonymous, please visit your %{collection_items_link} to remove it from this collection.
-          text: 'If you do not want your work to be anonymous, please visit your Approved Collection Items page to remove it from this collection: %{collection_items_url}'
+          html: Ako nе žеlitе da Vašе dеlo budе anonimno, molimo Vas da posеtitе Vašu %{collection_items_link} kako bistе ga uklonili iz ovе zbirkе.
+          text: 'Ako nе žеlitе da Vašе dеlo budе anonimno, molimo Vas da posеtitе Vašu stranicu Approved Collection Items (Odobrеni prеdmеti iz zbirkе) kako bistе ga uklonili iz ovе zbirkе: %{collection_items_url}'
         anonymous_unrevealed:
-          html: If you do not want your work to be anonymous and unrevealed, please visit your %{collection_items_link} to remove it from this collection.
-          text: 'If you do not want your work to be anonymous and unrevealed, please visit your Approved Collection Items page to remove it from this collection: %{collection_items_url}'
+          html: Ako nе žеlitе da Vašе dеlo budе anonimno i nеotkrivеno, molimo Vas da posеtitе Vašu %{collection_items_link} kako bistе ga uklonili iz ovе zbirkе.
+          text: 'Ako nе žеlitе da Vašе dеlo budе anonimno i nеotkrivеno, molimo Vas da posеtitе Vašu stranicu Approved Collection Items (Odobrеni prеdmеti iz zbirkе) kako bistе ga uklonili iz ovе zbirkе: %{collection_items_url}'
         unrevealed:
-          html: If you do not want your work to be unrevealed, please visit your %{collection_items_link} to remove it from this collection.
-          text: 'If you do not want your work to be unrevealed, please visit your Approved Collection Items page to remove it from this collection: %{collection_items_url}'
-      faq_link_text: Collections FAQ
+          html: Ako nе žеlitе da Vašе dеlo budе nеotkrivеno, molimo Vas da posеtitе Vašu %{collection_items_link} kako bistе ga uklonili iz ovе zbirkе.
+          text: 'Ako nе žеlitе da Vašе dеlo budе nеotkrivеno, molimo Vas da posеtitе Vašu stranicu Approved Collection Items (Odobrеni prеdmеti iz zbirkе) kako bistе ga uklonili iz ovе zbirkе: %{collection_items_url}'
+      faq_link_text: Čеsto postavljеna pitanja o zbirkama
       more_info:
-        html: For more information, visit our %{faq_link}.
-        text: 'For more information, visit our Collections FAQ: %{faq_url}'
+        html: Za višе informacija, posеtitе naša %{faq_link}.
+        text: 'Za višе informacija, posеtitе naša Čеsto postavljеna pitanja o zbirkama: %{faq_url}'
       subject:
-        anonymous: "[%{app_name}] Your work was made anonymous"
-        anonymous_unrevealed: "[%{app_name}] Your work was made anonymous and unrevealed"
-        unrevealed: "[%{app_name}] Your work was made unrevealed"
-      unrevealed_info: Unrevealed works are not included in tag listings or on your works page. Anyone who follows a link to the work will receive a notice that it is currently unrevealed, and they will be unable to access its content.
+        anonymous: "[%{app_name}] Vašе dеlo jе načinjеno anonimnim"
+        anonymous_unrevealed: "[%{app_name}] Vašе dеlo jе načinjеno anonimnim i nеotkrivеnim"
+        unrevealed: "[%{app_name}] Vašе dеlo jе načinjеno nеotkrivеnim"
+      unrevealed_info: Nеotkrivеna dеla nisu uključеna u izlistanе tagovе i nisu na stranici Vaših radova. Svako ko budе pratio link do Vašеg dеla ćе dobiti obavеštеnjе da jе dеlo trеnutno nеotkrivеno, i da nijе mogućе da sе pristupi njеgovom sadržaju.
     archivist_added_to_collection_notification:
-      approved_collection_items_page: Approved Collection Items page
-      archivist_notice: Because the collection maintainers are acting in their official capacity as Open Doors archivists, they are allowed to add your work to this collection, even if you have collection invitations disabled. Archivists will only add a work to a collection if it was hosted on an imported archive.
+      approved_collection_items_page: stranice Approved Collection Items (Odobreni predmeti u zbirkama)
+      archivist_notice: Pošto postupaju po svojoj zvaničnoj nadležnosti kao arhivari Open Doors (Otvorenih vrata), dozvoljeno im je da dodaju Vaše delo u ovu zbirku, čak i ako su Vam onemogućene pozivnice za zbirke. Arhivari će dodati delo u zbirku samo ako je ono bilo deo unesene arhive.
       removal_instructions:
-        html: If you would like to remove your work from this collection, please visit your %{approved_items_link}.
-        text: 'If you would like to remove your work from this collection, please visit your Approved Collection Items page: %{approved_items_url}.'
-      subject: "[%{app_name}][%{collection_title}] An Open Doors archivist has added your work to a collection"
+        html: Ako želite da uklonite Vaše delo iz ove zbirke, molimo idite do Vaše %{approved_items_link}.
+        text: 'Ako želite da uklonite Vaše delo iz ove zbirke, molimo idite do Vaše stranice Approved Collection Items (Odobreni predmeti u zbirkama): %{approved_items_url}.'
+      subject: "[%{app_name}][%{collection_title}] Arhivar Open Doors (Otvorenih vrata) je dodao Vaše delo u zbirku"
       work_added:
-        html: The collection maintainers of %{collection_link} have added your work %{work_link} to their collection!
-        text: The collection maintainers of "%{collection_title}" (%{collection_url}) have added your work "%{work_title}" (%{work_url}) to their collection!
+        html: Održavaoci zbirke %{collection_link} su dodali Vaše delo %{work_link} u njihovu zbirku!
+        text: Održavaoci zbirke "%{collection_title}" (%{collection_url}) su dodali Vaše delo "%{work_title}" (%{work_url}) u njihovu zbirku!
     challenge_assignment_notification:
-      any: Any
+      any: Bilo koji
       assignment:
-        html: You have been assigned the following request in the %{link} challenge at the Archive of Our Own!
-      description: 'Description:'
-      due: 'This assignment is due at:'
+        html: Dodeljen Vam je sledeći zahtev u okviru izazova %{link} na AO3-u!
+      description: 'Opis:'
+      due: 'Rok za ovaj zadatak je:'
       html:
         footer: You're receiving this email because you signed up for the %{title} challenge. For more information about this challenge and contact information for the moderators, please visit %{footer_link}.
         footer_link: the challenge profile page
         look_up: You can look up this assignment from %{link}.
         look_up_link: your Assignments page
-      optional_tags: 'Optional Tags:'
-      prompt_url: 'Prompt URL:'
-      prompts: 'Prompts:'
-      recipient: 'Recipient:'
-      recipient_missing: 'None: contact a moderator for help!'
-      subject: "[%{app_name}][%{collection_title}] Your assignment!"
+      optional_tags: 'Proizvoljni tagovi:'
+      prompt_url: 'Link ideje:'
+      prompts: 'Ideje (prompts):'
+      recipient: 'Primalac:'
+      recipient_missing: 'Nepoznato: kontaktirajte moderatora za pomoć!'
+      subject: "[%{app_name}][%{collection_title}] Vaš zadatak!"
       text:
         assignment: You have been assigned the following request in the "%{collection_title}" challenge (%{collection_url}) at the Archive of Our Own!
         footer: You're receiving this email because you signed up for the %{title} challenge (%{url}). For more information about this challenge and contact information for the moderators, please visit %{profile_url}.
@@ -212,118 +212,118 @@ sr:
       subject: "[%{app_name}] Email changed"
     claim_notification:
       access:
-        contact_support: contact AO3 Support
-        html: Depending on the archive, your works may have been imported restricted to registered users only (to keep them out of Google searches). If this is the case, the works will only be accessible by logged-in users unless you choose to make them fully visible. For help unlocking, orphaning, or deleting your works, please %{contact_support_link}.
-        text: Depending on the archive, your works may have been imported restricted to registered users only (to keep them out of Google searches). If this is the case, the works will only be accessible by logged-in users unless you choose to make them fully visible. For help unlocking, orphaning, or deleting your works, please contact AO3 Support at %{support_url}.
-      email_tips: If you're contacting us, please add email addresses from @transformativeworks.org to your list of safe contacts and check your spam folders for our reply.
+        contact_support: kontaktirajte Korisničku podršku AO3-a
+        html: Zavisno od arhive, Vaša dela su možda unesena kao ograničena samo za registrovane korisnike (kako bi bila sakrivena od Gugl pretraga). Ako je ovo slučaj, dela će biti dostupna samo ulogovanim korisnicima osim ako Vi ne odlučite da ih učinite potpuno vidljivim. Za pomoć oko otključavanja, odricanja od ili brisanja dela, molimo %{contact_support_link}.
+        text: Zavisno od arhive, Vaša dela su možda unesena kao ograničena samo za registrovane korisnike (kako bi bila sakrivena od Gugl pretraga). Ako je ovo slučaj, dela će biti dostupna samo ulogovanim korisnicima osim ako Vi ne odlučite da ih učinite potpuno vidljivim. Za pomoć oko otključavanja, odricanja od ili brisanja dela, molimo kontaktirajte Korisničku podršku AO3-a na %{support_url}.
+      email_tips: Ako nas kontaktirate, molimo dodajte imejl adrese od @transformativeworks.org na Vašu listu bezbednih kontakata i proverite Vaše spam foldere za naš odgovor.
       introduction:
-        ao3_name: Archive of Our Own
-        html: You're receiving this e-mail because you had works in a fanworks archive that has been imported by %{open_doors_name_link} into the %{app_link} (AO3). Because this e-mail address is connected to one registered on the imported archive, the associated fanworks (listed below) have been automatically added to your AO3 account.
-        open_doors_name: Open Doors
-        text: You're receiving this e-mail because you had works in a fanworks archive that has been imported by Open Doors (%{open_doors_url}) into the Archive of Our Own (AO3 - %{app_url}). Because this e-mail address is connected to one registered on the imported archive, the associated fanworks (listed below) have been automatically added to your AO3 account.
+        ao3_name: Archive of Our Own – AO3 (Našu sopstvenu arhivu)
+        html: Primili ste ovaj imejl jer ste imali dela u arhivi fan-dela koju su %{open_doors_name_link} unela na %{app_link}. Pošto je ova imejl adresa povezana sa jednom koja je registrovana na unesenoj arhivi, povezana fan-dela (navedena ispod) su automatski dodata na Vaš AO3 nalog.
+        open_doors_name: Open Doors (Otvorena vrata)
+        text: 'Primili ste ovaj imejl jer ste imali dela u arhivi fan-dela koju su Open Doors (Otvorena vrata) (%{open_doors_url}) unela na Archive of Our Own – AO3 (Našu sopstvenu arhivu): %{app_url}. Pošto je ova imejl adresa povezana sa jednom koja je registrovana na unesenoj arhivi, povezana fan-dela (navedena ispod) su automatski dodata na Vaš AO3 nalog.'
       mistake:
-        contact_open_doors: contact Open Doors
-        html: If this is a mistake and these are not your works, please don't delete them! Please just %{contact_open_doors_link} and we will sort it out.
-        text: If this is a mistake and these are not your works, please don't delete them! Please just contact Open Doors (%{open_doors_url}) and we will sort it out.
+        contact_open_doors: kontaktirate Otvorena vrata
+        html: Ako je ovo greška i ovo nisu Vaša dela, molimo Vas da ih ne obrišete! Molimo Vas da samo %{contact_open_doors_link} i mi ćemo rešiti problem.
+        text: Ako je ovo greška i ovo nisu Vaša dela, molimo Vas da ih ne obrišete! Molimo Vas da samo kontaktirate Otvorena vrata (%{open_doors_url}) i mi ćemo rešiti problem.
       more_info:
-        ao3_news: AO3 News
-        contact_support: contact AO3 Support
-        faq_page: FAQ page
-        html: You can read announcements about recent archive moves at %{ao3_news_link}, and find additional information on Open Doors' %{faq_page_link} or %{tutorial_page_link}. For any questions not answered in the FAQ, tutorials, or this e-mail, please %{contact_support_link}.
-        text: You can read announcements about recent archive moves at AO3 News (%{news_url}), and find additional information on Open Doors' FAQ page (%{open_doors_faq_url}) or tutorials page (%{open_doors_tutorial_url}). For any questions not answered in the FAQ, tutorials, or this e-mail, please contact Support at %{support_url}.
-        tutorial_page: tutorial page
+        ao3_news: AO3 vestima
+        contact_support: kontaktirajte Korisničku podršku AO3-a
+        faq_page: stranici Često postavljenih pitanja
+        html: Možete pročitati objave o skorašnjim prenosima arhiva na %{ao3_news_link}, i pronaći još informacija na %{faq_page_link} ili %{tutorial_page_link} Otvorenih vrata. Za pitanja na koja nisu odgovorena u Često postavljenim pitanjima, tutorijalima ili ovom imejlu, molimo %{contact_support_link}.
+        text: Možete pročitati objave o skorašnjim prenosima arhiva na AO3 vestima (%{news_url}), i pronaći još informacija na stranici Često postavljenih pitanja (%{open_doors_faq_url}) ili stranici tutorijala (%{open_doors_tutorial_url}) Otvorenih vrata. Za pitanja na koja nisu odgovorena u Često postavljenim pitanjima, tutorijalima ili ovom imejlu, molimo kontaktirajte Korisničku podršku AO3-a na %{support_url}.
+        tutorial_page: stranici tutorijala
       other_works:
-        contact_open_doors: contact Open Doors
-        html: If you had other works on the imported archive under an e-mail address you can no longer access, please %{contact_open_doors_link} with any information that can help verify your identity.
-        text: If you had other works on the imported archive under an e-mail address you can no longer access, please contact Open Doors with any information that can help verify your identity.
+        contact_open_doors: kontaktirajte Otvorena vrata
+        html: Ako ste imali druga dela na unesenoj arhivi pod imejl adresom kojoj više ne možete da pristupite, molimo Vas, %{contact_open_doors_link} sa bilo kojim informacijama koje mogu da pomognu u potvrđivanju Vašeg identiteta.
+        text: Ako ste imali druga dela na unesenoj arhivi pod imejl adresom kojoj više ne možete da pristupite, molimo Vas, kontaktirajte Otvorena vrata sa bilo kojim informacijama koje mogu da pomognu u potvrđivanju Vašeg identiteta.
       questions:
-        contact_support: contact AO3 Support
-        html: For other inquiries, please %{contact_support_link}.
-        text: For other inquiries, please contact AO3 Support at %{support_url}.
+        contact_support: kontaktirajte Korisničku podršku AO3-a
+        html: Za druga pitanja, molimo %{contact_support_link}.
+        text: Za druga pitanja, molimo kontaktirajte Korisničku podršku AO3-a na %{support_url}.
       redirects:
-        html: To preserve rec lists and bookmarks, the imported archive's web addresses may redirect to the imported copy of these works for a limited time (check the announcement post for your archive to be sure). If you've already uploaded a copy of these works and you did %{negation} use the import from URL feature, there will be two copies of the same work on the AO3.
+        html: Kako bi očuvali liste preporuka i obeleživače, veb adrese unesene arhive će možda voditi do unesenih kopija ovih dela na ograničeno vreme (proverite objavu za Vašu arhivu kako biste bili sigurni). Ako ste Vi već objavili kopiju ovih dela i %{negation} koristili opciju unosa putem URL-a, na AO3-u će postojati dve kopije istog dela.
         negation: NOT
-      subject: "[%{app_name}] Works uploaded"
+      subject: "[%{app_name}] Dodata dela"
       update_redirect:
-        contact_open_doors: contact Open Doors
-        html: If you would like Open Doors to update the redirect to point to your pre-existing work, please delete the imported copy, and %{contact_open_doors_link} with your AO3 account name, your account name on the imported archive, and the title and URL of the fanwork you would like the redirect to point to. (If you have multiple works you would like to change the redirects for, you can list these in one email.)
-        text: If you would like Open Doors to update the redirect to point to your pre-existing work, please delete the imported copy, and contact Open Doors at %{open_doors_url} with your AO3 account name, your account name on the imported archive, and the title and URL of the fanwork you would like the redirect to point to. (If you have multiple works you would like to change the redirects for, you can list these in one email.)
+        contact_open_doors: kontaktirate Otvorena vrata
+        html: Ako želite da Otvorena vrata ažuriraju preusmerenje kako bi vodilo do Vašeg već postojećeg dela, molimo da obrišete unesenu kopiju i %{contact_open_doors_link} sa imenom Vašeg AO3 naloga, imenom Vašeg naloga na unesenoj arhivi, i naslovom i URL-om fan-dela prema kom biste želeli da vodi veb adresa. (Ako imate više dela za koja biste želeli da promenite preusmerenje, možete da ih navedete u jednom imejlu.)
+        text: Ako želite da Otvorena vrata ažuriraju preusmerenje kako bi vodilo do Vašeg već postojećeg dela, molimo da obrišete unesenu kopiju i kontaktirate Otvorena vrata na %{open_doors_url} sa imenom Vašeg AO3 naloga, imenom Vašeg naloga na unesenoj arhivi, i naslovom i URL-om fan-dela prema kom biste želeli da vodi veb adresa. (Ako imate više dela za koja biste želeli da promenite preusmerenje, možete da ih navedete u jednom imejlu.)
       work_info:
         html: "%{work_link} (%{fandom})"
         text:
           no_fandom: "- %{work_title} %{work_url}"
           with_fandom: "- %{work_title} %{work_url} (%{fandom})"
-      works_by: 'These works were written under the e-mail: %{email}'
+      works_by: 'Ova dela su bila napisana sa imejla: %{email}'
     collection_notification:
       assignments_sent:
-        complete: All assignments have now been sent out.
-        subject: Assignments sent
+        complete: Svi zadaci su sada poslati.
+        subject: Zadaci poslati
       challenge_default:
         complete: 'Signed-up participant %{offer_byline} has defaulted on their assignment for %{request_byline}. You may want to assign a pinch hitter on the collection assignments page: %{assignments_page_url}'
         subject: Challenge default by %{offer_byline}
       html:
-        received_message: 'You have received a message about your collection %{collection_link}:'
+        received_message: 'Primili ste poruku o svojoj zbirci %{collection_link}:'
       text:
-        received_message: 'You have received a message about your collection "%{collection_title}" (%{collection_url}):'
+        received_message: 'Primili ste poruku o svojoj zbirci "%{collection_title}" (%{collection_url}):'
     creatorship_notification:
-      explanation: When you're a co-creator on a work, you can be added to new chapters regardless of your co-creation settings. You will also be added to any series the work is added to.
+      explanation: Kada ste koautor nekog dela, možete biti dodati novim poglavljima bez obzira na Vaša podešavanja o koautorstvu. Bićete dodati i u svaki serijal kojem je to delo dodato.
       html:
-        creation: "%{creation_link} by %{pseud_links}"
-        edit_chapter: edit the chapter
-        edit_series: edit the series
-        remove_chapter: If you've been added in error or don't want to be listed as a creator, you can %{edit_chapter_link} to remove yourself as creator.
-        remove_series: If you've been added in error or don't want to be listed as a creator, you can %{edit_series_link} to remove yourself as creator.
-      intro_chapter: 'The user %{adding_user} has listed your pseud %{pseud} as a co-creator on the following chapter:'
-      intro_series: 'The user %{adding_user} has listed your pseud %{pseud} as a co-creator on the following series:'
-      subject: "[%{app_name}] Co-creator notification"
+        creation: "%{creation_link} od %{pseud_links}"
+        edit_chapter: urediti poglavlje
+        edit_series: urediti serijal
+        remove_chapter: Ako ste dodati greškom ili ne želite da budete navedeni kao autor, možete %{edit_chapter_link} da biste uklonili sebe sa liste autora.
+        remove_series: Ako ste dodati greškom ili ne želite da budete navedeni kao autor, možete %{edit_series_link} da biste uklonili sebe sa liste autora.
+      intro_chapter: 'Korisnik %{adding_user} je naveo Vaš pseudonim %{pseud} kao koautora sledećeg poglavlja:'
+      intro_series: 'Korisnik %{adding_user} je naveo Vaš pseudonim %{pseud} kao koautora sledećeg serijala:'
+      subject: "[%{app_name}] Obaveštenje o koautorstvu"
       text:
-        creation: "%{title} (%{url}) by %{pseuds}"
-        remove_chapter: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the chapter to remove yourself as creator: %{url}'
-        remove_series: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the series to remove yourself as creator: %{url}'
+        creation: "%{title} (%{url}) od %{pseuds}"
+        remove_chapter: 'Ako ste dodati greškom ili ne želite da budete navedeni kao autor, možete urediti poglavlje da biste uklonili sebe sa liste autora: %{url}'
+        remove_series: 'Ako ste dodati greškom ili ne želite da budete navedeni kao autor, možete urediti serijal da biste uklonili sebe sa liste autora: %{url}'
     creatorship_notification_archivist:
-      explanation: Because they are acting in their official capacity as an Open Doors archivist, they are allowed to add you without a request, even if you have co-creation disabled.
+      explanation: Pošto postupaju po svojoj zvaničnoj nadležnosti kao arhivar Otvorenih vrata, dozvoljeno im je da Vas dodaju bez zahteva, čak i ako Vam je opcija koautorstva onemogućena.
       html:
-        creation: "%{creation_link} by %{pseud_links}"
-        edit_chapter: edit the chapter
-        edit_series: edit the series
-        edit_work: edit the work
-        remove_chapter: If you've been added in error or don't want to be listed as a creator, you can %{edit_chapter_link} to remove yourself as creator.
-        remove_series: If you've been added in error or don't want to be listed as a creator, you can %{edit_series_link} to remove yourself as creator.
-        remove_work: If you've been added in error or don't want to be listed as a creator, you can %{edit_work_link} to remove yourself as creator.
-      intro_chapter: 'The user %{archivist} has added your pseud %{pseud} as a co-creator on the following chapter:'
-      intro_series: 'The user %{archivist} has added your pseud %{pseud} as a co-creator on the following series:'
-      intro_work: 'The user %{archivist} has added your pseud %{pseud} as a co-creator on the following work:'
-      subject: "[%{app_name}] Archivist co-creator notification"
+        creation: "%{creation_link} оd %{pseud_links}"
+        edit_chapter: uredite poglavlje
+        edit_series: uredite serijal
+        edit_work: uredite delo
+        remove_chapter: Ako ste dodati greškom ili ne želite da budete navedeni kao autor, možete da %{edit_chapter_link} da biste uklonili sebe kao autora.
+        remove_series: Ako ste dodati greškom ili ne želite da budete navedeni kao autor, možete da %{edit_series_link} da biste uklonili sebe kao autora.
+        remove_work: Ako ste dodati greškom ili ne želite da budete navedeni kao autor, možete da %{edit_work_link} da biste uklonili sebe kao autora.
+      intro_chapter: 'Korisnik %{archivist} je dodao Vaš pseudonim %{pseud} kao koautora na sledeće poglavlje:'
+      intro_series: 'Korisnik %{archivist} je dodao Vaš pseudonim %{pseud} kao koautora na sledeći serijal:'
+      intro_work: 'Korisnik %{archivist} je dodao Vaš pseudonim %{pseud} kao koautora na sledeće delo:'
+      subject: "[%{app_name}] Arhivarsko obaveštenje o koautorstvu"
       text:
-        creation: "%{title} (%{url}) by %{pseuds}"
-        remove_chapter: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the chapter to remove yourself as creator: %{url}'
-        remove_series: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the series to remove yourself as creator: %{url}'
-        remove_work: 'If you''ve been added in error or don''t want to be listed as a creator, you can edit the work to remove yourself as creator: %{url}'
+        creation: "%{title} (%{url}) od %{pseuds}"
+        remove_chapter: 'Ako ste dodati greškom ili ne želite da budete navedeni kao autor, možete da uredite poglavlje da biste uklonili sebe kao autora: %{url}'
+        remove_series: 'Ako ste dodati greškom ili ne želite da budete navedeni kao autor, možete da uredite serijal da biste uklonili sebe kao autora: %{url}'
+        remove_work: 'Ako ste dodati greškom ili ne želite da budete navedeni kao autor, možete da uredite delo da biste uklonili sebe kao autora: %{url}'
     creatorship_request:
       html:
-        creation: "%{creation_link} by %{pseud_links}"
-        instructions: You can accept or reject this request on your %{page_name} page.
-        page_name: Co-Creator Requests
-      intro_chapter: 'The user %{inviting_user} has invited your pseud %{pseud} to be listed as a co-creator on the following chapter:'
-      intro_series: 'The user %{inviting_user} has invited your pseud %{pseud} to be listed as a co-creator on the following series:'
-      intro_work: 'The user %{inviting_user} has invited your pseud %{pseud} to be listed as a co-creator on the following work:'
-      subject: "[%{app_name}] Co-creator request"
+        creation: "%{creation_link} od strane %{pseud_links}"
+        instructions: Možete da prihvatite ili odbijete ovaj zahtev na Vašoj stranici %{page_name}.
+        page_name: Co-Creator Requests (Zahtevi za koautorstvo)
+      intro_chapter: 'Korisnik %{inviting_user} je pozvao Vaš pseudonim %{pseud} da bude na listi koautora sledećeg poglavlja:'
+      intro_series: 'Korisnik %{inviting_user} je pozvao Vaš pseudonim %{pseud} da bude na listi koautora sledećeg serijala:'
+      intro_work: 'Korisnik %{inviting_user} je pozvao Vaš pseudonim %{pseud} da bude na listi koautora sledećeg dela:'
+      subject: "[%{app_name}] Zahtev za koautorstvo"
       text:
-        creation: "%{title} (%{url}) by %{pseuds}"
-        instructions: 'You can accept or reject this request on your Co-Creator Requests page: %{url}'
+        creation: "%{title} (%{url}) od strane %{pseuds}"
+        instructions: 'Možete da prihvatite ili odbijete ovaj zahtev na Vašoj stranici Co-Creator Requests (Zahtevi za koautorstvo): %{url}'
     delete_work_notification:
-      attachment: Attached is a copy of your work for your reference.
+      attachment: U prilogu je kopija Vašeg dela kao referenca.
       deleted_other:
-        html: Your work %{title} was deleted at the request of %{pseud}.
-        text: Your work "%{title}" was deleted at the request of %{pseud}.
+        html: Vaše delo %{title} je izbrisano na zahtev %{pseud}.
+        text: Vaše delo "%{title}" je izbrisano na zahtev %{pseud}.
       deleted_yourself:
-        html: Your work %{title} was deleted at your request.
-        text: Your work "%{title}" was deleted at your request.
+        html: Vaše delo %{title} je izbrisano na Vaš zahtev.
+        text: Vaše delo "%{title}" je izbrisano na Vaš zahtev.
       questions:
-        html: If you have questions, please %{support}.
-        text: If you have questions, please %{support} (%{url}).
-      subject: "[%{app_name}] Your work has been deleted"
-      support: contact Support
+        html: Ako imate pitanja, molimo Vas %{support}.
+        text: Ako imate pitanja, molimo Vas %{support} (%{url}).
+      subject: "[%{app_name}] Vaše delo je izbrisano"
+      support: kontaktirajte Korisničku podršku
     feedback:
       additional_ticket: If you have additional questions or information, do not hesitate to send in another ticket.
       introduction: 'We''re working hard to reply to everyone, and we''ll respond to you as soon as we can. Your communication is greatly valued, and it will be reviewed and answered by our volunteer Support team. In the meantime, here is a copy of the information you submitted through the Technical Support and Feedback form:'
@@ -392,8 +392,8 @@ sr:
           one: We just wanted to let you know that you have %{count} new invitation, which can be used to create a new account at the Archive. You can invite a friend at %{invitation_page_link}.
           few: We just wanted to let you know that you have %{count} new invitations, which can be used to create new accounts at the Archive. You can invite a friend at %{invitation_page_link}.
           other: We just wanted to let you know that you have %{count} new invitations, which can be used to create new accounts at the Archive. You can invite a friend at %{invitation_page_link}.
-      invitation_page_link_text: your invitations page
-      subject: "[%{app_name}] New invitations"
+      invitation_page_link_text: Vašoj stranici Invitations (Pozivnice)
+      subject: "[%{app_name}] Nove pozivnice"
       text:
         body:
           one: We just wanted to let you know that you have %{count} new invitation, which can be used to create a new account at the Archive. You can invite a friend at your invitations page (%{invitation_page_url}).
@@ -401,18 +401,18 @@ sr:
           other: We just wanted to let you know that you have %{count} new invitations, which can be used to create new accounts at the Archive. You can invite a friend at your invitations page (%{invitation_page_url}).
     invite_request_declined:
       main:
-        one: We regret to inform you that your request for a new invitation cannot be fulfilled at this time.
-        few: We regret to inform you that your request for %{count} new invitations cannot be fulfilled at this time.
-        other: We regret to inform you that your request for %{count} new invitations cannot be fulfilled at this time.
-      reason: 'Your request was:'
-      subject: "[%{app_name}] Additional invitation request declined"
+        one: Sa žaljenjem Vas obaveštavamo da se Vaš zahtev za %{count} novu pozivnicu trenutno ne može ispuniti.
+        few: Sa žaljenjem Vas obaveštavamo da se Vaš zahtev za %{count} nove pozivnice trenutno ne može ispuniti.
+        other: Sa žaljenjem Vas obaveštavamo da se Vaš zahtev za %{count} novih pozivnica trenutno ne može ispuniti.
+      reason: 'Vaš zahtev je bio:'
+      subject: "[%{app_name}] Zahtev za dodatni kod za pozivnice je odbijen"
     recipient_notification:
       html:
         collection: A gift work has been posted for you in the %{collection_link} collection at the Archive of Our Own!
-      no_collection: A gift work has been posted for you at the Archive of Our Own!
+      no_collection: Poklon delo za Vas je objavljeno na AO3-u!
       subject:
-        collection: "[%{app_name}][%{collection_title}] A gift work for you from %{collection_title}"
-        no_collection: "[%{app_name}] A gift work for you"
+        collection: "[%{app_name}][%{collection_title}] Poklon delo za Vas iz %{collection_title}"
+        no_collection: "[%{app_name}] Poklon delo za Vas"
       text:
         collection: A gift work has been posted for you in the "%{collection_title}" collection (%{collection_url}) at the Archive of Our Own!
     signup_notification:
@@ -435,8 +435,8 @@ sr:
   users:
     mailer:
       reset_password_instructions:
-        expiration: If you do not use this link to reset your password within a week, it will expire, and you will have to request a new one.
-        intro: 'Someone has requested a password reset for your account. You can change your account password by following the link below and entering your new password:'
-        link_title: Change my password.
-        subject: "[%{app_name}] Reset your password"
-        unrequested: If you did not request this password reset, you may ignore this email and your previous password will continue to work.
+        expiration: Ako ne upotrebite ovaj link da resetujete svoju lozinku u roku od nedelju dana, isteći će i moraćete da zatražite novi.
+        intro: 'Neko je zatražio resetovanje lozinke za Vaš nalog. Možete promeniti lozinku tako što ćete ispratiti link ispod i uneti Vašu novu lozinku:'
+        link_title: Promeni moju lozinku.
+        subject: "[%{app_name}] Resetujte Vašu lozinku"
+        unrequested: Ukoliko niste zatražili resetovanje lozinke, možete zanemariti ovaj imejl i Vaša prethodna lozinka će nastaviti da radi.
