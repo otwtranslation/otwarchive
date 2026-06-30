@@ -44,38 +44,7 @@ fi:
         parent_org: Organization for Transformative Works – OTW (Transformatiivisten teosten järjestö)
         support: AO3 Käyttäjätukitiimi
   user_mailer:
-    admin_deleted_work_notification:
-      bye: Tähän viestiin on liitetty tiedoksesi kopio teoksestasi.
-      contact_abuse: ota yhteyttä Säännöt ja väärinkäytökset -toimikuntaan
-      deleted:
-        html: Sivuston ylläpitäjä on poistanut teoksesi %{title} AO3:sta.
-        text: Sivuston ylläpitäjä on poistanut teoksesi "%{title}" AO3:sta.
-      html:
-        tos_violation: Jos teoksesi saattoi rikkoa AO3:n Käyttöehtoja, ole hyvä ja %{contact_abuse_link}.
-      import_project:
-        html: Jos teoksesi kuului Open Doors (Avoimet ovet) -toimikunnan tuomaan projektiin, ole hyvä ja %{opendoors_link}, jos sinulla on kysymyksiä.
-        text: Jos teoksesi kuului Open Doors (Avoimet ovet) -toimikunnan tuomaan projektiin, ole hyvä ja ota yhteyttä Open Doors -toimikuntaan (%{opendoors_link}), jos sinulla on kysymyksiä.
-      opendoors: ota yhteyttä Open Doors -toimikuntaan
-      subject: "[%{app_name}] Ylläpitäjä on poistanut teoksesi"
-      text:
-        tos_violation: Jos teoksesi saattoi rikkoa AO3:n Käyttöehtoja, ole hyvä ja ota yhteyttä Säännöt ja väärinkäytökset -toimikuntaan (%{contact_abuse_url}).
-    admin_hidden_work_notification:
-      access: Teoksen ollessa piilotettuna voit tarkastella sitä yllä olevan linkin kautta, mutta se ei näy teokset-sivullasi eikä se ole muiden AO3-käyttäjien saatavilla.
-      check_email: Tarkistathan sähköpostisi, myös roskapostikansion, sillä Säännöt ja väärinkäytökset -toimikunta on saattanut jo ottaa yhteyttä ja selittää, miksi teoksesi on piilotettu.
-      contact_abuse: ota yhteyttä Säännöt ja väärinkäytökset -toimikuntaan
-      html:
-        help: Mikäli olet epävarma siitä, miksi teoksesi piilotettiin, etkä ole saanut yhteydenottoa asiaan liittyen, %{contact_abuse_link}.
-        hidden: Säännöt ja väärinkäytökset -toimikunta on piilottanut teoksesi %{title}, eikä se ole enää julkisesti saatavilla.
-        tos_violation: Mikäli teoksesi piilotettiin siksi, että se rikkoi AO3:n %{tos_link}, sinun tulee toimia rikkeen korjaamiseksi. Mikäli et muuta teostasi Käyttöehtojen mukaiseksi, se saatetaan poistaa AO3:sta.
-      subject: "[%{app_name}] Säännöt ja väärinkäytökset -toimikunta on piilottanut teoksesi"
-      text:
-        help: 'Mikäli olet epävarma siitä, miksi teoksesi piilotettiin, etkä ole saanut yhteydenottoa asiaan liittyen, ota yhteyttä Säännöt ja väärinkäytökset -toimikuntaan: %{contact_abuse_url}.'
-        hidden: Säännöt ja rikkomukset -toimikunta on piilottanut teoksesi "%{title}" (%{work_url}) eikä se ole enää julkisesti saatavilla.
-        tos_violation: Mikäli teoksesi piilotettiin siksi, että se rikkoi AO3:n Käyttöehtoja (%{tos_url}), sinun tulee toimia rikkeen korjaamiseksi. Mikäli et muuta teostasi Käyttöehtojen mukaiseksi, se saatetaan poistaa AO3:sta.
-      tos: Käyttöehtoja
     anonymous_or_unrevealed_notification:
-      anonymous_info: Anonyymit teokset näkyvät teoslistauksissa mutta eivät omalla teossivullasi. Teoksessa käyttäjänimesi tilalla lukee "Anonymous" (anonyymi).
-      anonymous_unrevealed_info: Kokoelman ylläpitäjät saattavat myöhemmin paljastaa teoksesi mutta jättää sen anonyymiksi. Teoksiesi ilmoitukset tilanneet eivät saa ilmoitusta tästä muutoksesta. Paljastamisen jälkeen teoksesi näkyy avainsanalistauksissa mutta ei teossivullasi. Teoksessa käyttäjänimesi tilalla lukee "Anonymous" (anonyymi).
       changed_status:
         anonymous:
           html: Kokoelman %{collection_link} ylläpitäjät ovat muuttaneet teoksesi %{work_link} tilan anonyymiksi.
@@ -120,34 +89,15 @@ fi:
       any: Mitä tahansa
       assignment:
         html: Sinulle on annettu toteutettavaksi pyyntö Archive of Our Ownin haasteessa %{link}!
-      description: 'Kuvaus:'
-      due: 'Tehtävän on oltava valmis:'
-      html:
-        footer: Olet saanut tämän viestin koska ilmoittauduit mukaan haasteeseen %{title}. Lisätietoa tästä haasteesta ja sen valvojien yhteystiedot löytyvät %{footer_link}.
-        footer_link: haasteen profiilista
-        look_up: Voit tarkastella tehtävänannon yksityiskohtia osoitteessa %{link}
-        look_up_link: Assignments (Tehtävänannot) -sivusi
-      optional_tags: 'Valinnaiset avainsanat:'
-      prompt_url: 'Ehdotuksen URL:'
-      prompts: 'Ehdotukset:'
-      recipient: 'Vastaanottaja:'
       recipient_missing: 'Ei vastaanottajaa: ota yhteyttä valvojaan!'
       subject: "[%{app_name}][%{collection_title}] Tehtävänantosi!"
-      text:
-        assignment: Sinulle on annettu toteutettavaksi pyyntö Archive of Our Own:n haasteessa "%{collection_title}" (%{collection_url}) !
-        footer: Olet saanut tämän viestin koska ilmoittauduit mukaan haasteeseen %{title} (%{url}). Lisätietoa tästä haasteesta ja sen valvojien yhteystiedot löytyvät osoitteesta %{profile_url}.
-        look_up: Voit tarkastella tehtävänannon yksityiskohtia Assignments (Tehtävänannot) -sivulta osoitteessa %{link}.
     claim_notification:
       access:
         contact_support: ota yhteyttä AO3:n Käyttäjätukeen
-        html: Arkistosta riippuen teoksesi on saatettu tuoda siten, että ne ovat näkyvillä vain rekisteröityneille käyttäjille (jotta ne eivät näy Google-hauissa). Jos näin on, teokset ovat saatavilla vain sisäänkirjautuneille käyttäjille, jollet valitse tehdä niistä täysin näkyviä. Saadaksesi apua teostesi lukituksen poistamiseen, niistä luopumiseen tai poistamiseen %{contact_support_link}
-        text: Arkistosta riippuen teoksesi on saatettu tuoda siten, että ne ovat näkyvillä vain rekisteröityneille käyttäjille (jotta ne eivät näy Google-hauissa). Jos näin on, teokset ovat saatavilla vain sisäänkirjautuneille käyttäjille, jollet valitse tehdä niistä täysin näkyviä. Saadaksesi apua teostesi lukituksen poistamiseen, niistä luopumiseen tai poistamiseen ota yhteyttä AO3:n Käyttäjätukeen %{support_url}.
       email_tips: Jos otat yhteyttä meihin, lisää @transformativeworks.org-loppuiset sähköpostiosoitteet turvallisten lähettäjien listallesi ja tarkista roskapostikansiosi vastauksemme varalta.
       introduction:
         ao3_name: Archive of Our Own – AO3:een (Oma arkisto)
-        html: Saat tämän sähköpostin koska sinulla oli teoksia faniteosarkistossa, jonka %{open_doors_name_link} on tuonut %{app_link}. Koska tämä sähköpostiosoite on yhdistetty tuotuun arkistoon rekisteröityyn osoitteeseen, siihen liittyvät teokset (listattuna alla) on automaattisesti lisätty AO3-tilillesi.
         open_doors_name: Open Doors (Avoimet ovet)
-        text: 'Saat tämän sähköpostin koska sinulla oli teoksia faniteosarkistossa, jonka Open Doors (Avoimet ovet (%{open_doors_url}) on tuonut Archive of Our Own – AO3:een (Oma arkisto): %{app_url}. Koska tämä sähköpostiosoite on yhdistetty tuotuun arkistoon rekisteröityyn osoitteeseen, siihen liittyvät teokset (listattuna alla) on automaattisesti lisätty AO3-tilillesi.'
       mistake:
         contact_open_doors: Ota yhteyttä Avoimiin oviin
         html: Jos tämä on virhe eivätkä nämä ole teoksiasi, ethän poista niitä! %{contact_open_doors_link} ja me hoidamme asian.
@@ -156,38 +106,16 @@ fi:
         ao3_news: AO3:n Uutisista
         contact_support: ota yhteyttä AO3:n Käyttäjätukeen
         faq_page: UKK-sivulta
-        html: Voit lukea ilmoituksia viimeaikaisista arkistosiirroista %{ao3_news_link} ja lisätietoa saat Avoimien ovien %{faq_page_link} tai %{tutorial_page_link}. Jos sinulla on kysymyksiä, joihin ei löydy vastausta UKK:sta, tutoriaaleista tai tästä sähköpostista, %{contact_support_link}.
-        text: Voit lukea ilmoituksia viimeaikaisista arkistosiirroista AO3:n Uutisista (%{news_url}) ja lisätietoa saat Avoimien ovien UKK-sivulta (%{open_doors_faq_url}) tai tutoriaalisivulta (%{open_doors_tutorial_url}). Jos sinulla on kysymyksiä, joihin ei löydy vastausta UKK:sta, tutoriaaleista tai tästä sähköpostista, ota yhteyttä Käyttäjätukeen %{support_url}.
         tutorial_page: tutoriaalisivulta
       other_works:
         contact_open_doors: ota yhteyttä Avoimiin oviin
-        html: Jos sinulla oli muita teoksia tuodussa arkistossa sellaisen sähköpostiosoitteen alla, johon sinulla ei enää ole pääsyä, %{contact_open_doors_link} ja anna tietoa, joka voi auttaa identiteettisi varmistamisessa.
-        text: Jos sinulla oli muita teoksia tuodussa arkistossa sellaisen sähköpostiosoitteen alla, johon sinulla ei enää ole pääsyä, ota yhteyttä Avoimiin oviin ja anna tietoa, joka voi auttaa identiteettisi varmistamisessa.
       questions:
         contact_support: ota yhteyttä AO3:n Käyttäjätukeen
         html: Muissa asioissa %{contact_support_link}.
         text: 'Muissa asioissa ota yhteyttä AO3:n Käyttäjätukeen täällä: %{support_url}.'
-      redirects:
-        html: Suosituslistojen ja kirjanmerkkien säilyttämiseksi tuodun arkiston nettiosoitteet saattavat uudelleenohjautua näiden teosten tuotuihin versioihin rajoitetun ajan (tarkista arkistosi tuonti-ilmoitus saadaksesi varmuuden). Jos olet jo julkaissut nämä teokset %{negation} käyttänyt tuo URLista -toimintoa, AO3:ssa on kaksi versiota samasta teoksesta.
       subject: "[%{app_name}] Tuotuja teoksia"
-      update_redirect:
-        contact_open_doors: ota yhteyttä Avoimiin oviin
-        html: Jos haluat Avoimien ovien päivittävän uudelleenohjauksen johtamaan jo olemassa olevaan teokseesi, poista tuotu versio ja %{contact_open_doors_link}. Liitä mukaan AO3-tilisi nimi, tuodun arkiston tilisi nimi sekä sen faniteoksen nimi ja URL, johon haluaisit uudelleenohjauksen johtavan. (Jos sinulle on useita teoksia, joihin haluaisit muuttaa uudelleenohjauksen, voit listata ne kaikki samassa sähköpostissa.)
-        text: Jos haluat Avoimien ovien päivittävän uudelleenohjauksen johtamaan jo olemassa olevaan teokseesi, poista tuotu versio ja ota yhteyttä Avoimiin oviin %{open_doors_url}. Liitä mukaan AO3-tilisi nimi, tuodun arkiston tilisi nimi sekä sen faniteoksen nimi ja URL, johon haluaisit uudelleenohjauksen johtavan. (Jos sinulle on useita teoksia, joihin haluaisit muuttaa uudelleenohjauksen, voit listata ne kaikki samassa sähköpostissa.)
       work_info:
         html: "%{work_link} (%{fandom})"
-        text:
-          no_fandom: "- %{work_title} %{work_url}"
-          with_fandom: "- %{work_title} %{work_url} (%{fandom})"
-      works_by: 'Nämä teokset kirjoitettiin sähköpostin %{email} alla'
-    collection_notification:
-      assignments_sent:
-        complete: Kaikki tehtävänannot on nyt lähetetty.
-        subject: Tehtävänannot lähetetty
-      html:
-        received_message: 'Olet saanut kokoelmaasi %{collection_link} koskevan viestin:'
-      text:
-        received_message: 'Olet saanut kokoelmaasi "%{collection_title}" (%{collection_url}) koskevan viestin:'
     creatorship_notification:
       explanation: Teoksen kanssatekijänä sinut voidaan lisätä uusiin lukuihin riippumatta tilisi kanssatekijyysasetuksista. Sinut lisätään myös kaikkiin sarjoihin, joihin teos lisätään.
       html:
@@ -198,7 +126,6 @@ fi:
         remove_series: Jos sinut on lisätty virheellisesti tai et halua, että sinut ilmoitetaan tekijäksi, voit %{edit_series_link} poistaaksesi itsesi tekijöistä.
       intro_chapter: 'Käyttäjä %{adding_user} on ilmoittanut nimimerkkisi %{pseud} kanssatekijäksi seuraavaan lukuun:'
       intro_series: 'Käyttäjä %{adding_user} on ilmoittanut nimimerkkisi %{pseud} kanssatekijäksi seuraavaan sarjaan:'
-      subject: "[%{app_name}] Ilmoitus kanssatekijäksi lisäämisestä"
       text:
         creation: "%{title} (%{url}), tekijä(t) %{pseuds}"
         remove_chapter: 'Jos sinut on lisätty virheellisesti tai et halua, että sinut ilmoitetaan tekijäksi, voit muokata lukua poistaaksesi itsesi tekijöistä: %{url}'
@@ -216,7 +143,6 @@ fi:
       intro_chapter: 'Käyttäjä %{archivist} on lisännyt nimimerkkisi %{pseud} toiseksi tekijäksi seuraavaan lukuun:'
       intro_series: 'Käyttäjä %{archivist} on lisännyt nimimerkkisi %{pseud} toisena tekijänä seuraavaan sarjaan:'
       intro_work: 'Käyttäjä %{archivist} on lisännyt nimimerkkisi %{pseud} toiseksi tekijäksi seuraavaan teokseen:'
-      subject: "[%{app_name}] Arkistonhoitajan ilmoitus toiseksi tekijäksi lisäämisestä"
       text:
         creation: "%{pseuds}: %{title} (%{url})"
         remove_chapter: 'Jos sinut on lisätty tekijäksi virheellisesti tai et halua tulla nimetyksi tekijänä, voit poistaa itsesi tekijänä muokkaamalla lukua: %{url}'
@@ -230,7 +156,6 @@ fi:
       intro_chapter: 'Käyttäjä %{inviting_user} on kutsunut nimimerkkisi %{pseud} listattavaksi seuraavan luvun kanssatekijäksi:'
       intro_series: 'Käyttäjä %{inviting_user} on kutsunut nimimerkkisi %{pseud} listattavaksi seuraavan sarjan kanssatekijäksi:'
       intro_work: 'Käyttäjä %{inviting_user} on kutsunut nimimerkkisi %{pseud} listattavaksi seuraavan teoksen kanssatekijäksi:'
-      subject: "[%{app_name}] Kutsu kanssatekijäksi"
       text:
         creation: "%{title} (%{url}) tekijältä %{pseuds}"
         instructions: 'Voit hyväksyä tai hylätä kutsun Co-Creator Requests (Pyynnöt kanssatekijäksi) -sivullasi: %{url}'
@@ -248,16 +173,8 @@ fi:
       subject: "[%{app_name}] Teoksesi on poistettu"
       support: ota yhteyttä Käyttäjätukeen
     invite_increase_notification:
-      html:
-        body:
-          one: Halusimme vain kertoa, että sinulla on %{count} uusi kutsu, jolla arkistoon voi luoda uuden tunnuksen. Voit kutsua ystävän mukaan %{invitation_page_link}.
-          other: Halusimme vain kertoa, että sinulla on %{count} kpl uusia kutsuja, joilla arkistoon voi luoda uusia tunnuksia. Voit kutsua ystäviä mukaan %{invitation_page_link}.
       invitation_page_link_text: Invitations (Kutsut) -sivullasi
       subject: "[%{app_name}] Uusia kutsuja"
-      text:
-        body:
-          one: Halusimme vain kertoa, että sinulla on %{count} uusi kutsu, jolla arkistoon voi luoda uuden tunnuksen. Voit kutsua ystävän mukaan Invitations (Kutsut) -sivullasi %{invitation_page_url}.
-          other: Halusimme vain kertoa, että sinulla on %{count} kpl uusia kutsuja, joilla arkistoon voi luoda uusia tunnuksia. Voit kutsua ystäviä mukaan Invitations (Kutsut) -sivullasi %{invitation_page_url}.
     invite_request_declined:
       main:
         one: Valitettavasti joudumme ilmoittamaan, että emme voi myöntää sinulle uutta kutsua.
@@ -265,19 +182,11 @@ fi:
       reason: 'Pyyntösi oli:'
       subject: "[%{app_name}] Pyyntösi ylimääräisistä kutsukoodeista on hylätty"
     recipient_notification:
-      html:
-        collection: Sinulle lahjoitettu teos on julkaistu AO3:ssa kokoelmassa %{collection_link}!
       no_collection: Sinulle lahjoitettu teos on julkaistu AO3:ssa!
       subject:
         collection: "[%{app_name}][%{collection_title}] Lahjateos sinulle kokoelmassa %{collection_title}"
         no_collection: "[%{app_name}] Sinulle on lahjoitettu teos"
-      text:
-        collection: Sinulle lahjoitettu teos on julkaistu AO3:ssa kokoelmassa "%{collection_title}", jonka linkki on (%{collection_url})!
   users:
     mailer:
       reset_password_instructions:
-        expiration: Jos et käytä tätä linkkiä salasanasi vaihtamiseen viikon kuluessa, se vanhenee, ja sinun on pyydettävä uusi linkki.
-        intro: 'Tilisi salasana on pyydetty asettamaan uudelleen. Voit vaihtaa salasanan seuraamalla alla olevaa linkkiä ja syöttämällä uuden salasanasi:'
-        link_title: Vaihda salasanani.
         subject: "[%{app_name}] Aseta uusi salasana"
-        unrequested: Jos et pyytänyt salasanan uudelleen asetusta, voit jättää tämän viestin huomioimatta, ja vanha salasanasi pysyy voimassa.
