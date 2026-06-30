@@ -44,38 +44,7 @@ hu:
         parent_org: Organization for Transformative Works – OTW (Szervezet a Transzformatív Munkákért)
         support: Az AO3 Támogatás csapata
   user_mailer:
-    admin_deleted_work_notification:
-      bye: Csatoltuk a munkád másolatát.
-      contact_abuse: lépj kapcsolatba a Szabályzat & Visszaélés bizottsággal
-      deleted:
-        html: A munkád, %{title} törölve lett az Archívumból egy admin által.
-        text: A munkád, "%{title}" törölve lett az Archívumból egy oldal admin által.
-      html:
-        tos_violation: Ha előfordulhat, hogy a munkád megsértette az Archívum Szolgáltatási Feltételeit, %{contact_abuse_link}.
-      import_project:
-        html: Ha a munkád része volt az Open Doors (Nyitott Ajtók) egyik importálási projektjének, további kérdéseiddel %{opendoors_link}.
-        text: Ha a munkád része volt az Open Doors (Nyitott Ajtók) egyik importálási projektjének, további kérdéseiddel lépj kapcsolatba a Nyitott Ajtók (%{opendoors_link}) bizottsággal.
-      opendoors: lépj kapcsolatba a Nyitott Ajtók bizottsággal
-      subject: "[%{app_name}] A munkádat törölte egy admin"
-      text:
-        tos_violation: Ha előfordulhat, hogy a munkád megsértette az Archívum Szolgáltatási Feltételeit, lépj kapcsolatba a Szabályzat & Visszaélés bizottsággal (%{contact_abuse_url}).
-    admin_hidden_work_notification:
-      access: Amíg el van rejtve a munkád, továbbra is el tudod érni a fent megadott linken, de nem lesz listázva a munkák oldaladon, és az AO3 többi felhasználója számára sem lesz elérhető.
-      check_email: Kérjük, ellenőrizd az emailed, beleértve a spam mappádat is, mivel a Szabályzat és Visszaélés csapat már lehet, hogy kapcsolatba lépett veled, hogy elmagyarázza, miért rejtette el a munkádat.
-      contact_abuse: lépj közvetlen kapcsolatba a Szabályzat és Visszaélés bizottsággal
-      html:
-        help: Ha nem vagy biztos abban, miért lett elrejtve a munkád, és nem kaptál további tájékoztatást ezzel kapcsolatban, kérjük, %{contact_abuse_link}.
-        hidden: A(z) %{title} munkádat elrejtette a Szabályzat és Visszaélés csapat és nem érhető el nyilvánosan.
-        tos_violation: Ha a munkád azért lett elrejtve, mert megsértette az AO3-mat %{tos_link}, köteles leszel intézkedni a szabálysértés megszüntetése érdekében. Ha nem hozod összhangba munkád a Szolgáltatási Feltételekkel, ez a munkád törléséhez vezethet.
-      subject: "[%{app_name}] A munkádat elrejtette a Szabályzat és Visszaélés csapat"
-      text:
-        help: 'Ha nem vagy biztos, miért lett elrejtve a munkád, és nem kaptál további tájékoztatást ezzel kapcsolatban, kérjük, lépj közvetlen kapcsolatba a Szabályzat és Visszaélés bizottsággal: %{contact_abuse_url}.'
-        hidden: A(z) "%{title}" (%{work_url}) munkádat elrejtette a Szabályzat és Visszaélés csapat és nem érhető el nyilvánosan.
-        tos_violation: Ha a munkád azért lett elrejtve, mert megsértette az AO3 Szolgáltatási Feltételeit (%{tos_url}), köteles leszel intézkedni a szabálysértés megszüntetése érdekében. Ha nem hozod összhangba munkád a Szolgáltatási Feltételekkel, ez a munkád törléséhez vezethet.
-      tos: Szolgáltatási Feltételek
     anonymous_or_unrevealed_notification:
-      anonymous_info: A névtelen munkák rajta vannak a kulcsszó listákon, de nem jelennek meg a munkáid között. A munkán a felhasználó neved "Anonymous"-ra (Névtelen) lesz cserélve.
-      anonymous_unrevealed_info: A gyűjtemény karbantartói a későbbiekben nyilvánossá, de névtelenné tehetik a munkád. Nem fognak értesítést kapni erről az emberek, akik követnek téged. Miután újra nyilvános a munkád, rajta lesz a kulcsszó listákon, de a munkáid között nem fog megjelenni. A munkán a felhasználó neved "Anonymous"-ra (Névtelen) lesz cserélve.
       changed_status:
         anonymous:
           html: 'A(z) %{collection_link} gyűjtemény kezelői névtelenné változtatták az alábbi munkád státuszát: %{work_link}.'
@@ -120,36 +89,15 @@ hu:
       any: Bármi
       assignment:
         html: A következő kérést kaptad feladatként a(z) %{link} kihívásban az Archive of Our Own oldalon!
-      description: 'Leírás:'
-      due: 'A feladat határideje:'
-      html:
-        footer: Azért kaptad ezt az emailt, mert feliratkoztál a(z) %{title} kihívásra. További információért erről a kihívásról és a moderátorok elérhetőségéért, kérjük, látogasd meg %{footer_link}.
-        footer_link: a kihívás profilját
-        look_up: Megtekintheted a feladatot %{link}.
-        look_up_link: a te Assignments (Feladatok) oldaladon.
-      optional_tags: 'Választható kulcsszavak:'
-      prompt_url: 'Ötlet URL-je:'
-      prompts: 'Ötletek:'
-      recipient: 'Ajándékozott:'
       recipient_missing: 'Nincs: segítségért lépj kapcsolatba egy moderátorral!'
       subject: "[%{app_name}][%{collection_title}] A feladatod!"
-      text:
-        assignment: A következő kérést kaptad feladatként a(z) "%{collection_title}" kihívásban (%{collection_url}) az Archive of Our Own oldalon!
-        footer: Azért kaptad ezt az emailt, mert feliratkoztál a(z) %{title} kihívásra (%{url}). További információért erről a kihívásról és a moderátorok elérhetőségéért, kérjük, látogasd meg %{profile_url}.
-        look_up: 'Megtekintheted a feladatot a te Assignments (Feladatok) oldaladon: %{link}.'
-    change_email:
-      subject: "[%{app_name}] Email módosítási kérés"
     claim_notification:
       access:
         contact_support: lépj kapcsolatba az AO3 Támogatással
-        html: Az archívumtól függően a munkáid talán korlátozottként, tehát csak regisztrált felhasználók számára elérhetőként lettek importálva (hogy Google-keresésekből kimaradjanak). Ha ez a helyzet, a munkák csak a bejelentkezett felhasználóknak lesznek elérhetők, hacsak nem teszed őket mindenki számára elérhetővé. A munkád feloldásához, elhagyásához vagy törléséhez segítségért kérlek, %{contact_support_link}.
-        text: 'Az archívumtól függően a munkáid talán korlátozottként, tehát csak regisztrált felhasználók számára elérhetőként lettek importálva (hogy Google-keresésekből kimaradjanak). Ha ez a helyzet, a munkák csak a bejelentkezett felhasználóknak lesznek elérhetők, hacsak nem teszed őket mindenki számára elérhetővé. A munkád feloldásához, elhagyásához vagy törléséhez segítségért kérlek, lépj kapcsolatba az AO3 Támogatással itt: %{support_url}.'
       email_tips: Ha kapcsolatba lépsz velünk, kérlek add hozzá a @transformativeworks.org-ra végződő email címeket a biztonságos kontaktokhoz és ellenőrizd rendszeresen a spam mappáidat a válaszunkért.
       introduction:
         ao3_name: Archive of Our Own - AO3 (A Mi Archívumunk)
-        html: Azért kapod ezt az emailt, mert voltak munkáid egy rajongói munka archívumban, amik importálva lettek %{open_doors_name_link} által a/az %{app_link}ba/be. Minthogy ez az email-cím kapcsolódik egy regisztrálthoz az importált archívumban, az asszociált munkák (alább listázva) automatikusan hozzáadódtak az AO3- fiókodhoz.
         open_doors_name: Open Doors (Nyitott Ajtók)
-        text: 'Azért kapod ezt az emailt, mert voltak munkáid egy rajongói munka archívumban, ami importálva lett az Open Doors (Nyitott Ajtók) (%{open_doors_url}) által az Archive of Our Own-AO3-ba (A Mi Archívumunkba): %{app_url}. Minthogy ez az email-cím kapcsolódik egy regisztrálthoz az importált archívumban, az asszociált munkák (alább listázva) automatikusan hozzáadódtak az AO3- fiókodhoz.'
       mistake:
         contact_open_doors: lépj kapcsolatba a Nyitott Ajtókkal
         html: Ha ez egy hiba, és ezek nem a te munkáid, kérjük ne töröld őket! Kérjük, csak %{contact_open_doors_link}, és mi megoldjuk.
@@ -158,38 +106,16 @@ hu:
         ao3_news: AO3 Hírek
         contact_support: lépj kapcsolatba az AO3 Támogatással
         faq_page: GyIK oldalon
-        html: Közleményeket a nemrég átköltöztetett archívumokról az %{ao3_news_link} linken tudsz olvasni, további információt az Open Doors-ról pedig a %{faq_page_link} vagy az %{tutorial_page_link} találsz. Bármilyen kérdés miatt, amit a GyIK vagy ez az email nem válaszolt meg, kérlek, %{contact_support_link}.
-        text: 'Közleményeket a nemrég átköltöztetett archívumokról az AO3 Hírek oldalon (news_url}) tudsz olvasni, további információt az Open Doors GyIK oldalán (%{open_doors_faq_url}) vagy az útmutató oldalon (%{open_doors_tutorial_url}) találsz. Bármilyen kérdés miatt, amit a GyIK vagy ez az email nem válaszolt meg, kérlek, lépj kapcsolatba a Támogatással itt: %{support_url}.'
         tutorial_page: útmutató oldalon
       other_works:
         contact_open_doors: lépj kapcsolatba a Nyitott Ajtókkal
-        html: Ha más munkáid is voltak az importált archívumban egy email cím alatt, amit már nem tudsz elérni, kérlek, %{contact_open_doors_link} bármilyen információval együtt, ami igazolhatja az identitásod.
-        text: Ha más munkáid is voltak az importált archívumban egy email cím alatt, amit már nem tudsz elérni, kérlek, lépj kapcsolatba a Nyitott Ajtókkal bármilyen információval együtt, ami igazolhatja az identitásod.
       questions:
         contact_support: lépj kapcsolatba az AO3 Támogatással
         html: Bármilyen más kérdéssel kérlek %{contact_support_link}.
         text: 'Bármilyen más kérdéssel kérlek fordulj az AO3-támogáshoz itt: %{support_url}.'
-      redirects:
-        html: Hogy megőrizzük az ajánló listákat és könyvjelzőket, az importált archívum webcíme lehet, hogy korlátozott ideig átirányít ezen munkák importált másolatához (nézd meg a bejelentést, hogy biztosan így van-e.) Ha már feltöltötted ezeknek a munkáknak a másolatait és %{negation} használtad az importálás URL-ből funkciót, az AO3-on két másolata lesz ugyanannak a munkának.
       subject: "[%{app_link}] Feltöltött munkák"
-      update_redirect:
-        contact_open_doors: lépj kapcsolatba a Nyitott Ajtókkal
-        html: Ha azt szeretnéd, hogy az Open Doors frissítse az átirányítást a már létező munkádhoz, kérlek, töröld az importált másolatot és %{contact_open_doors_link} az AO3 fiókod nevével, az importált archívumban lévő fiókod nevével és annak a rajongói munkának az URL-címével, amire kívánod, hogy átirányítson. (Ha több munkád van, amihez meg akarod változtatni az átirányításokat, egy emailben is felsorolhatod őket.)
-        text: Ha azt szeretnéd, hogy az Open Doors frissítse az átirányítást a már létező munkádhoz, kérlek, töröld az importált másolatot és lépj kapcsolatba a Nyitott Ajtókkal a %{open_doors_url} linken az AO3 fiókod nevével, az importált archívumban lévő fiókod nevével és annak a rajongói munkának az URL-címével, amire kívánod, hogy átirányítson. (Ha több munkád van, amihez meg akarod változtatni az átirányításokat, egy emailben is felsorolhatod őket.)
       work_info:
         html: "%{work_link} (%{fandom})"
-        text:
-          no_fandom: "- %{work_title} %{work_url}"
-          with_fandom: "- %{work_title} %{work_url} (%{fandom})"
-      works_by: 'Ezek a munkák a %{email} email alatt íródtak.'
-    collection_notification:
-      assignments_sent:
-        complete: Minden feladat kiküldésre került.
-        subject: Feladatok kiküldve
-      html:
-        received_message: 'Üzeneted érkezett a(z) %{collection_link} gyűjteményed kapcsán:'
-      text:
-        received_message: 'Üzeneted érkezett a(z) "%{collection_title}" (%{collection_url}) gyűjteményed kapcsán:'
     creatorship_notification:
       explanation: Ha egy mű társalkotója vagy, akkor új fejezetekhez adhatnak hozzá függetlenül a társalkotói beállításaidtól. Minden olyan sorozathoz is hozzá fognak adni, amelyhez a művet hozzáadják.
       html:
@@ -200,7 +126,6 @@ hu:
         remove_series: Ha tévedésből adtak hozzá, vagy nem akarod, hogy alkotóként szerepelj, akkor %{edit_series_link} eltávolíthatod magad az alkotók közül.
       intro_chapter: 'Egy %{adding_user} nevű felhasználó társalkotóként tüntette fel %{pseud} pszeudódat az alábbi fejezeten:'
       intro_series: 'Egy %{adding_user} nevű felhasználó társalkotóként tüntette fel %{pseud} pszeudódat az alábbi sorozaton:'
-      subject: "[%{app_name}] Társalkotói értesítés"
       text:
         creation: "%{pseuds}: %{title} (%{url})"
         remove_chapter: 'Ha tévedésből adtak hozzá, vagy nem akarod, hogy alkotóként szerepelj, akkor a fejezet szerkesztésével eltávolíthatod magad az alkotók közül: %{url}'
@@ -218,7 +143,6 @@ hu:
       intro_chapter: '%{archivist} felhasználó társalkotónak jelölte %{pseud} pszeudódat az alábbi fejezeten:'
       intro_series: '%{archivist} felhasználó társalkotónak jelölte %{pseud} pszeudódat az alábbi sorozaton:'
       intro_work: '%{archivist} felhasználó társalkotónak jelölte %{pseud} pszeudódat az alábbi munkán:'
-      subject: "[%{app_name}] Archiváló társalkotói értesítés"
       text:
         creation: "%{title} (%{url}) - %{pseuds}"
         remove_chapter: 'Ha tévedésből lettél megjelölve vagy nem szeretnél alkotóként szerepelni, a fejezet szerkesztésével törölheted magad az alkotók közül: %{url}'
@@ -232,7 +156,6 @@ hu:
       intro_chapter: 'A(z) %{inviting_user} felhasználó meghívta a(z) %{pseud} pszeudódat, hogy társalkotóként legyen feltüntetve a következő fejezeteken:'
       intro_series: 'A(z) %{inviting_user} felhasználó meghívta a(z) %{pseud} pszeudódat, hogy társalkotóként legyen feltüntetve a következő sorozaton:'
       intro_work: 'A(z) %{inviting_user} felhasználó meghívta a(z) %{pseud} pszeudódat, hogy társalkotóként legyen feltüntetve a következő munkán:'
-      subject: "[%{app_name}] Felkérés társalkotónak"
       text:
         creation: "%{pseuds}: %{title} (%{url})"
         instructions: 'Elfogadhatod vagy visszautasíthatod ezt a felkérést a Co-Creator Requests (Társalkotói felkérések) oldaladon: %{url}'
@@ -250,16 +173,8 @@ hu:
       subject: "[%{app_name}] Munkádat töröltük"
       support: lépj kapcsolatba a Támogatással
     invite_increase_notification:
-      html:
-        body:
-          one: 'Örömmel tudatjuk veled, hogy van %{count} új meghívód, amelyet új fiók létrehozására használhatsz az AO3-on. Itt hívhatsz meg egy barátot: %{invitation_page_link}.'
-          other: 'Örömmel tudatjuk veled, hogy van %{count} új meghívód, amelyeket új fiókok létrehozására használhatsz az AO3-on. Itt hívhatsz meg barátokat: %{invitation_page_link}.'
       invitation_page_link_text: Invitations (Meghívók) oldalad
       subject: "[%{app_name}] Új Meghívók"
-      text:
-        body:
-          one: Örömmel tudatjuk veled, hogy van %{count} új meghívód, amelyet új fiók létrehozására használhatsz az AO3-on. Te is meghívhatod egy barátod az Invitations (Meghívások) oldalon (%{invitation_page_url}).
-          other: Örömmel tudatjuk veled, hogy van %{count} új meghívód, amelyeket új fiókok létrehozására használhatsz az AO3-on.Te is meghívhatod egy barátod az Invitations (Meghívások) oldalon (%{invitation_page_url}).
     invite_request_declined:
       main:
         one: Sajnálattal közöljük, hogy új meghívókra vonatkozó kérésed jelenleg nem áll módunkban teljesíteni.
@@ -267,19 +182,11 @@ hu:
       reason: 'Kérésed a következő volt:'
       subject: "[%{app_name}] További meghívó kódok kérése elutasítva"
     recipient_notification:
-      html:
-        collection: Egy ajándék munkát posztoltak a számodra a(z) %{collection_link} gyűjteményben az AO3-on!
       no_collection: Egy ajándék munkát posztoltak a számodra az AO3-on!
       subject:
         collection: "[%{app_name}][%{collection_title}] Egy ajándék munka a számodra a(z) %{collection_title} gyűjteményben"
         no_collection: "[%{app_name}] Egy ajándék munka a számodra"
-      text:
-        collection: Egy ajándék munkát posztoltak a számodra a(z) "%{collection_title}" gyűjteményben (%{collection_url}) az AO3-on!
   users:
     mailer:
       reset_password_instructions:
-        expiration: Ha egy héten belül nem használod ezt a linket a jelszavad visszaállításához, a link érvényét veszti és egy újat kell majd igényelned.
-        intro: 'Valaki a fiókod jelszavának visszaállítását kérte. Az alábbi linkre kattintva és az új jelszó megadásával módosíthatod a fiókod jelszavát:'
-        link_title: Jelszavam megváltoztatása.
         subject: "[%{app_name}] Jelszó visszaállítása"
-        unrequested: Ha nem Te kérted jelszavad visszaállítását, hagyd figyelmen kívül ezt az emailt, így korábbi jelszavad továbbra is működni fog.
