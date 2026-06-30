@@ -48,26 +48,7 @@ sr:
         parent_org: Organization for Transformative Works – OTW (Organizacija za transformativne radove)
         support: Tim Korisničke podrške AO3-a
   user_mailer:
-    admin_deleted_work_notification:
-      bye: U prilogu je kopija Vašeg dela kao referenca.
-      contact_abuse: kontaktirate Odbor za politiku i zloupotrebu
-      deleted:
-        html: Vaše delo %{title} je izbrisano sa AO3-a od strane administratora sajta.
-        text: Vaše delo "%{title}" je izbrisano sa AO3-a od strane administratora sajta.
-      import_project:
-        html: Ako je Vaše delo bilo deo projekta unosa kojim se bavi naš tim Open Doors (Otvorena vrata), molimo Vas da %{opendoors_link} ako imate dodatna pitanja.
-        text: Ako je Vaše delo bilo deo projekta unosa kojim se bavi naš tim Open Doors (Otvorena vrata), molimo Vas da kontaktirate Otvorena vrata (%{opendoors_link}) ako imate dodatna pitanja.
-      opendoors: kontaktirate Otvorena vrata
-      subject: "[%{app_name}] Vaše delo je izbrisano od strane administratora"
-    admin_hidden_work_notification:
-      access: Dok Vam je delo sakriveno, i dalje ćete moći da mu pristupite putem linka iznad, ali neće biti navedeno na Vašoj stranici dela, i neće biti dostupno drugim korisnicima AO3-a.
-      check_email: Molimo Vas da proverite Vaš imejl, uključujući folder za nepoželjnu poštu, jer Vas je tim za Politiku i zloupotrebu možda već kontaktirao sa objašnjenjem zašto je Vaše delo sakriveno.
-      contact_abuse: kontaktirate Politiku i zloupotrebu
-      subject: "[%{app_name}] Vaše delo je sakriveno od strane tima za Politiku i zloupotrebu"
-      tos: Uslove korišćenja
     anonymous_or_unrevealed_notification:
-      anonymous_info: Anonimna dеla su uključеna u izlistanе tagovе, ali nisu na Vašoj stranici radova. Na samom dеlu, Vašе korisničko imе ćе biti zamеnjеno sa "Anonymous" (Anonimno).
-      anonymous_unrevealed_info: Održavaoci zbirkе mogu kasnijе otkriti Vašе dеlo, ali ga ostaviti anonimnim. Ljudi koji Vas budu pratili nеćе biti obavеštеni kada ova promеna stupi na snagu. Nakon što jе otkrivеno, Vašе dеlo ćе biti uključеno u izlistanе tagovе, ali nеćе biti na stranici Vaših radova. Na samom dеlu, Vašе korisničko imе ćе biti zamеnjеno sa "Anonymous" (Anonimno).
       changed_status:
         anonymous:
           html: Održavaoci %{collection_link} zbirkе su promеnili status Vašеg dеla %{work_link} na anonimno.
@@ -112,25 +93,15 @@ sr:
       any: Bilo koji
       assignment:
         html: Dodeljen Vam je sledeći zahtev u okviru izazova %{link} na AO3-u!
-      description: 'Opis:'
-      due: 'Rok za ovaj zadatak je:'
-      optional_tags: 'Proizvoljni tagovi:'
-      prompt_url: 'Link ideje:'
-      prompts: 'Ideje (prompts):'
-      recipient: 'Primalac:'
       recipient_missing: 'Nepoznato: kontaktirajte moderatora za pomoć!'
       subject: "[%{app_name}][%{collection_title}] Vaš zadatak!"
     claim_notification:
       access:
         contact_support: kontaktirajte Korisničku podršku AO3-a
-        html: Zavisno od arhive, Vaša dela su možda unesena kao ograničena samo za registrovane korisnike (kako bi bila sakrivena od Gugl pretraga). Ako je ovo slučaj, dela će biti dostupna samo ulogovanim korisnicima osim ako Vi ne odlučite da ih učinite potpuno vidljivim. Za pomoć oko otključavanja, odricanja od ili brisanja dela, molimo %{contact_support_link}.
-        text: Zavisno od arhive, Vaša dela su možda unesena kao ograničena samo za registrovane korisnike (kako bi bila sakrivena od Gugl pretraga). Ako je ovo slučaj, dela će biti dostupna samo ulogovanim korisnicima osim ako Vi ne odlučite da ih učinite potpuno vidljivim. Za pomoć oko otključavanja, odricanja od ili brisanja dela, molimo kontaktirajte Korisničku podršku AO3-a na %{support_url}.
       email_tips: Ako nas kontaktirate, molimo dodajte imejl adrese od @transformativeworks.org na Vašu listu bezbednih kontakata i proverite Vaše spam foldere za naš odgovor.
       introduction:
         ao3_name: Archive of Our Own – AO3 (Našu sopstvenu arhivu)
-        html: Primili ste ovaj imejl jer ste imali dela u arhivi fan-dela koju su %{open_doors_name_link} unela na %{app_link}. Pošto je ova imejl adresa povezana sa jednom koja je registrovana na unesenoj arhivi, povezana fan-dela (navedena ispod) su automatski dodata na Vaš AO3 nalog.
         open_doors_name: Open Doors (Otvorena vrata)
-        text: 'Primili ste ovaj imejl jer ste imali dela u arhivi fan-dela koju su Open Doors (Otvorena vrata) (%{open_doors_url}) unela na Archive of Our Own – AO3 (Našu sopstvenu arhivu): %{app_url}. Pošto je ova imejl adresa povezana sa jednom koja je registrovana na unesenoj arhivi, povezana fan-dela (navedena ispod) su automatski dodata na Vaš AO3 nalog.'
       mistake:
         contact_open_doors: kontaktirate Otvorena vrata
         html: Ako je ovo greška i ovo nisu Vaša dela, molimo Vas da ih ne obrišete! Molimo Vas da samo %{contact_open_doors_link} i mi ćemo rešiti problem.
@@ -139,38 +110,16 @@ sr:
         ao3_news: AO3 vestima
         contact_support: kontaktirajte Korisničku podršku AO3-a
         faq_page: stranici Često postavljenih pitanja
-        html: Možete pročitati objave o skorašnjim prenosima arhiva na %{ao3_news_link}, i pronaći još informacija na %{faq_page_link} ili %{tutorial_page_link} Otvorenih vrata. Za pitanja na koja nisu odgovorena u Često postavljenim pitanjima, tutorijalima ili ovom imejlu, molimo %{contact_support_link}.
-        text: Možete pročitati objave o skorašnjim prenosima arhiva na AO3 vestima (%{news_url}), i pronaći još informacija na stranici Često postavljenih pitanja (%{open_doors_faq_url}) ili stranici tutorijala (%{open_doors_tutorial_url}) Otvorenih vrata. Za pitanja na koja nisu odgovorena u Često postavljenim pitanjima, tutorijalima ili ovom imejlu, molimo kontaktirajte Korisničku podršku AO3-a na %{support_url}.
         tutorial_page: stranici tutorijala
       other_works:
         contact_open_doors: kontaktirajte Otvorena vrata
-        html: Ako ste imali druga dela na unesenoj arhivi pod imejl adresom kojoj više ne možete da pristupite, molimo Vas, %{contact_open_doors_link} sa bilo kojim informacijama koje mogu da pomognu u potvrđivanju Vašeg identiteta.
-        text: Ako ste imali druga dela na unesenoj arhivi pod imejl adresom kojoj više ne možete da pristupite, molimo Vas, kontaktirajte Otvorena vrata sa bilo kojim informacijama koje mogu da pomognu u potvrđivanju Vašeg identiteta.
       questions:
         contact_support: kontaktirajte Korisničku podršku AO3-a
         html: Za druga pitanja, molimo %{contact_support_link}.
         text: Za druga pitanja, molimo kontaktirajte Korisničku podršku AO3-a na %{support_url}.
-      redirects:
-        html: Kako bi očuvali liste preporuka i obeleživače, veb adrese unesene arhive će možda voditi do unesenih kopija ovih dela na ograničeno vreme (proverite objavu za Vašu arhivu kako biste bili sigurni). Ako ste Vi već objavili kopiju ovih dela i %{negation} koristili opciju unosa putem URL-a, na AO3-u će postojati dve kopije istog dela.
       subject: "[%{app_name}] Dodata dela"
-      update_redirect:
-        contact_open_doors: kontaktirate Otvorena vrata
-        html: Ako želite da Otvorena vrata ažuriraju preusmerenje kako bi vodilo do Vašeg već postojećeg dela, molimo da obrišete unesenu kopiju i %{contact_open_doors_link} sa imenom Vašeg AO3 naloga, imenom Vašeg naloga na unesenoj arhivi, i naslovom i URL-om fan-dela prema kom biste želeli da vodi veb adresa. (Ako imate više dela za koja biste želeli da promenite preusmerenje, možete da ih navedete u jednom imejlu.)
-        text: Ako želite da Otvorena vrata ažuriraju preusmerenje kako bi vodilo do Vašeg već postojećeg dela, molimo da obrišete unesenu kopiju i kontaktirate Otvorena vrata na %{open_doors_url} sa imenom Vašeg AO3 naloga, imenom Vašeg naloga na unesenoj arhivi, i naslovom i URL-om fan-dela prema kom biste želeli da vodi veb adresa. (Ako imate više dela za koja biste želeli da promenite preusmerenje, možete da ih navedete u jednom imejlu.)
       work_info:
         html: "%{work_link} (%{fandom})"
-        text:
-          no_fandom: "- %{work_title} %{work_url}"
-          with_fandom: "- %{work_title} %{work_url} (%{fandom})"
-      works_by: 'Ova dela su bila napisana sa imejla: %{email}'
-    collection_notification:
-      assignments_sent:
-        complete: Svi zadaci su sada poslati.
-        subject: Zadaci poslati
-      html:
-        received_message: 'Primili ste poruku o svojoj zbirci %{collection_link}:'
-      text:
-        received_message: 'Primili ste poruku o svojoj zbirci "%{collection_title}" (%{collection_url}):'
     creatorship_notification:
       explanation: Kada ste koautor nekog dela, možete biti dodati novim poglavljima bez obzira na Vaša podešavanja o koautorstvu. Bićete dodati i u svaki serijal kojem je to delo dodato.
       html:
@@ -181,7 +130,6 @@ sr:
         remove_series: Ako ste dodati greškom ili ne želite da budete navedeni kao autor, možete %{edit_series_link} da biste uklonili sebe sa liste autora.
       intro_chapter: 'Korisnik %{adding_user} je naveo Vaš pseudonim %{pseud} kao koautora sledećeg poglavlja:'
       intro_series: 'Korisnik %{adding_user} je naveo Vaš pseudonim %{pseud} kao koautora sledećeg serijala:'
-      subject: "[%{app_name}] Obaveštenje o koautorstvu"
       text:
         creation: "%{title} (%{url}) od %{pseuds}"
         remove_chapter: 'Ako ste dodati greškom ili ne želite da budete navedeni kao autor, možete urediti poglavlje da biste uklonili sebe sa liste autora: %{url}'
@@ -199,7 +147,6 @@ sr:
       intro_chapter: 'Korisnik %{archivist} je dodao Vaš pseudonim %{pseud} kao koautora na sledeće poglavlje:'
       intro_series: 'Korisnik %{archivist} je dodao Vaš pseudonim %{pseud} kao koautora na sledeći serijal:'
       intro_work: 'Korisnik %{archivist} je dodao Vaš pseudonim %{pseud} kao koautora na sledeće delo:'
-      subject: "[%{app_name}] Arhivarsko obaveštenje o koautorstvu"
       text:
         creation: "%{title} (%{url}) od %{pseuds}"
         remove_chapter: 'Ako ste dodati greškom ili ne želite da budete navedeni kao autor, možete da uredite poglavlje da biste uklonili sebe kao autora: %{url}'
@@ -213,7 +160,6 @@ sr:
       intro_chapter: 'Korisnik %{inviting_user} je pozvao Vaš pseudonim %{pseud} da bude na listi koautora sledećeg poglavlja:'
       intro_series: 'Korisnik %{inviting_user} je pozvao Vaš pseudonim %{pseud} da bude na listi koautora sledećeg serijala:'
       intro_work: 'Korisnik %{inviting_user} je pozvao Vaš pseudonim %{pseud} da bude na listi koautora sledećeg dela:'
-      subject: "[%{app_name}] Zahtev za koautorstvo"
       text:
         creation: "%{title} (%{url}) od strane %{pseuds}"
         instructions: 'Možete da prihvatite ili odbijete ovaj zahtev na Vašoj stranici Co-Creator Requests (Zahtevi za koautorstvo): %{url}'
@@ -248,8 +194,4 @@ sr:
   users:
     mailer:
       reset_password_instructions:
-        expiration: Ako ne upotrebite ovaj link da resetujete svoju lozinku u roku od nedelju dana, isteći će i moraćete da zatražite novi.
-        intro: 'Neko je zatražio resetovanje lozinke za Vaš nalog. Možete promeniti lozinku tako što ćete ispratiti link ispod i uneti Vašu novu lozinku:'
-        link_title: Promeni moju lozinku.
         subject: "[%{app_name}] Resetujte Vašu lozinku"
-        unrequested: Ukoliko niste zatražili resetovanje lozinke, možete zanemariti ovaj imejl i Vaša prethodna lozinka će nastaviti da radi.
