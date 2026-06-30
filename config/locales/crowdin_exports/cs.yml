@@ -31,38 +31,7 @@ cs:
         parent_org: Organization for Transformative Works – OTW (Společnost pro transformativní tvorbu)
         support: Podpora AO3
   user_mailer:
-    admin_deleted_work_notification:
-      bye: Kopii své práce najdete v příloze.
-      contact_abuse: obraťte se prosím na Dohled na dodržování pravidel a zásad serveru
-      deleted:
-        html: Vaše práce s názvem %{title} byla z Archivu smazána administrátorem.
-        text: Vaše práce s názvem "%{title}" byla z Archivu smazána administrátorem.
-      html:
-        tos_violation: V případě, že je možné, že vaše práce porušila Smluvní podmínky Archivu, %{contact_abuse_link}.
-      import_project:
-        html: V případě, že byla vaše práce součástí projektu Open Doors (Otevřené dveře), %{opendoors_link}.
-        text: V případě, že byla vaše práce součástí projektu Open Doors (Otevřené dveře), obraťte se s případnými dotazy na Open Doors (%{opendoors_link}).
-      opendoors: obraťte se s případnými dotazy na Open Doors
-      subject: "[%{app_name}] Vaše práce byla smazána administrátorem"
-      text:
-        tos_violation: V případě, že je možné, že vaše práce porušila Smluvní podmínky Archivu, obraťte se prosím na Dohled na dodržování pravidel a zásad serveru (%{contact_abuse_url}).
-    admin_hidden_work_notification:
-      access: Na stránku se skrytou prací se dostanete pomocí odkazu přiloženého výše, nebude ale dostupná ostatním uživatelům AO3, a to ani ze stránky s přehledem vašich prací.
-      check_email: Je možné, že vás výbor pro Dohled již kontaktoval ohledně důvodu pro skrytí této práce, zkontrolujte proto prosím svoji e-mailovou schránku, a to včetně složky s nevyžádanou poštou (spam).
-      contact_abuse: kontaktujte prosím výbor pro Dohled
-      html:
-        help: Pokud si nejste jisti, proč byla vaše práce skryta, a neobdrželi jste další informace, na tento e-mail neodpovídejte, ale %{contact_abuse_link}.
-        hidden: Vaše práce %{title} byla skryta výborem pro Dohled na dodržování pravidel a zásad serveru a není proto nadále veřejně dostupná.
-        tos_violation: Pokud byla vaše práce skryta z důvodu porušení %{tos_link} AO3, budete muset práci upravit tak, aby s nimi byla v souladu. Pokud tak neučiníte, hrozí, že bude vaše práce smazána.
-      subject: "[%{app_name}] Vaše práce byla skryta výborem pro Dohled na dodržování pravidel a zásad serveru"
-      text:
-        help: 'Pokud si nejste jisti, proč byla vaše práce skryta, a neobdrželi jste další informace, na tento e-mail neodpovídejte, ale kontaktujte prosím výbor pro Dohled: %{contact_abuse_url}.'
-        hidden: Vaše práce "%{title}" (%{work_url}) byla skryta výborem pro Dohled na dodržování pravidel a zásad serveru, a není proto nadále veřejně dostupná.
-        tos_violation: Pokud byla vaše práce skryta z důvodu porušení smluvních podmínek AO3 (%{tos_url}), budete muset práci upravit tak, aby s nimi byla v souladu. Jestli tak neučiníte, hrozí, že bude vaše práce smazána.
-      tos: smluvních podmínek
     anonymous_or_unrevealed_notification:
-      anonymous_info: Anonymní práce jsou zahrnuty ve výpisech tagů, ale nejsou uvedeny na stránce s vašimi pracemi. U dané práce bude vaše uživatelské jméno nahrazeno slovem "Anonymous" (Anonymní).
-      anonymous_unrevealed_info: Správci sbírky mohou vaši práci později zveřejnit, ale ponechat ji v anonymitě. Lidé, kteří se přihlásili k odběru vašich prací, nebudou o této změně informováni. Po zveřejnění bude vaše práce zahrnuta ve výpisech tagů, ale nebude uvedena na stránce s vašimi pracemi. Na stránce práce bude vaše uživatelské jméno nahrazeno slovem "Anonymous" (Anonymní).
       changed_status:
         anonymous:
           html: Správci sbírky %{collection_link} změnili status vaší práce %{work_link} na anonymní.
@@ -107,34 +76,15 @@ cs:
       any: Jakékoliv
       assignment:
         html: Byla vám přidělena následující žádost ve výzvě %{link} na AO3!
-      description: 'Popis:'
-      due: 'Termín splnění zadání je do:'
-      html:
-        footer: Tento e-mail jste obdrželi, protože jste se přihlásili do výzvy %{title}. Více informací o této výzvě a kontakty na moderátory najdete na %{footer_link}.
-        footer_link: profilové stránce výzvy
-        look_up: Toto zadání můžete najít na %{link}.
-        look_up_link: své stránce Assignments (Zadání)
-      optional_tags: 'Volitelné tagy:'
-      prompt_url: 'URL námětu:'
-      prompts: 'Náměty:'
-      recipient: 'Příjemce:'
       recipient_missing: 'Žádný: pro pomoc kontaktujte moderátora!'
       subject: "[%{app_name}][%{collection_title}] Vaše zadání!"
-      text:
-        assignment: Byla vám přidělena následující žádost ve výzvě "%{collection_title}" (%{collection_url}) na AO3!
-        footer: Tento e-mail jste obdrželi, protože jste se přihlásili do výzvy %{title} (%{url}). Více informací o této výzvě a kontakty na moderátory můžete najít na %{profile_url}.
-        look_up: Toto zadání najdete na stránce Assignments (Zadání) pod odkazem %{link}.
     claim_notification:
       access:
         contact_support: kontaktujte Podporu AO3
-        html: V závislosti na typu archivu mohou být vaše importované práce dostupné pouze registrovaným uživatelům (aby se nedostaly do vyhledávání Google). Pokud se nerozhodnete je zpřístupnit všem uživatelům, budou přístupné pouze přihlášeným uživatelům. Pokud potřebujete pomoct s odemknutím, opuštěním nebo odstraněním vašich prací, %{contact_support_link}.
-        text: 'V závislosti na typu archivu mohou být vaše importované práce dostupné pouze registrovaným uživatelům (aby se nedostaly do vyhledávání Google). Pokud se nerozhodnete je zpřístupnit všem uživatelům, budou přístupné pouze přihlášeným uživatelům. Pokud potřebujete pomoct s odemknutím, opuštěním nebo odstraněním vašich prací, kontaktujte Podporu AO3: %{support_url}.'
       email_tips: Pokud nás kontaktujete, přidejte si prosím e-mailové adresy @transformativeworks.org do seznamu bezpečných kontaktů a zkontrolujte si složky spam, jestli v nich nenajdete naši odpověď.
       introduction:
         ao3_name: Archive of Our Own – AO3 (Našeho vlastního archivu)
-        html: Tento e-mail vám zasíláme, protože jste měli v archivu fanouškovských děl práce, které byly v rámci projektu %{open_doors_name_link} naimportovány do %{app_link}. Vzhledem k tomu, že tato e-mailová adresa je spojena s adresou zaregistrovanou v importovaném archivu, byla související (níže uvedená) fanouškovská díla automaticky přiřazena k vašemu účtu na AO3 (Našem vlatním archivu).
         open_doors_name: Open Doors (Otevřené dveře)
-        text: 'Tento e-mail vám zasíláme, protože jste měli v archivu fanouškovských děl práce, které byly v rámci projektu Open Doors (Otevřené dveře) (%{open_doors_url}) naimportovány do Archive of Our Own – AO3 (Našeho vlastního archivu): %{app_url}. Vzhledem k tomu, že tato e-mailová adresa je spojena s adresou zaregistrovanou v importovaném archivu, byla související (níže uvedená) fanouškovská díla automaticky přiřazena k vašemu účtu na AO3.'
       mistake:
         contact_open_doors: kontaktovat projekt Open Doors
         html: Máte-li pocit, že vám tento e-mail by zaslán omylem a nejedná se o vaše práce, prosím nemažte je! Stačí %{contact_open_doors_link} a my to vyřešíme.
@@ -143,38 +93,16 @@ cs:
         ao3_news: Novinek AO3
         contact_support: Podporu AO3
         faq_page: Často kladené dotazy (FAQ)
-        html: Oznámení o nedávných přesunech v archivu si můžete přečíst na stránkách %{ao3_news_link} a dodatečné informace najdete na stránkách Open Doors %{faq_page_link} nebo %{tutorial_page_link}. Jakékoli otázky, na které nenaleznete odpověď v často kladených dotazech, návodech nebo v tomto e-mailu, prosím směřujte na %{contact_support_link}.
-        text: 'Oznámení o nedávných přesunech archivu si můžete přečíst na stránkách Novinek AO3 (%{news_url}) a dodatečné informace najdete na stránkách Open Doors s často kladenými dotazy (%{open_doors_faq_url}) nebo s návody (%{open_doors_tutorial_url}). Jakékoli otázky, na které nenaleznete odpověď v často kladených dotazech, návodech nebo v tomto e-mailu, prosím směřujte na Podporu AO3: %{support_url}.'
         tutorial_page: Návody
       other_works:
         contact_open_doors: kontaktujte projekt Open Doors
-        html: Pokud jste v importovaném archivu měli další práce vedené pod e-mailovou adresou, ke které již nemáte přístup, prosím %{contact_open_doors_link} s jakoukoli informací, která pomůže k ověření vaší totožnosti.
-        text: Pokud jste v importovaném archivu měli další práce vedené pod e-mailovými adresami, ke kterým již nemáte přístup, prosím kontaktujte projekt Open Doors s jakoukoli informací, která pomůže k ověření vaší totožnosti.
       questions:
         contact_support: kontaktujte Podporu AO3
         html: S dalšími dotazy prosím %{contact_support_link}.
         text: 'S dalšími dotazy prosím kontaktujte Podporu AO3: %{support_url}.'
-      redirects:
-        html: Z důvodu zachování záložek a seznamů s doporučeními mohou být webové adresy importovaného archivu po omezenou dobu přesměrovány na importovanou kopii těchto prací (pro jistotu zkontrolujte oznámení k vašemu archivu). Pokud jste již nahráli kopii těchto děl a %{negation}použili jste funkci importování z URL, budou na webu AO3 dvě kopie též práce.
       subject: "[%{app_name}] Nahrané práce"
-      update_redirect:
-        contact_open_doors: kontaktujte projekt Open Doors
-        html: Chcete-li, aby projekt Open Doors aktualizoval přesměrování na vaši již existující práci, smažte prosím importovanou kopii a %{contact_open_doors_link} se jménem vašeho účtu na AO3, vašeho účtu v importovaném archivu a názvem a URL fanouškovské práce, ke které chcete, aby přesměrování vedlo. (Pokud máte více prací, u kterých chcete přesměrování změnit, můžete je uvést do jednoho e-mailu.)
-        text: Chcete-li, aby projekt Open Doors aktualizoval přesměrování na vaši již existující práci, smažte prosím importovanou kopii a kontaktujte projekt Open Doors %{open_doors_url} se jménem vašeho účtu na AO3, vašeho účtu v importovaném archivu a názvem a URL fanouškovské práce, ke které chcete, aby přesměrování vedlo. (Pokud máte více prací, u kterých chcete přesměrování změnit, můžete je uvést do jednoho e-mailu.)
       work_info:
         html: "%{work_link} (%{fandom})"
-        text:
-          no_fandom: "- %{work_title} %{work_url}"
-          with_fandom: "- %{work_title} %{work_url} (%{fandom})"
-      works_by: 'Tyto práce byly vedeny pod e-mailovou adresou: %{email}'
-    collection_notification:
-      assignments_sent:
-        complete: Všechna zadání byla rozeslána.
-        subject: Zadání rozeslána
-      html:
-        received_message: 'Máte novou zprávu o vaší sbírce %{collection_link}:'
-      text:
-        received_message: 'Máte novou zprávu o vaší sbírce "%{collection_title}" (%{collection_url}):'
     creatorship_notification:
       explanation: Pokud jste spoluautorkou/em práce, můžete být přidány/i jako spoluautorky/ři nových kapitol nehledě na vaše nastavení preferencí ohledně spoluautorství. Budete také přidáni do všech sérií, do nichž bude tato práce přidána.
       html:
@@ -185,7 +113,6 @@ cs:
         remove_series: Pokud jste byly/i přidány/i omylem nebo nechcete být uváděny/i jako autor/ka, zvolte možnost %{edit_series_link}, abyste se autorství zřekly/i.
       intro_chapter: 'Uživatel/ka %{adding_user} uvedl/a váš pseudonym %{pseud} jako spoluautorku/a následující kapitoly:'
       intro_series: 'Uživatel/ka %{adding_user} uvedl/a váš pseudonym %{pseud} jako spoluautorku/a následující série:'
-      subject: "[%{app_name}] Oznámení o spoluautorství"
       text:
         creation: "%{title} (%{url}) od %{pseuds}"
         remove_chapter: 'Pokud jste byly/i přidány/i omylem nebo nechcete být uváděny/i jako autor/ka, můžete kapitolu editovat, abyste se autorství zřekly/i: %{url}'
@@ -203,7 +130,6 @@ cs:
       intro_chapter: 'Uživatel %{archivist} uvedl váš pseudonym %{pseud} jako spoluautora následující kapitoly:'
       intro_series: 'Uživatel %{archivist} uvedl váš pseudonym %{pseud} jako spoluautora následující série:'
       intro_work: 'Uživatel %{archivist} uvedl váš pseudonym %{pseud} jako spoluautora následující práce:'
-      subject: "[%{app_name}] Oznámení archiváře o spoluautorství"
       text:
         creation: "%{title} (%{url}) od %{pseuds}"
         remove_chapter: 'Pokud jste byli přidáni omylem nebo nechcete být uváděni jako autor, můžete kapitolu upravit, abyste se autorství zřekli: %{url}'
@@ -217,7 +143,6 @@ cs:
       intro_chapter: 'Uživatel %{inviting_user} zaslal vašemu pseudonymu %{pseud} pozvánku ke spoluautorství u následující kapitoly:'
       intro_series: 'Uživatel %{inviting_user} zaslal vašemu pseudonymu %{pseud} pozvánku ke spoluautorství u následující série:'
       intro_work: 'Uživatel %{inviting_user} zaslal vašemu pseudonymu %{pseud} pozvánku ke spoluautorství u následující práce:'
-      subject: "[%{app_name}] Pozvánka ke spoluautorství"
       text:
         creation: "%{title} (%{url}) od %{pseuds}"
         instructions: 'Tuto pozvánku můžete přijmout nebo odmítnout na stránce Co-Creator Requests (Pozvánky ke spoluautorství): %{url}'
@@ -241,19 +166,11 @@ cs:
       reason: 'Vaše žádost byla:'
       subject: "[%{app_name}] Žádost o dodatečnou pozvánku zamítnuta"
     recipient_notification:
-      html:
-        collection: Vám darovaná práce byla zveřejněna ve sbírce %{collection_link} na AO3!
       no_collection: Na AO3 pro vás byla zveřejněna fanouškovská práce!
       subject:
         collection: "[%{app_name}][%{collection_title}] Vám darovaná práce ze sbírky %{collection_title}"
         no_collection: "[%{app_name}] Fanouškovská práce jako dárek pro vás"
-      text:
-        collection: Ve sbírce "%{collection_title}" (%{collection_url}) na AO3 byla zveřejněna vám darovaná práce!
   users:
     mailer:
       reset_password_instructions:
-        expiration: Pokud tento odkaz nepoužijete ke změně hesla do sedmi dnů, vyprší a budete si muset zažádat o nový.
-        intro: 'Byl vznesen požadavek na změnu hesla pro váš účet. Své heslo můžete změnit kliknutím na následující odkaz a vyplněním nového hesla:'
-        link_title: Změnit heslo.
         subject: "[%{app_name}] Změňte své heslo"
-        unrequested: Pokud jste si změnu hesla nevyžádal/a, můžete tento email ignorovat a vaše stávající heslo zůstane platné.
