@@ -40,38 +40,7 @@ vi:
         parent_org: Organization for Transformative Works – OTW (Tổ Chức cho các Tác Phẩm Được Biến Đổi)
         support: Đội ngũ Hỗ Trợ Kỹ Thuật của AO3
   user_mailer:
-    admin_deleted_work_notification:
-      bye: Bản sao tác phẩm của bạn được đính kèm trong thư này.
-      contact_abuse: liên hệ đội ngũ Xử Lý Lạm Quyền của chúng tôi.
-      deleted:
-        html: Quản trị viên đã xóa tác phẩm %{title} của bạn khỏi AO3.
-        text: Quản lý trang web đã xóa tác phẩm %{title} của bạn quản lý trang web khỏi AO3.
-      html:
-        tos_violation: Nếu tác phẩm của bạn vi phạm Điều Khoản Dịch Vụ của AO3, vui lòng %{contact_abuse_link}.
-      import_project:
-        html: Nếu tác phẩm của bạn nằm trong dự án đăng lại thuộc quyền quản lý của đội ngũ Open Doors (Cửa Mở), hãy %{opendoors_link} để biết thêm thông tin chi tiết.
-        text: Nếu tác phẩm của bạn nằm trong dự án đăng lại thuộc quyền quản lý của đội ngũ Open Doors (Cửa Mở), hãy liên hệ Open Doors (%{opendoors_link}) để biết thêm thông tin chi tiết.
-      opendoors: liên hệ Open Doors
-      subject: "[%{app_name}] Quản trị viên đã xóa tác phẩm của bạn"
-      text:
-        tos_violation: Nếu tác phẩm của bạn vi phạm Điều Khoản Dịch Vụ AO3, hãy liên hệ đội ngũ Xử Lý Lạm Quyền của chúng tôi (%{contact_abuse_url}).
-    admin_hidden_work_notification:
-      access: Bạn vẫn có thể truy cập tác phẩm bị ẩn của mình qua đường dẫn trên; tuy nhiên, tác phẩm này sẽ không xuất hiện tại trang tác phẩm của bạn, đồng thời sẽ bị ẩn với những người dùng AO3 khác.
-      check_email: Ban Xử Lý Lạm Quyền AO3 có thể đã liên lạc với bạn về quyết định và lý do ẩn tác phẩm; xin vui lòng kiểm tra hộp thư của bạn, kể cả hộp thư rác.
-      contact_abuse: liên hệ Ban Xử Lý Lạm Quyền
-      html:
-        help: Nếu bạn không rõ vì sao tác phẩm của mình bị ẩn và chưa được thông báo gì thêm về việc này, vui lòng trực tiếp %{contact_abuse_link}.
-        hidden: Ban Xử Lý Lạm Quyền đã ẩn tác phẩm %{title} của bạn; tác phẩm này không còn ở chế độ mở truy cập công khai.
-        tos_violation: Nếu tác phẩm của bạn bị ẩn do vi phạm %{tos_link} của AO3, bạn sẽ được yêu cầu có hành động điều chỉnh để khắc phục. Không xử lý vi phạm về Điều Khoản Dịch Vụ có thể dẫn tới việc tác phẩm của bạn bị xóa khỏi AO3.
-      subject: "[%{app_name}] Ban Xử Lý Lạm Quyền đã ẩn tác phẩm của bạn"
-      text:
-        help: 'Nếu bạn không rõ vì sao tác phẩm của mình bị ẩn và chưa được thông báo gì thêm về việc này, vui lòng trực tiếp liên hệ Ban Xử Lý Lạm Quyền: %{contact_abuse_url}.'
-        hidden: Ban Xử Lý Lạm Quyền đã ẩn tác phẩm "%{title}" (%{work_url}) của bạn; tác phẩm này không còn ở chế độ mở truy cập công khai.
-        tos_violation: Nếu tác phẩm của bạn bị ẩn do vi phạm Điều Khoản Dịch Vụ (%{tos_url}) của AO3, bạn sẽ được yêu cầu có hành động điều chỉnh để khắc phục. Không xử lý vi phạm về Điều Khoản Dịch Vụ có thể dẫn tới việc tác phẩm của bạn bị xóa khỏi AO3.
-      tos: Điều Khoản Dịch Vụ
     anonymous_or_unrevealed_notification:
-      anonymous_info: Tác phẩm ẩn danh vẫn sẽ được liệt kê trong danh mục từ khóa, nhưng sẽ không xuất hiện trên trang tác phẩm của bạn. Tên người dùng hiển thị cùng tác phẩm sẽ trở thành "Anonymous" ("Ẩn danh").
-      anonymous_unrevealed_info: Trong tương lai, tác phẩm của bạn có thể sẽ được người quản lý bộ sưu tập công khai, song vẫn giữ trạng thái ẩn danh. Những người đăng ký theo dõi bạn sẽ không được thông báo về thay đổi này. Sau khi công khai, tác phẩm của bạn sẽ được liệt kê trong danh mục từ khóa, nhưng sẽ không xuất hiện trên trang tác phẩm của bạn. Tên người dùng hiển thị cùng tác phẩm sẽ trở thành "Anonymous" ("Ẩn danh").
       changed_status:
         anonymous:
           html: Người quản lý bộ sưu tập %{collection_link} đã chuyển trạng thái tác phẩm %{work_link} của bạn thành ẩn danh.
@@ -116,36 +85,15 @@ vi:
       any: Bất kỳ
       assignment:
         html: Đây là nhiệm vụ của bạn trong thử thách %{link} tại AO3!
-      description: 'Mô tả:'
-      due: 'Thời hạn hoàn thành nhiệm vụ:'
-      html:
-        footer: Bạn nhận được email này vì bạn đã đăng ký tham gia thử thách %{title}. Để biết thêm chi tiết về thử thách này và thông tin liên hệ của điều phối viên, vui lòng truy cập %{footer_link}.
-        footer_link: trang chính của thử thách
-        look_up: Bạn có thể tìm hiểu thêm về nhiệm vụ này ở %{link}.
-        look_up_link: trang Assignments (Nhiệm Vụ) của bạn
-      optional_tags: 'Từ khóa tùy chọn:'
-      prompt_url: 'Địa chỉ URL của chủ đề gợi ý:'
-      prompts: 'Chủ đề gợi ý:'
-      recipient: 'Người nhận:'
       recipient_missing: 'Không có người nhận: hãy liên hệ điều phối viên để được giúp đỡ!'
       subject: "[%{app_name}][%{collection_title}] Nhiệm Vụ của Bạn!"
-      text:
-        assignment: Đây là nhiệm vụ của bạn trong thử thách "%{collection_title}" (%{collection_url}) tại AO3!
-        footer: Bạn nhận được email này vì bạn đã đăng ký tham gia thử thách %{title} (%{url}). Để biết thêm chi tiết về thử thách này và thông tin liên hệ của điều phối viên, vui lòng truy cập %{profile_url}.
-        look_up: Bạn có thể tìm hiểu thêm về nhiệm vụ này tại ở Assignments (Nhiệm Vụ) của bạn tại %{link}.
-    change_email:
-      subject: "[%{app_name}] Yêu cầu thay đổi email"
     claim_notification:
       access:
         contact_support: liên lạc Ban Hỗ Trợ của AO3
-        html: Tùy thuộc vào kho tàng gốc, sau khi được nhập vào, các tác phẩm của bạn có thể chỉ hiển thị với người dùng đã đăng ký (để tránh những tác phẩm ấy hiển thị khi dùng chức năng tìm kiếm của Google). Trong trường hợp đó, chỉ những người dùng đã đăng nhập mới có thể nhìn thấy tác phẩm, trừ khi bạn cho phép hiển thị với mọi người. Để mở khóa, bỏ quyền sở hữu hoặc xóa tác phẩm, hãy %{contact_support_link}.
-        text: Tùy thuộc vào kho tàng gốc, sau khi được nhập vào, các tác phẩm của bạn có thể chỉ hiển thị với người dùng đã đăng ký (để tránh những tác phẩm ấy hiển thị khi dùng chức năng tìm kiếm của Google). Trong trường hợp đó, chỉ những người dùng đã đăng nhập mới có thể nhìn thấy tác phẩm, trừ khi bạn cho phép hiển thị với mọi người. Để mở khóa, bỏ quyền sở hữu hoặc xóa tác phẩm, hãy liên lạc với Ban Hỗ Trợ AO3 ở %{support_url}.
       email_tips: Để đảm bảo liên lạc giữa hai bên, hãy thêm @transformativeworks.org vào danh sách email an toàn của bạn và kiểm tra hòm thư spam nếu không tìm thấy phản hồi của chúng tôi.
       introduction:
         ao3_name: Archive of Our Own – AO3 (Kho Tàng Lưu Trữ của Chúng Ta)
-        html: Bạn nhận được thư này vì bạn có tác phẩm đăng tải ở trang kho tàng lưu trữ tác phẩm fan được %{open_doors_name_link} nhập vào %{app_link}. Vì địa chỉ e-mail này liên kết trực tiếp với địa chỉ e-mail đăng ký trong dữ liệu trang kho tàng được nhập, các tác phẩm tương ứng (được liệt kê sau đây) đã được tự động thêm vào tài khoản AO3 của bạn.
         open_doors_name: Open Doors (Dự án Cửa Mở)
-        text: 'Bạn nhận được email này vì những tác phẩm của bạn trong kho tàng lưu trữ tác phẩm của fan đã được nhập bởi Open Doors (Cửa Mở) (%{open_doors_url} đến Archive of Our Own – AO3 (Kho tàng lưu trữ của chúng ta): %{app_url}.. Vì địa chỉ email này được liên kết với email đăng ký ở kho tàng đó, nên những tác phẩm liên quan (được liệt kê bên dưới) được tự động thêm vào tài khoản AO3 của bạn.'
       mistake:
         contact_open_doors: liên lạc với Open Doors
         html: Nếu các tác phẩm kể trên không phải của bạn, xin vui lòng đừng xóa tác phẩm, mà hãy %{contact_open_doors_link} để chúng tôi tìm phương án giải quyết.
@@ -154,38 +102,16 @@ vi:
         ao3_news: Tin tức AO3
         contact_support: liên lạc với đội ngũ Hỗ Trợ của AO3
         faq_page: trang Hỏi Đáp
-        html: Bạn có thể tìm đọc thông báo về các đợt nhập lưu trữ dữ liệu gần đây tại trang %{ao3_news_link} và tìm hiểm thêm thông tin tại %{faq_page_link} hoặc %{tutorial_page_link} của dự án Open Doors. Với những vấn đề chưa được giải đáp trong trang Hỏi Đáp và trang Hướng Dẫn, vui lòng %{contact_support_link}.
-        text: Bạn có thể đọc thông báo về việc nhập dữ liệu từ kho tàng khác tại Tin Tức AO3 (%{news_url}), và đọc thêm thông tin tại Trang Hỏi Đáp của Cửa Mở (%{open_doors_faq_url}) hoặc Trang Hướng dẫn (%{open_doors_tutorial_url}). Với những câu hỏi chưa được giải đáp trong Trang Hướng Đáp, Trang Hướng dẫn và email này, hãy liên lạc Ban Hỗ Trợ tại %{support_url}.
         tutorial_page: trang Hướng Dẫn
       other_works:
         contact_open_doors: liên lạc với Cửa Mở
-        html: Nếu bạn còn những tác phẩm khác đã được nhập vào nhưng lại liên kết với email bạn không còn đăng nhập được, hãy %{contact_open_doors_link} đính kèm thông tin chứng minh bạn là người sáng tác.
-        text: Nếu bạn còn những tác phẩm khác đã được nhập vào nhưng lại liên kết với email bạn không còn đăng nhập được, hãy liên lạc với Cửa Mở đính kèm thông tin chứng minh bạn là người sáng tác.
       questions:
         contact_support: liên lạc Ban Hỗ Trợ của AO3
         html: Với những câu hỏi khác, hãy %{contact_support_link}.
         text: Nếu bạn có câu hỏi nào khác, hãy liên lạc Ban Hỗ Trợ của AO3 tại %{support_url}.
-      redirects:
-        html: Để giữ danh sách đề cử và dấu trang, đường link những kho tàng được nhập liệu có thể sẽ được chuyển hướng đến bản sao chép được nhập liệu của những tác phẩm ấy trong một khoảng thời gian giới hạn (kiểm tra thông báo về kho tàng để biết về thời gian). Nếu bạn đã đăng tải những tác phẩm này và %{negation} dùng tính năng nhập liệu từ URL, tác phẩm đấy sẽ có 2 bản trên AO3.
       subject: "[%{app_name}] Tác phẩm đã đăng tải"
-      update_redirect:
-        contact_open_doors: liên lạc với Cửa Mở
-        html: Nếu bạn muốn Cửa Mở cập nhật đường link chuyển hướng sang tác phẩm đã có sẵn của bạn, hãy xóa tác phẩm được nhập liệu, và %{contact_open_doors_link} cùng tên tài khoản AO3, tên tài khoản trên kho tàng được nhập liệu của bạn, tên và URL của tác phẩm mà bạn muốn được chuyển hướng đến. Nếu bạn có nhiều tác phẩm cùng muốn chuyển hướng, bạn có thể liệt kê trong cùng một mail.
-        text: Nếu bạn muốn Cửa Mở cập nhật đường link chuyển hướng sang tác phẩm đã có sẵn của bạn, hãy xóa tác phẩm được nhập liệu, và liên lạc với Cửa Mở tại %{open_doors_url} cùng tên tài khoản AO3, tên tài khoản trên kho tàng được nhập liệu của bạn, tên và URL của tác phẩm mà bạn muốn được chuyển hướng đến. Nếu bạn có nhiều tác phẩm cùng muốn chuyển hướng, bạn có thể liệt kê trong cùng một mail.
       work_info:
         html: "%{work_link} (%{fandom})"
-        text:
-          no_fandom: "- %{work_title} %{work_url}"
-          with_fandom: "- %{work_title} %{work_url} (%{fandom})"
-      works_by: 'Những tác phẩm dưới đây được liên kết với email: %{email}'
-    collection_notification:
-      assignments_sent:
-        complete: Tất cả nhiệm vụ đã được gửi.
-        subject: Các nhiệm vụ đã được gửi
-      html:
-        received_message: 'Bạn có một tin nhắn về bộ sưu tập %{collection_link} của bạn:'
-      text:
-        received_message: 'Bạn có một tin nhắn về bộ sưu tập "%{collection_title}" (%{collection_url}) của bạn:'
     creatorship_notification:
       explanation: Nếu bạn là đồng tác giả của một tác phẩm nào đó, bút danh của bạn sẽ được đưa vào danh sách tác giả của các chương mới, bất kể thiết lập cá nhân của bạn về đồng sáng tác. Bạn cũng sẽ được liệt kê vào danh sách tác giả trong mọi bộ tác phẩm có chứa tác phẩm này.
       html:
@@ -196,7 +122,6 @@ vi:
         remove_series: Nếu bạn bị thêm nhầm hoặc không muốn được liệt kê là đồng tác giả, bạn có thể %{edit_series_link} để loại bỏ mình khỏi danh sách tác giả.
       intro_chapter: 'Người dùng %{adding_user} đã liệt kê bút danh %{pseud} của bạn làm đồng tác giả của chương truyện sau:'
       intro_series: 'Người dùng %{adding_user} đã thêm bút danh %{pseud} của bạn làm đồng tác giả của bộ tác phẩm:'
-      subject: "[%{app_name}] Thông báo đồng sáng tác"
       text:
         creation: "%{title} (%{url}) bởi %{pseuds}"
         remove_chapter: 'Nếu bạn bị thêm nhầm hoặc không muốn được liệt kê là đồng tác giả, bạn có thể chỉnh sửa chương truyện để loại bỏ mình khỏi danh sách tác giả: %{url}'
@@ -214,7 +139,6 @@ vi:
       intro_chapter: 'Người dùng %{archivist} đã thêm bút danh %{pseud} của bạn làm đồng tác giả của chương truyện sau:'
       intro_series: 'Người dùng %{archivist} đã thêm bút danh %{pseud} của bạn làm đồng tác giả trong bộ tác phẩm sau:'
       intro_work: 'Người dùng %{archivist} đã thêm bút danh %{pseud} của bạn làm đồng tác giả của tác phẩm sau:'
-      subject: "[%{app_name}] Thông báo của chuyên viên lưu trữ về tư cách đồng tác giả"
       text:
         creation: "%{title} (%{url}) bởi %{pseuds}"
         remove_chapter: 'Nếu bạn bị thêm nhầm hoặc không muốn được liệt kê là đồng tác giả, bạn có thể chỉnh sửa chương truyện để loại bỏ mình khỏi danh sách tác giả: %{url}'
@@ -228,7 +152,6 @@ vi:
       intro_chapter: 'Người dùng %{inviting_user} đã mời bút danh %{pseud} của bạn làm đồng tác giả của chương truyện sau:'
       intro_series: 'Người dùng %{inviting_user} đã mời bút danh %{pseud} của bạn làm đồng tác giả của bộ tác phẩm sau:'
       intro_work: 'Người dùng %{inviting_user} đã mời bút danh %{pseud} của bạn làm đồng tác giả của tác phẩm sau:'
-      subject: "[%{app_name}] Lời mời hợp tác"
       text:
         creation: "%{title} (%{url}) bởi %{pseuds}"
         instructions: 'Bạn có thể chấp nhận hoặc từ chối lời mời này tại trang Co-Creator Requests (Lời Mời Hợp Tác) của bạn: %{url}'
@@ -246,9 +169,6 @@ vi:
       subject: "[%{app_name}] Quản trị viên đã xóa tác phẩm của bạn"
       support: liên hệ ban Hỗ Trợ Kỹ Thuật
     invite_increase_notification:
-      html:
-        body:
-          other: 'Chúng tôi xin thông báo: bạn hiện đang có %{count} thư mời mới có thể sử dụng để tạo tài khoản mới ở AO3. Bạn có thể gửi thư mời cho bạn bè qua %{invitation_page_link}.'
       invitation_page_link_text: trang Invitations (Thư Mời) của mình
       subject: "[%{app_name}] Thư mời mới"
     invite_request_declined:
@@ -257,19 +177,11 @@ vi:
       reason: 'Yêu cầu của bạn là:'
       subject: "[%{app_name}] Từ chối Yêu cầu Thêm Thư mời"
     recipient_notification:
-      html:
-        collection: Một tác phẩm dành tặng bạn đã được đăng tải trong bộ sưu tập %{collection_link} tại AO3!
       no_collection: Một tác phẩm dành tặng bạn đã được đăng tải trên AO3!
       subject:
         collection: "[%{app_name}][%{collection_title}] Một tác phẩm dành tặng bạn trong %{collection_title}"
         no_collection: "[%{app_name}] Một tác phẩm dành tặng bạn"
-      text:
-        collection: Một tác phẩm dành tặng bạn đã được đăng tải trong bộ sưu tập"%{collection_title}" (%{collection_url}) tại AO3!
   users:
     mailer:
       reset_password_instructions:
-        expiration: Trong thời hạn 1 tuần, nếu bạn không dùng đường link này để đặt lại mật khẩu, đường link sẽ mất hiệu lực; bạn sẽ phải yêu cầu đường link mới.
-        intro: 'Ai đó đã yêu cầu đặt lại mật khẩu cho tài khoản của bạn. Bạn có thể thay đổi mật khẩu bằng cách nhấn vào đường link bên dưới và điền mật khẩu mới.'
-        link_title: Thay đổi mật khẩu của tôi.
         subject: "[%{app_name}] Đặt lại mật khẩu"
-        unrequested: Nếu bạn không yêu cầu đặt lại mật khẩu, bạn có thể bỏ qua email này; mật khẩu cũ của bạn vẫn sẽ tiếp tục có hiệu lực.
