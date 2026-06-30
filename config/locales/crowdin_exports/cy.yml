@@ -31,38 +31,7 @@ cy:
         parent_org: '"Organisation for Transformative Works - OTW" (Mudiad Cyfryngau Trawsffurfiadwy)'
         support: Y tîm Cefnogaeth AO3
   user_mailer:
-    admin_deleted_work_notification:
-      bye: Cysylltwyd gopi o'ch gwaith am eich cofnodion.
-      contact_abuse: cysylltwch â'n Pwyllgor Polisi a Chamdriniaeth
-      deleted:
-        html: Dileüwyd eich gwaith %{title} o'r Archif gan weinyddydd.
-        text: Dileüwyd eich gwaith %{title} o'r Archif gan weinyddydd.
-      html:
-        tos_violation: Os mae'n bosib yr oedd eich gwaith yn torri Telerau'r Archif, %{contact_abuse_link}.
-      import_project:
-        html: Os yr oedd eich gwaith yn rhan o brosiect mewforiad gan "Open Doors" (Drysau Agored), %{opendoors_link} gyda unrhyw holiadau pellach.
-        text: Os yr oedd eich gwaith yn rhan o brosiect mewforiad gan "Open Doors" (Drysau Agored), cysylltwch â Drysau Agored (%{opendoors_link}) gyda unrhyw holiadau pellach.
-      opendoors: cysylltwch â Drysau Agored
-      subject: "[%{app_name}] Dileuwyd eich gwaith gan weinyddydd"
-      text:
-        tos_violation: Os mae'n bosib yr oedd eich gwaith yn torri Telerau'r Archif, cysylltwch âg ein Pwyllgor Polisi a Chamdriniaeth (%{contact_abuse_url}).
-    admin_hidden_work_notification:
-      access: Tra bod eich gwaith wedi'i guddio, gallwch barhau i gael gafael arno trwy'r ddolen uchod, ond ni fydd yn cael ei restru ar eich tudalen waith, nag ar gael i ddefnyddyddion AO3 eraill.
-      check_email: Gwiriwch eich e-bost, os gwelwch yn dda, gan gynnwys eich ffolder sbam, oherwydd efallai bod y tîm eisoes wedi cysylltu â chi i esbonio pam fod eich gwaith wedi'i guddio.
-      contact_abuse: cysylltwch â'r tîm Camdriniaeth
-      html:
-        help: Os ydych yn ansicr pam fod eich gwaith yn gudd, ac nid ydych wedi derbyn cyfathrebu pellach ynghylch y mater hwn, %{contact_abuse_link}.
-        hidden: Mae eich gwaith %{title} wedi'i guddio gan y tîm Camdriniaeth a nid yw'n bellach yn hygyrch i'r cyhoedd.
-        tos_violation: Os cafodd y gwaith ei guddio oherwydd toriad %{tos_link} yr AO3, bydd rhaid i chi gywiro'r toriad. Gall methu â dod â'ch gwaith i gydymffurfio â'r telerau arwain at y gwaith yn cael ei ddileu o'r AO3.
-      subject: "[%{app_name}] Mae eich gwaith wedi'i guddio gan y tîm Camdriniaeth"
-      text:
-        help: 'Os ydych yn ansicr pam fod eich gwaith yn gudd, ac nid ydych wedi derbyn cyfathrebu pellach ynghylch y mater hwn, cysylltwch â''r tîm Camdriniaeth: %{contact_abuse_url}.'
-        hidden: Mae eich gwaith "%{title}" (%{work_url}) wedi'i guddio gan y tîm Camdriniaeth a nid yw'n bellach yn hygyrch i'r cyhoedd.
-        tos_violation: Os cafodd y gwaith ei guddio oherwydd toriad Telerau'r AO3 (%{tos_url}), bydd rhaid i chi gywiro'r toriad. Gall methu â dod â'ch gwaith i gydymffurfio â'r telerau arwain at y gwaith yn cael ei ddileu o'r AO3.
-      tos: Telerau
     anonymous_or_unrevealed_notification:
-      anonymous_info: Mae gwaith dienw yn cael eu cynnwys mewn rhestrau tag, ond nid ar eich tudalen gwaith. Ar y gwaith, bydd eich enw cyfrif yn cael ei ddisodli gan "Anonymous" (Dienw)
-      anonymous_unrevealed_info: Gall y cynhalydd casglu ddatgelu eich gwaith ond byddant yn ei adael yn ddienw. Ni fydd pobl sy'n tanysgrifio i chi yn cael gwybod am y newid. Ar ôl cael ei ddatgelu, bydd eich gwaith yn cael ei gynnwys mewn rhestrau tagiau, ond nid ar eich tudalen waith. Ar y gwaith, bydd eich enw yn cael ei ddisodli gan "Anonymous" (Dienw).
       changed_status:
         anonymous:
           html: Mae cynhalyddion casglu %{collection_link} wedi newid statws eich gwaith %{work_link} i ddienw.
@@ -107,36 +76,15 @@ cy:
       any: Unrhyw
       assignment:
         html: Mae'r cais hon yn yr her %{link} ar Archif Ein Hun wedi'i aseinio i chi!
-      description: 'Disgrifiad:'
-      due: 'Mae''r aseiniad hwn yn ddyledus am:'
-      html:
-        footer: Rydych chi'n derbyn yr ebost hyn oherwydd wnaethoch cofrestru ar gyfer yr her %{title}. Am fwy o wybodaeth am yr her hon ac am fanylion cyswllt y cymedrolyddion, gwelwch %{footer_link}.
-        footer_link: tudalen proffil yr her
-        look_up: Gallwch weld yr aseiniad hwn ar %{link}.
-        look_up_link: Eich Aseiniadau
-      optional_tags: 'Tagiau Ychwanegol:'
-      prompt_url: 'URL Annogiad:'
-      prompts: 'Annogion:'
-      recipient: 'Derbynydd:'
       recipient_missing: 'Neb: cysylltwch â chymedrolydd am help!'
       subject: "[%{app_name}][%{collection_title}] Eich Aseiniad!"
-      text:
-        assignment: Mae'r cais hon yn yr her "%{collection_title}" (%{collection_url}) ar Archif Ein Hun wedi'i aseinio i chi!
-        footer: Rydych chi'n derbyn yr ebost hyn oherwydd wnaethoch cofrestru ar gyfer y her %{title} (%{url}). Am fwy o wybodaeth am yr her hon ac am fanylion cyswllt y cymedrolyddion, gwelwch %{profile_url}.
-        look_up: Gallwch edrych ar yr aseiniad hwn o'ch tudalen Assignments (Aseiniadau) ar%{link}.
-    change_email:
-      subject: "[%{app_name}] Cais newid ebost"
     claim_notification:
       access:
         contact_support: cysylltwch â Chefnogaeth AO3
-        html: Yn dibynnu ar yr archif, mae'n bosibl bod eich gweithiau wedi'u mewnforio wedi'u cyfyngu i ddefnyddwyr cofrestredig yn unig (er mwyn eu hatal rhag ymddangos mewn chwiliadau Google). Yn yr achos hwn, dim ond defnyddwyr sydd wedi mewngofnodi fydd yn gallu eu gweld oni bai eich bod yn dewis eu gwneud yn weladwy i bawb. Am help i ddatgloi, anghatrefu neu dileu'ch gwaith, %{contact_support_link}.
-        text: Yn dibynnu ar yr archif, mae'n bosibl bod eich gweithiau wedi'u mewnforio wedi'u cyfyngu i ddefnyddwyr cofrestredig yn unig (er mwyn eu hatal rhag ymddangos mewn chwiliadau Google). Yn yr achos hwn, dim ond defnyddwyr sydd wedi mewngofnodi fydd yn gallu eu gweld oni bai eich bod yn dewis eu gwneud yn weladwy i bawb. Am help i ddatgloi, anghatrefu neu dileu'ch gwaith, cysylltwch â Chefnogaeth at %{support_url}.
       email_tips: Os cysylltwch â ni, ychwanegwch gyfeiriadau e-bost oddi wrth @transformativeworks.org to i'ch rhestr o gysylltiadau diogel a gwiriwch eich ffolder sothach am ein hateb.
       introduction:
         ao3_name: Archive of Our Own – AO3 (Archif Ein Hun)
-        html: Rydych chi'n derbyn yr e-bost hwn oherwydd eich gwaith mewn archif Ffangyfryngau sydd wedi'i fewnforio gan %{open_doors_name_link} i'r %{app_link}. Oherwydd mae'r cyfeiriad e-bost hwn yn gysylltiedig ag un sydd wedi'i gofrestru ar yr archif a fewnforiwyd, mae'r ffanweithiau (a restrir isod) cysylltiedig wedi'u hychwanegu'n awtomatig at eich cyfrif AO3.
         open_doors_name: Drysau Agored
-        text: 'Rydych chi''n derbyn yr e-bost hwn oherwydd eich gwaith mewn archif Ffangyfryngau sydd wedi''i fewnforio gan Open Doors (Drysau Agored) (%{open_doors_url}) i''r Archive of Our Own – AO3 (Archif Ein Hun): %{app_url}. Oherwydd bod y cyfeiriad e-bost hwn yn gysylltiedig ag un sydd wedi''i gofrestru ar yr archif a fewnforiwyd, mae''r ffanweithiau (a restrir isod) cysylltiedig wedi''u hychwanegu''n awtomatig at eich cyfrif AO3.'
       mistake:
         contact_open_doors: cysylltwch â Drysau Agored
         html: Os camgymeriad yw hyn, ac nid yw'r gweithiau hwn yn perthyn i chi, peidiwch â'u dileu os gwelwch yn dda! %{contact_open_doors_link} i ddatrys y sefyllfa.
@@ -145,38 +93,16 @@ cy:
         ao3_news: Newyddion AO3
         contact_support: cysylltwch â Chefnogaeth AO3
         faq_page: Tudalen Holiadau Cyffredin
-        html: Gallwch ddarllen cyhoeddiadau am symudiadau archif diweddar yn %{ao3_news_link}, a dod o hyd i ragor o wybodaeth ar y %{faq_page_link} neu'r %{tutorial_page_link} Drysau Agored. Am gwestiynau eraill heb eu hateb yn yr holiadau cyffredin, tiwtorialau, neu'r e-bost hwn, %{contact_support_link}.
-        text: Gallwch ddarllen cyhoeddiadau am symudiadau archif diweddar yn Newyddion AO3 (%{news_url}), a dod o hyd i ragor o wybodaeth ar dudalen holiadau cyffredin (%{open_doors_faq_url}) neu dudalen tiwtorial (%{open_doors_tutorial_url}) y Drysau Agored. Am gwestiynau eraill heb eu hateb yn yr holiadau cyffredin, tiwtorialau, neu'r e-bost hwn, cysylltwch â Chefnogaeth at %{support_url}.
         tutorial_page: dudalen tiwtorial
       other_works:
         contact_open_doors: cysylltwch â Drysau Agored
-        html: Os oedd gennych weithiau eraill ar yr archif a fewnforiwyd o dan gyfeiriad e-bost ni allwch gael mynediad iddo fwyach, %{contact_open_doors_link} gydag unrhyw wybodaeth a all wirio pwy ydych.
-        text: Os oedd gennych weithiau eraill ar yr archif a fewnforiwyd o dan gyfeiriad e-bost ni allwch gael mynediad iddo fwyach, cysylltwch â Drysau Agored gydag unrhyw wybodaeth a all wirio pwy ydych.
       questions:
         contact_support: cysylltwch â Chefnogaeth AO3
         html: Am ymholiadau eraill, %{contact_support_link}.
         text: Am ymholiadau eraill, cysylltwch â Chefnogaeth AO3 at %{support_url}.
-      redirects:
-        html: I gadw rhestrau awgrymu a thudalnodau, gall cyfeiriadau gwe'r archif a fewnforiwyd ailgyfeirio i'r copi o'r gweithiau hyn a fewnforiwyd am gyfnod cyfyngedig (edrychwch ar bostiad cyhoeddiad eich archif i fod yn sicr). Os ydych chi eisoes wedi uwchlwytho copi o'r gweithiau hyn a %{negation} defnyddioch chi'r nodwedd mewnforio o URL, bydd dau gopi o'r un gwaith ar AO3.
       subject: "[%{app_name}] Gweithiau wedi'u llwytho i fyny"
-      update_redirect:
-        contact_open_doors: cysylltwch â Drysau Agored
-        html: Os hoffech i Ddrysau Agored ddiweddaru'r ailgyfeiriad i dynnu sylw at eich gwaith sy'n bodoli eisoes, dilëwch y copi a fewnforiwyd, ac wedyn %{contact_open_doors_link} gyda'ch enw cyfrif AO3 a'r archif a fewnforiwyd, a theitl ac URL y gwaith yr hoffech i'r ailgyfeiriad gyfeirio ato. (I newid ailgyfeiriadau lluosog, gallwch restr pob gwaith yn un e-bost.)
-        text: Os hoffech i Ddrysau Agored ddiweddaru'r ailgyfeiriad i dynnu sylw at eich gwaith sy'n bodoli eisoes, dilëwch y copi a fewnforiwyd, a chysylltwch â Drysau Agored at %{open_doors_url} gyda'ch enw cyfrif AO3 a'r archif a fewnforiwyd, a theitl ac URL y gwaith yr hoffech i'r ailgyfeiriad gyfeirio ato. (I newid ailgyfeiriadau lluosog, gallwch restr pob gwaith yn un e-bost.)
       work_info:
         html: "%{work_link} (%{fandom})"
-        text:
-          no_fandom: "- %{work_title} %{work_url}"
-          with_fandom: "- %{work_title} %{work_url} (%{fandom})"
-      works_by: 'Ysgrifennwyd y gweithiau hyn o dan yr e-bost: %{email}'
-    collection_notification:
-      assignments_sent:
-        complete: Mae pob aseiniad yn awr wedi'i hanfon.
-        subject: Aseiniadau wedi'i hanfon
-      html:
-        received_message: 'Rydych wedi derbyn neges amdan eich casgliad %{collection_link}:'
-      text:
-        received_message: 'Rydych wedi derbyn neges amdan eich casgliad "%{collection_title}" (%{collection_url}):'
     creatorship_notification:
       explanation: Pan rydych yn gyd-greüydd ar waith, gallwch cael eich ychwwnegu i benodau newydd waeth beth yw eich gosodiadau cyd-greu. Byddwch hefyd yn cael eich ychwanegu i unrhyw gyfres mae'r gwaith yn cael ei ychwanegu ati.
       html:
@@ -187,7 +113,6 @@ cy:
         remove_series: Os ydych wedi cael eich ychwanegu ar gam neu nad ydych chi am gael eich rhestru fel creüydd, gallwch %{edit_series_link}i dynnu'ch hun fel creüydd.
       intro_chapter: 'Mae''r defnyddydd %{adding_user} wedi rhestru''ch ffugenw %{pseud} fel cyd-greüydd ar y bennod ganlynol:'
       intro_series: 'Mae''r defnyddydd %{adding_user} wedi rhestru''ch ffugenw %{pseud} fel cyd-greüydd ar y gyfres ganlynol:'
-      subject: "[%{app_name}] Hysbysiad cyd-greüydd"
       text:
         creation: "%{title} (%{url}) gan %{pseuds}"
         remove_chapter: 'Os ydych wedi cael eich ychwanegu ar gam neu nad ydych chi am gael eich rhestru fel creüydd, gallwch golygu''r bennod ii dynnu''ch hun fel creüydd. %{url}'
@@ -205,7 +130,6 @@ cy:
       intro_chapter: 'Mae''r defnyddydd %{archivist} wedi ychwanegu %{pseud} fel cydgreüydd ar y bennod canlynol:'
       intro_series: 'Mae''r defnyddydd %{archivist} wedi ychwanegu %{pseud} fel cydgreüydd ar y gyfres canlynol:'
       intro_work: 'Mae''r defnyddydd %{archivist} wedi ychwanegu %{pseud} fel cydgreüydd ar y gwaith canlynol:'
-      subject: "[%{app_name}] Hysbysiad cyd-greüydd archifydd"
       text:
         creation: "%{title} (%{url}) gan %{pseuds}"
         remove_chapter: 'Os rydych wedi cael eich ychwanegu ar gam, neu na hoffech gael eich rhestru fel creüydd, gallwch olygu''r bennod i dynnu eich hun fel creüydd: %{url}'
@@ -219,7 +143,6 @@ cy:
       intro_chapter: 'Mae''r defnyddydd %{inviting_user} wedi gwahodd eich ffugenw %{pseud} fel cyd-greüydd ar y bennod ganlynol:'
       intro_series: 'Mae''r defnyddydd %{inviting_user} wedi gwahodd eich ffugenw %{pseud} fel cyd-greüydd ar y gyfres ganlynol:'
       intro_work: 'Mae''r defnyddydd %{inviting_user} wedi gwahodd eich ffugenw %{pseud} fel cyd-greüydd ar y gwaith canlynol:'
-      subject: "Cais cyd-greüydd [%{app_name}]"
       text:
         creation: "%{title} (%{url}) gan %{pseuds}"
         instructions: 'Gallwch dderbyn neu gwrthod y cais yma ar eich tudalen "Co-Creator Requests" (Ceisiau Cyd-Greüydd): %{url}'
@@ -243,19 +166,11 @@ cy:
       reason: 'Roedd eich cais yn:'
       subject: "[%{app_name}] Gwrthodwyd cais cod gwahoddiad ychwanegol"
     recipient_notification:
-      html:
-        collection: Mae gwaith anrheg weid cael ei phostio yng nghasgliad %{collection_link} ar yr AO3 ar eich cyfer!
       no_collection: Mae gwaith anrheg weid cael ei phostio ar yr AO3 ar eich cyfer!
       subject:
         collection: "[%{app_name}][%{collection_title}] Gwaith anrheg ar eich cyfer o %{collection_title}"
         no_collection: "[%{app_name}] Gwaith anrheg ar eich cyfer"
-      text:
-        collection: Mae gwaith anrheg weid cael ei phostio yng nghasgliad "%{collection_title}" (%{collection_url}) ar yr AO3 ar eich cyfer!
   users:
     mailer:
       reset_password_instructions:
-        expiration: Os na ddefnyddiwch y ddolen hon i ailosod eich cyfrinair o fewn wythnos, bydd y ddolen yn dod i ben, a bydd rhaid i chi ofyn am un newydd.
-        intro: 'Mae rhywun yn ceisio ailosod y gyfrinair ar gyfer eich cyfrif. Gallwch newid cyfrinair eich cyfrif trwy ddilyn y ddolen isod a mewnbynnu eich cyfrinair newydd:'
-        link_title: Newid fy nghyfrinair.
         subject: "[%{app_name}] Ailosod eich gyfrinair"
-        unrequested: Os na wnaethoch chi ceisio ailosod y cyfrinair hwn, gallwch anwybyddu'r e-bost hwn a bydd eich cyfrinair blaenorol yn parhau i weithio.
