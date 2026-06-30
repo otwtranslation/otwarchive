@@ -5,23 +5,7 @@ af:
       creation:
         title_with_chapter_number: Hoofstuk %{position} van %{title}
   user_mailer:
-    admin_hidden_work_notification:
-      access: Alhoewel jou werk versteek is, sal jy steeds toegang daartoe hê deur die skakel hierbo, maar dit sal nie op jou werkebladsy gelys word nie, en dit sal nie beskikbaar wees vir ander gebruikers van die AO3 nie.
-      check_email: Gaan asseblief jou e-pos na, insluitend jou strooiposvouer, aangesien die Beleid- en Misbruikspan jou moontlik reeds gekontak het om te verduidelik hoekom jou werk versteek is.
-      contact_abuse: kontak die Beleidsmisbruik-komitee
-      html:
-        help: Indien jy onseker is waarom jou werk versteek is, en jy geen verdere kommunikasie oor hierdie saak ontvang het nie, %{contact_abuse_link}.
-        hidden: Jou werk %{title} is deur die Beleidsmisbruik-span versteek en is nie meer in die openbaar toeganklik nie.
-        tos_violation: Indien jou werk versteek is as gevolg van 'n oortreding van die AO3 se %{tos_link}, sal jy stappe moet volg om die oortreding reg te stel. Indien jy nie jou werk opdateer om aan die Diensvoorwaardes te voldoen nie, kan jou werk van die AO3 verwyder word.
-      subject: "[%{app_name}] Jou werk is deur die Beleidsmisbruik-span versteek"
-      text:
-        help: 'Indien jy onseker is waarom jou werk versteek is, en jy geen verdere kommunikasie oor hierdie saak ontvang het nie, kontak asseblief die Beleidsmisbruik-komitee: %{contact_abuse_url}.'
-        hidden: Jou werk "%{title}" (%{work_url}) is deur die Beleidsmisbruik-span versteek en is nie meer publiek toeganklik nie.
-        tos_violation: Indien jou werk versteek is as gevolg van 'n oortreding van die AO3 se Diensvoorwaardes (%{tos_url}), sal jy stappe moet neem om die oortreding reg te stel. Indien jy nie jou werk opdateer om aan die Diensvoorwaardes te voldoen nie, kan jou werk van die AO3 verwyder word.
-      tos: Diensvoorwaardes
     anonymous_or_unrevealed_notification:
-      anonymous_info: Anonieme werke word ingesluit by etiket-lyste, maar nie op jou werke-bladsy nie. Op die werk sal jou gebruikersnaam vervang word met "Anonymous" (Anoniem).
-      anonymous_unrevealed_info: Die versameling onderhouers mag later jou werk openbaar maar dit anoniem los. Mense wat tot jou rekening ingeskryf is sal nie in kennis gestel word van hierdie verandering nie. Sodra dit openbaar is, sal jou werk by etiket lyste ingesluit word, maar nie op jou werke-bladsy nie. Op die werk sal jou gebruikersnaam vervang word met "Anonymous" (Anoniem).
       changed_status:
         anonymous:
           html: Die versameling onderhouers van %{collection_link} het die status van jou werk %{work_link} na anoniem verander.
@@ -66,34 +50,15 @@ af:
       any: Enige
       assignment:
         html: Die volgende versoek is aan jou toegeken in die %{link} uitdaging by die AO3!
-      description: 'Beskrywing:'
-      due: 'Hierdie opdrag moet voltooi wees teen:'
-      html:
-        footer: Jy ontvang hierdie e-pos omdat jy ingekryf het vir die %{title} uitdaging. Vir meer inligting oor hierdie uitdaging en kontakbesonderhede van die modereerders, besoek asseblief %{footer_link}.
-        footer_link: die uitdaging profielbladsy
-        look_up: Jy kan die opdrag opsoek by %{link}.
-        look_up_link: Jou Assignments (Opdragte)-bladsy
-      optional_tags: 'Opsionele etikette:'
-      prompt_url: 'Prikkel URL:'
-      prompts: 'Prikkels:'
-      recipient: 'Ontvanger:'
       recipient_missing: 'Geen: kontak ''n modereerder vir hulp!'
       subject: "[%{app_name}][%{collection_title}] Jou Opdrag!"
-      text:
-        assignment: Die volgende versoek is aan jou toegeken in die "%{collection_title}" uitdaging (%{collection_url}) by die AO3!
-        footer: U ontvang hierdie e-pos omdat jy ingekryf het vir die %{title} uitdaging (%{url}). Vir meer inligting oor hierdie uitdaging en kontakbesonderhede van die modereerders, besoek asseblief %{profile_url}.
-        look_up: Jy kan die opdrag opsoek in jou Assignments (Opdragte)-bladsy by %{link}.
     claim_notification:
       access:
         contact_support: Kontak die AO3 Ondersteuningkomitee
-        html: Afhangende van die argief, is jou ingevoerde werke dalk beperk tot geregistreerde gebruikers (om hulle uit Google-soektogte te hou). As dit die geval is, sal die werke slegs toeganklik wees vir ingetekende gebruikers, tensy jy kies om die werke ten volle sigbaar te maak. %{contact_support_link} vir hulp om jou werke oop te sluit, te oneien of uit te vee.
-        text: Afhangende van die argief, is jou ingevoerde werke dalk beperk tot geregistreerde gebruikers (om hulle uit Google-soektogte te hou). As dit die geval is, sal die werke slegs toeganklik wees vir ingetekende gebruikers, tensy jy kies om die werke ten volle sigbaar te maak. Kontak asseblief die AO3 Ondersteuning-komitee by %{support_url} vir hulp om jou werke oop te sluit, te oneien of uit te vee.
       email_tips: As jy ons kontak, voeg asseblief e-posadresse vanaf @transformativeworks.org by jou lys van veilige kontakte en hou jou strooiposvouers dop vir ons antwoord.
       introduction:
         ao3_name: Archive of Our Own – AO3 (Argief van Ons Eie)
-        html: Jy ontvang hierdie e-pos omdat jy werke in 'n fanwerke-argief gehad het wat deur %{open_doors_name_link} na die %{app_link} ingevoer is. Omdat hierdie e-posadres gekoppel is aan een wat op die ingevoerde argief geregistreer is, is die gepaarde fanwerke (hieronder gelys) outomaties by jou AO3-rekening gevoeg.
         open_doors_name: Open Doors (Oop Deure)
-        text: 'Jy ontvang hierdie e-pos omdat jy werke in ''n fanwerke-argief gehad het wat deur Open Doors (Oop Deure) (%{open_doors_url}) in die Archive of Our Own ingevoer is – AO3 (Argief van Ons Eie): %{app_url}. Omdat hierdie e-posadres gekoppel is aan een wat op die ingevoerde argief geregistreer is, is die gekoppelde fanwerke (hieronder gelys) outomaties by jou AO3-rekening gevoeg.'
       mistake:
         contact_open_doors: Kontak Oop Deure
         html: As dit 'n fout is en hierdie nie jou werke is nie, moet dit asseblief nie uitvee nie! %{contact_open_doors_link} en ons sal dit uitsorteer.
@@ -102,30 +67,16 @@ af:
         ao3_news: AO3 Nuus
         contact_support: kontak die AO3 Ondersteuningkomitee
         faq_page: Algemene Vrae-bladsy
-        html: Jy kan aankondigings lees oor argiewe wat onlangs oorgeskuif is by %{ao3_news_link} en bykomende inligting op Oop Deure se %{faq_page_link} of %{tutorial_page_link} vind. Vir enige vrae wat nie in die Algemene Vrae, handleidings of hierdie e-pos beantwoord is nie, %{contact_support_link}.
-        text: Jy kan aankondigings lees oor argiewe wat onlangs oorgeskuif is by AO3 Nuus (%{news_url}) en bykomende inligting op Oop Deure se Algemene Vrae-bladsy (%{open_doors_faq_url}) of handleiding-bladsy (%{open_doors_tutorial_url}) vind. Vir enige vrae wat nie in die Algemene Vrae, handleidings of hierdie e-pos beantwoord is nie, kontak asseblief %{support_url}.
         tutorial_page: handleiding-bladsy
       other_works:
         contact_open_doors: kontak Oop Deure
-        html: As jy ander werke op die ingevoerde argief gehad het onder 'n e-posadres waartoe jy nie meer toegang het nie, %{contact_open_doors_link} met enige inligting wat kan help om jou identiteit te verifieer.
-        text: As jy ander werke op die ingevoerde argief gehad het onder 'n e-posadres waartoe jy nie meer toegang het nie, kontak asseblief Oop Deure met enige inligting wat kan help om jou identiteit te verifieer.
       questions:
         contact_support: kontak die AO3 Ondersteuningkomitee
         html: Vir ander navrae, %{contact_support_link}.
         text: Vir ander navrae, kontak asseblief die AO3 Ondersteuning-komitee by %{support_url}.
-      redirects:
-        html: Om aanbevelinglyste en boekmerke te bewaar, kan die ingevoerde argief se webadresse vir 'n beperkte tyd na die ingevoerde kopie van hierdie werke herlei word (verwys na die aankondiging e-pos vir jou argief om seker te maak). As jy reeds kopieë van hierdie werke opgelaai het en jy %{negation} die "invoer vanaf URL-funksie" gebruik het nie, sal daar twee kopieë van dieselfde werk op AO3 wees.
       subject: "[%{app_name}] Werke opgelaai"
-      update_redirect:
-        contact_open_doors: kontak Oop Deure
-        html: As jy wil hê Oop Deure moet die herleiding opdateer om na jou bestaande werk te wys, vee asseblief die ingevoerde kopie uit, en %{contact_open_doors_link} met jou AO3-rekeningnaam, jou rekeningnaam op die ingevoerde argief, en die titel en URL van die fanwerk waarna jy wil hê die herleiding moet wys. (As jy verskeie werke het waarvoor jy die herleiding wil verander, kan jy dit in een e-pos lys.)
-        text: As jy wil hê Oop Deure moet die herleiding opdateer om na jou voorafbestaande werk te wys, vee asseblief die ingevoerde kopie uit, en kontak Oop Deure by %{open_doors_url} met jou AO3-rekeningnaam, jou rekeningnaam op die ingevoerde argief, en die titel en URL van die fanwerk waarna jy wil hê die herleiding moet wys. (As jy verskeie werke het waarvoor jy die herleiding wil verander, kan jy dit in een e-pos lys.)
       work_info:
         html: "%{work_link} (%{fandom})"
-        text:
-          no_fandom: "- %{work_title} %{work_url}"
-          with_fandom: "- %{work_title} %{work_url} (%{fandom})"
-      works_by: 'Hierdie werke is onder die volgende e-posadres geskryf: %{email}'
     creatorship_notification:
       explanation: Wanneer jy 'n werk se medeskepper is, kan jy by nuwe hoofstukke gevoeg word ongeag jou medeskepper-instellings. Jou skuilnaam sal ook by enige reeks gevoeg word waarby die werk gevoeg word.
       html:
@@ -136,7 +87,6 @@ af:
         remove_series: Indien jy per ongeluk bygevoeg is of nie as 'n skepper gelys wil word nie, kan jy jouself %{edit_series_link} as skepper verwyder.
       intro_chapter: 'Die gebruiker %{adding_user} het jou skuilnaam %{pseud} as ''n medeskepper van die volgende hoofstuk gelys:'
       intro_series: 'Die gebruiker %{adding_user} het jou skuilnaam %{pseud} as ''n medeskepper van die volgende reeks gelys:'
-      subject: "[%{app_name}] Medeskepper-kennisgewing"
       text:
         creation: "%{title} (%{url}) deur %{pseuds}"
         remove_chapter: 'Indien jy per ongeluk bygevoeg is of nie as ''n skepper gelys wil word nie, kan jy die hoofstuk wysig om jouself as skepper te verwyder: %{url}'
@@ -154,7 +104,6 @@ af:
       intro_chapter: 'Die gebruiker %{archivist} het jou skuilnaam %{pseud} as ''n mede-skepper by die volgende hoofstuk gevoeg:'
       intro_series: 'Die gebruiker %{archivist} het jou skuilnaam %{pseud} as ''n mede-skepper by die volgende reeks gevoeg:'
       intro_work: 'Die gebruiker %{archivist} het jou skuilnaam %{pseud} as ''n mede-skepper by die volgende werk gevoeg:'
-      subject: "[%{app_name}] Argivaris mede-skepper kennisgewing"
       text:
         creation: "%{title} (%{url}) deur %{pseuds}"
         remove_chapter: 'As jy verkeerdelik bygevoeg is of nie as ''n skepper gelys wil word nie, kan jy die hoofstuk redigeer om jouself as skepper te verwyder: %{url}'
@@ -168,7 +117,6 @@ af:
       intro_chapter: 'Die gebruiker %{inviting_user} het jou skuilnaam %{pseud} genooi om as medeskepper van die volgende hoofstuk gelys te word:'
       intro_series: 'Die gebruiker %{inviting_user} het jou skuilnaam %{pseud} genooi om as medeskepper van die volgende reeks gelys te word:'
       intro_work: 'Die gebruiker %{inviting_user} het jou skuilnaam %{pseud} genooi om as medeskepper van die volgende werk gelys te word:'
-      subject: "[%{app_name}] Medeskepper versoek"
       text:
         creation: "%{title} (%{url}) deur %{pseuds}"
         instructions: 'Jy kan die versoek aanvaar of verwerp op jou Co-Creator Requests (Medeskepper versoeke) bladsy: %{url}'
