@@ -44,38 +44,7 @@ nb:
         parent_org: Organization for Transformative Works – OTW (Organisasjonen for transformative verk)
         support: Teamet for AO3 support
   user_mailer:
-    admin_deleted_work_notification:
-      bye: Vedlagt ligger en kopi av verket for din referanse.
-      contact_abuse: kontakt vår komité for retningslinjer og misbruk
-      deleted:
-        html: Ditt verk %{title} ble slettet fra Arkivet av en sideadministrator.
-        text: Ditt verk "%{title}" ble slettet fra Arkivet av en sideadministrator.
-      html:
-        tos_violation: Hvis det er mulig at verket ditt brøt med Arkivets brukervilkår, vennligst %{contact_abuse_link}.
-      import_project:
-        html: Hvis verket var en del av et importprosjekt administrert av vårt Åpne Dører-team, vennligst %{opendoors_link} for eventuelle spørsmål.
-        text: Hvis verket var en del av et importprosjekt administrert av vårt Åpne Dører-team, vennligst kontakt Åpne Dører (%{opendoors_link}) for eventuelle spørsmål.
-      opendoors: kontakt Åpne Dører
-      subject: "[%{app_name}] Ditt verk har blitt slettet av en administrator"
-      text:
-        tos_violation: Hvis det er mulig at verket ditt brøt med Arkivets brukervilkår, vennligst kontakt vår komité for retningslinjer og misbruk %{contact_abuse_url}.
-    admin_hidden_work_notification:
-      access: Mens verket ditt er skjult kan du fortsatt få tilgang til det gjennom lenken ovenfor, men det vil ikke være synlig på siden med oversikt over dine verk, og det vil heller ikke være tilgjengelig for andre brukere av AO3.
-      check_email: Vennligst sjekk e-posten din, inkludert spam innboksen ettersom teamet for retningslinjer og misbruk allerede kan ha kontaktet deg for å forklare hvorfor verket ditt har blitt skjult.
-      contact_abuse: kontakt retningslinjer og misbruk
-      html:
-        help: Hvis du er usikker på hvorfor verket ditt ble skjult og du ikke har mottatt videre kommunikasjon angående dette, vennligst %{contact_abuse_link} direkte.
-        hidden: Verket ditt %{title} har blitt skjult av teamet for retningslinjer og misbruk og er ikke lenger offentlig tilgjengelig.
-        tos_violation: Hvis verket ditt ble skjult fordi det er i strid med AO3s %{tos_link} blir du nødt til å gjøre endringer for å rette opp dette. Dersom du ikke endrer verket ditt slik at det samsvarer med brukervilkårene, kan det føre til at verket ditt blir slettet fra AO3.
-      subject: "[%{app_name}] Verket ditt har blitt skjult av teamet for retningslinjer og misbruk"
-      text:
-        help: 'Hvis du er usikker på hvorfor verket ditt ble skjult og du ikke har mottatt videre kommunikasjon angående dette, vennligst kontakt retningslinjer og misbruk direkte: %{contact_abuse_url}.'
-        hidden: Verket ditt "%{title}" (%{work_url}) har blitt skjult av teamet for retningslinjer og misbruk og er ikke lenger offentlig tilgjengelig.
-        tos_violation: Hvis verket ditt ble skjult fordi det er i strid med AO3s brukervilkår (%{tos_url}) blir du nødt til å gjøre endringer for å rette opp dette. Dersom du ikke endrer verket ditt slik at det samsvarer med brukervilkårene, kan det føre til at verket ditt blir slettet fra AO3.
-      tos: Brukervilkår
     anonymous_or_unrevealed_notification:
-      anonymous_info: Anonyme verk inkluderes i tagg-lister, men ikke på oversikten over dine verk. På selve verket vil brukernavnet ditt erstattes med "Anonymous" (Anonym).
-      anonymous_unrevealed_info: Samlingens administratorer kan ved en senere anledning velge å offentliggjøre verket men holde det anonymt. Brukere som abonnerer på dine verk vil ikke motta noen notifikasjon når dette skjer. Når verket er offentliggjort vil det inkluderes i tagg-lister, men ikke på oversikten over dine verk. På selve verket vil brukernavnet ditt erstattes med "Anonymous" (Anonym).
       changed_status:
         anonymous:
           html: Administratorene for %{collection_link} har gjort verket ditt %{work_link} anonymt.
@@ -120,36 +89,15 @@ nb:
       any: Uansett
       assignment:
         html: Du har fått følgende i oppdrag i %{link}-utfordringen på Archive of Our Own (Vårt eget arkiv)!
-      description: 'Beskrivelse:'
-      due: 'Dette oppdraget har frist:'
-      html:
-        footer: Du mottar denne e-posten fordi du har svart på %{title}-utfordringen. For mer informasjon om denne utfordringen og kontaktinformasjonen til moderatorene, gå til %{footer_link}.
-        footer_link: utfordringens profilside
-        look_up: Du kan finne dette oppdraget på %{link}.
-        look_up_link: Assignments (oppdrag)-siden din
-      optional_tags: 'Valgfrie tagger:'
-      prompt_url: 'URL til inspirasjonen:'
-      prompts: 'Inspirasjon:'
-      recipient: 'Mottaker:'
       recipient_missing: 'Ingen: kontakt en moderator for hjelp!'
       subject: "[%{app_name}][%{collection_title}] Ditt oppdrag!"
-      text:
-        assignment: Du har fått følgende i oppdrag i "%{collection_title}"-utfordringen (%{collection_url}) på Archive of Our Own (Vårt eget arkiv)!
-        footer: Du mottar denne e-posten fordi du har meldt deg på %{title}-utfordringen (%{url}). For mer informasjon om denne utfordringen og kontaktinformasjonen til moderatorene, gå til %{profile_url}.
-        look_up: Du kan finne dette oppdraget på Assignments (oppdrag)-siden din på %{link}.
-    change_email:
-      subject: "[%{app_name}] Forespørsel om å endre e-postadresse"
     claim_notification:
       access:
         contact_support: kontakt AO3 support
-        html: Avhengig av arkivet, kan det hende verkene dine har blitt importert som begrenset til kun registrerte brukere (for å unngå at de dukker opp i Google-søk). Hvis dette er tilfellet, vil verkene kun være tilgjengelige for brukere som er logget inn, med mindre du velger å gjøre dem helt synlige. For hjelp med å åpne, si fra deg eller slette verkene dine, vennligst %{contact_support_link}.
-        text: 'Avhengig av arkivet, kan det hende verkene dine har blitt importert som begrenset til kun registrerte brukere (for å unngå at de dukker opp i Google-søk). Hvis dette er tilfellet, vil verkene kun være tilgjengelige for brukere som er logget inn, med mindre du velger å gjøre dem helt synlige. For hjelp med å åpne, si fra deg eller slette verkene dine, vennligst kontakt AO3 support her: %{support_url}.'
       email_tips: Hvis du kontakter oss, vennligst legg til e-postadresser fra @transformativeworks.org til listen din over sikre kontakter og sjekk søppelpostmappene dine etter svar fra oss.
       introduction:
         ao3_name: Archive of Our Own – AO3 (Vårt eget arkiv)
-        html: Du mottar denne e-posten fordi du hadde verk i et fanverkarkiv som har blitt importert av %{open_doors_name_link} til %{app_link}. Fordi denne e-postadressen er knyttet til en som er registrert hos det importerte arkivet, har de tilhørende fanverkene (listet opp nedenfor) automatisk blitt lagt til AO3-kontoen din.
         open_doors_name: Open Doors (Åpne Dører)
-        text: 'Du mottar denne e-posten fordi du hadde verk i et fanverkarkiv som har blitt importert av Open Doors (Åpne Dører) (%{open_doors_url}) til Archive of Our Own – AO3 (Vårt eget arkiv): %{app_url}. Fordi denne e-postadressen er knyttet til en som er registrert hos det importerte arkivet, har de tilhørende fanverkene (listet opp nedenfor) automatisk blitt lagt til AO3-kontoen din.'
       mistake:
         contact_open_doors: kontakt Åpne Dører
         html: Hvis dette er feil og disse verkene ikke tilhører deg, ikke slett dem! Vennligst %{contact_open_doors_link}, så ordner vi det.
@@ -158,38 +106,16 @@ nb:
         ao3_news: AO3 Nyheter
         contact_support: kontakt AO3 support
         faq_page: ofte stilte spørsmål-side
-        html: Du kan lese kunngjøringer om nylige arkivforflyttninger på %{ao3_news_link}, og finne ytterligere informasjon på Åpne Dører sin %{faq_page_link} eller %{tutorial_page_link}. For spørsmål som ikke er besvart i ofte stilte spørsmål, tutorialer, eller i denne e-posten, vennligst %{contact_support_link}.
-        text: 'Du kan lese kunngjøringer om nylige arkivforflyttninger på AO3 Nyheter (%{news_url}) og finne ytterligere informasjon på Åpne Dører sin ofte stilte spørsmål-side (%{open_doors_faq_url}) eller tutorial-side (%{open_doors_tutorial_url}). For spørsmål som ikke er besvart i ofte stilte spørsmål, tutorialer, eller i denne e-posten, vennligst kontakt support her: %{support_url}.'
         tutorial_page: tutorial-side
       other_works:
         contact_open_doors: kontakt Åpne Dører
-        html: Hvis du hadde andre verk på det importerte arkivet under en e-postadresse du ikke lenger har tilgang til, vennligst %{contact_open_doors_link} med all informasjon som kan hjelpe med å verifisere identiteten din.
-        text: Hvis du hadde andre verk på det importerte arkivet under en e-postadresse du ikke lenger har tilgang til, vennligst kontakt Åpne Dører med all informasjon som kan hjelpe med å verifisere identiteten din.
       questions:
         contact_support: kontakt AO3 support
         html: For andre henvendelser, vennligst %{contact_support_link}.
         text: 'For andre henvendelser, vennligst kontakt AO3 support her: %{support_url}.'
-      redirects:
-        html: For å bevare anbefalingslister og bokmerker, kan nettadressen til det importerte arkivet omdirigere til den importerte kopien av disse verkene i en begrenset periode (sjekk kunngjøringsinnlegget til arkivet ditt for å være sikker). Hvis du allerede har lastet opp en kopi av disse verkene og du %{negation} brukte funksjonen hvor verket importeres fra URL-en, kommer det til å være to kopier av samme verk på AO3.
       subject: "[%{app_name}] Verk lastet opp"
-      update_redirect:
-        contact_open_doors: kontakt Åpne Dører
-        html: Hvis du ønsker at Åpne Dører skal oppdatere omdirigeringspunktet til verket ditt som allerede eksisterer på AO3, vennligst slett den importerte kopien og %{contact_open_doors_link} med navnet på AO3-kontoen din, navnet på kontoen din fra det importerte arkivet, samt tittelen og URL-en til fanverket du ønsker at omdirigeringen skal gå til. (Hvis du har flere verk du ønsker å endre omdirigeringen til, kan du oppgi alle sammen i én e-post.)
-        text: 'Hvis du ønsker at Åpne Dører skal oppdatere omdirigeringspunktet til verket ditt som allerede eksisterer på AO3, vennligst slett den importerte kopien og kontakt Åpne Dører her: %{open_doors_url} med navnet på AO3-kontoen din, navnet på kontoen din fra det importerte arkivet, samt tittelen og URL-en til fanverket du ønsker at omdirigeringen skal gå til. (Hvis du har flere verk du ønsker å endre omdirigeringen til, kan du oppgi alle sammen i én e-post.)'
       work_info:
         html: "%{work_link} (%{fandom})"
-        text:
-          no_fandom: "- %{work_title} %{work_url}"
-          with_fandom: "- %{work_title} %{work_url} (%{fandom})"
-      works_by: 'Disse verkene ble skrevet under e-posten: %{email}'
-    collection_notification:
-      assignments_sent:
-        complete: Alle oppdrag er nå sendt ut.
-        subject: Oppdrag utsendt
-      html:
-        received_message: 'Du har fått en melding om samlingen din %{collection_link}:'
-      text:
-        received_message: 'Du har fått en melding om samlingen din "%{collection_title}" (%{collection_url}):'
     creatorship_notification:
       explanation: Når du er medskaper på et verk kan du bli lagt til på nye kapitler uavhengig av dine medskaper-innstillinger. Du blir også lagt til på alle serier som verket tilhører.
       html:
@@ -200,7 +126,6 @@ nb:
         remove_series: Dersom du har blitt lagt til ved en feiltakelse eller du ikke ønsker å stå oppført som skaper, kan du %{edit_series_link} for å fjerne deg selv som skaper.
       intro_chapter: 'Brukeren %{adding_user} har lagt til pseudonymet ditt %{pseud} som medskaper på følgende kapittel:'
       intro_series: 'Brukeren %{adding_user} har lagt til pseudonymet ditt %{pseud} som medskaper på følgende serie:'
-      subject: "[%{app_name}] Varsel om at du har blitt lagt til som medskaper"
       text:
         creation: "%{title} (%{url}) av %{pseuds}"
         remove_chapter: 'Dersom du har blitt lagt til ved en feiltakelse eller ikke ønsker å stå oppført som skaper, kan du redigere kapittelet for å fjerne deg selv som skaper: %{url}'
@@ -218,7 +143,6 @@ nb:
       intro_chapter: 'Brukeren %{archivist} har lagt til pseudonymet ditt %{pseud} som medskaper på følgende kapittel:'
       intro_series: 'Brukeren %{archivist} har lagt til pseudonymet ditt %{pseud} som medskaper på følgende serie:'
       intro_work: 'Brukeren %{archivist} har lagt til pseudonymet ditt %{pseud} som medskaper på følgende verk:'
-      subject: "[%{app_name}] En arkivar har lagt deg til som medskaper"
       text:
         creation: "%{title} (%{url}) av %{pseuds}"
         remove_chapter: 'Dersom du har blitt lagt til ved en feiltakelse eller ikke ønsker å stå oppført som skaper, kan du redigere kapittelet for å fjerne deg selv som skaper: %{url}'
@@ -232,7 +156,6 @@ nb:
       intro_chapter: 'Brukeren %{inviting_user} har invitert pseudonymet ditt %{pseud} til å bli lagt til som medskaper på følgende kapittel:'
       intro_series: 'Brukeren %{inviting_user} har invitert pseudonymet ditt %{pseud} til å bli lagt til som medskaper på følgende serie:'
       intro_work: 'Brukeren %{inviting_user} har invitert pseudonymet ditt %{pseud} til å bli lagt til som medskaper på følgende verk:'
-      subject: "[%{app_name}] Medskaperforespørsel"
       text:
         creation: "%{title} (%{url}) av %{pseuds}"
         instructions: 'Du kan godkjenne eller avvise denne forespørselen på siden din for Co-Creator Requests (medskaperforespørsler): %{url}'
@@ -250,16 +173,8 @@ nb:
       subject: "[%{app_name}] Ditt verk har blitt slettet"
       support: kontakt support
     invite_increase_notification:
-      html:
-        body:
-          one: Vi ville bare informere deg om at du har %{count} ny invitasjon som kan brukes til å lage en ny bruker på arkivet. Du kan invitere en venn på %{invitation_page_link}.
-          other: Vi ville bare informere deg om at du har %{count} nye invitasjoner som kan brukes til å lage nye brukere på arkivet. Du kan invitere en venn på %{invitation_page_link}.
       invitation_page_link_text: din Invitations (invitasjoner)-side
       subject: "[%{app_name}] Nye invitasjoner"
-      text:
-        body:
-          one: Vi ville bare informere deg om at du har %{count} ny invitasjon som kan brukes til å lage en ny bruker på arkivet. Du kan invitere en venn på din Invitations (invitasjoner)-side (%{invitation_page_url}).
-          other: Vi ville bare informere deg om at du har %{count} nye invitasjoner som kan brukes til å lage nye brukere på arkivet. Du kan invitere en venn på din Invitations (invitasjoner)-side (%{invitation_page_url}).
     invite_request_declined:
       main:
         one: Vi beklager å måtte informere deg om at din forespørsel om å få tilsendt en ny invitasjon ikke kan innfris på dette tidspunktet.
@@ -267,19 +182,11 @@ nb:
       reason: 'Din forespørsel var:'
       subject: "[%{app_name}] Forespørsel om ekstra invitasjonskode avvist"
     recipient_notification:
-      html:
-        collection: Et verk er publisert som en gave til deg i samlingen %{collection_link} på AO3!
       no_collection: Et verk er publisert på AO3 som en gave til deg!
       subject:
         collection: "[%{app_name}][%{collection_title}] Du har fått et verk fra %{collection_title}"
         no_collection: "[%{app_name}] Du har fått et verk"
-      text:
-        collection: Et verk er publisert som en gave til deg i samlingen "%{collection_title}" (%{collection_url}) på AO3!
   users:
     mailer:
       reset_password_instructions:
-        expiration: Hvis du ikke bruker denne lenken til å tilbakestille passordet ditt innen en uke, vil lenken utløpe, og du må be om en ny en.
-        intro: 'Noen har bedt om å tilbakestille passordet til kontoen din. Du kan endre passordet til kontoen din ved å følge lenken under og fylle inn det nye passordet ditt:'
-        link_title: Endre passordet mitt.
         subject: "[%{app_name}] Tilbakestill passordet ditt"
-        unrequested: Hvis du ikke ba om å tilbakestille passordet ditt, kan du ignorere denne e-posten og det tidligere passordet ditt vil fortsette å fungere.
